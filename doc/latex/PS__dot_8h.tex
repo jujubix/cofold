@@ -1,0 +1,243 @@
+\hypertarget{PS__dot_8h}{
+\section{H/PS\_\-dot.h File Reference}
+\label{PS__dot_8h}\index{H/PS\_\-dot.h@{H/PS\_\-dot.h}}
+}
+
+
+Various functions for plotting RNA secondary structures, dot-\/plots and other visualizations.  
+
+
+Include dependency graph for PS\_\-dot.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=104pt]{PS__dot_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=64pt]{PS__dot_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{PS__dot_8h_a0873c7cc4cd7a11c9a2cea19dde7e9c9}{PS\_\-rna\_\-plot} (char $\ast$string, char $\ast$structure, char $\ast$file)
+\begin{DoxyCompactList}\small\item\em Produce a secondary structure graph in PostScript and write it to 'filename'. \item\end{DoxyCompactList}\item 
+int \hyperlink{PS__dot_8h_a47856b2504b566588785597b6ebb8271}{PS\_\-rna\_\-plot\_\-a} (char $\ast$string, char $\ast$structure, char $\ast$file, char $\ast$pre, char $\ast$post)
+\begin{DoxyCompactList}\small\item\em Produce a secondary structure graph in PostScript including additional annotation macros and write it to 'filename'. \item\end{DoxyCompactList}\item 
+int \hyperlink{PS__dot_8h_a70834bc8c0aad4fe6824ff76ccb8f329}{gmlRNA} (char $\ast$string, char $\ast$structure, char $\ast$ssfile, char option)
+\begin{DoxyCompactList}\small\item\em Produce a secondary structure graph in Graph Meta Language (gml) and write it to a file. \item\end{DoxyCompactList}\item 
+int \hyperlink{PS__dot_8h_add368528755f9a830727b680243541df}{ssv\_\-rna\_\-plot} (char $\ast$string, char $\ast$structure, char $\ast$ssfile)
+\begin{DoxyCompactList}\small\item\em Produce a secondary structure graph in SStructView format. \item\end{DoxyCompactList}\item 
+int \hyperlink{PS__dot_8h_ae7853539b5df98f294b4af434e979304}{svg\_\-rna\_\-plot} (char $\ast$string, char $\ast$structure, char $\ast$ssfile)
+\begin{DoxyCompactList}\small\item\em Produce a secondary structure plot in SVG format and write it to a file. \item\end{DoxyCompactList}\item 
+int \hyperlink{PS__dot_8h_a2f6d5953e6a323df898896b8d6614483}{xrna\_\-plot} (char $\ast$string, char $\ast$structure, char $\ast$ssfile)
+\begin{DoxyCompactList}\small\item\em Produce a secondary structure plot for further editing in XRNA. \item\end{DoxyCompactList}\item 
+int \hyperlink{PS__dot_8h_a00ea223b5cf02eb2faae5ff29f0d5e12}{PS\_\-dot\_\-plot\_\-list} (char $\ast$seq, char $\ast$filename, \hyperlink{structplist}{plist} $\ast$pl, \hyperlink{structplist}{plist} $\ast$mf, char $\ast$comment)
+\begin{DoxyCompactList}\small\item\em Produce a postscript dot-\/plot from two pair lists. \item\end{DoxyCompactList}\item 
+\hypertarget{PS__dot_8h_aab48d4dac655d688abe921389ac2847c}{
+int \hyperlink{PS__dot_8h_aab48d4dac655d688abe921389ac2847c}{aliPS\_\-color\_\-aln} (const char $\ast$structure, const char $\ast$filename, const char $\ast$seqs\mbox{[}$\,$\mbox{]}, const char $\ast$names\mbox{[}$\,$\mbox{]})}
+\label{PS__dot_8h_aab48d4dac655d688abe921389ac2847c}
+
+\begin{DoxyCompactList}\small\item\em PS\_\-color\_\-aln for duplexes. \item\end{DoxyCompactList}\item 
+int \hyperlink{PS__dot_8h_a689a97a7e3b8a2df14728b8204d9d57b}{PS\_\-dot\_\-plot} (char $\ast$string, char $\ast$file)
+\begin{DoxyCompactList}\small\item\em Wrapper to PS\_\-dot\_\-plot\_\-list. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Various functions for plotting RNA secondary structures, dot-\/plots and other visualizations. 
+
+\subsection{Function Documentation}
+\hypertarget{PS__dot_8h_a0873c7cc4cd7a11c9a2cea19dde7e9c9}{
+\index{PS\_\-dot.h@{PS\_\-dot.h}!PS\_\-rna\_\-plot@{PS\_\-rna\_\-plot}}
+\index{PS\_\-rna\_\-plot@{PS\_\-rna\_\-plot}!PS_dot.h@{PS\_\-dot.h}}
+\subsubsection[{PS\_\-rna\_\-plot}]{\setlength{\rightskip}{0pt plus 5cm}int PS\_\-rna\_\-plot (char $\ast$ {\em string}, \/  char $\ast$ {\em structure}, \/  char $\ast$ {\em file})}}
+\label{PS__dot_8h_a0873c7cc4cd7a11c9a2cea19dde7e9c9}
+
+
+Produce a secondary structure graph in PostScript and write it to 'filename'. 
+
+Note that this function has changed from previous versions and now expects the structure to be plotted in dot-\/bracket notation as an argument. It does not make use of the global \hyperlink{fold__vars_8h_a0244a629b5ab4f58b77590c3dfd130dc}{base\_\-pair} array anymore.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]The RNA sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]The secondary structure in dot-\/bracket notation 
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]The filename of the postscript output \begin{DoxyReturn}{Returns}
+1 on success, 0 otherwise 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{PS__dot_8h_a47856b2504b566588785597b6ebb8271}{
+\index{PS\_\-dot.h@{PS\_\-dot.h}!PS\_\-rna\_\-plot\_\-a@{PS\_\-rna\_\-plot\_\-a}}
+\index{PS\_\-rna\_\-plot\_\-a@{PS\_\-rna\_\-plot\_\-a}!PS_dot.h@{PS\_\-dot.h}}
+\subsubsection[{PS\_\-rna\_\-plot\_\-a}]{\setlength{\rightskip}{0pt plus 5cm}int PS\_\-rna\_\-plot\_\-a (char $\ast$ {\em string}, \/  char $\ast$ {\em structure}, \/  char $\ast$ {\em file}, \/  char $\ast$ {\em pre}, \/  char $\ast$ {\em post})}}
+\label{PS__dot_8h_a47856b2504b566588785597b6ebb8271}
+
+
+Produce a secondary structure graph in PostScript including additional annotation macros and write it to 'filename'. 
+
+Same as \hyperlink{PS__dot_8h_a0873c7cc4cd7a11c9a2cea19dde7e9c9}{PS\_\-rna\_\-plot()} but adds extra PostScript macros for various annotations (see generated PS code). The 'pre' and 'post' variables contain PostScript code that is verbatim copied in the resulting PS file just before and after the structure plot. If both arguments ('pre' and 'post') are NULL, no additional macros will be printed into the PostScript.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]The RNA sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]The secondary structure in dot-\/bracket notation 
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]The filename of the postscript output 
+\begin{DoxyParams}{Parameters}
+\item[{\em pre}]PostScript code to appear before the secondary structure plot 
+\begin{DoxyParams}{Parameters}
+\item[{\em post}]PostScript code to appear after the secondary structure plot \begin{DoxyReturn}{Returns}
+1 on success, 0 otherwise 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{PS__dot_8h_a70834bc8c0aad4fe6824ff76ccb8f329}{
+\index{PS\_\-dot.h@{PS\_\-dot.h}!gmlRNA@{gmlRNA}}
+\index{gmlRNA@{gmlRNA}!PS_dot.h@{PS\_\-dot.h}}
+\subsubsection[{gmlRNA}]{\setlength{\rightskip}{0pt plus 5cm}int gmlRNA (char $\ast$ {\em string}, \/  char $\ast$ {\em structure}, \/  char $\ast$ {\em ssfile}, \/  char {\em option})}}
+\label{PS__dot_8h_a70834bc8c0aad4fe6824ff76ccb8f329}
+
+
+Produce a secondary structure graph in Graph Meta Language (gml) and write it to a file. 
+
+If 'option' is an uppercase letter the RNA sequence is used to label nodes, if 'option' equals {\itshape 'X'\/} or {\itshape 'x'\/} the resulting file will coordinates for an initial layout of the graph.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]The RNA sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]The secondary structure in dot-\/bracket notation 
+\begin{DoxyParams}{Parameters}
+\item[{\em ssfile}]The filename of the gml output 
+\begin{DoxyParams}{Parameters}
+\item[{\em option}]The option flag \begin{DoxyReturn}{Returns}
+1 on success, 0 otherwise 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{PS__dot_8h_add368528755f9a830727b680243541df}{
+\index{PS\_\-dot.h@{PS\_\-dot.h}!ssv\_\-rna\_\-plot@{ssv\_\-rna\_\-plot}}
+\index{ssv\_\-rna\_\-plot@{ssv\_\-rna\_\-plot}!PS_dot.h@{PS\_\-dot.h}}
+\subsubsection[{ssv\_\-rna\_\-plot}]{\setlength{\rightskip}{0pt plus 5cm}int ssv\_\-rna\_\-plot (char $\ast$ {\em string}, \/  char $\ast$ {\em structure}, \/  char $\ast$ {\em ssfile})}}
+\label{PS__dot_8h_add368528755f9a830727b680243541df}
+
+
+Produce a secondary structure graph in SStructView format. 
+
+Write coord file for SStructView
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]The RNA sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]The secondary structure in dot-\/bracket notation 
+\begin{DoxyParams}{Parameters}
+\item[{\em ssfile}]The filename of the ssv output \begin{DoxyReturn}{Returns}
+1 on success, 0 otherwise 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{PS__dot_8h_ae7853539b5df98f294b4af434e979304}{
+\index{PS\_\-dot.h@{PS\_\-dot.h}!svg\_\-rna\_\-plot@{svg\_\-rna\_\-plot}}
+\index{svg\_\-rna\_\-plot@{svg\_\-rna\_\-plot}!PS_dot.h@{PS\_\-dot.h}}
+\subsubsection[{svg\_\-rna\_\-plot}]{\setlength{\rightskip}{0pt plus 5cm}int svg\_\-rna\_\-plot (char $\ast$ {\em string}, \/  char $\ast$ {\em structure}, \/  char $\ast$ {\em ssfile})}}
+\label{PS__dot_8h_ae7853539b5df98f294b4af434e979304}
+
+
+Produce a secondary structure plot in SVG format and write it to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]The RNA sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]The secondary structure in dot-\/bracket notation 
+\begin{DoxyParams}{Parameters}
+\item[{\em ssfile}]The filename of the svg output \begin{DoxyReturn}{Returns}
+1 on success, 0 otherwise 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{PS__dot_8h_a2f6d5953e6a323df898896b8d6614483}{
+\index{PS\_\-dot.h@{PS\_\-dot.h}!xrna\_\-plot@{xrna\_\-plot}}
+\index{xrna\_\-plot@{xrna\_\-plot}!PS_dot.h@{PS\_\-dot.h}}
+\subsubsection[{xrna\_\-plot}]{\setlength{\rightskip}{0pt plus 5cm}int xrna\_\-plot (char $\ast$ {\em string}, \/  char $\ast$ {\em structure}, \/  char $\ast$ {\em ssfile})}}
+\label{PS__dot_8h_a2f6d5953e6a323df898896b8d6614483}
+
+
+Produce a secondary structure plot for further editing in XRNA. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]The RNA sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]The secondary structure in dot-\/bracket notation 
+\begin{DoxyParams}{Parameters}
+\item[{\em ssfile}]The filename of the xrna output \begin{DoxyReturn}{Returns}
+1 on success, 0 otherwise 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{PS__dot_8h_a00ea223b5cf02eb2faae5ff29f0d5e12}{
+\index{PS\_\-dot.h@{PS\_\-dot.h}!PS\_\-dot\_\-plot\_\-list@{PS\_\-dot\_\-plot\_\-list}}
+\index{PS\_\-dot\_\-plot\_\-list@{PS\_\-dot\_\-plot\_\-list}!PS_dot.h@{PS\_\-dot.h}}
+\subsubsection[{PS\_\-dot\_\-plot\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}int PS\_\-dot\_\-plot\_\-list (char $\ast$ {\em seq}, \/  char $\ast$ {\em filename}, \/  {\bf plist} $\ast$ {\em pl}, \/  {\bf plist} $\ast$ {\em mf}, \/  char $\ast$ {\em comment})}}
+\label{PS__dot_8h_a00ea223b5cf02eb2faae5ff29f0d5e12}
+
+
+Produce a postscript dot-\/plot from two pair lists. 
+
+This function reads two plist structures (e.g. base pair probabilities and a secondary structure) as produced by \hyperlink{part__func_8h_a2f29542659beb5ebd176631a3da11580}{assign\_\-plist\_\-from\_\-pr()} and \hyperlink{fold_8h_adaa59b81664e2e36cb9932e891558fae}{assign\_\-plist\_\-from\_\-db()} and produces a postscript \char`\"{}dot plot\char`\"{} that is written to 'filename'.\par
+ Using base pair probabilities in the first and mfe structure in the second plist, the resulting \char`\"{}dot plot\char`\"{} represents each base pairing probability by a square of corresponding area in a upper triangle matrix. The lower part of the matrix contains the minimum free energy structure.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{part__func_8h_a2f29542659beb5ebd176631a3da11580}{assign\_\-plist\_\-from\_\-pr()}, \hyperlink{fold_8h_adaa59b81664e2e36cb9932e891558fae}{assign\_\-plist\_\-from\_\-db()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em seq}]The RNA sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]A filename for the postscript output 
+\begin{DoxyParams}{Parameters}
+\item[{\em pl}]The base pair probability pairlist 
+\begin{DoxyParams}{Parameters}
+\item[{\em mf}]The mfe secondary structure pairlist 
+\begin{DoxyParams}{Parameters}
+\item[{\em comment}]A comment \begin{DoxyReturn}{Returns}
+1 if postscript was successfully written, 0 otherwise 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{PS__dot_8h_a689a97a7e3b8a2df14728b8204d9d57b}{
+\index{PS\_\-dot.h@{PS\_\-dot.h}!PS\_\-dot\_\-plot@{PS\_\-dot\_\-plot}}
+\index{PS\_\-dot\_\-plot@{PS\_\-dot\_\-plot}!PS_dot.h@{PS\_\-dot.h}}
+\subsubsection[{PS\_\-dot\_\-plot}]{\setlength{\rightskip}{0pt plus 5cm}int PS\_\-dot\_\-plot (char $\ast$ {\em string}, \/  char $\ast$ {\em file})}}
+\label{PS__dot_8h_a689a97a7e3b8a2df14728b8204d9d57b}
+
+
+Wrapper to PS\_\-dot\_\-plot\_\-list. 
+
+Produce postscript dot-\/plot Reads base pair probabilities produced by \hyperlink{part__func_8h_adc3db3d98742427e7001a7fd36ef28c2}{pf\_\-fold()} from the global array \hyperlink{fold__vars_8h_ac98ec419070aee6831b44e5c700f090f}{pr} and the pair list \hyperlink{fold__vars_8h_a0244a629b5ab4f58b77590c3dfd130dc}{base\_\-pair} produced by \hyperlink{fold_8h_aadafcb0f140795ae62e5ca027e335a9b}{fold()} and produces a postscript \char`\"{}dot plot\char`\"{} that is written to 'filename'. The \char`\"{}dot plot\char`\"{} represents each base pairing probability by a square of corresponding area in a upper triangle matrix. The lower part of the matrix contains the minimum free energy \begin{DoxyNote}{Note}
+DO NOT USE THIS FUNCTION ANYMORE SINCE IT IS NOT THREADSAFE
+\end{DoxyNote}
+\begin{Desc}
+\item[\hyperlink{deprecated__deprecated000019}{Deprecated}]This function is deprecated and will be removed soon! Use \hyperlink{PS__dot_8h_a00ea223b5cf02eb2faae5ff29f0d5e12}{PS\_\-dot\_\-plot\_\-list()} instead! \end{Desc}

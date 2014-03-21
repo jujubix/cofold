@@ -1,0 +1,388 @@
+\hypertarget{alifold_8h}{
+\section{H/alifold.h File Reference}
+\label{alifold_8h}\index{H/alifold.h@{H/alifold.h}}
+}
+
+
+compute various properties (consensus MFE structures, partition function, Boltzmann distributed stochastic samples, .  
+
+
+Include dependency graph for alifold.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=68pt]{alifold_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{alifold_8h_ac484c6bd429bafbd353b91044508d8e9}{update\_\-alifold\_\-params} (void)
+\begin{DoxyCompactList}\small\item\em Update the energy parameters for alifold function. \item\end{DoxyCompactList}\item 
+float \hyperlink{alifold_8h_a4cf00f0659e5f0480335d69e797f05b1}{alifold} (const char $\ast$$\ast$strings, char $\ast$structure)
+\begin{DoxyCompactList}\small\item\em Compute MFE and according consensus structure of an alignment of sequences. \item\end{DoxyCompactList}\item 
+float \hyperlink{alifold_8h_adbd3b0b1c144cbfb4efe704b2b260f96}{circalifold} (const char $\ast$$\ast$strings, char $\ast$structure)
+\begin{DoxyCompactList}\small\item\em Compute MFE and according structure of an alignment of sequences assuming the sequences are circular instead of linear. \item\end{DoxyCompactList}\item 
+\hypertarget{alifold_8h_a72095e4554b5d577250ea14c42acc49e}{
+void \hyperlink{alifold_8h_a72095e4554b5d577250ea14c42acc49e}{free\_\-alifold\_\-arrays} (void)}
+\label{alifold_8h_a72095e4554b5d577250ea14c42acc49e}
+
+\begin{DoxyCompactList}\small\item\em Free the memory occupied by MFE alifold functions. \item\end{DoxyCompactList}\item 
+int \hyperlink{alifold_8h_aa2d600be90844094ec145ea14a314d2f}{get\_\-mpi} (char $\ast$Alseq\mbox{[}$\,$\mbox{]}, int n\_\-seq, int length, int $\ast$mini)
+\begin{DoxyCompactList}\small\item\em Get the mean pairwise identity in steps from ?to?(ident). \item\end{DoxyCompactList}\item 
+\hypertarget{alifold_8h_a5e125c9586fcd4e2e1559fe76f7289cc}{
+float $\ast$$\ast$ \hyperlink{alifold_8h_a5e125c9586fcd4e2e1559fe76f7289cc}{readribosum} (char $\ast$name)}
+\label{alifold_8h_a5e125c9586fcd4e2e1559fe76f7289cc}
+
+\begin{DoxyCompactList}\small\item\em Read a ribosum or other user-\/defined scoring matrix. \item\end{DoxyCompactList}\item 
+float \hyperlink{alifold_8h_a1c48869c03b49a342bf4cbdd61900081}{energy\_\-of\_\-alistruct} (const char $\ast$$\ast$sequences, const char $\ast$structure, int n\_\-seq, float $\ast$energy)
+\begin{DoxyCompactList}\small\item\em Calculate the free energy of a consensus structure given a set of aligned sequences. \item\end{DoxyCompactList}\item 
+void \hyperlink{alifold_8h_aa3e40277c837d6f7603afe319884c786}{encode\_\-ali\_\-sequence} (const char $\ast$sequence, short $\ast$S, short $\ast$s5, short $\ast$s3, char $\ast$ss, unsigned short $\ast$as, int \hyperlink{fold__vars_8h_af9202a1a09f5828dc731e2d9a10fa111}{circ})
+\begin{DoxyCompactList}\small\item\em Get arrays with encoded sequence of the alignment. \item\end{DoxyCompactList}\item 
+void \hyperlink{alifold_8h_a8a560930f7f2582cc3967723a86cfdfa}{alloc\_\-sequence\_\-arrays} (const char $\ast$$\ast$sequences, short $\ast$$\ast$$\ast$S, short $\ast$$\ast$$\ast$S5, short $\ast$$\ast$$\ast$S3, unsigned short $\ast$$\ast$$\ast$a2s, char $\ast$$\ast$$\ast$Ss, int \hyperlink{fold__vars_8h_af9202a1a09f5828dc731e2d9a10fa111}{circ})
+\begin{DoxyCompactList}\small\item\em Allocate memory for sequence array used to deal with aligned sequences. \item\end{DoxyCompactList}\item 
+void \hyperlink{alifold_8h_a298a420a8c879202e2617b3f724fde38}{free\_\-sequence\_\-arrays} (unsigned int n\_\-seq, short $\ast$$\ast$$\ast$S, short $\ast$$\ast$$\ast$S5, short $\ast$$\ast$$\ast$S3, unsigned short $\ast$$\ast$$\ast$a2s, char $\ast$$\ast$$\ast$Ss)
+\begin{DoxyCompactList}\small\item\em Free the memory of the sequence arrays used to deal with aligned sequences. \item\end{DoxyCompactList}\item 
+float \hyperlink{alifold_8h_a4d2ff54d8210fc7cceeeff389d4dbd1d}{alipf\_\-fold\_\-par} (const char $\ast$$\ast$sequences, char $\ast$structure, \hyperlink{structplist}{plist} $\ast$$\ast$pl, \hyperlink{structpf__paramT}{pf\_\-paramT} $\ast$parameters, int calculate\_\-bppm, int is\_\-constrained, int is\_\-circular)
+\item 
+float \hyperlink{alifold_8h_ad32ded7d753ccaf211ab35782d1f42a9}{alipf\_\-fold} (const char $\ast$$\ast$sequences, char $\ast$structure, \hyperlink{structplist}{plist} $\ast$$\ast$pl)
+\begin{DoxyCompactList}\small\item\em The partition function version of \hyperlink{alifold_8h_a4cf00f0659e5f0480335d69e797f05b1}{alifold()} works in analogy to \hyperlink{part__func_8h_adc3db3d98742427e7001a7fd36ef28c2}{pf\_\-fold()}. \item\end{DoxyCompactList}\item 
+float \hyperlink{alifold_8h_a6b4dde1d43b79ab3753508c46cf50363}{alipf\_\-circ\_\-fold} (const char $\ast$$\ast$sequences, char $\ast$structure, \hyperlink{structplist}{plist} $\ast$$\ast$pl)
+\item 
+FLT\_\-OR\_\-DBL $\ast$ \hyperlink{alifold_8h_a11b6ab8bd9be1821fea352b190a01cab}{export\_\-ali\_\-bppm} (void)
+\begin{DoxyCompactList}\small\item\em Get a pointer to the base pair probability array. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{alifold_8h_a0df40248788f0fb17ebdc59d74116d1c}{alipbacktrack} (double $\ast$prob)
+\begin{DoxyCompactList}\small\item\em Sample a consensus secondary structure from the Boltzmann ensemble according its probability\par
+. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{alifold_8h_af3cbac6ff5d706d6e414677841ddf94c}{cv\_\-fact}
+\begin{DoxyCompactList}\small\item\em This variable controls the weight of the covariance term in the energy function of alignment folding algorithms. \item\end{DoxyCompactList}\item 
+double \hyperlink{alifold_8h_a502948a122a2af5b914355b1f3ea2f61}{nc\_\-fact}
+\begin{DoxyCompactList}\small\item\em This variable controls the magnitude of the penalty for non-\/compatible sequences in the covariance term of alignment folding algorithms. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+compute various properties (consensus MFE structures, partition function, Boltzmann distributed stochastic samples, . ..) for RNA sequence alignments 
+
+\subsection{Function Documentation}
+\hypertarget{alifold_8h_ac484c6bd429bafbd353b91044508d8e9}{
+\index{alifold.h@{alifold.h}!update\_\-alifold\_\-params@{update\_\-alifold\_\-params}}
+\index{update\_\-alifold\_\-params@{update\_\-alifold\_\-params}!alifold.h@{alifold.h}}
+\subsubsection[{update\_\-alifold\_\-params}]{\setlength{\rightskip}{0pt plus 5cm}void update\_\-alifold\_\-params (void)}}
+\label{alifold_8h_ac484c6bd429bafbd353b91044508d8e9}
+
+
+Update the energy parameters for alifold function. 
+
+Call this to recalculate the pair matrix and energy parameters after a change in folding parameters like \hyperlink{fold__vars_8h_ab4b11c8d9c758430960896bc3fe82ead}{temperature} \hypertarget{alifold_8h_a4cf00f0659e5f0480335d69e797f05b1}{
+\index{alifold.h@{alifold.h}!alifold@{alifold}}
+\index{alifold@{alifold}!alifold.h@{alifold.h}}
+\subsubsection[{alifold}]{\setlength{\rightskip}{0pt plus 5cm}float alifold (const char $\ast$$\ast$ {\em strings}, \/  char $\ast$ {\em structure})}}
+\label{alifold_8h_a4cf00f0659e5f0480335d69e797f05b1}
+
+
+Compute MFE and according consensus structure of an alignment of sequences. 
+
+This function predicts the consensus structure for the aligned 'sequences' and returns the minimum free energy; the mfe structure in bracket notation is returned in 'structure'.
+
+Sufficient space must be allocated for 'structure' before calling \hyperlink{alifold_8h_a4cf00f0659e5f0480335d69e797f05b1}{alifold()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em strings}]A pointer to a NULL terminated array of character arrays 
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]A pointer to a character array that may contain a constraining consensus structure (will be overwritten by a consensus structure that exhibits the MFE) \begin{DoxyReturn}{Returns}
+The free energy score in kcal/mol 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{alifold_8h_adbd3b0b1c144cbfb4efe704b2b260f96}{
+\index{alifold.h@{alifold.h}!circalifold@{circalifold}}
+\index{circalifold@{circalifold}!alifold.h@{alifold.h}}
+\subsubsection[{circalifold}]{\setlength{\rightskip}{0pt plus 5cm}float circalifold (const char $\ast$$\ast$ {\em strings}, \/  char $\ast$ {\em structure})}}
+\label{alifold_8h_adbd3b0b1c144cbfb4efe704b2b260f96}
+
+
+Compute MFE and according structure of an alignment of sequences assuming the sequences are circular instead of linear. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em strings}]A pointer to a NULL terminated array of character arrays 
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]A pointer to a character array that may contain a constraining consensus structure (will be overwritten by a consensus structure that exhibits the MFE) \begin{DoxyReturn}{Returns}
+The free energy score in kcal/mol 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{alifold_8h_aa2d600be90844094ec145ea14a314d2f}{
+\index{alifold.h@{alifold.h}!get\_\-mpi@{get\_\-mpi}}
+\index{get\_\-mpi@{get\_\-mpi}!alifold.h@{alifold.h}}
+\subsubsection[{get\_\-mpi}]{\setlength{\rightskip}{0pt plus 5cm}int get\_\-mpi (char $\ast$ {\em Alseq}\mbox{[}$\,$\mbox{]}, \/  int {\em n\_\-seq}, \/  int {\em length}, \/  int $\ast$ {\em mini})}}
+\label{alifold_8h_aa2d600be90844094ec145ea14a314d2f}
+
+
+Get the mean pairwise identity in steps from ?to?(ident). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em Alseq}]
+\begin{DoxyParams}{Parameters}
+\item[{\em n\_\-seq}]The number of sequences in the alignment 
+\begin{DoxyParams}{Parameters}
+\item[{\em length}]The length of the alignment 
+\begin{DoxyParams}{Parameters}
+\item[{\em mini}]\begin{DoxyReturn}{Returns}
+The mean pairwise identity 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{alifold_8h_a1c48869c03b49a342bf4cbdd61900081}{
+\index{alifold.h@{alifold.h}!energy\_\-of\_\-alistruct@{energy\_\-of\_\-alistruct}}
+\index{energy\_\-of\_\-alistruct@{energy\_\-of\_\-alistruct}!alifold.h@{alifold.h}}
+\subsubsection[{energy\_\-of\_\-alistruct}]{\setlength{\rightskip}{0pt plus 5cm}float energy\_\-of\_\-alistruct (const char $\ast$$\ast$ {\em sequences}, \/  const char $\ast$ {\em structure}, \/  int {\em n\_\-seq}, \/  float $\ast$ {\em energy})}}
+\label{alifold_8h_a1c48869c03b49a342bf4cbdd61900081}
+
+
+Calculate the free energy of a consensus structure given a set of aligned sequences. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sequences}]The NULL terminated array of sequences 
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]The consensus structure 
+\begin{DoxyParams}{Parameters}
+\item[{\em n\_\-seq}]The number of sequences in the alignment 
+\begin{DoxyParams}{Parameters}
+\item[{\em energy}]A pointer to an array of at least two floats that will hold the free energies (energy\mbox{[}0\mbox{]} will contain the free energy, energy\mbox{[}1\mbox{]} will be filled with the covariance energy term) \begin{DoxyReturn}{Returns}
+free energy in kcal/mol 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{alifold_8h_aa3e40277c837d6f7603afe319884c786}{
+\index{alifold.h@{alifold.h}!encode\_\-ali\_\-sequence@{encode\_\-ali\_\-sequence}}
+\index{encode\_\-ali\_\-sequence@{encode\_\-ali\_\-sequence}!alifold.h@{alifold.h}}
+\subsubsection[{encode\_\-ali\_\-sequence}]{\setlength{\rightskip}{0pt plus 5cm}void encode\_\-ali\_\-sequence (const char $\ast$ {\em sequence}, \/  short $\ast$ {\em S}, \/  short $\ast$ {\em s5}, \/  short $\ast$ {\em s3}, \/  char $\ast$ {\em ss}, \/  unsigned short $\ast$ {\em as}, \/  int {\em circ})}}
+\label{alifold_8h_aa3e40277c837d6f7603afe319884c786}
+
+
+Get arrays with encoded sequence of the alignment. 
+
+this function assumes that in S, S5, s3, ss and as enough space is already allocated (size must be at least sequence length+2) 
+\begin{DoxyParams}{Parameters}
+\item[{\em sequence}]The gapped sequence from the alignment 
+\begin{DoxyParams}{Parameters}
+\item[{\em S}]pointer to an array that holds encoded sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em s5}]pointer to an array that holds the next base 5' of alignment position i 
+\begin{DoxyParams}{Parameters}
+\item[{\em s3}]pointer to an array that holds the next base 3' of alignment position i 
+\begin{DoxyParams}{Parameters}
+\item[{\em ss}]
+\begin{DoxyParams}{Parameters}
+\item[{\em as}]
+\begin{DoxyParams}{Parameters}
+\item[{\em circ}]assume the molecules to be circular instead of linear (circ=0) \end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{alifold_8h_a8a560930f7f2582cc3967723a86cfdfa}{
+\index{alifold.h@{alifold.h}!alloc\_\-sequence\_\-arrays@{alloc\_\-sequence\_\-arrays}}
+\index{alloc\_\-sequence\_\-arrays@{alloc\_\-sequence\_\-arrays}!alifold.h@{alifold.h}}
+\subsubsection[{alloc\_\-sequence\_\-arrays}]{\setlength{\rightskip}{0pt plus 5cm}void alloc\_\-sequence\_\-arrays (const char $\ast$$\ast$ {\em sequences}, \/  short $\ast$$\ast$$\ast$ {\em S}, \/  short $\ast$$\ast$$\ast$ {\em S5}, \/  short $\ast$$\ast$$\ast$ {\em S3}, \/  unsigned short $\ast$$\ast$$\ast$ {\em a2s}, \/  char $\ast$$\ast$$\ast$ {\em Ss}, \/  int {\em circ})}}
+\label{alifold_8h_a8a560930f7f2582cc3967723a86cfdfa}
+
+
+Allocate memory for sequence array used to deal with aligned sequences. 
+
+Note that these arrays will also be initialized according to the sequence alignment given
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{alifold_8h_a298a420a8c879202e2617b3f724fde38}{free\_\-sequence\_\-arrays()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sequences}]The aligned sequences 
+\begin{DoxyParams}{Parameters}
+\item[{\em S}]A pointer to the array of encoded sequences 
+\begin{DoxyParams}{Parameters}
+\item[{\em S5}]A pointer to the array that contains the next 5' nucleotide of a sequence position 
+\begin{DoxyParams}{Parameters}
+\item[{\em S3}]A pointer to the array that contains the next 3' nucleotide of a sequence position 
+\begin{DoxyParams}{Parameters}
+\item[{\em a2s}]A pointer to the array that contains the alignment to sequence position mapping 
+\begin{DoxyParams}{Parameters}
+\item[{\em Ss}]A pointer to the array that contains the ungapped sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em circ}]assume the molecules to be circular instead of linear (circ=0) \end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{alifold_8h_a298a420a8c879202e2617b3f724fde38}{
+\index{alifold.h@{alifold.h}!free\_\-sequence\_\-arrays@{free\_\-sequence\_\-arrays}}
+\index{free\_\-sequence\_\-arrays@{free\_\-sequence\_\-arrays}!alifold.h@{alifold.h}}
+\subsubsection[{free\_\-sequence\_\-arrays}]{\setlength{\rightskip}{0pt plus 5cm}void free\_\-sequence\_\-arrays (unsigned int {\em n\_\-seq}, \/  short $\ast$$\ast$$\ast$ {\em S}, \/  short $\ast$$\ast$$\ast$ {\em S5}, \/  short $\ast$$\ast$$\ast$ {\em S3}, \/  unsigned short $\ast$$\ast$$\ast$ {\em a2s}, \/  char $\ast$$\ast$$\ast$ {\em Ss})}}
+\label{alifold_8h_a298a420a8c879202e2617b3f724fde38}
+
+
+Free the memory of the sequence arrays used to deal with aligned sequences. 
+
+This function frees the memory previously allocated with \hyperlink{alifold_8h_a8a560930f7f2582cc3967723a86cfdfa}{alloc\_\-sequence\_\-arrays()}
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{alifold_8h_a8a560930f7f2582cc3967723a86cfdfa}{alloc\_\-sequence\_\-arrays()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em n\_\-seq}]The number of aligned sequences 
+\begin{DoxyParams}{Parameters}
+\item[{\em S}]A pointer to the array of encoded sequences 
+\begin{DoxyParams}{Parameters}
+\item[{\em S5}]A pointer to the array that contains the next 5' nucleotide of a sequence position 
+\begin{DoxyParams}{Parameters}
+\item[{\em S3}]A pointer to the array that contains the next 3' nucleotide of a sequence position 
+\begin{DoxyParams}{Parameters}
+\item[{\em a2s}]A pointer to the array that contains the alignment to sequence position mapping 
+\begin{DoxyParams}{Parameters}
+\item[{\em Ss}]A pointer to the array that contains the ungapped sequence \end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{alifold_8h_a4d2ff54d8210fc7cceeeff389d4dbd1d}{
+\index{alifold.h@{alifold.h}!alipf\_\-fold\_\-par@{alipf\_\-fold\_\-par}}
+\index{alipf\_\-fold\_\-par@{alipf\_\-fold\_\-par}!alifold.h@{alifold.h}}
+\subsubsection[{alipf\_\-fold\_\-par}]{\setlength{\rightskip}{0pt plus 5cm}float alipf\_\-fold\_\-par (const char $\ast$$\ast$ {\em sequences}, \/  char $\ast$ {\em structure}, \/  {\bf plist} $\ast$$\ast$ {\em pl}, \/  {\bf pf\_\-paramT} $\ast$ {\em parameters}, \/  int {\em calculate\_\-bppm}, \/  int {\em is\_\-constrained}, \/  int {\em is\_\-circular})}}
+\label{alifold_8h_a4d2ff54d8210fc7cceeeff389d4dbd1d}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sequences}]
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]
+\begin{DoxyParams}{Parameters}
+\item[{\em pl}]
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]
+\begin{DoxyParams}{Parameters}
+\item[{\em calculate\_\-bppm}]
+\begin{DoxyParams}{Parameters}
+\item[{\em is\_\-constrained}]
+\begin{DoxyParams}{Parameters}
+\item[{\em is\_\-circular}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{alifold_8h_ad32ded7d753ccaf211ab35782d1f42a9}{
+\index{alifold.h@{alifold.h}!alipf\_\-fold@{alipf\_\-fold}}
+\index{alipf\_\-fold@{alipf\_\-fold}!alifold.h@{alifold.h}}
+\subsubsection[{alipf\_\-fold}]{\setlength{\rightskip}{0pt plus 5cm}float alipf\_\-fold (const char $\ast$$\ast$ {\em sequences}, \/  char $\ast$ {\em structure}, \/  {\bf plist} $\ast$$\ast$ {\em pl})}}
+\label{alifold_8h_ad32ded7d753ccaf211ab35782d1f42a9}
+
+
+The partition function version of \hyperlink{alifold_8h_a4cf00f0659e5f0480335d69e797f05b1}{alifold()} works in analogy to \hyperlink{part__func_8h_adc3db3d98742427e7001a7fd36ef28c2}{pf\_\-fold()}. 
+
+Pair probabilities and information about sequence covariations are returned via the 'pi' variable as a list of \hyperlink{structpair__info}{pair\_\-info} structs. The list is terminated by the first entry with pi.i = 0.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sequences}]
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]
+\begin{DoxyParams}{Parameters}
+\item[{\em pl}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{alifold_8h_a6b4dde1d43b79ab3753508c46cf50363}{
+\index{alifold.h@{alifold.h}!alipf\_\-circ\_\-fold@{alipf\_\-circ\_\-fold}}
+\index{alipf\_\-circ\_\-fold@{alipf\_\-circ\_\-fold}!alifold.h@{alifold.h}}
+\subsubsection[{alipf\_\-circ\_\-fold}]{\setlength{\rightskip}{0pt plus 5cm}float alipf\_\-circ\_\-fold (const char $\ast$$\ast$ {\em sequences}, \/  char $\ast$ {\em structure}, \/  {\bf plist} $\ast$$\ast$ {\em pl})}}
+\label{alifold_8h_a6b4dde1d43b79ab3753508c46cf50363}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sequences}]
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]
+\begin{DoxyParams}{Parameters}
+\item[{\em pl}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{alifold_8h_a11b6ab8bd9be1821fea352b190a01cab}{
+\index{alifold.h@{alifold.h}!export\_\-ali\_\-bppm@{export\_\-ali\_\-bppm}}
+\index{export\_\-ali\_\-bppm@{export\_\-ali\_\-bppm}!alifold.h@{alifold.h}}
+\subsubsection[{export\_\-ali\_\-bppm}]{\setlength{\rightskip}{0pt plus 5cm}FLT\_\-OR\_\-DBL$\ast$ export\_\-ali\_\-bppm (void)}}
+\label{alifold_8h_a11b6ab8bd9be1821fea352b190a01cab}
+
+
+Get a pointer to the base pair probability array. 
+
+Accessing the base pair probabilities for a pair (i,j) is achieved by \begin{DoxyVerb}FLT_OR_DBL *pr = export_bppm(); pr_ij = pr[iindx[i]-j]; \end{DoxyVerb}
+
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{utils_8h_a55c0f6b3b07b6adf2ee235ba901fe397}{get\_\-iindx()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+A pointer to the base pair probability array 
+\end{DoxyReturn}
+\hypertarget{alifold_8h_a0df40248788f0fb17ebdc59d74116d1c}{
+\index{alifold.h@{alifold.h}!alipbacktrack@{alipbacktrack}}
+\index{alipbacktrack@{alipbacktrack}!alifold.h@{alifold.h}}
+\subsubsection[{alipbacktrack}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ alipbacktrack (double $\ast$ {\em prob})}}
+\label{alifold_8h_a0df40248788f0fb17ebdc59d74116d1c}
+
+
+Sample a consensus secondary structure from the Boltzmann ensemble according its probability\par
+. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em prob}]to be described (berni) \begin{DoxyReturn}{Returns}
+A sampled consensus secondary structure in dot-\/bracket notation 
+\end{DoxyReturn}
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\hypertarget{alifold_8h_af3cbac6ff5d706d6e414677841ddf94c}{
+\index{alifold.h@{alifold.h}!cv\_\-fact@{cv\_\-fact}}
+\index{cv\_\-fact@{cv\_\-fact}!alifold.h@{alifold.h}}
+\subsubsection[{cv\_\-fact}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf cv\_\-fact}}}
+\label{alifold_8h_af3cbac6ff5d706d6e414677841ddf94c}
+
+
+This variable controls the weight of the covariance term in the energy function of alignment folding algorithms. 
+
+Default is 1. \hypertarget{alifold_8h_a502948a122a2af5b914355b1f3ea2f61}{
+\index{alifold.h@{alifold.h}!nc\_\-fact@{nc\_\-fact}}
+\index{nc\_\-fact@{nc\_\-fact}!alifold.h@{alifold.h}}
+\subsubsection[{nc\_\-fact}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf nc\_\-fact}}}
+\label{alifold_8h_a502948a122a2af5b914355b1f3ea2f61}
+
+
+This variable controls the magnitude of the penalty for non-\/compatible sequences in the covariance term of alignment folding algorithms. 
+
+Default is 1. 

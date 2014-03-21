@@ -1,0 +1,169 @@
+\hypertarget{convert__epars_8h}{
+\section{H/convert\_\-epars.h File Reference}
+\label{convert__epars_8h}\index{H/convert\_\-epars.h@{H/convert\_\-epars.h}}
+}
+
+
+Functions and definitions for energy parameter file format conversion.  
+
+
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{convert__epars_8h_a8dc6aee5a806c49b71557152f9616bc4}{
+\#define \hyperlink{convert__epars_8h_a8dc6aee5a806c49b71557152f9616bc4}{VRNA\_\-CONVERT\_\-OUTPUT\_\-ALL}~1U}
+\label{convert__epars_8h_a8dc6aee5a806c49b71557152f9616bc4}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of a complete parameter set. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_af66fe2cb11dfcfd32d791049c254a8a4}{
+\#define \hyperlink{convert__epars_8h_af66fe2cb11dfcfd32d791049c254a8a4}{VRNA\_\-CONVERT\_\-OUTPUT\_\-HP}~2U}
+\label{convert__epars_8h_af66fe2cb11dfcfd32d791049c254a8a4}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of hairpin contributions. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_ad23522d63f8d4c50d5a5deee9bee3ef2}{
+\#define \hyperlink{convert__epars_8h_ad23522d63f8d4c50d5a5deee9bee3ef2}{VRNA\_\-CONVERT\_\-OUTPUT\_\-STACK}~4U}
+\label{convert__epars_8h_ad23522d63f8d4c50d5a5deee9bee3ef2}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of base pair stack contributions. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_aa892c7b4957459090f3e08da298cc347}{
+\#define \hyperlink{convert__epars_8h_aa892c7b4957459090f3e08da298cc347}{VRNA\_\-CONVERT\_\-OUTPUT\_\-MM\_\-HP}~8U}
+\label{convert__epars_8h_aa892c7b4957459090f3e08da298cc347}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of hairpin mismatch contribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_a4ff223fb1f9c62cd92d9ab811ad03d55}{
+\#define \hyperlink{convert__epars_8h_a4ff223fb1f9c62cd92d9ab811ad03d55}{VRNA\_\-CONVERT\_\-OUTPUT\_\-MM\_\-INT}~16U}
+\label{convert__epars_8h_a4ff223fb1f9c62cd92d9ab811ad03d55}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of interior loop mismatch contribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_af5d3743219f83c6348155cd81e755bbb}{
+\#define \hyperlink{convert__epars_8h_af5d3743219f83c6348155cd81e755bbb}{VRNA\_\-CONVERT\_\-OUTPUT\_\-MM\_\-INT\_\-1N}~32U}
+\label{convert__epars_8h_af5d3743219f83c6348155cd81e755bbb}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of 1:n interior loop mismatch contribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_a78382ec622ba99e0ac2262317bdd7316}{
+\#define \hyperlink{convert__epars_8h_a78382ec622ba99e0ac2262317bdd7316}{VRNA\_\-CONVERT\_\-OUTPUT\_\-MM\_\-INT\_\-23}~64U}
+\label{convert__epars_8h_a78382ec622ba99e0ac2262317bdd7316}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of 2:3 interior loop mismatch contribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_ae67af9f1cdf7baf2865481282a5d1034}{
+\#define \hyperlink{convert__epars_8h_ae67af9f1cdf7baf2865481282a5d1034}{VRNA\_\-CONVERT\_\-OUTPUT\_\-MM\_\-MULTI}~128U}
+\label{convert__epars_8h_ae67af9f1cdf7baf2865481282a5d1034}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of multi loop mismatch contribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_af14ead7ef1fdbe725ade653750fc51e3}{
+\#define \hyperlink{convert__epars_8h_af14ead7ef1fdbe725ade653750fc51e3}{VRNA\_\-CONVERT\_\-OUTPUT\_\-MM\_\-EXT}~256U}
+\label{convert__epars_8h_af14ead7ef1fdbe725ade653750fc51e3}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of exterior loop mismatch contribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_a036ffd996d8c8a9acf631760dd1da24b}{
+\#define \hyperlink{convert__epars_8h_a036ffd996d8c8a9acf631760dd1da24b}{VRNA\_\-CONVERT\_\-OUTPUT\_\-DANGLE5}~512U}
+\label{convert__epars_8h_a036ffd996d8c8a9acf631760dd1da24b}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of 5' dangle conctribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_a34a8a5479ef885834ef32f3fb43d79bc}{
+\#define \hyperlink{convert__epars_8h_a34a8a5479ef885834ef32f3fb43d79bc}{VRNA\_\-CONVERT\_\-OUTPUT\_\-DANGLE3}~1024U}
+\label{convert__epars_8h_a34a8a5479ef885834ef32f3fb43d79bc}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of 3' dangle contribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_a079aafefd5f8ab57ee5120099a34bd25}{
+\#define \hyperlink{convert__epars_8h_a079aafefd5f8ab57ee5120099a34bd25}{VRNA\_\-CONVERT\_\-OUTPUT\_\-INT\_\-11}~2048U}
+\label{convert__epars_8h_a079aafefd5f8ab57ee5120099a34bd25}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of 1:1 interior loop contribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_acf770881d9034431ebe741642342a1f9}{
+\#define \hyperlink{convert__epars_8h_acf770881d9034431ebe741642342a1f9}{VRNA\_\-CONVERT\_\-OUTPUT\_\-INT\_\-21}~4096U}
+\label{convert__epars_8h_acf770881d9034431ebe741642342a1f9}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of 2:1 interior loop contribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_aa307671e2631cdacad9cbe4c6583b05f}{
+\#define \hyperlink{convert__epars_8h_aa307671e2631cdacad9cbe4c6583b05f}{VRNA\_\-CONVERT\_\-OUTPUT\_\-INT\_\-22}~8192U}
+\label{convert__epars_8h_aa307671e2631cdacad9cbe4c6583b05f}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of 2:2 interior loop contribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_a7092fe0be4de6f02cc0bf08e81af726a}{
+\#define \hyperlink{convert__epars_8h_a7092fe0be4de6f02cc0bf08e81af726a}{VRNA\_\-CONVERT\_\-OUTPUT\_\-BULGE}~16384U}
+\label{convert__epars_8h_a7092fe0be4de6f02cc0bf08e81af726a}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of bulge loop contribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_ac5c2289fdf8ff1b980976d1613ff943a}{
+\#define \hyperlink{convert__epars_8h_ac5c2289fdf8ff1b980976d1613ff943a}{VRNA\_\-CONVERT\_\-OUTPUT\_\-INT}~32768U}
+\label{convert__epars_8h_ac5c2289fdf8ff1b980976d1613ff943a}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of interior loop contribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_af2c8755d64eff3852aa45df9ac80a4fe}{
+\#define \hyperlink{convert__epars_8h_af2c8755d64eff3852aa45df9ac80a4fe}{VRNA\_\-CONVERT\_\-OUTPUT\_\-ML}~65536U}
+\label{convert__epars_8h_af2c8755d64eff3852aa45df9ac80a4fe}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of multi loop contribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_a46d5b1535ae86060b6317565b7c6b40b}{
+\#define \hyperlink{convert__epars_8h_a46d5b1535ae86060b6317565b7c6b40b}{VRNA\_\-CONVERT\_\-OUTPUT\_\-MISC}~131072U}
+\label{convert__epars_8h_a46d5b1535ae86060b6317565b7c6b40b}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of misc contributions (such as terminalAU). \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_aa1ff48a79642d69579d1766561ec6db6}{
+\#define \hyperlink{convert__epars_8h_aa1ff48a79642d69579d1766561ec6db6}{VRNA\_\-CONVERT\_\-OUTPUT\_\-SPECIAL\_\-HP}~262144U}
+\label{convert__epars_8h_aa1ff48a79642d69579d1766561ec6db6}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of special hairpin contributions (tri-\/, tetra-\/, hexa-\/loops). \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_a0d4e8a836bb4864ab5129c085dbf592d}{
+\#define \hyperlink{convert__epars_8h_a0d4e8a836bb4864ab5129c085dbf592d}{VRNA\_\-CONVERT\_\-OUTPUT\_\-VANILLA}~524288U}
+\label{convert__epars_8h_a0d4e8a836bb4864ab5129c085dbf592d}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of given parameters only\par
+\begin{DoxyNote}{Note}
+This option overrides all other output options, except \hyperlink{convert__epars_8h_ac86976e9c2a55b3a6481ea60044f6098}{VRNA\_\-CONVERT\_\-OUTPUT\_\-DUMP} ! 
+\end{DoxyNote}
+\item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_a2eb0462f16939ddacdaf751a88d675ce}{
+\#define \hyperlink{convert__epars_8h_a2eb0462f16939ddacdaf751a88d675ce}{VRNA\_\-CONVERT\_\-OUTPUT\_\-NINIO}~1048576U}
+\label{convert__epars_8h_a2eb0462f16939ddacdaf751a88d675ce}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate printing of interior loop asymmetry contribution. \item\end{DoxyCompactList}\item 
+\hypertarget{convert__epars_8h_ac86976e9c2a55b3a6481ea60044f6098}{
+\#define \hyperlink{convert__epars_8h_ac86976e9c2a55b3a6481ea60044f6098}{VRNA\_\-CONVERT\_\-OUTPUT\_\-DUMP}~2097152U}
+\label{convert__epars_8h_ac86976e9c2a55b3a6481ea60044f6098}
+
+\begin{DoxyCompactList}\small\item\em Flag to indicate dumping the energy contributions from the library instead of an input file. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{convert__epars_8h_afbe538bc4eb2cf2a33326e1010005f8a}{convert\_\-parameter\_\-file} (const char $\ast$iname, const char $\ast$oname, unsigned int options)
+\begin{DoxyCompactList}\small\item\em Convert/dump a Vienna 1.8.4 formatted energy parameter file. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions and definitions for energy parameter file format conversion. 
+
+\subsection{Function Documentation}
+\hypertarget{convert__epars_8h_afbe538bc4eb2cf2a33326e1010005f8a}{
+\index{convert\_\-epars.h@{convert\_\-epars.h}!convert\_\-parameter\_\-file@{convert\_\-parameter\_\-file}}
+\index{convert\_\-parameter\_\-file@{convert\_\-parameter\_\-file}!convert_epars.h@{convert\_\-epars.h}}
+\subsubsection[{convert\_\-parameter\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void convert\_\-parameter\_\-file (const char $\ast$ {\em iname}, \/  const char $\ast$ {\em oname}, \/  unsigned int {\em options})}}
+\label{convert__epars_8h_afbe538bc4eb2cf2a33326e1010005f8a}
+
+
+Convert/dump a Vienna 1.8.4 formatted energy parameter file. 
+
+The options argument allows to control the different output modes.\par
+ Currently available options are:\par
+ \hyperlink{convert__epars_8h_a8dc6aee5a806c49b71557152f9616bc4}{VRNA\_\-CONVERT\_\-OUTPUT\_\-ALL}, \hyperlink{convert__epars_8h_af66fe2cb11dfcfd32d791049c254a8a4}{VRNA\_\-CONVERT\_\-OUTPUT\_\-HP}, \hyperlink{convert__epars_8h_ad23522d63f8d4c50d5a5deee9bee3ef2}{VRNA\_\-CONVERT\_\-OUTPUT\_\-STACK}\par
+ \hyperlink{convert__epars_8h_aa892c7b4957459090f3e08da298cc347}{VRNA\_\-CONVERT\_\-OUTPUT\_\-MM\_\-HP}, \hyperlink{convert__epars_8h_a4ff223fb1f9c62cd92d9ab811ad03d55}{VRNA\_\-CONVERT\_\-OUTPUT\_\-MM\_\-INT}, \hyperlink{convert__epars_8h_af5d3743219f83c6348155cd81e755bbb}{VRNA\_\-CONVERT\_\-OUTPUT\_\-MM\_\-INT\_\-1N}\par
+ \hyperlink{convert__epars_8h_a78382ec622ba99e0ac2262317bdd7316}{VRNA\_\-CONVERT\_\-OUTPUT\_\-MM\_\-INT\_\-23}, \hyperlink{convert__epars_8h_ae67af9f1cdf7baf2865481282a5d1034}{VRNA\_\-CONVERT\_\-OUTPUT\_\-MM\_\-MULTI}, \hyperlink{convert__epars_8h_af14ead7ef1fdbe725ade653750fc51e3}{VRNA\_\-CONVERT\_\-OUTPUT\_\-MM\_\-EXT}\par
+ \hyperlink{convert__epars_8h_a036ffd996d8c8a9acf631760dd1da24b}{VRNA\_\-CONVERT\_\-OUTPUT\_\-DANGLE5}, \hyperlink{convert__epars_8h_a34a8a5479ef885834ef32f3fb43d79bc}{VRNA\_\-CONVERT\_\-OUTPUT\_\-DANGLE3}, \hyperlink{convert__epars_8h_a079aafefd5f8ab57ee5120099a34bd25}{VRNA\_\-CONVERT\_\-OUTPUT\_\-INT\_\-11}\par
+ \hyperlink{convert__epars_8h_acf770881d9034431ebe741642342a1f9}{VRNA\_\-CONVERT\_\-OUTPUT\_\-INT\_\-21}, \hyperlink{convert__epars_8h_aa307671e2631cdacad9cbe4c6583b05f}{VRNA\_\-CONVERT\_\-OUTPUT\_\-INT\_\-22}, \hyperlink{convert__epars_8h_a7092fe0be4de6f02cc0bf08e81af726a}{VRNA\_\-CONVERT\_\-OUTPUT\_\-BULGE}\par
+ \hyperlink{convert__epars_8h_ac5c2289fdf8ff1b980976d1613ff943a}{VRNA\_\-CONVERT\_\-OUTPUT\_\-INT}, \hyperlink{convert__epars_8h_af2c8755d64eff3852aa45df9ac80a4fe}{VRNA\_\-CONVERT\_\-OUTPUT\_\-ML}, \hyperlink{convert__epars_8h_a46d5b1535ae86060b6317565b7c6b40b}{VRNA\_\-CONVERT\_\-OUTPUT\_\-MISC}\par
+ \hyperlink{convert__epars_8h_aa1ff48a79642d69579d1766561ec6db6}{VRNA\_\-CONVERT\_\-OUTPUT\_\-SPECIAL\_\-HP}, \hyperlink{convert__epars_8h_a0d4e8a836bb4864ab5129c085dbf592d}{VRNA\_\-CONVERT\_\-OUTPUT\_\-VANILLA}, \hyperlink{convert__epars_8h_a2eb0462f16939ddacdaf751a88d675ce}{VRNA\_\-CONVERT\_\-OUTPUT\_\-NINIO}\par
+ \hyperlink{convert__epars_8h_ac86976e9c2a55b3a6481ea60044f6098}{VRNA\_\-CONVERT\_\-OUTPUT\_\-DUMP}
+
+The defined options are fine for bitwise compare-\/ and assignment-\/operations, e. g.: pass a collection of options as a single value like this: \begin{DoxyVerb}convert_parameter_file(ifile, ofile, option_1 | option_2 | option_n) \end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em iname}]The input file name (If NULL input is read from stdin) 
+\begin{DoxyParams}{Parameters}
+\item[{\em oname}]The output file name (If NULL output is written to stdout) 
+\begin{DoxyParams}{Parameters}
+\item[{\em options}]The options (as described above) \end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}

@@ -1,0 +1,245 @@
+\hypertarget{RNAstruct_8h}{
+\section{H/RNAstruct.h File Reference}
+\label{RNAstruct_8h}\index{H/RNAstruct.h@{H/RNAstruct.h}}
+}
+
+
+Parsing and Coarse Graining of Structures.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{RNAstruct_8h_a07b7e90e712559a1992fba3ac6d21bbd}{b2HIT} (const char $\ast$structure)
+\begin{DoxyCompactList}\small\item\em Converts the full structure from bracket notation to the HIT notation including root. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{RNAstruct_8h_a9c80d92391f2833549a8b6dac92233f0}{b2C} (const char $\ast$structure)
+\begin{DoxyCompactList}\small\item\em Converts the full structure from bracket notation to the a coarse grained notation using the 'H' 'B' 'I' 'M' and 'R' identifiers. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{RNAstruct_8h_a5cd2feb367feeacad0c03cb7ddba5f10}{b2Shapiro} (const char $\ast$structure)
+\begin{DoxyCompactList}\small\item\em Converts the full structure from bracket notation to the {\itshape weighted\/} coarse grained notation using the 'H' 'B' 'I' 'M' 'S' 'E' and 'R' identifiers. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{RNAstruct_8h_a880d33066dd95441e5fbb73c57ed1c3e}{add\_\-root} (const char $\ast$structure)
+\begin{DoxyCompactList}\small\item\em Adds a root to an un-\/rooted tree in any except bracket notation. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{RNAstruct_8h_abe3d815b420dc4553bfb23511198b4c6}{expand\_\-Shapiro} (const char $\ast$coarse)
+\begin{DoxyCompactList}\small\item\em Inserts missing 'S' identifiers in unweighted coarse grained structures as obtained from \hyperlink{RNAstruct_8h_a9c80d92391f2833549a8b6dac92233f0}{b2C()}. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{RNAstruct_8h_a78d73cd54a068ef2812812771cdddc6f}{expand\_\-Full} (const char $\ast$structure)
+\begin{DoxyCompactList}\small\item\em Convert the full structure from bracket notation to the expanded notation including root. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{RNAstruct_8h_a260c4b622093b76a883bf96628280de1}{unexpand\_\-Full} (const char $\ast$ffull)
+\begin{DoxyCompactList}\small\item\em Restores the bracket notation from an expanded full or HIT tree, that is any tree using only identifiers 'U' 'P' and 'R'. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{RNAstruct_8h_a09a80253ac7b6bae606871ba7c6e5136}{unweight} (const char $\ast$wcoarse)
+\begin{DoxyCompactList}\small\item\em Strip weights from any weighted tree. \item\end{DoxyCompactList}\item 
+void \hyperlink{RNAstruct_8h_a1054c4477d53b31d79d4cb132100e87a}{unexpand\_\-aligned\_\-F} (char $\ast$align\mbox{[}2\mbox{]})
+\begin{DoxyCompactList}\small\item\em Converts two aligned structures in expanded notation. \item\end{DoxyCompactList}\item 
+void \hyperlink{RNAstruct_8h_a3c79042e6bf6f01706bf30ec9e69e8ac}{parse\_\-structure} (const char $\ast$structure)
+\begin{DoxyCompactList}\small\item\em Collects a statistic of structure elements of the full structure in bracket notation. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{RNAstruct_8h_a3f31e0e48125601bfa57b52f8b038e8e}{loop\_\-size} \mbox{[}STRUC\mbox{]}
+\begin{DoxyCompactList}\small\item\em contains a list of all loop sizes. \item\end{DoxyCompactList}\item 
+\hypertarget{RNAstruct_8h_a8218c0d581a3fba2a1a56a196abe19a5}{
+int \hyperlink{RNAstruct_8h_a8218c0d581a3fba2a1a56a196abe19a5}{helix\_\-size} \mbox{[}STRUC\mbox{]}}
+\label{RNAstruct_8h_a8218c0d581a3fba2a1a56a196abe19a5}
+
+\begin{DoxyCompactList}\small\item\em contains a list of all stack sizes. \item\end{DoxyCompactList}\item 
+\hypertarget{RNAstruct_8h_aef14e2f8ab3f61e8e659ba6b9003b08a}{
+int \hyperlink{RNAstruct_8h_aef14e2f8ab3f61e8e659ba6b9003b08a}{loop\_\-degree} \mbox{[}STRUC\mbox{]}}
+\label{RNAstruct_8h_aef14e2f8ab3f61e8e659ba6b9003b08a}
+
+\begin{DoxyCompactList}\small\item\em contains the corresponding list of loop degrees. \item\end{DoxyCompactList}\item 
+\hypertarget{RNAstruct_8h_a439fcb9f8d4f9f4d2227fde5fbfecb30}{
+int \hyperlink{RNAstruct_8h_a439fcb9f8d4f9f4d2227fde5fbfecb30}{loops}}
+\label{RNAstruct_8h_a439fcb9f8d4f9f4d2227fde5fbfecb30}
+
+\begin{DoxyCompactList}\small\item\em contains the number of loops ( and therefore of stacks ). \item\end{DoxyCompactList}\item 
+\hypertarget{RNAstruct_8h_add2f952597e02d66e1116a9d11d252d6}{
+int \hyperlink{RNAstruct_8h_add2f952597e02d66e1116a9d11d252d6}{unpaired}}
+\label{RNAstruct_8h_add2f952597e02d66e1116a9d11d252d6}
+
+\begin{DoxyCompactList}\small\item\em contains the number of unpaired bases. \item\end{DoxyCompactList}\item 
+\hypertarget{RNAstruct_8h_a6341cbb704924824e0236c1dce791032}{
+int \hyperlink{RNAstruct_8h_a6341cbb704924824e0236c1dce791032}{pairs}}
+\label{RNAstruct_8h_a6341cbb704924824e0236c1dce791032}
+
+\begin{DoxyCompactList}\small\item\em contains the number of base pairs in the last parsed structure. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parsing and Coarse Graining of Structures. Example: \begin{DoxyVerb}
+ *   .((..(((...)))..((..)))).   is the bracket or full tree
+ *   becomes expanded:   - expand_Full() -
+ *   ((U)(((U)(U)((((U)(U)(U)P)P)P)(U)(U)(((U)(U)P)P)P)P)(U)R)
+ *   HIT:                - b2HIT() -
+ *   ((U1)((U2)((U3)P3)(U2)((U2)P2)P2)(U1)R)
+ *   Coarse:             - b2C() -
+ *   ((H)((H)M)R)
+ *   becomes expanded:   - expand_Shapiro() -
+ *   (((((H)S)((H)S)M)S)R)
+ *   weighted Shapiro:   - b2Shapiro() -
+ *   ((((((H3)S3)((H2)S2)M4)S2)E2)R)
+ *  \end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\hypertarget{RNAstruct_8h_a07b7e90e712559a1992fba3ac6d21bbd}{
+\index{RNAstruct.h@{RNAstruct.h}!b2HIT@{b2HIT}}
+\index{b2HIT@{b2HIT}!RNAstruct.h@{RNAstruct.h}}
+\subsubsection[{b2HIT}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ b2HIT (const char $\ast$ {\em structure})}}
+\label{RNAstruct_8h_a07b7e90e712559a1992fba3ac6d21bbd}
+
+
+Converts the full structure from bracket notation to the HIT notation including root. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{RNAstruct_8h_a9c80d92391f2833549a8b6dac92233f0}{
+\index{RNAstruct.h@{RNAstruct.h}!b2C@{b2C}}
+\index{b2C@{b2C}!RNAstruct.h@{RNAstruct.h}}
+\subsubsection[{b2C}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ b2C (const char $\ast$ {\em structure})}}
+\label{RNAstruct_8h_a9c80d92391f2833549a8b6dac92233f0}
+
+
+Converts the full structure from bracket notation to the a coarse grained notation using the 'H' 'B' 'I' 'M' and 'R' identifiers. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{RNAstruct_8h_a5cd2feb367feeacad0c03cb7ddba5f10}{
+\index{RNAstruct.h@{RNAstruct.h}!b2Shapiro@{b2Shapiro}}
+\index{b2Shapiro@{b2Shapiro}!RNAstruct.h@{RNAstruct.h}}
+\subsubsection[{b2Shapiro}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ b2Shapiro (const char $\ast$ {\em structure})}}
+\label{RNAstruct_8h_a5cd2feb367feeacad0c03cb7ddba5f10}
+
+
+Converts the full structure from bracket notation to the {\itshape weighted\/} coarse grained notation using the 'H' 'B' 'I' 'M' 'S' 'E' and 'R' identifiers. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{RNAstruct_8h_a880d33066dd95441e5fbb73c57ed1c3e}{
+\index{RNAstruct.h@{RNAstruct.h}!add\_\-root@{add\_\-root}}
+\index{add\_\-root@{add\_\-root}!RNAstruct.h@{RNAstruct.h}}
+\subsubsection[{add\_\-root}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ add\_\-root (const char $\ast$ {\em structure})}}
+\label{RNAstruct_8h_a880d33066dd95441e5fbb73c57ed1c3e}
+
+
+Adds a root to an un-\/rooted tree in any except bracket notation. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{RNAstruct_8h_abe3d815b420dc4553bfb23511198b4c6}{
+\index{RNAstruct.h@{RNAstruct.h}!expand\_\-Shapiro@{expand\_\-Shapiro}}
+\index{expand\_\-Shapiro@{expand\_\-Shapiro}!RNAstruct.h@{RNAstruct.h}}
+\subsubsection[{expand\_\-Shapiro}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ expand\_\-Shapiro (const char $\ast$ {\em coarse})}}
+\label{RNAstruct_8h_abe3d815b420dc4553bfb23511198b4c6}
+
+
+Inserts missing 'S' identifiers in unweighted coarse grained structures as obtained from \hyperlink{RNAstruct_8h_a9c80d92391f2833549a8b6dac92233f0}{b2C()}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em coarse}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{RNAstruct_8h_a78d73cd54a068ef2812812771cdddc6f}{
+\index{RNAstruct.h@{RNAstruct.h}!expand\_\-Full@{expand\_\-Full}}
+\index{expand\_\-Full@{expand\_\-Full}!RNAstruct.h@{RNAstruct.h}}
+\subsubsection[{expand\_\-Full}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ expand\_\-Full (const char $\ast$ {\em structure})}}
+\label{RNAstruct_8h_a78d73cd54a068ef2812812771cdddc6f}
+
+
+Convert the full structure from bracket notation to the expanded notation including root. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{RNAstruct_8h_a260c4b622093b76a883bf96628280de1}{
+\index{RNAstruct.h@{RNAstruct.h}!unexpand\_\-Full@{unexpand\_\-Full}}
+\index{unexpand\_\-Full@{unexpand\_\-Full}!RNAstruct.h@{RNAstruct.h}}
+\subsubsection[{unexpand\_\-Full}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ unexpand\_\-Full (const char $\ast$ {\em ffull})}}
+\label{RNAstruct_8h_a260c4b622093b76a883bf96628280de1}
+
+
+Restores the bracket notation from an expanded full or HIT tree, that is any tree using only identifiers 'U' 'P' and 'R'. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ffull}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{RNAstruct_8h_a09a80253ac7b6bae606871ba7c6e5136}{
+\index{RNAstruct.h@{RNAstruct.h}!unweight@{unweight}}
+\index{unweight@{unweight}!RNAstruct.h@{RNAstruct.h}}
+\subsubsection[{unweight}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ unweight (const char $\ast$ {\em wcoarse})}}
+\label{RNAstruct_8h_a09a80253ac7b6bae606871ba7c6e5136}
+
+
+Strip weights from any weighted tree. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em wcoarse}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{RNAstruct_8h_a1054c4477d53b31d79d4cb132100e87a}{
+\index{RNAstruct.h@{RNAstruct.h}!unexpand\_\-aligned\_\-F@{unexpand\_\-aligned\_\-F}}
+\index{unexpand\_\-aligned\_\-F@{unexpand\_\-aligned\_\-F}!RNAstruct.h@{RNAstruct.h}}
+\subsubsection[{unexpand\_\-aligned\_\-F}]{\setlength{\rightskip}{0pt plus 5cm}void unexpand\_\-aligned\_\-F (char $\ast$ {\em align}\mbox{[}2\mbox{]})}}
+\label{RNAstruct_8h_a1054c4477d53b31d79d4cb132100e87a}
+
+
+Converts two aligned structures in expanded notation. 
+
+Takes two aligned structures as produced by \hyperlink{treedist_8h_a3b21f1925f7071f46d93431a835217bb}{tree\_\-edit\_\-distance()} function back to bracket notation with '\_\-' as the gap character. The result overwrites the input.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em align}]\end{DoxyParams}
+\hypertarget{RNAstruct_8h_a3c79042e6bf6f01706bf30ec9e69e8ac}{
+\index{RNAstruct.h@{RNAstruct.h}!parse\_\-structure@{parse\_\-structure}}
+\index{parse\_\-structure@{parse\_\-structure}!RNAstruct.h@{RNAstruct.h}}
+\subsubsection[{parse\_\-structure}]{\setlength{\rightskip}{0pt plus 5cm}void parse\_\-structure (const char $\ast$ {\em structure})}}
+\label{RNAstruct_8h_a3c79042e6bf6f01706bf30ec9e69e8ac}
+
+
+Collects a statistic of structure elements of the full structure in bracket notation. 
+
+The function writes to the following global variables: \hyperlink{RNAstruct_8h_a3f31e0e48125601bfa57b52f8b038e8e}{loop\_\-size}, \hyperlink{RNAstruct_8h_aef14e2f8ab3f61e8e659ba6b9003b08a}{loop\_\-degree}, \hyperlink{RNAstruct_8h_a8218c0d581a3fba2a1a56a196abe19a5}{helix\_\-size}, \hyperlink{RNAstruct_8h_a439fcb9f8d4f9f4d2227fde5fbfecb30}{loops}, \hyperlink{RNAstruct_8h_a6341cbb704924824e0236c1dce791032}{pairs}, \hyperlink{RNAstruct_8h_add2f952597e02d66e1116a9d11d252d6}{unpaired}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\hypertarget{RNAstruct_8h_a3f31e0e48125601bfa57b52f8b038e8e}{
+\index{RNAstruct.h@{RNAstruct.h}!loop\_\-size@{loop\_\-size}}
+\index{loop\_\-size@{loop\_\-size}!RNAstruct.h@{RNAstruct.h}}
+\subsubsection[{loop\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf loop\_\-size}\mbox{[}STRUC\mbox{]}}}
+\label{RNAstruct_8h_a3f31e0e48125601bfa57b52f8b038e8e}
+
+
+contains a list of all loop sizes. 
+
+loop\_\-size\mbox{[}0\mbox{]} contains the number of external bases. 

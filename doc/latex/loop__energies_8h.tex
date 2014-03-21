@@ -1,0 +1,315 @@
+\hypertarget{loop__energies_8h}{
+\section{H/loop\_\-energies.h File Reference}
+\label{loop__energies_8h}\index{H/loop\_\-energies.h@{H/loop\_\-energies.h}}
+}
+
+
+Energy evaluation for MFE and partition function calculations.  
+
+
+Include dependency graph for loop\_\-energies.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{loop__energies_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=78pt]{loop__energies_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+PRIVATE int \hyperlink{loop__energies_8h_a3e5ad89f451254b1fe366d77aa8ff7bd}{E\_\-IntLoop} (int n1, int n2, int type, int type\_\-2, int si1, int sj1, int sp1, int sq1, \hyperlink{structparamT}{paramT} $\ast$P)
+\item 
+PRIVATE int \hyperlink{loop__energies_8h_aa362183cf6db89a10cdb0f5c4bd180c6}{E\_\-Hairpin} (int size, int type, int si1, int sj1, const char $\ast$string, \hyperlink{structparamT}{paramT} $\ast$P)
+\item 
+PRIVATE int \hyperlink{loop__energies_8h_af5a6594eba9b2622cb47076650c69819}{E\_\-Stem} (int type, int si1, int sj1, int extLoop, \hyperlink{structparamT}{paramT} $\ast$P)
+\item 
+PRIVATE double \hyperlink{loop__energies_8h_a76cc24ec96199e04beddad13e7891e21}{exp\_\-E\_\-Stem} (int type, int si1, int sj1, int extLoop, \hyperlink{structpf__paramT}{pf\_\-paramT} $\ast$P)
+\item 
+PRIVATE double \hyperlink{loop__energies_8h_a0e128184bb097dc2da33706f33b555a6}{exp\_\-E\_\-Hairpin} (int u, int type, short si1, short sj1, const char $\ast$string, \hyperlink{structpf__paramT}{pf\_\-paramT} $\ast$P)
+\item 
+PRIVATE double \hyperlink{loop__energies_8h_aa5e98e524e2a41e290b942b09544bc9e}{exp\_\-E\_\-IntLoop} (int u1, int u2, int type, int type2, short si1, short sj1, short sp1, short sq1, \hyperlink{structpf__paramT}{pf\_\-paramT} $\ast$P)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Energy evaluation for MFE and partition function calculations. This file contains functions for the calculation of the free energy $\Delta G$ of a hairpin-\/ \mbox{[} \hyperlink{loop__energies_8h_aa362183cf6db89a10cdb0f5c4bd180c6}{E\_\-Hairpin()} \mbox{]} or interior-\/loop \mbox{[} \hyperlink{loop__energies_8h_a3e5ad89f451254b1fe366d77aa8ff7bd}{E\_\-IntLoop()}\mbox{]} .\par
+ The unit of the free energy returned is $10^{-2} * \mathrm{kcal}/\mathrm{mol}$  
+
+In case of computing the partition function, this file also supplies functions which return the Boltzmann weights $e^{-\Delta G/kT} $ for a hairpin-\/ \mbox{[} \hyperlink{loop__energies_8h_a0e128184bb097dc2da33706f33b555a6}{exp\_\-E\_\-Hairpin()} \mbox{]} or interior-\/loop \mbox{[} \hyperlink{loop__energies_8h_aa5e98e524e2a41e290b942b09544bc9e}{exp\_\-E\_\-IntLoop()} \mbox{]}.  
+
+\subsection{Function Documentation}
+\hypertarget{loop__energies_8h_a3e5ad89f451254b1fe366d77aa8ff7bd}{
+\index{loop\_\-energies.h@{loop\_\-energies.h}!E\_\-IntLoop@{E\_\-IntLoop}}
+\index{E\_\-IntLoop@{E\_\-IntLoop}!loop_energies.h@{loop\_\-energies.h}}
+\subsubsection[{E\_\-IntLoop}]{\setlength{\rightskip}{0pt plus 5cm}PRIVATE int E\_\-IntLoop (int {\em n1}, \/  int {\em n2}, \/  int {\em type}, \/  int {\em type\_\-2}, \/  int {\em si1}, \/  int {\em sj1}, \/  int {\em sp1}, \/  int {\em sq1}, \/  {\bf paramT} $\ast$ {\em P})}}
+\label{loop__energies_8h_a3e5ad89f451254b1fe366d77aa8ff7bd}
+\subsubsection*{Compute the Energy of an interior-\/loop}
+
+This function computes the free energy $\Delta G$ of an interior-\/loop with the following structure: \par
+ 
+\begin{DoxyPre}
+        3'  5'
+        |   |
+        U - V
+    a\_n       b\_1
+     .        .
+     .        .
+     .        .
+    a\_1       b\_m
+        X - Y
+        |   |
+        5'  3'
+  \end{DoxyPre}
+ This general structure depicts an interior-\/loop that is closed by the base pair (X,Y). The enclosed base pair is (V,U) which leaves the unpaired bases a\_\-1-\/a\_\-n and b\_\-1-\/b\_\-n that constitute the loop. In this example, the length of the interior-\/loop is $(n+m)$ where n or m may be 0 resulting in a bulge-\/loop or base pair stack. The mismatching nucleotides for the closing pair (X,Y) are:\par
+ 5'-\/mismatch: a\_\-1\par
+ 3'-\/mismatch: b\_\-m\par
+ and for the enclosed base pair (V,U):\par
+ 5'-\/mismatch: b\_\-1\par
+ 3'-\/mismatch: a\_\-n\par
+ \begin{DoxyNote}{Note}
+Base pairs are always denoted in 5'-\/$>$3' direction. Thus the enclosed base pair must be 'turned arround' when evaluating the free energy of the interior-\/loop 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{params_8h_a527ef619cd8210b84d5d53be1e0e29b6}{scale\_\-parameters()} 
+
+\hyperlink{structparamT}{paramT} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+This function is threadsafe
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em n1}]The size of the 'left'-\/loop (number of unpaired nucleotides) 
+\begin{DoxyParams}{Parameters}
+\item[{\em n2}]The size of the 'right'-\/loop (number of unpaired nucleotides) 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The pair type of the base pair closing the interior loop 
+\begin{DoxyParams}{Parameters}
+\item[{\em type\_\-2}]The pair type of the enclosed base pair 
+\begin{DoxyParams}{Parameters}
+\item[{\em si1}]The 5'-\/mismatching nucleotide of the closing pair 
+\begin{DoxyParams}{Parameters}
+\item[{\em sj1}]The 3'-\/mismatching nucleotide of the closing pair 
+\begin{DoxyParams}{Parameters}
+\item[{\em sp1}]The 3'-\/mismatching nucleotide of the enclosed pair 
+\begin{DoxyParams}{Parameters}
+\item[{\em sq1}]The 5'-\/mismatching nucleotide of the enclosed pair 
+\begin{DoxyParams}{Parameters}
+\item[{\em P}]The datastructure containing scaled energy parameters \begin{DoxyReturn}{Returns}
+The Free energy of the Interior-\/loop in dcal/mol 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{loop__energies_8h_aa362183cf6db89a10cdb0f5c4bd180c6}{
+\index{loop\_\-energies.h@{loop\_\-energies.h}!E\_\-Hairpin@{E\_\-Hairpin}}
+\index{E\_\-Hairpin@{E\_\-Hairpin}!loop_energies.h@{loop\_\-energies.h}}
+\subsubsection[{E\_\-Hairpin}]{\setlength{\rightskip}{0pt plus 5cm}PRIVATE int E\_\-Hairpin (int {\em size}, \/  int {\em type}, \/  int {\em si1}, \/  int {\em sj1}, \/  const char $\ast$ {\em string}, \/  {\bf paramT} $\ast$ {\em P})}}
+\label{loop__energies_8h_aa362183cf6db89a10cdb0f5c4bd180c6}
+\subsubsection*{Compute the Energy of a hairpin-\/loop}
+
+To evaluate the free energy of a hairpin-\/loop, several parameters have to be known. A general hairpin-\/loop has this structure:\par
+ 
+\begin{DoxyPre}
+        a3 a4
+      a2     a5
+      a1     a6
+        X - Y
+        |   |
+        5'  3'
+  \end{DoxyPre}
+ where X-\/Y marks the closing pair \mbox{[}e.g. a {\bfseries (G,C)} pair\mbox{]}. The length of this loop is 6 as there are six unpaired nucleotides (a1-\/a6) enclosed by (X,Y). The 5' mismatching nucleotide is a1 while the 3' mismatch is a6. The nucleotide sequence of this loop is "a1.a2.a3.a4.a5.a6" \par
+ \begin{DoxyNote}{Note}
+The parameter sequence should contain the sequence of the loop in capital letters of the nucleic acid alphabet if the loop size is below 7. This is useful for unusually stable tri-\/, tetra-\/ and hexa-\/loops which are treated differently (based on experimental data) if they are tabulated. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{params_8h_a527ef619cd8210b84d5d53be1e0e29b6}{scale\_\-parameters()} 
+
+\hyperlink{structparamT}{paramT} 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+Not (really) thread safe! A threadsafe implementation will replace this function in a future release!\par
+ Energy evaluation may change due to updates in global variable \char`\"{}tetra\_\-loop\char`\"{}
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em size}]The size of the loop (number of unpaired nucleotides) 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The pair type of the base pair closing the hairpin 
+\begin{DoxyParams}{Parameters}
+\item[{\em si1}]The 5'-\/mismatching nucleotide 
+\begin{DoxyParams}{Parameters}
+\item[{\em sj1}]The 3'-\/mismatching nucleotide 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]The sequence of the loop 
+\begin{DoxyParams}{Parameters}
+\item[{\em P}]The datastructure containing scaled energy parameters \begin{DoxyReturn}{Returns}
+The Free energy of the Hairpin-\/loop in dcal/mol 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{loop__energies_8h_af5a6594eba9b2622cb47076650c69819}{
+\index{loop\_\-energies.h@{loop\_\-energies.h}!E\_\-Stem@{E\_\-Stem}}
+\index{E\_\-Stem@{E\_\-Stem}!loop_energies.h@{loop\_\-energies.h}}
+\subsubsection[{E\_\-Stem}]{\setlength{\rightskip}{0pt plus 5cm}PRIVATE int E\_\-Stem (int {\em type}, \/  int {\em si1}, \/  int {\em sj1}, \/  int {\em extLoop}, \/  {\bf paramT} $\ast$ {\em P})}}
+\label{loop__energies_8h_af5a6594eba9b2622cb47076650c69819}
+\subsubsection*{Compute the energy contribution of a stem branching off a loop-\/region}
+
+This function computes the energy contribution of a stem that branches off a loop region. This can be the case in multiloops, when a stem branching off increases the degree of the loop but also {\itshape immediately interior base pairs\/} of an exterior loop contribute free energy. To switch the bahavior of the function according to the evaluation of a multiloop-\/ or exterior-\/loop-\/stem, you pass the flag 'extLoop'. The returned energy contribution consists of a TerminalAU penalty if the pair type is greater than 2, dangling end contributions of mismatching nucleotides adjacent to the stem if only one of the si1, sj1 parameters is greater than 0 and mismatch energies if both mismatching nucleotides are positive values. Thus, to avoid incooperating dangling end or mismatch energies just pass a negative number, e.g. -\/1 to the mismatch argument.
+
+This is an illustration of how the energy contribution is assembled: 
+\begin{DoxyPre}
+        3'  5'
+        |   |
+        X - Y
+  5'-si1     sj1-3'
+  \end{DoxyPre}
+
+
+Here, (X,Y) is the base pair that closes the stem that branches off a loop region. The nucleotides si1 and sj1 are the 5'-\/ and 3'-\/ mismatches, respectively. If the base pair type of (X,Y) is greater than 2 (i.e. an A-\/U or G-\/U pair, the TerminalAU penalty will be included in the energy contribution returned. If si1 and sj1 are both nonnegative numbers, mismatch energies will also be included. If one of sij or sj1 is a negtive value, only 5' or 3' dangling end contributions are taken into account. To prohibit any of these mismatch contributions to be incoorporated, just pass a negative number to both, si1 and sj1. In case the argument extLoop is 0, the returned energy contribution also includes the {\itshape internal-\/loop-\/penalty\/} of a multiloop stem with closing pair type.
+
+\begin{DoxySeeAlso}{See also}
+E\_\-MLstem() 
+
+E\_\-ExtLoop() 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+This function is threadsafe
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The pair type of the first base pair un the stem 
+\begin{DoxyParams}{Parameters}
+\item[{\em si1}]The 5'-\/mismatching nucleotide 
+\begin{DoxyParams}{Parameters}
+\item[{\em sj1}]The 3'-\/mismatching nucleotide 
+\begin{DoxyParams}{Parameters}
+\item[{\em extLoop}]A flag that indicates whether the contribution reflects the one of an exterior loop or not 
+\begin{DoxyParams}{Parameters}
+\item[{\em P}]The datastructure containing scaled energy parameters \begin{DoxyReturn}{Returns}
+The Free energy of the branch off the loop in dcal/mol 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{loop__energies_8h_a76cc24ec96199e04beddad13e7891e21}{
+\index{loop\_\-energies.h@{loop\_\-energies.h}!exp\_\-E\_\-Stem@{exp\_\-E\_\-Stem}}
+\index{exp\_\-E\_\-Stem@{exp\_\-E\_\-Stem}!loop_energies.h@{loop\_\-energies.h}}
+\subsubsection[{exp\_\-E\_\-Stem}]{\setlength{\rightskip}{0pt plus 5cm}PRIVATE double exp\_\-E\_\-Stem (int {\em type}, \/  int {\em si1}, \/  int {\em sj1}, \/  int {\em extLoop}, \/  {\bf pf\_\-paramT} $\ast$ {\em P})}}
+\label{loop__energies_8h_a76cc24ec96199e04beddad13e7891e21}
+\subsubsection*{Compute the Boltzmann weighted energy contribution of a stem branching off a loop-\/region}
+
+This is the partition function variant of \hyperlink{loop__energies_8h_af5a6594eba9b2622cb47076650c69819}{E\_\-Stem()} \begin{DoxySeeAlso}{See also}
+\hyperlink{loop__energies_8h_af5a6594eba9b2622cb47076650c69819}{E\_\-Stem()} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+This function is threadsafe
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+The Boltzmann weighted energy contribution of the branch off the loop 
+\end{DoxyReturn}
+\hypertarget{loop__energies_8h_a0e128184bb097dc2da33706f33b555a6}{
+\index{loop\_\-energies.h@{loop\_\-energies.h}!exp\_\-E\_\-Hairpin@{exp\_\-E\_\-Hairpin}}
+\index{exp\_\-E\_\-Hairpin@{exp\_\-E\_\-Hairpin}!loop_energies.h@{loop\_\-energies.h}}
+\subsubsection[{exp\_\-E\_\-Hairpin}]{\setlength{\rightskip}{0pt plus 5cm}PRIVATE double exp\_\-E\_\-Hairpin (int {\em u}, \/  int {\em type}, \/  short {\em si1}, \/  short {\em sj1}, \/  const char $\ast$ {\em string}, \/  {\bf pf\_\-paramT} $\ast$ {\em P})}}
+\label{loop__energies_8h_a0e128184bb097dc2da33706f33b555a6}
+\subsubsection*{Compute Boltzmann weight $e^{-\Delta G/kT} $ of a hairpin loop}
+
+multiply by scale\mbox{[}u+2\mbox{]} \begin{DoxySeeAlso}{See also}
+\hyperlink{params_8h_ab85f6b6da051f380371deb0d8921bdba}{get\_\-scaled\_\-pf\_\-parameters()} 
+
+\hyperlink{structpf__paramT}{pf\_\-paramT} 
+
+\hyperlink{loop__energies_8h_aa362183cf6db89a10cdb0f5c4bd180c6}{E\_\-Hairpin()} 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+Not (really) thread safe! A threadsafe implementation will replace this function in a future release!\par
+ Energy evaluation may change due to updates in global variable \char`\"{}tetra\_\-loop\char`\"{}
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]The size of the loop (number of unpaired nucleotides) 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The pair type of the base pair closing the hairpin 
+\begin{DoxyParams}{Parameters}
+\item[{\em si1}]The 5'-\/mismatching nucleotide 
+\begin{DoxyParams}{Parameters}
+\item[{\em sj1}]The 3'-\/mismatching nucleotide 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]The sequence of the loop 
+\begin{DoxyParams}{Parameters}
+\item[{\em P}]The datastructure containing scaled Boltzmann weights of the energy parameters \begin{DoxyReturn}{Returns}
+The Boltzmann weight of the Hairpin-\/loop 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{loop__energies_8h_aa5e98e524e2a41e290b942b09544bc9e}{
+\index{loop\_\-energies.h@{loop\_\-energies.h}!exp\_\-E\_\-IntLoop@{exp\_\-E\_\-IntLoop}}
+\index{exp\_\-E\_\-IntLoop@{exp\_\-E\_\-IntLoop}!loop_energies.h@{loop\_\-energies.h}}
+\subsubsection[{exp\_\-E\_\-IntLoop}]{\setlength{\rightskip}{0pt plus 5cm}PRIVATE double exp\_\-E\_\-IntLoop (int {\em u1}, \/  int {\em u2}, \/  int {\em type}, \/  int {\em type2}, \/  short {\em si1}, \/  short {\em sj1}, \/  short {\em sp1}, \/  short {\em sq1}, \/  {\bf pf\_\-paramT} $\ast$ {\em P})}}
+\label{loop__energies_8h_aa5e98e524e2a41e290b942b09544bc9e}
+\subsubsection*{Compute Boltzmann weight $e^{-\Delta G/kT} $ of interior loop}
+
+multiply by scale\mbox{[}u1+u2+2\mbox{]} for scaling \begin{DoxySeeAlso}{See also}
+\hyperlink{params_8h_ab85f6b6da051f380371deb0d8921bdba}{get\_\-scaled\_\-pf\_\-parameters()} 
+
+\hyperlink{structpf__paramT}{pf\_\-paramT} 
+
+\hyperlink{loop__energies_8h_a3e5ad89f451254b1fe366d77aa8ff7bd}{E\_\-IntLoop()} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+This function is threadsafe
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u1}]The size of the 'left'-\/loop (number of unpaired nucleotides) 
+\begin{DoxyParams}{Parameters}
+\item[{\em u2}]The size of the 'right'-\/loop (number of unpaired nucleotides) 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The pair type of the base pair closing the interior loop 
+\begin{DoxyParams}{Parameters}
+\item[{\em type2}]The pair type of the enclosed base pair 
+\begin{DoxyParams}{Parameters}
+\item[{\em si1}]The 5'-\/mismatching nucleotide of the closing pair 
+\begin{DoxyParams}{Parameters}
+\item[{\em sj1}]The 3'-\/mismatching nucleotide of the closing pair 
+\begin{DoxyParams}{Parameters}
+\item[{\em sp1}]The 3'-\/mismatching nucleotide of the enclosed pair 
+\begin{DoxyParams}{Parameters}
+\item[{\em sq1}]The 5'-\/mismatching nucleotide of the enclosed pair 
+\begin{DoxyParams}{Parameters}
+\item[{\em P}]The datastructure containing scaled Boltzmann weights of the energy parameters \begin{DoxyReturn}{Returns}
+The Boltzmann weight of the Interior-\/loop 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}

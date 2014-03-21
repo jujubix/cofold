@@ -1,0 +1,142 @@
+\hypertarget{cofold_8h}{
+\section{H/cofold.h File Reference}
+\label{cofold_8h}\index{H/cofold.h@{H/cofold.h}}
+}
+
+
+MFE version of cofolding routines.  
+
+
+Include dependency graph for cofold.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=68pt]{cofold_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{cofold_8h_abc8517f22cfe70595ee81fc837910d52}{cofold} (const char $\ast$sequence, char $\ast$structure)
+\begin{DoxyCompactList}\small\item\em Compute the minimum free energy of two interacting RNA molecules. \item\end{DoxyCompactList}\item 
+\hypertarget{cofold_8h_aafb33d7473eb9af9d1b168ca8761c41a}{
+void \hyperlink{cofold_8h_aafb33d7473eb9af9d1b168ca8761c41a}{free\_\-co\_\-arrays} (void)}
+\label{cofold_8h_aafb33d7473eb9af9d1b168ca8761c41a}
+
+\begin{DoxyCompactList}\small\item\em Free memory occupied by \hyperlink{cofold_8h_abc8517f22cfe70595ee81fc837910d52}{cofold()}. \item\end{DoxyCompactList}\item 
+\hypertarget{cofold_8h_a4fcbf34e77b99bfbb2333d2ab0c41a57}{
+void \hyperlink{cofold_8h_a4fcbf34e77b99bfbb2333d2ab0c41a57}{update\_\-cofold\_\-params} (void)}
+\label{cofold_8h_a4fcbf34e77b99bfbb2333d2ab0c41a57}
+
+\begin{DoxyCompactList}\small\item\em Recalculate parameters. \item\end{DoxyCompactList}\item 
+\hyperlink{structSOLUTION}{SOLUTION} $\ast$ \hyperlink{cofold_8h_a0d5104e3ecf119d8eabd40aa5fe47f90}{zukersubopt} (const char $\ast$string)
+\begin{DoxyCompactList}\small\item\em Compute Zuker type suboptimal structures. \item\end{DoxyCompactList}\item 
+void \hyperlink{cofold_8h_a4958b517c613e4d2afd5bce6c1060a79}{get\_\-monomere\_\-mfes} (float $\ast$e1, float $\ast$e2)
+\begin{DoxyCompactList}\small\item\em get\_\-monomer\_\-free\_\-energies \item\end{DoxyCompactList}\item 
+void \hyperlink{cofold_8h_a5cb6b59983f1f74ccc00b9b9c4e84482}{export\_\-cofold\_\-arrays} (int $\ast$$\ast$f5\_\-p, int $\ast$$\ast$c\_\-p, int $\ast$$\ast$fML\_\-p, int $\ast$$\ast$fM1\_\-p, int $\ast$$\ast$fc\_\-p, int $\ast$$\ast$indx\_\-p, char $\ast$$\ast$ptype\_\-p)
+\begin{DoxyCompactList}\small\item\em Export the arrays of partition function cofold. \item\end{DoxyCompactList}\item 
+void \hyperlink{cofold_8h_afee0c32208aa2ac97338b6e3fbad7fa5}{initialize\_\-cofold} (int length)
+\begin{DoxyCompactList}\small\item\em allocate arrays for folding \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+MFE version of cofolding routines. This file includes (almost) all function declarations within the {\bfseries RNAlib} that are related to MFE Cofolding... This also includes the Zuker suboptimals calculations, since they are implemented using the cofold routines. 
+
+\subsection{Function Documentation}
+\hypertarget{cofold_8h_abc8517f22cfe70595ee81fc837910d52}{
+\index{cofold.h@{cofold.h}!cofold@{cofold}}
+\index{cofold@{cofold}!cofold.h@{cofold.h}}
+\subsubsection[{cofold}]{\setlength{\rightskip}{0pt plus 5cm}float cofold (const char $\ast$ {\em sequence}, \/  char $\ast$ {\em structure})}}
+\label{cofold_8h_abc8517f22cfe70595ee81fc837910d52}
+
+
+Compute the minimum free energy of two interacting RNA molecules. 
+
+The code is analog to the \hyperlink{fold_8h_aadafcb0f140795ae62e5ca027e335a9b}{fold()} function. If \hyperlink{fold__vars_8h_ab9b2c3a37a5516614c06d0ab54b97cda}{cut\_\-point} ==-\/1 results should be the same as with \hyperlink{fold_8h_aadafcb0f140795ae62e5ca027e335a9b}{fold()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sequence}]The two sequences concatenated 
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]Will hold the barcket dot structure of the dimer molecule \begin{DoxyReturn}{Returns}
+minimum free energy of the structure 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{cofold_8h_a0d5104e3ecf119d8eabd40aa5fe47f90}{
+\index{cofold.h@{cofold.h}!zukersubopt@{zukersubopt}}
+\index{zukersubopt@{zukersubopt}!cofold.h@{cofold.h}}
+\subsubsection[{zukersubopt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SOLUTION}$\ast$ zukersubopt (const char $\ast$ {\em string})}}
+\label{cofold_8h_a0d5104e3ecf119d8eabd40aa5fe47f90}
+
+
+Compute Zuker type suboptimal structures. 
+
+Compute Suboptimal structures according to M. Zuker, i.e. for every possible base pair the minimum energy structure containing the resp. base pair. Returns a list of these structures and their energies.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]RNA sequence \begin{DoxyReturn}{Returns}
+List of zuker suboptimal structures 
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{cofold_8h_a4958b517c613e4d2afd5bce6c1060a79}{
+\index{cofold.h@{cofold.h}!get\_\-monomere\_\-mfes@{get\_\-monomere\_\-mfes}}
+\index{get\_\-monomere\_\-mfes@{get\_\-monomere\_\-mfes}!cofold.h@{cofold.h}}
+\subsubsection[{get\_\-monomere\_\-mfes}]{\setlength{\rightskip}{0pt plus 5cm}void get\_\-monomere\_\-mfes (float $\ast$ {\em e1}, \/  float $\ast$ {\em e2})}}
+\label{cofold_8h_a4958b517c613e4d2afd5bce6c1060a79}
+
+
+get\_\-monomer\_\-free\_\-energies 
+
+Export monomer free energies out of cofold arrays
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e1}]A pointer to a variable where the energy of molecule A will be written to 
+\begin{DoxyParams}{Parameters}
+\item[{\em e2}]A pointer to a variable where the energy of molecule B will be written to \end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{cofold_8h_a5cb6b59983f1f74ccc00b9b9c4e84482}{
+\index{cofold.h@{cofold.h}!export\_\-cofold\_\-arrays@{export\_\-cofold\_\-arrays}}
+\index{export\_\-cofold\_\-arrays@{export\_\-cofold\_\-arrays}!cofold.h@{cofold.h}}
+\subsubsection[{export\_\-cofold\_\-arrays}]{\setlength{\rightskip}{0pt plus 5cm}void export\_\-cofold\_\-arrays (int $\ast$$\ast$ {\em f5\_\-p}, \/  int $\ast$$\ast$ {\em c\_\-p}, \/  int $\ast$$\ast$ {\em fML\_\-p}, \/  int $\ast$$\ast$ {\em fM1\_\-p}, \/  int $\ast$$\ast$ {\em fc\_\-p}, \/  int $\ast$$\ast$ {\em indx\_\-p}, \/  char $\ast$$\ast$ {\em ptype\_\-p})}}
+\label{cofold_8h_a5cb6b59983f1f74ccc00b9b9c4e84482}
+
+
+Export the arrays of partition function cofold. 
+
+Export the cofold arrays for use e.g. in the concentration Computations or suboptimal secondary structure backtracking
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em f5\_\-p}]A pointer to the 'f5' array, i.e. array conatining best free energy in interval \mbox{[}1,j\mbox{]} 
+\begin{DoxyParams}{Parameters}
+\item[{\em c\_\-p}]A pointer to the 'c' array, i.e. array containing best free energy in interval \mbox{[}i,j\mbox{]} given that i pairs with j 
+\begin{DoxyParams}{Parameters}
+\item[{\em fML\_\-p}]A pointer to the 'M' array, i.e. array containing best free energy in interval \mbox{[}i,j\mbox{]} for any multiloop segment with at least one stem 
+\begin{DoxyParams}{Parameters}
+\item[{\em fM1\_\-p}]A pointer to the 'M1' array, i.e. array containing best free energy in interval \mbox{[}i,j\mbox{]} for multiloop segment with exactly one stem 
+\begin{DoxyParams}{Parameters}
+\item[{\em fc\_\-p}]A pointer to the 'fc' array, i.e. array ... 
+\begin{DoxyParams}{Parameters}
+\item[{\em indx\_\-p}]A pointer to the indexing array used for accessing the energy matrices 
+\begin{DoxyParams}{Parameters}
+\item[{\em ptype\_\-p}]A pointer to the ptype array containing the base pair types for each possibility (i,j) \end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{cofold_8h_afee0c32208aa2ac97338b6e3fbad7fa5}{
+\index{cofold.h@{cofold.h}!initialize\_\-cofold@{initialize\_\-cofold}}
+\index{initialize\_\-cofold@{initialize\_\-cofold}!cofold.h@{cofold.h}}
+\subsubsection[{initialize\_\-cofold}]{\setlength{\rightskip}{0pt plus 5cm}void initialize\_\-cofold (int {\em length})}}
+\label{cofold_8h_afee0c32208aa2ac97338b6e3fbad7fa5}
+
+
+allocate arrays for folding 
+
+\begin{Desc}
+\item[\hyperlink{deprecated__deprecated000001}{Deprecated}]\{This function is obsolete and will be removed soon!\} \end{Desc}

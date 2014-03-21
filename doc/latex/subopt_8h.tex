@@ -1,0 +1,94 @@
+\hypertarget{subopt_8h}{
+\section{H/subopt.h File Reference}
+\label{subopt_8h}\index{H/subopt.h@{H/subopt.h}}
+}
+
+
+RNAsubopt and density of states declarations.  
+
+
+Include dependency graph for subopt.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=68pt]{subopt_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSOLUTION}{SOLUTION} $\ast$ \hyperlink{subopt_8h_ac7f749cb177da547798509ebe021884c}{subopt} (char $\ast$seq, char $\ast$sequence, int delta, FILE $\ast$fp)
+\begin{DoxyCompactList}\small\item\em Returns list of subopt structures or writes to fp. \item\end{DoxyCompactList}\item 
+\hyperlink{structSOLUTION}{SOLUTION} $\ast$ \hyperlink{subopt_8h_a8634516e4740e0b6c9a46d2bae940340}{subopt\_\-circ} (char $\ast$seq, char $\ast$sequence, int delta, FILE $\ast$fp)
+\begin{DoxyCompactList}\small\item\em Returns list of circular subopt structures or writes to fp. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{subopt_8h_a873cf8ed69e0437f8efa8b1fec854a0e}{
+int \hyperlink{subopt_8h_a873cf8ed69e0437f8efa8b1fec854a0e}{subopt\_\-sorted}}
+\label{subopt_8h_a873cf8ed69e0437f8efa8b1fec854a0e}
+
+\begin{DoxyCompactList}\small\item\em Sort output by energy. \item\end{DoxyCompactList}\item 
+\hypertarget{subopt_8h_a5e57d914bcb5feeecdf520e25313fcfe}{
+double \hyperlink{subopt_8h_a5e57d914bcb5feeecdf520e25313fcfe}{print\_\-energy}}
+\label{subopt_8h_a5e57d914bcb5feeecdf520e25313fcfe}
+
+\begin{DoxyCompactList}\small\item\em printing threshold for use with logML \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+RNAsubopt and density of states declarations. 
+
+\subsection{Function Documentation}
+\hypertarget{subopt_8h_ac7f749cb177da547798509ebe021884c}{
+\index{subopt.h@{subopt.h}!subopt@{subopt}}
+\index{subopt@{subopt}!subopt.h@{subopt.h}}
+\subsubsection[{subopt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SOLUTION}$\ast$ subopt (char $\ast$ {\em seq}, \/  char $\ast$ {\em sequence}, \/  int {\em delta}, \/  FILE $\ast$ {\em fp})}}
+\label{subopt_8h_ac7f749cb177da547798509ebe021884c}
+
+
+Returns list of subopt structures or writes to fp. 
+
+This function produces {\bfseries all} suboptimal secondary structures within 'delta' $\ast$ 0.01 kcal/mol of the optimum. The results are either directly written to a 'fp' (if 'fp' is not NULL), or (fp==NULL) returned in a \hyperlink{structSOLUTION}{SOLUTION} $\ast$ list terminated by an entry were the 'structure' pointer is NULL.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em seq}]
+\begin{DoxyParams}{Parameters}
+\item[{\em sequence}]
+\begin{DoxyParams}{Parameters}
+\item[{\em delta}]
+\begin{DoxyParams}{Parameters}
+\item[{\em fp}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{subopt_8h_a8634516e4740e0b6c9a46d2bae940340}{
+\index{subopt.h@{subopt.h}!subopt\_\-circ@{subopt\_\-circ}}
+\index{subopt\_\-circ@{subopt\_\-circ}!subopt.h@{subopt.h}}
+\subsubsection[{subopt\_\-circ}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SOLUTION}$\ast$ subopt\_\-circ (char $\ast$ {\em seq}, \/  char $\ast$ {\em sequence}, \/  int {\em delta}, \/  FILE $\ast$ {\em fp})}}
+\label{subopt_8h_a8634516e4740e0b6c9a46d2bae940340}
+
+
+Returns list of circular subopt structures or writes to fp. 
+
+This function is similar to \hyperlink{subopt_8h_ac7f749cb177da547798509ebe021884c}{subopt()} but calculates secondary structures assuming the RNA sequence to be circular instead of linear
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em seq}]
+\begin{DoxyParams}{Parameters}
+\item[{\em sequence}]
+\begin{DoxyParams}{Parameters}
+\item[{\em delta}]
+\begin{DoxyParams}{Parameters}
+\item[{\em fp}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}

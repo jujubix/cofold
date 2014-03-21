@@ -1,0 +1,382 @@
+\contentsline {chapter}{\numberline {1}ViennaRNA Package core -\/ RNAlib}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Folding Routines -\/ Functions for Folding RNA Secondary Structures}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Calculating Minimum Free Energy Structures}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Calculating Partition Functions and Pair Probabilities}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Searching for Predefined Structures}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Enumerating Suboptimal Structures}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}Predicting hybridization structures of two molecules}{7}{section.2.5}
+\contentsline {section}{\numberline {2.6}Predicting local structures of large sequences}{9}{section.2.6}
+\contentsline {section}{\numberline {2.7}Predicting Consensus Structures from Alignment}{10}{section.2.7}
+\contentsline {section}{\numberline {2.8}Global Variables for the Folding Routines}{11}{section.2.8}
+\contentsline {section}{\numberline {2.9}Reading Energy Parameters from File}{13}{section.2.9}
+\contentsline {chapter}{\numberline {3}Parsing and Comparing -\/ Functions to Manipulate Structures}{15}{chapter.3}
+\contentsline {chapter}{\numberline {4}Utilities -\/ Odds and Ends}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Producing secondary structure graphs}{22}{section.4.1}
+\contentsline {section}{\numberline {4.2}Producing (colored) dot plots for base pair probabilities}{23}{section.4.2}
+\contentsline {section}{\numberline {4.3}Producing (colored) alignments}{24}{section.4.3}
+\contentsline {section}{\numberline {4.4}RNA sequence related utilities}{24}{section.4.4}
+\contentsline {section}{\numberline {4.5}RNA secondary structure related utilities}{24}{section.4.5}
+\contentsline {section}{\numberline {4.6}Miscellaneous Utilities}{25}{section.4.6}
+\contentsline {chapter}{\numberline {5}Example -\/ A Small Example Program}{27}{chapter.5}
+\contentsline {chapter}{\numberline {6}References}{31}{chapter.6}
+\contentsline {chapter}{\numberline {7}Deprecated List}{35}{chapter.7}
+\contentsline {chapter}{\numberline {8}Data Structure Index}{39}{chapter.8}
+\contentsline {section}{\numberline {8.1}Data Structures}{39}{section.8.1}
+\contentsline {chapter}{\numberline {9}File Index}{41}{chapter.9}
+\contentsline {section}{\numberline {9.1}File List}{41}{section.9.1}
+\contentsline {chapter}{\numberline {10}Data Structure Documentation}{43}{chapter.10}
+\contentsline {section}{\numberline {10.1}bondT Struct Reference}{43}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Detailed Description}{43}{subsection.10.1.1}
+\contentsline {section}{\numberline {10.2}bondTEn Struct Reference}{44}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Detailed Description}{44}{subsection.10.2.1}
+\contentsline {section}{\numberline {10.3}cofoldF Struct Reference}{45}{section.10.3}
+\contentsline {section}{\numberline {10.4}ConcEnt Struct Reference}{46}{section.10.4}
+\contentsline {section}{\numberline {10.5}constrain Struct Reference}{47}{section.10.5}
+\contentsline {section}{\numberline {10.6}COORDINATE Struct Reference}{48}{section.10.6}
+\contentsline {subsection}{\numberline {10.6.1}Detailed Description}{48}{subsection.10.6.1}
+\contentsline {section}{\numberline {10.7}cpair Struct Reference}{49}{section.10.7}
+\contentsline {subsection}{\numberline {10.7.1}Detailed Description}{49}{subsection.10.7.1}
+\contentsline {section}{\numberline {10.8}duplexT Struct Reference}{50}{section.10.8}
+\contentsline {section}{\numberline {10.9}dupVar Struct Reference}{51}{section.10.9}
+\contentsline {section}{\numberline {10.10}folden Struct Reference}{52}{section.10.10}
+\contentsline {section}{\numberline {10.11}interact Struct Reference}{53}{section.10.11}
+\contentsline {section}{\numberline {10.12}intermediate\_\discretionary {-}{}{}t Struct Reference}{54}{section.10.12}
+\contentsline {section}{\numberline {10.13}INTERVAL Struct Reference}{55}{section.10.13}
+\contentsline {subsection}{\numberline {10.13.1}Detailed Description}{55}{subsection.10.13.1}
+\contentsline {section}{\numberline {10.14}LIST Struct Reference}{56}{section.10.14}
+\contentsline {section}{\numberline {10.15}LST\_\discretionary {-}{}{}BUCKET Struct Reference}{57}{section.10.15}
+\contentsline {section}{\numberline {10.16}model\_\discretionary {-}{}{}detailsT Struct Reference}{58}{section.10.16}
+\contentsline {subsection}{\numberline {10.16.1}Detailed Description}{58}{subsection.10.16.1}
+\contentsline {section}{\numberline {10.17}move\_\discretionary {-}{}{}t Struct Reference}{59}{section.10.17}
+\contentsline {section}{\numberline {10.18}PAIR Struct Reference}{60}{section.10.18}
+\contentsline {subsection}{\numberline {10.18.1}Detailed Description}{60}{subsection.10.18.1}
+\contentsline {section}{\numberline {10.19}pair\_\discretionary {-}{}{}info Struct Reference}{61}{section.10.19}
+\contentsline {subsection}{\numberline {10.19.1}Detailed Description}{61}{subsection.10.19.1}
+\contentsline {section}{\numberline {10.20}pairpro Struct Reference}{62}{section.10.20}
+\contentsline {section}{\numberline {10.21}paramT Struct Reference}{63}{section.10.21}
+\contentsline {subsection}{\numberline {10.21.1}Detailed Description}{63}{subsection.10.21.1}
+\contentsline {section}{\numberline {10.22}path\_\discretionary {-}{}{}t Struct Reference}{64}{section.10.22}
+\contentsline {section}{\numberline {10.23}pf\_\discretionary {-}{}{}paramT Struct Reference}{65}{section.10.23}
+\contentsline {subsection}{\numberline {10.23.1}Detailed Description}{65}{subsection.10.23.1}
+\contentsline {section}{\numberline {10.24}plist Struct Reference}{66}{section.10.24}
+\contentsline {subsection}{\numberline {10.24.1}Detailed Description}{66}{subsection.10.24.1}
+\contentsline {section}{\numberline {10.25}Postorder\_\discretionary {-}{}{}list Struct Reference}{67}{section.10.25}
+\contentsline {section}{\numberline {10.26}pu\_\discretionary {-}{}{}contrib Struct Reference}{68}{section.10.26}
+\contentsline {section}{\numberline {10.27}pu\_\discretionary {-}{}{}out Struct Reference}{69}{section.10.27}
+\contentsline {section}{\numberline {10.28}sect Struct Reference}{70}{section.10.28}
+\contentsline {subsection}{\numberline {10.28.1}Detailed Description}{70}{subsection.10.28.1}
+\contentsline {section}{\numberline {10.29}snoopT Struct Reference}{71}{section.10.29}
+\contentsline {section}{\numberline {10.30}SOLUTION Struct Reference}{72}{section.10.30}
+\contentsline {subsection}{\numberline {10.30.1}Detailed Description}{72}{subsection.10.30.1}
+\contentsline {section}{\numberline {10.31}svm\_\discretionary {-}{}{}model Struct Reference}{73}{section.10.31}
+\contentsline {section}{\numberline {10.32}swString Struct Reference}{74}{section.10.32}
+\contentsline {section}{\numberline {10.33}Tree Struct Reference}{75}{section.10.33}
+\contentsline {section}{\numberline {10.34}TwoDfold\_\discretionary {-}{}{}solution Struct Reference}{76}{section.10.34}
+\contentsline {subsection}{\numberline {10.34.1}Detailed Description}{76}{subsection.10.34.1}
+\contentsline {section}{\numberline {10.35}TwoDfold\_\discretionary {-}{}{}vars Struct Reference}{77}{section.10.35}
+\contentsline {subsection}{\numberline {10.35.1}Detailed Description}{77}{subsection.10.35.1}
+\contentsline {section}{\numberline {10.36}TwoDpfold\_\discretionary {-}{}{}solution Struct Reference}{78}{section.10.36}
+\contentsline {subsection}{\numberline {10.36.1}Detailed Description}{78}{subsection.10.36.1}
+\contentsline {section}{\numberline {10.37}TwoDpfold\_\discretionary {-}{}{}vars Struct Reference}{79}{section.10.37}
+\contentsline {subsection}{\numberline {10.37.1}Detailed Description}{79}{subsection.10.37.1}
+\contentsline {chapter}{\numberline {11}File Documentation}{81}{chapter.11}
+\contentsline {section}{\numberline {11.1}H/2Dfold.h File Reference}{81}{section.11.1}
+\contentsline {subsection}{\numberline {11.1.1}Detailed Description}{82}{subsection.11.1.1}
+\contentsline {subsection}{\numberline {11.1.2}Function Documentation}{82}{subsection.11.1.2}
+\contentsline {subsubsection}{\numberline {11.1.2.1}get\_\discretionary {-}{}{}TwoDfold\_\discretionary {-}{}{}variables}{82}{subsubsection.11.1.2.1}
+\contentsline {subsubsection}{\numberline {11.1.2.2}destroy\_\discretionary {-}{}{}TwoDfold\_\discretionary {-}{}{}variables}{83}{subsubsection.11.1.2.2}
+\contentsline {subsubsection}{\numberline {11.1.2.3}TwoDfoldList}{83}{subsubsection.11.1.2.3}
+\contentsline {subsubsection}{\numberline {11.1.2.4}TwoDfold\_\discretionary {-}{}{}backtrack\_\discretionary {-}{}{}f5}{83}{subsubsection.11.1.2.4}
+\contentsline {section}{\numberline {11.2}H/2Dpfold.h File Reference}{85}{section.11.2}
+\contentsline {subsection}{\numberline {11.2.1}Detailed Description}{86}{subsection.11.2.1}
+\contentsline {subsection}{\numberline {11.2.2}Function Documentation}{86}{subsection.11.2.2}
+\contentsline {subsubsection}{\numberline {11.2.2.1}get\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables}{86}{subsubsection.11.2.2.1}
+\contentsline {subsubsection}{\numberline {11.2.2.2}get\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables\_\discretionary {-}{}{}from\_\discretionary {-}{}{}MFE}{86}{subsubsection.11.2.2.2}
+\contentsline {subsubsection}{\numberline {11.2.2.3}destroy\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables}{87}{subsubsection.11.2.2.3}
+\contentsline {subsubsection}{\numberline {11.2.2.4}TwoDpfoldList}{87}{subsubsection.11.2.2.4}
+\contentsline {subsubsection}{\numberline {11.2.2.5}TwoDpfold\_\discretionary {-}{}{}pbacktrack}{88}{subsubsection.11.2.2.5}
+\contentsline {subsubsection}{\numberline {11.2.2.6}TwoDpfold\_\discretionary {-}{}{}pbacktrack5}{88}{subsubsection.11.2.2.6}
+\contentsline {section}{\numberline {11.3}H/alifold.h File Reference}{90}{section.11.3}
+\contentsline {subsection}{\numberline {11.3.1}Detailed Description}{91}{subsection.11.3.1}
+\contentsline {subsection}{\numberline {11.3.2}Function Documentation}{91}{subsection.11.3.2}
+\contentsline {subsubsection}{\numberline {11.3.2.1}update\_\discretionary {-}{}{}alifold\_\discretionary {-}{}{}params}{91}{subsubsection.11.3.2.1}
+\contentsline {subsubsection}{\numberline {11.3.2.2}alifold}{92}{subsubsection.11.3.2.2}
+\contentsline {subsubsection}{\numberline {11.3.2.3}circalifold}{92}{subsubsection.11.3.2.3}
+\contentsline {subsubsection}{\numberline {11.3.2.4}get\_\discretionary {-}{}{}mpi}{92}{subsubsection.11.3.2.4}
+\contentsline {subsubsection}{\numberline {11.3.2.5}energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}alistruct}{93}{subsubsection.11.3.2.5}
+\contentsline {subsubsection}{\numberline {11.3.2.6}encode\_\discretionary {-}{}{}ali\_\discretionary {-}{}{}sequence}{93}{subsubsection.11.3.2.6}
+\contentsline {subsubsection}{\numberline {11.3.2.7}alloc\_\discretionary {-}{}{}sequence\_\discretionary {-}{}{}arrays}{94}{subsubsection.11.3.2.7}
+\contentsline {subsubsection}{\numberline {11.3.2.8}free\_\discretionary {-}{}{}sequence\_\discretionary {-}{}{}arrays}{95}{subsubsection.11.3.2.8}
+\contentsline {subsubsection}{\numberline {11.3.2.9}alipf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par}{95}{subsubsection.11.3.2.9}
+\contentsline {subsubsection}{\numberline {11.3.2.10}alipf\_\discretionary {-}{}{}fold}{95}{subsubsection.11.3.2.10}
+\contentsline {subsubsection}{\numberline {11.3.2.11}alipf\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}fold}{96}{subsubsection.11.3.2.11}
+\contentsline {subsubsection}{\numberline {11.3.2.12}export\_\discretionary {-}{}{}ali\_\discretionary {-}{}{}bppm}{96}{subsubsection.11.3.2.12}
+\contentsline {subsubsection}{\numberline {11.3.2.13}alipbacktrack}{96}{subsubsection.11.3.2.13}
+\contentsline {subsection}{\numberline {11.3.3}Variable Documentation}{96}{subsection.11.3.3}
+\contentsline {subsubsection}{\numberline {11.3.3.1}cv\_\discretionary {-}{}{}fact}{96}{subsubsection.11.3.3.1}
+\contentsline {subsubsection}{\numberline {11.3.3.2}nc\_\discretionary {-}{}{}fact}{97}{subsubsection.11.3.3.2}
+\contentsline {section}{\numberline {11.4}H/cofold.h File Reference}{98}{section.11.4}
+\contentsline {subsection}{\numberline {11.4.1}Detailed Description}{99}{subsection.11.4.1}
+\contentsline {subsection}{\numberline {11.4.2}Function Documentation}{99}{subsection.11.4.2}
+\contentsline {subsubsection}{\numberline {11.4.2.1}cofold}{99}{subsubsection.11.4.2.1}
+\contentsline {subsubsection}{\numberline {11.4.2.2}zukersubopt}{99}{subsubsection.11.4.2.2}
+\contentsline {subsubsection}{\numberline {11.4.2.3}get\_\discretionary {-}{}{}monomere\_\discretionary {-}{}{}mfes}{99}{subsubsection.11.4.2.3}
+\contentsline {subsubsection}{\numberline {11.4.2.4}export\_\discretionary {-}{}{}cofold\_\discretionary {-}{}{}arrays}{100}{subsubsection.11.4.2.4}
+\contentsline {subsubsection}{\numberline {11.4.2.5}initialize\_\discretionary {-}{}{}cofold}{100}{subsubsection.11.4.2.5}
+\contentsline {section}{\numberline {11.5}H/convert\_\discretionary {-}{}{}epars.h File Reference}{102}{section.11.5}
+\contentsline {subsection}{\numberline {11.5.1}Detailed Description}{103}{subsection.11.5.1}
+\contentsline {subsection}{\numberline {11.5.2}Function Documentation}{104}{subsection.11.5.2}
+\contentsline {subsubsection}{\numberline {11.5.2.1}convert\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file}{104}{subsubsection.11.5.2.1}
+\contentsline {section}{\numberline {11.6}H/data\_\discretionary {-}{}{}structures.h File Reference}{105}{section.11.6}
+\contentsline {subsection}{\numberline {11.6.1}Detailed Description}{107}{subsection.11.6.1}
+\contentsline {section}{\numberline {11.7}H/dist\_\discretionary {-}{}{}vars.h File Reference}{108}{section.11.7}
+\contentsline {subsection}{\numberline {11.7.1}Detailed Description}{108}{subsection.11.7.1}
+\contentsline {subsection}{\numberline {11.7.2}Variable Documentation}{108}{subsection.11.7.2}
+\contentsline {subsubsection}{\numberline {11.7.2.1}edit\_\discretionary {-}{}{}backtrack}{108}{subsubsection.11.7.2.1}
+\contentsline {subsubsection}{\numberline {11.7.2.2}cost\_\discretionary {-}{}{}matrix}{109}{subsubsection.11.7.2.2}
+\contentsline {section}{\numberline {11.8}H/duplex.h File Reference}{110}{section.11.8}
+\contentsline {subsection}{\numberline {11.8.1}Detailed Description}{110}{subsection.11.8.1}
+\contentsline {section}{\numberline {11.9}H/edit\_\discretionary {-}{}{}cost.h File Reference}{111}{section.11.9}
+\contentsline {subsection}{\numberline {11.9.1}Detailed Description}{111}{subsection.11.9.1}
+\contentsline {section}{\numberline {11.10}H/energy\_\discretionary {-}{}{}const.h File Reference}{112}{section.11.10}
+\contentsline {subsection}{\numberline {11.10.1}Detailed Description}{113}{subsection.11.10.1}
+\contentsline {section}{\numberline {11.11}H/findpath.h File Reference}{114}{section.11.11}
+\contentsline {subsection}{\numberline {11.11.1}Detailed Description}{114}{subsection.11.11.1}
+\contentsline {section}{\numberline {11.12}H/fold.h File Reference}{115}{section.11.12}
+\contentsline {subsection}{\numberline {11.12.1}Detailed Description}{117}{subsection.11.12.1}
+\contentsline {subsection}{\numberline {11.12.2}Function Documentation}{117}{subsection.11.12.2}
+\contentsline {subsubsection}{\numberline {11.12.2.1}fold\_\discretionary {-}{}{}par}{117}{subsubsection.11.12.2.1}
+\contentsline {subsubsection}{\numberline {11.12.2.2}fold}{118}{subsubsection.11.12.2.2}
+\contentsline {subsubsection}{\numberline {11.12.2.3}circfold}{119}{subsubsection.11.12.2.3}
+\contentsline {subsubsection}{\numberline {11.12.2.4}energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}structure}{119}{subsubsection.11.12.2.4}
+\contentsline {subsubsection}{\numberline {11.12.2.5}energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}par}{120}{subsubsection.11.12.2.5}
+\contentsline {subsubsection}{\numberline {11.12.2.6}energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}structure}{121}{subsubsection.11.12.2.6}
+\contentsline {subsubsection}{\numberline {11.12.2.7}energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}par}{121}{subsubsection.11.12.2.7}
+\contentsline {subsubsection}{\numberline {11.12.2.8}energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}structure\_\discretionary {-}{}{}pt}{122}{subsubsection.11.12.2.8}
+\contentsline {subsubsection}{\numberline {11.12.2.9}energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pt\_\discretionary {-}{}{}par}{123}{subsubsection.11.12.2.9}
+\contentsline {subsubsection}{\numberline {11.12.2.10}parenthesis\_\discretionary {-}{}{}structure}{123}{subsubsection.11.12.2.10}
+\contentsline {subsubsection}{\numberline {11.12.2.11}parenthesis\_\discretionary {-}{}{}zuker}{124}{subsubsection.11.12.2.11}
+\contentsline {subsubsection}{\numberline {11.12.2.12}assign\_\discretionary {-}{}{}plist\_\discretionary {-}{}{}from\_\discretionary {-}{}{}db}{124}{subsubsection.11.12.2.12}
+\contentsline {subsubsection}{\numberline {11.12.2.13}LoopEnergy}{124}{subsubsection.11.12.2.13}
+\contentsline {subsubsection}{\numberline {11.12.2.14}HairpinE}{124}{subsubsection.11.12.2.14}
+\contentsline {subsubsection}{\numberline {11.12.2.15}initialize\_\discretionary {-}{}{}fold}{124}{subsubsection.11.12.2.15}
+\contentsline {subsubsection}{\numberline {11.12.2.16}energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct}{125}{subsubsection.11.12.2.16}
+\contentsline {subsubsection}{\numberline {11.12.2.17}energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pt}{125}{subsubsection.11.12.2.17}
+\contentsline {subsubsection}{\numberline {11.12.2.18}energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}struct}{126}{subsubsection.11.12.2.18}
+\contentsline {section}{\numberline {11.13}H/fold\_\discretionary {-}{}{}vars.h File Reference}{127}{section.11.13}
+\contentsline {subsection}{\numberline {11.13.1}Detailed Description}{129}{subsection.11.13.1}
+\contentsline {subsection}{\numberline {11.13.2}Function Documentation}{129}{subsection.11.13.2}
+\contentsline {subsubsection}{\numberline {11.13.2.1}set\_\discretionary {-}{}{}model\_\discretionary {-}{}{}details}{129}{subsubsection.11.13.2.1}
+\contentsline {subsection}{\numberline {11.13.3}Variable Documentation}{129}{subsection.11.13.3}
+\contentsline {subsubsection}{\numberline {11.13.3.1}noLonelyPairs}{129}{subsubsection.11.13.3.1}
+\contentsline {subsubsection}{\numberline {11.13.3.2}dangles}{129}{subsubsection.11.13.3.2}
+\contentsline {subsubsection}{\numberline {11.13.3.3}tetra\_\discretionary {-}{}{}loop}{130}{subsubsection.11.13.3.3}
+\contentsline {subsubsection}{\numberline {11.13.3.4}energy\_\discretionary {-}{}{}set}{130}{subsubsection.11.13.3.4}
+\contentsline {subsubsection}{\numberline {11.13.3.5}circ}{130}{subsubsection.11.13.3.5}
+\contentsline {subsubsection}{\numberline {11.13.3.6}nonstandards}{130}{subsubsection.11.13.3.6}
+\contentsline {subsubsection}{\numberline {11.13.3.7}temperature}{130}{subsubsection.11.13.3.7}
+\contentsline {subsubsection}{\numberline {11.13.3.8}cut\_\discretionary {-}{}{}point}{130}{subsubsection.11.13.3.8}
+\contentsline {subsubsection}{\numberline {11.13.3.9}base\_\discretionary {-}{}{}pair}{131}{subsubsection.11.13.3.9}
+\contentsline {subsubsection}{\numberline {11.13.3.10}pr}{131}{subsubsection.11.13.3.10}
+\contentsline {subsubsection}{\numberline {11.13.3.11}iindx}{131}{subsubsection.11.13.3.11}
+\contentsline {subsubsection}{\numberline {11.13.3.12}pf\_\discretionary {-}{}{}scale}{131}{subsubsection.11.13.3.12}
+\contentsline {subsubsection}{\numberline {11.13.3.13}do\_\discretionary {-}{}{}backtrack}{131}{subsubsection.11.13.3.13}
+\contentsline {subsubsection}{\numberline {11.13.3.14}backtrack\_\discretionary {-}{}{}type}{132}{subsubsection.11.13.3.14}
+\contentsline {section}{\numberline {11.14}H/inverse.h File Reference}{133}{section.11.14}
+\contentsline {subsection}{\numberline {11.14.1}Detailed Description}{133}{subsection.11.14.1}
+\contentsline {subsection}{\numberline {11.14.2}Function Documentation}{133}{subsection.11.14.2}
+\contentsline {subsubsection}{\numberline {11.14.2.1}inverse\_\discretionary {-}{}{}fold}{133}{subsubsection.11.14.2.1}
+\contentsline {subsubsection}{\numberline {11.14.2.2}inverse\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold}{134}{subsubsection.11.14.2.2}
+\contentsline {subsection}{\numberline {11.14.3}Variable Documentation}{134}{subsection.11.14.3}
+\contentsline {subsubsection}{\numberline {11.14.3.1}symbolset}{134}{subsubsection.11.14.3.1}
+\contentsline {section}{\numberline {11.15}H/Lfold.h File Reference}{135}{section.11.15}
+\contentsline {subsection}{\numberline {11.15.1}Detailed Description}{135}{subsection.11.15.1}
+\contentsline {subsection}{\numberline {11.15.2}Function Documentation}{135}{subsection.11.15.2}
+\contentsline {subsubsection}{\numberline {11.15.2.1}Lfold}{135}{subsubsection.11.15.2.1}
+\contentsline {subsubsection}{\numberline {11.15.2.2}aliLfold}{135}{subsubsection.11.15.2.2}
+\contentsline {subsubsection}{\numberline {11.15.2.3}Lfoldz}{135}{subsubsection.11.15.2.3}
+\contentsline {section}{\numberline {11.16}H/loop\_\discretionary {-}{}{}energies.h File Reference}{136}{section.11.16}
+\contentsline {subsection}{\numberline {11.16.1}Detailed Description}{136}{subsection.11.16.1}
+\contentsline {subsection}{\numberline {11.16.2}Function Documentation}{137}{subsection.11.16.2}
+\contentsline {subsubsection}{\numberline {11.16.2.1}E\_\discretionary {-}{}{}IntLoop}{137}{subsubsection.11.16.2.1}
+\contentsline {subsubsection}{\numberline {11.16.2.2}E\_\discretionary {-}{}{}Hairpin}{139}{subsubsection.11.16.2.2}
+\contentsline {subsubsection}{\numberline {11.16.2.3}E\_\discretionary {-}{}{}Stem}{140}{subsubsection.11.16.2.3}
+\contentsline {subsubsection}{\numberline {11.16.2.4}exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}Stem}{141}{subsubsection.11.16.2.4}
+\contentsline {subsubsection}{\numberline {11.16.2.5}exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}Hairpin}{142}{subsubsection.11.16.2.5}
+\contentsline {subsubsection}{\numberline {11.16.2.6}exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}IntLoop}{143}{subsubsection.11.16.2.6}
+\contentsline {section}{\numberline {11.17}H/LPfold.h File Reference}{145}{section.11.17}
+\contentsline {subsection}{\numberline {11.17.1}Detailed Description}{145}{subsection.11.17.1}
+\contentsline {subsection}{\numberline {11.17.2}Function Documentation}{146}{subsection.11.17.2}
+\contentsline {subsubsection}{\numberline {11.17.2.1}update\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}paramsLP}{146}{subsubsection.11.17.2.1}
+\contentsline {subsubsection}{\numberline {11.17.2.2}pfl\_\discretionary {-}{}{}fold}{146}{subsubsection.11.17.2.2}
+\contentsline {subsubsection}{\numberline {11.17.2.3}putoutpU\_\discretionary {-}{}{}prob}{147}{subsubsection.11.17.2.3}
+\contentsline {subsubsection}{\numberline {11.17.2.4}putoutpU\_\discretionary {-}{}{}prob\_\discretionary {-}{}{}bin}{147}{subsubsection.11.17.2.4}
+\contentsline {subsubsection}{\numberline {11.17.2.5}init\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}foldLP}{148}{subsubsection.11.17.2.5}
+\contentsline {section}{\numberline {11.18}H/MEA.h File Reference}{149}{section.11.18}
+\contentsline {subsection}{\numberline {11.18.1}Detailed Description}{149}{subsection.11.18.1}
+\contentsline {subsection}{\numberline {11.18.2}Function Documentation}{149}{subsection.11.18.2}
+\contentsline {subsubsection}{\numberline {11.18.2.1}MEA}{149}{subsubsection.11.18.2.1}
+\contentsline {section}{\numberline {11.19}H/mm.h File Reference}{150}{section.11.19}
+\contentsline {subsection}{\numberline {11.19.1}Detailed Description}{150}{subsection.11.19.1}
+\contentsline {section}{\numberline {11.20}H/naview.h File Reference}{151}{section.11.20}
+\contentsline {subsection}{\numberline {11.20.1}Detailed Description}{151}{subsection.11.20.1}
+\contentsline {section}{\numberline {11.21}H/params.h File Reference}{152}{section.11.21}
+\contentsline {subsection}{\numberline {11.21.1}Detailed Description}{153}{subsection.11.21.1}
+\contentsline {subsection}{\numberline {11.21.2}Function Documentation}{153}{subsection.11.21.2}
+\contentsline {subsubsection}{\numberline {11.21.2.1}scale\_\discretionary {-}{}{}parameters}{153}{subsubsection.11.21.2.1}
+\contentsline {subsubsection}{\numberline {11.21.2.2}get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}parameters}{153}{subsubsection.11.21.2.2}
+\contentsline {subsubsection}{\numberline {11.21.2.3}get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}parameters}{153}{subsubsection.11.21.2.3}
+\contentsline {subsubsection}{\numberline {11.21.2.4}get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factors}{154}{subsubsection.11.21.2.4}
+\contentsline {subsubsection}{\numberline {11.21.2.5}get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factor\_\discretionary {-}{}{}copy}{154}{subsubsection.11.21.2.5}
+\contentsline {subsubsection}{\numberline {11.21.2.6}get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}alipf\_\discretionary {-}{}{}parameters}{155}{subsubsection.11.21.2.6}
+\contentsline {subsubsection}{\numberline {11.21.2.7}get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factors\_\discretionary {-}{}{}ali}{155}{subsubsection.11.21.2.7}
+\contentsline {section}{\numberline {11.22}H/part\_\discretionary {-}{}{}func.h File Reference}{156}{section.11.22}
+\contentsline {subsection}{\numberline {11.22.1}Detailed Description}{158}{subsection.11.22.1}
+\contentsline {subsection}{\numberline {11.22.2}Function Documentation}{158}{subsection.11.22.2}
+\contentsline {subsubsection}{\numberline {11.22.2.1}pf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par}{158}{subsubsection.11.22.2.1}
+\contentsline {subsubsection}{\numberline {11.22.2.2}pf\_\discretionary {-}{}{}fold}{159}{subsubsection.11.22.2.2}
+\contentsline {subsubsection}{\numberline {11.22.2.3}pf\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}fold}{160}{subsubsection.11.22.2.3}
+\contentsline {subsubsection}{\numberline {11.22.2.4}pbacktrack}{160}{subsubsection.11.22.2.4}
+\contentsline {subsubsection}{\numberline {11.22.2.5}pbacktrack\_\discretionary {-}{}{}circ}{161}{subsubsection.11.22.2.5}
+\contentsline {subsubsection}{\numberline {11.22.2.6}free\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}arrays}{161}{subsubsection.11.22.2.6}
+\contentsline {subsubsection}{\numberline {11.22.2.7}update\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params}{162}{subsubsection.11.22.2.7}
+\contentsline {subsubsection}{\numberline {11.22.2.8}export\_\discretionary {-}{}{}bppm}{162}{subsubsection.11.22.2.8}
+\contentsline {subsubsection}{\numberline {11.22.2.9}assign\_\discretionary {-}{}{}plist\_\discretionary {-}{}{}from\_\discretionary {-}{}{}pr}{162}{subsubsection.11.22.2.9}
+\contentsline {subsubsection}{\numberline {11.22.2.10}get\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}arrays}{163}{subsubsection.11.22.2.10}
+\contentsline {subsubsection}{\numberline {11.22.2.11}get\_\discretionary {-}{}{}centroid\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pl}{163}{subsubsection.11.22.2.11}
+\contentsline {subsubsection}{\numberline {11.22.2.12}get\_\discretionary {-}{}{}centroid\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pr}{164}{subsubsection.11.22.2.12}
+\contentsline {subsubsection}{\numberline {11.22.2.13}mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}distance}{165}{subsubsection.11.22.2.13}
+\contentsline {subsubsection}{\numberline {11.22.2.14}mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}distance\_\discretionary {-}{}{}pr}{165}{subsubsection.11.22.2.14}
+\contentsline {subsubsection}{\numberline {11.22.2.15}init\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold}{165}{subsubsection.11.22.2.15}
+\contentsline {subsubsection}{\numberline {11.22.2.16}centroid}{166}{subsubsection.11.22.2.16}
+\contentsline {subsubsection}{\numberline {11.22.2.17}mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}dist}{166}{subsubsection.11.22.2.17}
+\contentsline {subsubsection}{\numberline {11.22.2.18}expLoopEnergy}{166}{subsubsection.11.22.2.18}
+\contentsline {subsubsection}{\numberline {11.22.2.19}expHairpinEnergy}{166}{subsubsection.11.22.2.19}
+\contentsline {section}{\numberline {11.23}H/part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h File Reference}{167}{section.11.23}
+\contentsline {subsection}{\numberline {11.23.1}Detailed Description}{168}{subsection.11.23.1}
+\contentsline {subsection}{\numberline {11.23.2}Function Documentation}{168}{subsection.11.23.2}
+\contentsline {subsubsection}{\numberline {11.23.2.1}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold}{168}{subsubsection.11.23.2.1}
+\contentsline {subsubsection}{\numberline {11.23.2.2}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par}{169}{subsubsection.11.23.2.2}
+\contentsline {subsubsection}{\numberline {11.23.2.3}export\_\discretionary {-}{}{}co\_\discretionary {-}{}{}bppm}{170}{subsubsection.11.23.2.3}
+\contentsline {subsubsection}{\numberline {11.23.2.4}update\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params}{170}{subsubsection.11.23.2.4}
+\contentsline {subsubsection}{\numberline {11.23.2.5}update\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params\_\discretionary {-}{}{}par}{171}{subsubsection.11.23.2.5}
+\contentsline {subsubsection}{\numberline {11.23.2.6}compute\_\discretionary {-}{}{}probabilities}{171}{subsubsection.11.23.2.6}
+\contentsline {subsubsection}{\numberline {11.23.2.7}get\_\discretionary {-}{}{}concentrations}{172}{subsubsection.11.23.2.7}
+\contentsline {subsubsection}{\numberline {11.23.2.8}get\_\discretionary {-}{}{}plist}{172}{subsubsection.11.23.2.8}
+\contentsline {subsubsection}{\numberline {11.23.2.9}init\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold}{173}{subsubsection.11.23.2.9}
+\contentsline {section}{\numberline {11.24}H/part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}up.h File Reference}{174}{section.11.24}
+\contentsline {subsection}{\numberline {11.24.1}Detailed Description}{174}{subsection.11.24.1}
+\contentsline {subsection}{\numberline {11.24.2}Function Documentation}{175}{subsection.11.24.2}
+\contentsline {subsubsection}{\numberline {11.24.2.1}pf\_\discretionary {-}{}{}unstru}{175}{subsubsection.11.24.2.1}
+\contentsline {subsubsection}{\numberline {11.24.2.2}pf\_\discretionary {-}{}{}interact}{175}{subsubsection.11.24.2.2}
+\contentsline {section}{\numberline {11.25}H/plot\_\discretionary {-}{}{}layouts.h File Reference}{177}{section.11.25}
+\contentsline {subsection}{\numberline {11.25.1}Detailed Description}{178}{subsection.11.25.1}
+\contentsline {subsection}{\numberline {11.25.2}Define Documentation}{178}{subsection.11.25.2}
+\contentsline {subsubsection}{\numberline {11.25.2.1}VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}SIMPLE}{178}{subsubsection.11.25.2.1}
+\contentsline {subsubsection}{\numberline {11.25.2.2}VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}NAVIEW}{178}{subsubsection.11.25.2.2}
+\contentsline {subsubsection}{\numberline {11.25.2.3}VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}CIRCULAR}{178}{subsubsection.11.25.2.3}
+\contentsline {subsection}{\numberline {11.25.3}Function Documentation}{179}{subsection.11.25.3}
+\contentsline {subsubsection}{\numberline {11.25.3.1}simple\_\discretionary {-}{}{}xy\_\discretionary {-}{}{}coordinates}{179}{subsubsection.11.25.3.1}
+\contentsline {subsubsection}{\numberline {11.25.3.2}simple\_\discretionary {-}{}{}circplot\_\discretionary {-}{}{}coordinates}{179}{subsubsection.11.25.3.2}
+\contentsline {subsection}{\numberline {11.25.4}Variable Documentation}{180}{subsection.11.25.4}
+\contentsline {subsubsection}{\numberline {11.25.4.1}rna\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}type}{180}{subsubsection.11.25.4.1}
+\contentsline {section}{\numberline {11.26}H/profiledist.h File Reference}{181}{section.11.26}
+\contentsline {subsection}{\numberline {11.26.1}Detailed Description}{181}{subsection.11.26.1}
+\contentsline {subsection}{\numberline {11.26.2}Function Documentation}{181}{subsection.11.26.2}
+\contentsline {subsubsection}{\numberline {11.26.2.1}profile\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance}{181}{subsubsection.11.26.2.1}
+\contentsline {subsubsection}{\numberline {11.26.2.2}Make\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}profile\_\discretionary {-}{}{}bppm}{182}{subsubsection.11.26.2.2}
+\contentsline {subsubsection}{\numberline {11.26.2.3}free\_\discretionary {-}{}{}profile}{182}{subsubsection.11.26.2.3}
+\contentsline {subsubsection}{\numberline {11.26.2.4}Make\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}profile}{182}{subsubsection.11.26.2.4}
+\contentsline {section}{\numberline {11.27}H/PS\_\discretionary {-}{}{}dot.h File Reference}{183}{section.11.27}
+\contentsline {subsection}{\numberline {11.27.1}Detailed Description}{184}{subsection.11.27.1}
+\contentsline {subsection}{\numberline {11.27.2}Function Documentation}{184}{subsection.11.27.2}
+\contentsline {subsubsection}{\numberline {11.27.2.1}PS\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot}{184}{subsubsection.11.27.2.1}
+\contentsline {subsubsection}{\numberline {11.27.2.2}PS\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}a}{184}{subsubsection.11.27.2.2}
+\contentsline {subsubsection}{\numberline {11.27.2.3}gmlRNA}{185}{subsubsection.11.27.2.3}
+\contentsline {subsubsection}{\numberline {11.27.2.4}ssv\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot}{186}{subsubsection.11.27.2.4}
+\contentsline {subsubsection}{\numberline {11.27.2.5}svg\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot}{186}{subsubsection.11.27.2.5}
+\contentsline {subsubsection}{\numberline {11.27.2.6}xrna\_\discretionary {-}{}{}plot}{186}{subsubsection.11.27.2.6}
+\contentsline {subsubsection}{\numberline {11.27.2.7}PS\_\discretionary {-}{}{}dot\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}list}{187}{subsubsection.11.27.2.7}
+\contentsline {subsubsection}{\numberline {11.27.2.8}PS\_\discretionary {-}{}{}dot\_\discretionary {-}{}{}plot}{187}{subsubsection.11.27.2.8}
+\contentsline {section}{\numberline {11.28}H/read\_\discretionary {-}{}{}epars.h File Reference}{189}{section.11.28}
+\contentsline {subsection}{\numberline {11.28.1}Detailed Description}{189}{subsection.11.28.1}
+\contentsline {subsection}{\numberline {11.28.2}Function Documentation}{189}{subsection.11.28.2}
+\contentsline {subsubsection}{\numberline {11.28.2.1}read\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file}{189}{subsubsection.11.28.2.1}
+\contentsline {subsubsection}{\numberline {11.28.2.2}write\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file}{189}{subsubsection.11.28.2.2}
+\contentsline {section}{\numberline {11.29}H/RNAstruct.h File Reference}{190}{section.11.29}
+\contentsline {subsection}{\numberline {11.29.1}Detailed Description}{191}{subsection.11.29.1}
+\contentsline {subsection}{\numberline {11.29.2}Function Documentation}{191}{subsection.11.29.2}
+\contentsline {subsubsection}{\numberline {11.29.2.1}b2HIT}{191}{subsubsection.11.29.2.1}
+\contentsline {subsubsection}{\numberline {11.29.2.2}b2C}{191}{subsubsection.11.29.2.2}
+\contentsline {subsubsection}{\numberline {11.29.2.3}b2Shapiro}{192}{subsubsection.11.29.2.3}
+\contentsline {subsubsection}{\numberline {11.29.2.4}add\_\discretionary {-}{}{}root}{192}{subsubsection.11.29.2.4}
+\contentsline {subsubsection}{\numberline {11.29.2.5}expand\_\discretionary {-}{}{}Shapiro}{192}{subsubsection.11.29.2.5}
+\contentsline {subsubsection}{\numberline {11.29.2.6}expand\_\discretionary {-}{}{}Full}{192}{subsubsection.11.29.2.6}
+\contentsline {subsubsection}{\numberline {11.29.2.7}unexpand\_\discretionary {-}{}{}Full}{192}{subsubsection.11.29.2.7}
+\contentsline {subsubsection}{\numberline {11.29.2.8}unweight}{193}{subsubsection.11.29.2.8}
+\contentsline {subsubsection}{\numberline {11.29.2.9}unexpand\_\discretionary {-}{}{}aligned\_\discretionary {-}{}{}F}{193}{subsubsection.11.29.2.9}
+\contentsline {subsubsection}{\numberline {11.29.2.10}parse\_\discretionary {-}{}{}structure}{193}{subsubsection.11.29.2.10}
+\contentsline {subsection}{\numberline {11.29.3}Variable Documentation}{193}{subsection.11.29.3}
+\contentsline {subsubsection}{\numberline {11.29.3.1}loop\_\discretionary {-}{}{}size}{193}{subsubsection.11.29.3.1}
+\contentsline {section}{\numberline {11.30}H/stringdist.h File Reference}{194}{section.11.30}
+\contentsline {subsection}{\numberline {11.30.1}Detailed Description}{194}{subsection.11.30.1}
+\contentsline {subsection}{\numberline {11.30.2}Function Documentation}{194}{subsection.11.30.2}
+\contentsline {subsubsection}{\numberline {11.30.2.1}Make\_\discretionary {-}{}{}swString}{194}{subsubsection.11.30.2.1}
+\contentsline {subsubsection}{\numberline {11.30.2.2}string\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance}{194}{subsubsection.11.30.2.2}
+\contentsline {section}{\numberline {11.31}H/subopt.h File Reference}{195}{section.11.31}
+\contentsline {subsection}{\numberline {11.31.1}Detailed Description}{195}{subsection.11.31.1}
+\contentsline {subsection}{\numberline {11.31.2}Function Documentation}{196}{subsection.11.31.2}
+\contentsline {subsubsection}{\numberline {11.31.2.1}subopt}{196}{subsubsection.11.31.2.1}
+\contentsline {subsubsection}{\numberline {11.31.2.2}subopt\_\discretionary {-}{}{}circ}{196}{subsubsection.11.31.2.2}
+\contentsline {section}{\numberline {11.32}H/treedist.h File Reference}{197}{section.11.32}
+\contentsline {subsection}{\numberline {11.32.1}Detailed Description}{197}{subsection.11.32.1}
+\contentsline {subsection}{\numberline {11.32.2}Function Documentation}{197}{subsection.11.32.2}
+\contentsline {subsubsection}{\numberline {11.32.2.1}make\_\discretionary {-}{}{}tree}{197}{subsubsection.11.32.2.1}
+\contentsline {subsubsection}{\numberline {11.32.2.2}tree\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance}{198}{subsubsection.11.32.2.2}
+\contentsline {subsubsection}{\numberline {11.32.2.3}free\_\discretionary {-}{}{}tree}{198}{subsubsection.11.32.2.3}
+\contentsline {section}{\numberline {11.33}H/utils.h File Reference}{199}{section.11.33}
+\contentsline {subsection}{\numberline {11.33.1}Detailed Description}{203}{subsection.11.33.1}
+\contentsline {subsection}{\numberline {11.33.2}Define Documentation}{203}{subsection.11.33.2}
+\contentsline {subsubsection}{\numberline {11.33.2.1}VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}FASTA\_\discretionary {-}{}{}HEADER}{203}{subsubsection.11.33.2.1}
+\contentsline {subsubsection}{\numberline {11.33.2.2}VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}SEQUENCE}{203}{subsubsection.11.33.2.2}
+\contentsline {subsubsection}{\numberline {11.33.2.3}VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}CONSTRAINT}{203}{subsubsection.11.33.2.3}
+\contentsline {subsubsection}{\numberline {11.33.2.4}VRNA\_\discretionary {-}{}{}CONSTRAINT\_\discretionary {-}{}{}DOT}{204}{subsubsection.11.33.2.4}
+\contentsline {subsubsection}{\numberline {11.33.2.5}FILENAME\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}LENGTH}{204}{subsubsection.11.33.2.5}
+\contentsline {subsubsection}{\numberline {11.33.2.6}FILENAME\_\discretionary {-}{}{}ID\_\discretionary {-}{}{}LENGTH}{204}{subsubsection.11.33.2.6}
+\contentsline {subsection}{\numberline {11.33.3}Function Documentation}{204}{subsection.11.33.3}
+\contentsline {subsubsection}{\numberline {11.33.3.1}space}{204}{subsubsection.11.33.3.1}
+\contentsline {subsubsection}{\numberline {11.33.3.2}xrealloc}{204}{subsubsection.11.33.3.2}
+\contentsline {subsubsection}{\numberline {11.33.3.3}nrerror}{205}{subsubsection.11.33.3.3}
+\contentsline {subsubsection}{\numberline {11.33.3.4}warn\_\discretionary {-}{}{}user}{205}{subsubsection.11.33.3.4}
+\contentsline {subsubsection}{\numberline {11.33.3.5}urn}{205}{subsubsection.11.33.3.5}
+\contentsline {subsubsection}{\numberline {11.33.3.6}int\_\discretionary {-}{}{}urn}{205}{subsubsection.11.33.3.6}
+\contentsline {subsubsection}{\numberline {11.33.3.7}time\_\discretionary {-}{}{}stamp}{206}{subsubsection.11.33.3.7}
+\contentsline {subsubsection}{\numberline {11.33.3.8}random\_\discretionary {-}{}{}string}{206}{subsubsection.11.33.3.8}
+\contentsline {subsubsection}{\numberline {11.33.3.9}hamming}{206}{subsubsection.11.33.3.9}
+\contentsline {subsubsection}{\numberline {11.33.3.10}hamming\_\discretionary {-}{}{}bound}{206}{subsubsection.11.33.3.10}
+\contentsline {subsubsection}{\numberline {11.33.3.11}get\_\discretionary {-}{}{}line}{207}{subsubsection.11.33.3.11}
+\contentsline {subsubsection}{\numberline {11.33.3.12}get\_\discretionary {-}{}{}input\_\discretionary {-}{}{}line}{207}{subsubsection.11.33.3.12}
+\contentsline {subsubsection}{\numberline {11.33.3.13}read\_\discretionary {-}{}{}record}{208}{subsubsection.11.33.3.13}
+\contentsline {subsubsection}{\numberline {11.33.3.14}pack\_\discretionary {-}{}{}structure}{209}{subsubsection.11.33.3.14}
+\contentsline {subsubsection}{\numberline {11.33.3.15}unpack\_\discretionary {-}{}{}structure}{209}{subsubsection.11.33.3.15}
+\contentsline {subsubsection}{\numberline {11.33.3.16}make\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table}{210}{subsubsection.11.33.3.16}
+\contentsline {subsubsection}{\numberline {11.33.3.17}copy\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table}{210}{subsubsection.11.33.3.17}
+\contentsline {subsubsection}{\numberline {11.33.3.18}alimake\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table}{210}{subsubsection.11.33.3.18}
+\contentsline {subsubsection}{\numberline {11.33.3.19}make\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table\_\discretionary {-}{}{}snoop}{210}{subsubsection.11.33.3.19}
+\contentsline {subsubsection}{\numberline {11.33.3.20}bp\_\discretionary {-}{}{}distance}{210}{subsubsection.11.33.3.20}
+\contentsline {subsubsection}{\numberline {11.33.3.21}print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}input\_\discretionary {-}{}{}seq}{211}{subsubsection.11.33.3.21}
+\contentsline {subsubsection}{\numberline {11.33.3.22}print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}input\_\discretionary {-}{}{}seq\_\discretionary {-}{}{}str}{211}{subsubsection.11.33.3.22}
+\contentsline {subsubsection}{\numberline {11.33.3.23}print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}constraint\_\discretionary {-}{}{}full}{211}{subsubsection.11.33.3.23}
+\contentsline {subsubsection}{\numberline {11.33.3.24}print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}constraint}{211}{subsubsection.11.33.3.24}
+\contentsline {subsubsection}{\numberline {11.33.3.25}str\_\discretionary {-}{}{}DNA2RNA}{212}{subsubsection.11.33.3.25}
+\contentsline {subsubsection}{\numberline {11.33.3.26}str\_\discretionary {-}{}{}uppercase}{212}{subsubsection.11.33.3.26}
+\contentsline {subsubsection}{\numberline {11.33.3.27}get\_\discretionary {-}{}{}iindx}{212}{subsubsection.11.33.3.27}
+\contentsline {subsubsection}{\numberline {11.33.3.28}get\_\discretionary {-}{}{}indx}{213}{subsubsection.11.33.3.28}
+\contentsline {subsubsection}{\numberline {11.33.3.29}constrain\_\discretionary {-}{}{}ptypes}{213}{subsubsection.11.33.3.29}
+\contentsline {subsection}{\numberline {11.33.4}Variable Documentation}{214}{subsection.11.33.4}
+\contentsline {subsubsection}{\numberline {11.33.4.1}xsubi}{214}{subsubsection.11.33.4.1}
+\contentsline {section}{\numberline {11.34}lib/1.8.4\_\discretionary {-}{}{}epars.h File Reference}{215}{section.11.34}
+\contentsline {subsection}{\numberline {11.34.1}Detailed Description}{215}{subsection.11.34.1}
+\contentsline {section}{\numberline {11.35}lib/1.8.4\_\discretionary {-}{}{}intloops.h File Reference}{216}{section.11.35}
+\contentsline {subsection}{\numberline {11.35.1}Detailed Description}{216}{subsection.11.35.1}

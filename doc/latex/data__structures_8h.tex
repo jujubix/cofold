@@ -1,0 +1,105 @@
+\hypertarget{data__structures_8h}{
+\section{H/data\_\-structures.h File Reference}
+\label{data__structures_8h}\index{H/data\_\-structures.h@{H/data\_\-structures.h}}
+}
+
+
+All datastructures and typedefs shared among the Vienna RNA Package can be found here.  
+
+
+Include dependency graph for data\_\-structures.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=73pt]{data__structures_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=420pt]{data__structures_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structplist}{plist}
+\begin{DoxyCompactList}\small\item\em this datastructure is used as input parameter in functions of \hyperlink{PS__dot_8h}{PS\_\-dot.h} and others \item\end{DoxyCompactList}\item 
+struct \hyperlink{structcpair}{cpair}
+\begin{DoxyCompactList}\small\item\em this datastructure is used as input parameter in functions of PS\_\-dot.c \item\end{DoxyCompactList}\item 
+struct \hyperlink{structCOORDINATE}{COORDINATE}
+\begin{DoxyCompactList}\small\item\em this is a workarround for the SWIG Perl Wrapper RNA plot function that returns an array of type \hyperlink{structCOORDINATE}{COORDINATE} \item\end{DoxyCompactList}\item 
+struct \hyperlink{structsect}{sect}
+\begin{DoxyCompactList}\small\item\em stack of partial structures for backtracking \item\end{DoxyCompactList}\item 
+struct \hyperlink{structbondT}{bondT}
+\begin{DoxyCompactList}\small\item\em base pair \item\end{DoxyCompactList}\item 
+struct \hyperlink{structbondTEn}{bondTEn}
+\begin{DoxyCompactList}\small\item\em base pair with associated energy \item\end{DoxyCompactList}\item 
+struct \hyperlink{structmodel__detailsT}{model\_\-detailsT}
+\begin{DoxyCompactList}\small\item\em The data structure that contains the complete model details used throughout the calculations. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structparamT}{paramT}
+\begin{DoxyCompactList}\small\item\em The datastructure that contains temperature scaled energy parameters. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structpf__paramT}{pf\_\-paramT}
+\begin{DoxyCompactList}\small\item\em The datastructure that contains temperature scaled Boltzmann weights of the energy parameters. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structPAIR}{PAIR}
+\begin{DoxyCompactList}\small\item\em base pair data structure used in subopt.c \item\end{DoxyCompactList}\item 
+struct \hyperlink{structINTERVAL}{INTERVAL}
+\begin{DoxyCompactList}\small\item\em sequence interval stack element used in subopt.c \item\end{DoxyCompactList}\item 
+struct \hyperlink{structSOLUTION}{SOLUTION}
+\begin{DoxyCompactList}\small\item\em solution element from subopt.c \item\end{DoxyCompactList}\item 
+struct \hyperlink{structcofoldF}{cofoldF}
+\item 
+struct \hyperlink{structConcEnt}{ConcEnt}
+\item 
+struct \hyperlink{structpairpro}{pairpro}
+\item 
+struct \hyperlink{structpair__info}{pair\_\-info}
+\begin{DoxyCompactList}\small\item\em A base pair info structure. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structmove__t}{move\_\-t}
+\item 
+struct \hyperlink{structintermediate__t}{intermediate\_\-t}
+\item 
+struct \hyperlink{structpath__t}{path\_\-t}
+\item 
+struct \hyperlink{structpu__contrib}{pu\_\-contrib}
+\item 
+struct \hyperlink{structinteract}{interact}
+\item 
+struct \hyperlink{structpu__out}{pu\_\-out}
+\item 
+struct \hyperlink{structconstrain}{constrain}
+\item 
+struct \hyperlink{structduplexT}{duplexT}
+\item 
+struct \hyperlink{structfolden}{folden}
+\item 
+struct \hyperlink{structsnoopT}{snoopT}
+\item 
+struct \hyperlink{structdupVar}{dupVar}
+\item 
+struct \hyperlink{structTwoDfold__solution}{TwoDfold\_\-solution}
+\begin{DoxyCompactList}\small\item\em Solution element returned from TwoDfoldList. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structTwoDfold__vars}{TwoDfold\_\-vars}
+\begin{DoxyCompactList}\small\item\em Variables compound for 2Dfold MFE folding. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structTwoDpfold__solution}{TwoDpfold\_\-solution}
+\begin{DoxyCompactList}\small\item\em Solution element returned from TwoDpfoldList. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structTwoDpfold__vars}{TwoDpfold\_\-vars}
+\begin{DoxyCompactList}\small\item\em Variables compound for 2Dfold partition function folding. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{data__structures_8h_a05a5ffe718aa431d97419a12fb082379}{
+\#define \hyperlink{data__structures_8h_a05a5ffe718aa431d97419a12fb082379}{MAXALPHA}~20}
+\label{data__structures_8h_a05a5ffe718aa431d97419a12fb082379}
+
+\begin{DoxyCompactList}\small\item\em Maximal length of alphabet. \item\end{DoxyCompactList}\item 
+\hypertarget{data__structures_8h_a5ec740b80afb4906ba4311dbd8ddbd89}{
+\#define \hyperlink{data__structures_8h_a5ec740b80afb4906ba4311dbd8ddbd89}{MAXDOS}~1000}
+\label{data__structures_8h_a5ec740b80afb4906ba4311dbd8ddbd89}
+
+\begin{DoxyCompactList}\small\item\em Maximum density of states discretization for subopt. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+All datastructures and typedefs shared among the Vienna RNA Package can be found here. 

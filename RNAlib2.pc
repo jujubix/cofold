@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib64
+includedir=${prefix}/include
+
+Name: ViennaRNA
+Description: ViennaRNA Package 2 - Core library.
+Version: 2.0.4
+URL: http://www.tbi.univie.ac.a/~ivo/RNA
+Libs: -L${libdir} -lRNA
+Cflags: -I${includedir}/ViennaRNA

@@ -1,0 +1,168 @@
+\hypertarget{plot__layouts_8h}{
+\section{H/plot\_\-layouts.h File Reference}
+\label{plot__layouts_8h}\index{H/plot\_\-layouts.h@{H/plot\_\-layouts.h}}
+}
+
+
+Secondary structure plot layout algorithms.  
+
+
+Include dependency graph for plot\_\-layouts.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=75pt]{plot__layouts_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=74pt]{plot__layouts_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{plot__layouts_8h_ae6d17b9f0a53cf5205a9181e0f8422e9}{VRNA\_\-PLOT\_\-TYPE\_\-SIMPLE}~0
+\begin{DoxyCompactList}\small\item\em Definition of Plot type {\itshape simple\/} \item\end{DoxyCompactList}\item 
+\#define \hyperlink{plot__layouts_8h_a94d4c863ecac2f220f76658afb92f964}{VRNA\_\-PLOT\_\-TYPE\_\-NAVIEW}~1
+\begin{DoxyCompactList}\small\item\em Definition of Plot type {\itshape Naview\/} \item\end{DoxyCompactList}\item 
+\#define \hyperlink{plot__layouts_8h_a8c9eac631348da92136c8363ecdd9fb9}{VRNA\_\-PLOT\_\-TYPE\_\-CIRCULAR}~2
+\begin{DoxyCompactList}\small\item\em Definition of Plot type {\itshape Circular\/} \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{plot__layouts_8h_af4b9173e7d3fd361c3c85e6def194123}{simple\_\-xy\_\-coordinates} (short $\ast$pair\_\-table, float $\ast$X, float $\ast$Y)
+\begin{DoxyCompactList}\small\item\em Calculate nucleotide coordinates for secondary structure plot the {\itshape Simple way\/} \item\end{DoxyCompactList}\item 
+int \hyperlink{plot__layouts_8h_ac4ea13d35308f09940178d2b05a248c2}{simple\_\-circplot\_\-coordinates} (short $\ast$pair\_\-table, float $\ast$x, float $\ast$y)
+\begin{DoxyCompactList}\small\item\em Calculate nucleotide coordinates for {\itshape Circular Plot\/} \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{plot__layouts_8h_a5964c4581431b098b80027d6e14dcdd4}{rna\_\-plot\_\-type}
+\begin{DoxyCompactList}\small\item\em Switch for changing the secondary structure layout algorithm. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Secondary structure plot layout algorithms. c Ronny Lorenz The ViennaRNA Package 
+
+\subsection{Define Documentation}
+\hypertarget{plot__layouts_8h_ae6d17b9f0a53cf5205a9181e0f8422e9}{
+\index{plot\_\-layouts.h@{plot\_\-layouts.h}!VRNA\_\-PLOT\_\-TYPE\_\-SIMPLE@{VRNA\_\-PLOT\_\-TYPE\_\-SIMPLE}}
+\index{VRNA\_\-PLOT\_\-TYPE\_\-SIMPLE@{VRNA\_\-PLOT\_\-TYPE\_\-SIMPLE}!plot_layouts.h@{plot\_\-layouts.h}}
+\subsubsection[{VRNA\_\-PLOT\_\-TYPE\_\-SIMPLE}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRNA\_\-PLOT\_\-TYPE\_\-SIMPLE~0}}
+\label{plot__layouts_8h_ae6d17b9f0a53cf5205a9181e0f8422e9}
+
+
+Definition of Plot type {\itshape simple\/} 
+
+This is the plot type definition for several RNA structure plotting functions telling them to use {\bfseries Simple} plotting algorithm
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{plot__layouts_8h_a5964c4581431b098b80027d6e14dcdd4}{rna\_\-plot\_\-type}, \hyperlink{PS__dot_8h_a47856b2504b566588785597b6ebb8271}{PS\_\-rna\_\-plot\_\-a()}, \hyperlink{PS__dot_8h_a0873c7cc4cd7a11c9a2cea19dde7e9c9}{PS\_\-rna\_\-plot()}, \hyperlink{PS__dot_8h_ae7853539b5df98f294b4af434e979304}{svg\_\-rna\_\-plot()}, \hyperlink{PS__dot_8h_a70834bc8c0aad4fe6824ff76ccb8f329}{gmlRNA()}, \hyperlink{PS__dot_8h_add368528755f9a830727b680243541df}{ssv\_\-rna\_\-plot()}, \hyperlink{PS__dot_8h_a2f6d5953e6a323df898896b8d6614483}{xrna\_\-plot()} 
+\end{DoxySeeAlso}
+\hypertarget{plot__layouts_8h_a94d4c863ecac2f220f76658afb92f964}{
+\index{plot\_\-layouts.h@{plot\_\-layouts.h}!VRNA\_\-PLOT\_\-TYPE\_\-NAVIEW@{VRNA\_\-PLOT\_\-TYPE\_\-NAVIEW}}
+\index{VRNA\_\-PLOT\_\-TYPE\_\-NAVIEW@{VRNA\_\-PLOT\_\-TYPE\_\-NAVIEW}!plot_layouts.h@{plot\_\-layouts.h}}
+\subsubsection[{VRNA\_\-PLOT\_\-TYPE\_\-NAVIEW}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRNA\_\-PLOT\_\-TYPE\_\-NAVIEW~1}}
+\label{plot__layouts_8h_a94d4c863ecac2f220f76658afb92f964}
+
+
+Definition of Plot type {\itshape Naview\/} 
+
+This is the plot type definition for several RNA structure plotting functions telling them to use {\bfseries Naview} plotting algorithm
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{plot__layouts_8h_a5964c4581431b098b80027d6e14dcdd4}{rna\_\-plot\_\-type}, \hyperlink{PS__dot_8h_a47856b2504b566588785597b6ebb8271}{PS\_\-rna\_\-plot\_\-a()}, \hyperlink{PS__dot_8h_a0873c7cc4cd7a11c9a2cea19dde7e9c9}{PS\_\-rna\_\-plot()}, \hyperlink{PS__dot_8h_ae7853539b5df98f294b4af434e979304}{svg\_\-rna\_\-plot()}, \hyperlink{PS__dot_8h_a70834bc8c0aad4fe6824ff76ccb8f329}{gmlRNA()}, \hyperlink{PS__dot_8h_add368528755f9a830727b680243541df}{ssv\_\-rna\_\-plot()}, \hyperlink{PS__dot_8h_a2f6d5953e6a323df898896b8d6614483}{xrna\_\-plot()} 
+\end{DoxySeeAlso}
+\hypertarget{plot__layouts_8h_a8c9eac631348da92136c8363ecdd9fb9}{
+\index{plot\_\-layouts.h@{plot\_\-layouts.h}!VRNA\_\-PLOT\_\-TYPE\_\-CIRCULAR@{VRNA\_\-PLOT\_\-TYPE\_\-CIRCULAR}}
+\index{VRNA\_\-PLOT\_\-TYPE\_\-CIRCULAR@{VRNA\_\-PLOT\_\-TYPE\_\-CIRCULAR}!plot_layouts.h@{plot\_\-layouts.h}}
+\subsubsection[{VRNA\_\-PLOT\_\-TYPE\_\-CIRCULAR}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRNA\_\-PLOT\_\-TYPE\_\-CIRCULAR~2}}
+\label{plot__layouts_8h_a8c9eac631348da92136c8363ecdd9fb9}
+
+
+Definition of Plot type {\itshape Circular\/} 
+
+This is the plot type definition for several RNA structure plotting functions telling them to produce a {\bfseries Circular plot}
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{plot__layouts_8h_a5964c4581431b098b80027d6e14dcdd4}{rna\_\-plot\_\-type}, \hyperlink{PS__dot_8h_a47856b2504b566588785597b6ebb8271}{PS\_\-rna\_\-plot\_\-a()}, \hyperlink{PS__dot_8h_a0873c7cc4cd7a11c9a2cea19dde7e9c9}{PS\_\-rna\_\-plot()}, \hyperlink{PS__dot_8h_ae7853539b5df98f294b4af434e979304}{svg\_\-rna\_\-plot()}, \hyperlink{PS__dot_8h_a70834bc8c0aad4fe6824ff76ccb8f329}{gmlRNA()}, \hyperlink{PS__dot_8h_add368528755f9a830727b680243541df}{ssv\_\-rna\_\-plot()}, \hyperlink{PS__dot_8h_a2f6d5953e6a323df898896b8d6614483}{xrna\_\-plot()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Function Documentation}
+\hypertarget{plot__layouts_8h_af4b9173e7d3fd361c3c85e6def194123}{
+\index{plot\_\-layouts.h@{plot\_\-layouts.h}!simple\_\-xy\_\-coordinates@{simple\_\-xy\_\-coordinates}}
+\index{simple\_\-xy\_\-coordinates@{simple\_\-xy\_\-coordinates}!plot_layouts.h@{plot\_\-layouts.h}}
+\subsubsection[{simple\_\-xy\_\-coordinates}]{\setlength{\rightskip}{0pt plus 5cm}int simple\_\-xy\_\-coordinates (short $\ast$ {\em pair\_\-table}, \/  float $\ast$ {\em X}, \/  float $\ast$ {\em Y})}}
+\label{plot__layouts_8h_af4b9173e7d3fd361c3c85e6def194123}
+
+
+Calculate nucleotide coordinates for secondary structure plot the {\itshape Simple way\/} 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{utils_8h_a89c32307ee50a0026f4a3131fac0845a}{make\_\-pair\_\-table()}, \hyperlink{plot__layouts_8h_a5964c4581431b098b80027d6e14dcdd4}{rna\_\-plot\_\-type}, \hyperlink{plot__layouts_8h_ac4ea13d35308f09940178d2b05a248c2}{simple\_\-circplot\_\-coordinates()}, naview\_\-xy\_\-coordinates(), \hyperlink{PS__dot_8h_a47856b2504b566588785597b6ebb8271}{PS\_\-rna\_\-plot\_\-a()}, \hyperlink{PS__dot_8h_a0873c7cc4cd7a11c9a2cea19dde7e9c9}{PS\_\-rna\_\-plot}, \hyperlink{PS__dot_8h_ae7853539b5df98f294b4af434e979304}{svg\_\-rna\_\-plot()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pair\_\-table}]The pair table of the secondary structure 
+\begin{DoxyParams}{Parameters}
+\item[{\em X}]a pointer to an array with enough allocated space to hold the x coordinates 
+\begin{DoxyParams}{Parameters}
+\item[{\em Y}]a pointer to an array with enough allocated space to hold the y coordinates \begin{DoxyReturn}{Returns}
+length of sequence on success, 0 otherwise 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{plot__layouts_8h_ac4ea13d35308f09940178d2b05a248c2}{
+\index{plot\_\-layouts.h@{plot\_\-layouts.h}!simple\_\-circplot\_\-coordinates@{simple\_\-circplot\_\-coordinates}}
+\index{simple\_\-circplot\_\-coordinates@{simple\_\-circplot\_\-coordinates}!plot_layouts.h@{plot\_\-layouts.h}}
+\subsubsection[{simple\_\-circplot\_\-coordinates}]{\setlength{\rightskip}{0pt plus 5cm}int simple\_\-circplot\_\-coordinates (short $\ast$ {\em pair\_\-table}, \/  float $\ast$ {\em x}, \/  float $\ast$ {\em y})}}
+\label{plot__layouts_8h_ac4ea13d35308f09940178d2b05a248c2}
+
+
+Calculate nucleotide coordinates for {\itshape Circular Plot\/} 
+
+This function calculates the coordinates of nucleotides mapped in equal distancies onto a unit circle.
+
+\begin{DoxyNote}{Note}
+In order to draw nice arcs using quadratic bezier curves that connect base pairs one may calculate a second tangential point $P^t$ in addition to the actual R$^{\mbox{2}}$  coordinates. the simplest way to do so may be to compute a radius scaling factor $rs$ in the interval $[0,1]$ that weights the proportion of base pair span to the actual length of the sequence. This scaling factor can then be used to calculate the coordinates for $P^t$, i.e. $ P^{t}_x[i] = X[i] * rs$ and $P^{t}_y[i] = Y[i] * rs$.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{utils_8h_a89c32307ee50a0026f4a3131fac0845a}{make\_\-pair\_\-table()}, \hyperlink{plot__layouts_8h_a5964c4581431b098b80027d6e14dcdd4}{rna\_\-plot\_\-type}, \hyperlink{plot__layouts_8h_af4b9173e7d3fd361c3c85e6def194123}{simple\_\-xy\_\-coordinates()}, naview\_\-xy\_\-coordinates(), \hyperlink{PS__dot_8h_a47856b2504b566588785597b6ebb8271}{PS\_\-rna\_\-plot\_\-a()}, \hyperlink{PS__dot_8h_a0873c7cc4cd7a11c9a2cea19dde7e9c9}{PS\_\-rna\_\-plot}, \hyperlink{PS__dot_8h_ae7853539b5df98f294b4af434e979304}{svg\_\-rna\_\-plot()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pair\_\-table}]The pair table of the secondary structure 
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]a pointer to an array with enough allocated space to hold the x coordinates 
+\begin{DoxyParams}{Parameters}
+\item[{\em y}]a pointer to an array with enough allocated space to hold the y coordinates \begin{DoxyReturn}{Returns}
+length of sequence on success, 0 otherwise 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\hypertarget{plot__layouts_8h_a5964c4581431b098b80027d6e14dcdd4}{
+\index{plot\_\-layouts.h@{plot\_\-layouts.h}!rna\_\-plot\_\-type@{rna\_\-plot\_\-type}}
+\index{rna\_\-plot\_\-type@{rna\_\-plot\_\-type}!plot_layouts.h@{plot\_\-layouts.h}}
+\subsubsection[{rna\_\-plot\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf rna\_\-plot\_\-type}}}
+\label{plot__layouts_8h_a5964c4581431b098b80027d6e14dcdd4}
+
+
+Switch for changing the secondary structure layout algorithm. 
+
+Current possibility are 0 for a simple radial drawing or 1 for the modified radial drawing taken from the {\itshape naview\/} program of \hyperlink{mp__ref_bruccoleri_88}{Bruccoleri \& Heinrich (1988)}.
+
+\begin{DoxyNote}{Note}
+To provide thread safety please do not rely on this global variable in future implementations but pass a plot type flag directly to the function that decides which layout algorithm it may use!
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{plot__layouts_8h_ae6d17b9f0a53cf5205a9181e0f8422e9}{VRNA\_\-PLOT\_\-TYPE\_\-SIMPLE}, \hyperlink{plot__layouts_8h_a94d4c863ecac2f220f76658afb92f964}{VRNA\_\-PLOT\_\-TYPE\_\-NAVIEW}, \hyperlink{plot__layouts_8h_a8c9eac631348da92136c8363ecdd9fb9}{VRNA\_\-PLOT\_\-TYPE\_\-CIRCULAR} 
+\end{DoxySeeAlso}

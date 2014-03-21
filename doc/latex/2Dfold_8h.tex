@@ -1,0 +1,141 @@
+\hypertarget{2Dfold_8h}{
+\section{H/2Dfold.h File Reference}
+\label{2Dfold_8h}\index{H/2Dfold.h@{H/2Dfold.h}}
+}
+
+
+Compute the minimum free energy (MFE) and secondary structures for a partitioning of the secondary structure space according to the base pair distance to two fixed reference structures basepair distance to two fixed reference structures.  
+
+
+Include dependency graph for 2Dfold.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=62pt]{2Dfold_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=62pt]{2Dfold_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structTwoDfold__vars}{TwoDfold\_\-vars} $\ast$ \hyperlink{2Dfold_8h_ac9284f132cf0eaa0a2f43590eda05488}{get\_\-TwoDfold\_\-variables} (const char $\ast$seq, const char $\ast$structure1, const char $\ast$structure2, int \hyperlink{fold__vars_8h_af9202a1a09f5828dc731e2d9a10fa111}{circ})
+\begin{DoxyCompactList}\small\item\em Get a structure of type \hyperlink{structTwoDfold__vars}{TwoDfold\_\-vars} prefilled with current global settings. \item\end{DoxyCompactList}\item 
+void \hyperlink{2Dfold_8h_a05bf4f31d216b1b160fd2d3d68e9b487}{destroy\_\-TwoDfold\_\-variables} (\hyperlink{structTwoDfold__vars}{TwoDfold\_\-vars} $\ast$our\_\-variables)
+\begin{DoxyCompactList}\small\item\em Destroy a \hyperlink{structTwoDfold__vars}{TwoDfold\_\-vars} datastructure without memory loss. \item\end{DoxyCompactList}\item 
+\hyperlink{structTwoDfold__solution}{TwoDfold\_\-solution} $\ast$ \hyperlink{2Dfold_8h_a47da790166020558d27323aef489703e}{TwoDfoldList} (\hyperlink{structTwoDfold__vars}{TwoDfold\_\-vars} $\ast$vars, int distance1, int distance2)
+\begin{DoxyCompactList}\small\item\em Compute MFE's and representative for distance partitioning. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{2Dfold_8h_af4dc05bf8fc1ea53acd7aeb798ba80c2}{TwoDfold\_\-backtrack\_\-f5} (unsigned int j, int k, int l, \hyperlink{structTwoDfold__vars}{TwoDfold\_\-vars} $\ast$vars)
+\begin{DoxyCompactList}\small\item\em Backtrack a minimum free energy structure from a 5' section of specified length. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Compute the minimum free energy (MFE) and secondary structures for a partitioning of the secondary structure space according to the base pair distance to two fixed reference structures basepair distance to two fixed reference structures. 
+
+\subsection{Function Documentation}
+\hypertarget{2Dfold_8h_ac9284f132cf0eaa0a2f43590eda05488}{
+\index{2Dfold.h@{2Dfold.h}!get\_\-TwoDfold\_\-variables@{get\_\-TwoDfold\_\-variables}}
+\index{get\_\-TwoDfold\_\-variables@{get\_\-TwoDfold\_\-variables}!2Dfold.h@{2Dfold.h}}
+\subsubsection[{get\_\-TwoDfold\_\-variables}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TwoDfold\_\-vars}$\ast$ get\_\-TwoDfold\_\-variables (const char $\ast$ {\em seq}, \/  const char $\ast$ {\em structure1}, \/  const char $\ast$ {\em structure2}, \/  int {\em circ})}}
+\label{2Dfold_8h_ac9284f132cf0eaa0a2f43590eda05488}
+
+
+Get a structure of type \hyperlink{structTwoDfold__vars}{TwoDfold\_\-vars} prefilled with current global settings. 
+
+This function returns a datastructure of type \hyperlink{structTwoDfold__vars}{TwoDfold\_\-vars}. The data fields inside the \hyperlink{structTwoDfold__vars}{TwoDfold\_\-vars} are prefilled by global settings and all memory allocations necessary to start a computation are already done for the convenience of the user
+
+\begin{DoxyNote}{Note}
+Make sure that the reference structures are compatible with the sequence according to Watson-\/Crick-\/ and Wobble-\/base pairing
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{2Dfold_8h_a05bf4f31d216b1b160fd2d3d68e9b487}{destroy\_\-TwoDfold\_\-variables()}, TwoDfold(), TwoDfold\_\-circ
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em seq}]The RNA sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em structure1}]The first reference structure in dot-\/bracket notation 
+\begin{DoxyParams}{Parameters}
+\item[{\em structure2}]The second reference structure in dot-\/bracket notation 
+\begin{DoxyParams}{Parameters}
+\item[{\em circ}]A switch to indicate the assumption to fold a circular instead of linear RNA (0=OFF, 1=ON) \begin{DoxyReturn}{Returns}
+A datastructure prefilled with folding options and allocated memory 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{2Dfold_8h_a05bf4f31d216b1b160fd2d3d68e9b487}{
+\index{2Dfold.h@{2Dfold.h}!destroy\_\-TwoDfold\_\-variables@{destroy\_\-TwoDfold\_\-variables}}
+\index{destroy\_\-TwoDfold\_\-variables@{destroy\_\-TwoDfold\_\-variables}!2Dfold.h@{2Dfold.h}}
+\subsubsection[{destroy\_\-TwoDfold\_\-variables}]{\setlength{\rightskip}{0pt plus 5cm}void destroy\_\-TwoDfold\_\-variables ({\bf TwoDfold\_\-vars} $\ast$ {\em our\_\-variables})}}
+\label{2Dfold_8h_a05bf4f31d216b1b160fd2d3d68e9b487}
+
+
+Destroy a \hyperlink{structTwoDfold__vars}{TwoDfold\_\-vars} datastructure without memory loss. 
+
+This function free's all allocated memory that depends on the datastructure given.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{2Dfold_8h_ac9284f132cf0eaa0a2f43590eda05488}{get\_\-TwoDfold\_\-variables()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em our\_\-variables}]A pointer to the datastructure to be destroyed \end{DoxyParams}
+\hypertarget{2Dfold_8h_a47da790166020558d27323aef489703e}{
+\index{2Dfold.h@{2Dfold.h}!TwoDfoldList@{TwoDfoldList}}
+\index{TwoDfoldList@{TwoDfoldList}!2Dfold.h@{2Dfold.h}}
+\subsubsection[{TwoDfoldList}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TwoDfold\_\-solution}$\ast$ TwoDfoldList ({\bf TwoDfold\_\-vars} $\ast$ {\em vars}, \/  int {\em distance1}, \/  int {\em distance2})}}
+\label{2Dfold_8h_a47da790166020558d27323aef489703e}
+
+
+Compute MFE's and representative for distance partitioning. 
+
+This function computes the minimum free energies and a representative secondary structure for each distance class according to the two references specified in the datastructure 'vars'. The maximum basepair distance to each of both references may be set by the arguments 'distance1' and 'distance2', respectively. If both distance arguments are set to '-\/1', no restriction is assumed and the calculation is performed for each distance class possible.
+
+The returned list contains an entry for each distance class. If a maximum basepair distance to either of the references was passed, an entry with k=l=-\/1 will be appended in the list, denoting the class where all structures exceeding the maximum will be thrown into. The end of the list is denoted by an attribute value of \hyperlink{energy__const_8h_a12c2040f25d8e3a7b9e1c2024c618cb6}{INF} in the k-\/attribute of the list entry.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{2Dfold_8h_ac9284f132cf0eaa0a2f43590eda05488}{get\_\-TwoDfold\_\-variables()}, \hyperlink{2Dfold_8h_a05bf4f31d216b1b160fd2d3d68e9b487}{destroy\_\-TwoDfold\_\-variables()}, \hyperlink{structTwoDfold__solution}{TwoDfold\_\-solution}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em vars}]the datastructure containing all predefined folding attributes 
+\begin{DoxyParams}{Parameters}
+\item[{\em distance1}]maximum distance to reference1 (-\/1 means no restriction) 
+\begin{DoxyParams}{Parameters}
+\item[{\em distance2}]maximum distance to reference2 (-\/1 means no restriction) \end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{2Dfold_8h_af4dc05bf8fc1ea53acd7aeb798ba80c2}{
+\index{2Dfold.h@{2Dfold.h}!TwoDfold\_\-backtrack\_\-f5@{TwoDfold\_\-backtrack\_\-f5}}
+\index{TwoDfold\_\-backtrack\_\-f5@{TwoDfold\_\-backtrack\_\-f5}!2Dfold.h@{2Dfold.h}}
+\subsubsection[{TwoDfold\_\-backtrack\_\-f5}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ TwoDfold\_\-backtrack\_\-f5 (unsigned int {\em j}, \/  int {\em k}, \/  int {\em l}, \/  {\bf TwoDfold\_\-vars} $\ast$ {\em vars})}}
+\label{2Dfold_8h_af4dc05bf8fc1ea53acd7aeb798ba80c2}
+
+
+Backtrack a minimum free energy structure from a 5' section of specified length. 
+
+This function allows to backtrack a secondary structure beginning at the 5' end, a specified length and residing in a specific distance class. If the argument 'k' gets a value of -\/1, the structure that is backtracked is assumed to reside in the distance class where all structures exceeding the maximum basepair distance specified in \hyperlink{2Dfold_8h_a47da790166020558d27323aef489703e}{TwoDfoldList()} belong to. \begin{DoxyNote}{Note}
+The argument 'vars' must contain precalculated energy values in the energy matrices, i.e. a call to \hyperlink{2Dfold_8h_a47da790166020558d27323aef489703e}{TwoDfoldList()} preceding this function is mandatory!
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{2Dfold_8h_a47da790166020558d27323aef489703e}{TwoDfoldList()}, \hyperlink{2Dfold_8h_ac9284f132cf0eaa0a2f43590eda05488}{get\_\-TwoDfold\_\-variables()}, \hyperlink{2Dfold_8h_a05bf4f31d216b1b160fd2d3d68e9b487}{destroy\_\-TwoDfold\_\-variables()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]The length in nucleotides beginning from the 5' end 
+\begin{DoxyParams}{Parameters}
+\item[{\em k}]distance to reference1 (may be -\/1) 
+\begin{DoxyParams}{Parameters}
+\item[{\em l}]distance to reference2 
+\begin{DoxyParams}{Parameters}
+\item[{\em vars}]the datastructure containing all predefined folding attributes \end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}

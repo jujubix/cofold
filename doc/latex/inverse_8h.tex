@@ -1,0 +1,95 @@
+\hypertarget{inverse_8h}{
+\section{H/inverse.h File Reference}
+\label{inverse_8h}\index{H/inverse.h@{H/inverse.h}}
+}
+
+
+Inverse folding routines.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{inverse_8h_a7af026de55d4babad879f2c92559cbbc}{inverse\_\-fold} (char $\ast$start, const char $\ast$target)
+\begin{DoxyCompactList}\small\item\em Find sequences with predefined structure. \item\end{DoxyCompactList}\item 
+float \hyperlink{inverse_8h_aeef52ecbf2a2450ad585a344f9826806}{inverse\_\-pf\_\-fold} (char $\ast$start, const char $\ast$target)
+\begin{DoxyCompactList}\small\item\em Find sequence that maximizes probability of a predefined structure. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{inverse_8h_a8f791e7740a5a28b9f6fafb4e60301d9}{symbolset}
+\begin{DoxyCompactList}\small\item\em This global variable points to the allowed bases, initially \char`\"{}AUGC\char`\"{}. \item\end{DoxyCompactList}\item 
+\hypertarget{inverse_8h_a7f17d3b169af048d32bb185039a9c09c}{
+float \hyperlink{inverse_8h_a7f17d3b169af048d32bb185039a9c09c}{final\_\-cost}}
+\label{inverse_8h_a7f17d3b169af048d32bb185039a9c09c}
+
+\begin{DoxyCompactList}\small\item\em when to stop \hyperlink{inverse_8h_aeef52ecbf2a2450ad585a344f9826806}{inverse\_\-pf\_\-fold()} \item\end{DoxyCompactList}\item 
+\hypertarget{inverse_8h_a7ec4ba51f86e1717a1e174264e4a75ce}{
+int \hyperlink{inverse_8h_a7ec4ba51f86e1717a1e174264e4a75ce}{give\_\-up}}
+\label{inverse_8h_a7ec4ba51f86e1717a1e174264e4a75ce}
+
+\begin{DoxyCompactList}\small\item\em default 0: try to minimize structure distance even if no exact solution can be found \item\end{DoxyCompactList}\item 
+\hypertarget{inverse_8h_afcfc65fba01b9cca5946726ed9057a63}{
+int \hyperlink{inverse_8h_afcfc65fba01b9cca5946726ed9057a63}{inv\_\-verbose}}
+\label{inverse_8h_afcfc65fba01b9cca5946726ed9057a63}
+
+\begin{DoxyCompactList}\small\item\em print out substructure on which \hyperlink{inverse_8h_a7af026de55d4babad879f2c92559cbbc}{inverse\_\-fold()} fails \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Inverse folding routines. 
+
+\subsection{Function Documentation}
+\hypertarget{inverse_8h_a7af026de55d4babad879f2c92559cbbc}{
+\index{inverse.h@{inverse.h}!inverse\_\-fold@{inverse\_\-fold}}
+\index{inverse\_\-fold@{inverse\_\-fold}!inverse.h@{inverse.h}}
+\subsubsection[{inverse\_\-fold}]{\setlength{\rightskip}{0pt plus 5cm}float inverse\_\-fold (char $\ast$ {\em start}, \/  const char $\ast$ {\em target})}}
+\label{inverse_8h_a7af026de55d4babad879f2c92559cbbc}
+
+
+Find sequences with predefined structure. 
+
+This function searches for a sequence with minimum free energy structure provided in the parameter 'target', starting with sequence 'start'. It returns 0 if the search was successful, otherwise a structure distance in terms of the energy difference between the search result and the actual target 'target' is returned. The found sequence is returned in 'start'. If \hyperlink{inverse_8h_a7ec4ba51f86e1717a1e174264e4a75ce}{give\_\-up} is set to 1, the function will return as soon as it is clear that the search will be unsuccessful, this speeds up the algorithm if you are only interested in exact solutions.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em start}]The start sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em target}]The target secondary structure in dot-\/bracket notation \begin{DoxyReturn}{Returns}
+The distance to the target in case a search was unsuccessful, 0 otherwise 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{inverse_8h_aeef52ecbf2a2450ad585a344f9826806}{
+\index{inverse.h@{inverse.h}!inverse\_\-pf\_\-fold@{inverse\_\-pf\_\-fold}}
+\index{inverse\_\-pf\_\-fold@{inverse\_\-pf\_\-fold}!inverse.h@{inverse.h}}
+\subsubsection[{inverse\_\-pf\_\-fold}]{\setlength{\rightskip}{0pt plus 5cm}float inverse\_\-pf\_\-fold (char $\ast$ {\em start}, \/  const char $\ast$ {\em target})}}
+\label{inverse_8h_aeef52ecbf2a2450ad585a344f9826806}
+
+
+Find sequence that maximizes probability of a predefined structure. 
+
+This function searches for a sequence with maximum probability to fold into the provided structure 'target' using the partition function algorithm. It returns $-kT \cdot \log(p)$ where $p$ is the frequency of 'target' in the ensemble of possible structures. This is usually much slower than \hyperlink{inverse_8h_a7af026de55d4babad879f2c92559cbbc}{inverse\_\-fold()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em start}]The start sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em target}]The target secondary structure in dot-\/bracket notation \begin{DoxyReturn}{Returns}
+The distance to the target in case a search was unsuccessful, 0 otherwise 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\hypertarget{inverse_8h_a8f791e7740a5a28b9f6fafb4e60301d9}{
+\index{inverse.h@{inverse.h}!symbolset@{symbolset}}
+\index{symbolset@{symbolset}!inverse.h@{inverse.h}}
+\subsubsection[{symbolset}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf symbolset}}}
+\label{inverse_8h_a8f791e7740a5a28b9f6fafb4e60301d9}
+
+
+This global variable points to the allowed bases, initially \char`\"{}AUGC\char`\"{}. 
+
+It can be used to design sequences from reduced alphabets. 

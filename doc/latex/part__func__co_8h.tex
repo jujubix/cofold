@@ -1,0 +1,269 @@
+\hypertarget{part__func__co_8h}{
+\section{H/part\_\-func\_\-co.h File Reference}
+\label{part__func__co_8h}\index{H/part\_\-func\_\-co.h@{H/part\_\-func\_\-co.h}}
+}
+
+
+Partition function for two RNA sequences.  
+
+
+Include dependency graph for part\_\-func\_\-co.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=68pt]{part__func__co_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcofoldF}{cofoldF} \hyperlink{part__func__co_8h_aa86a5f998789ed71813d23d7307a791b}{co\_\-pf\_\-fold} (char $\ast$sequence, char $\ast$structure)
+\begin{DoxyCompactList}\small\item\em Calculate partition function and base pair probabilities. \item\end{DoxyCompactList}\item 
+\hyperlink{structcofoldF}{cofoldF} \hyperlink{part__func__co_8h_abd873b450832ab5f21101fc5ab354d21}{co\_\-pf\_\-fold\_\-par} (char $\ast$sequence, char $\ast$structure, \hyperlink{structpf__paramT}{pf\_\-paramT} $\ast$parameters, int calculate\_\-bppm, int is\_\-constrained)
+\begin{DoxyCompactList}\small\item\em Calculate partition function and base pair probabilities. \item\end{DoxyCompactList}\item 
+FLT\_\-OR\_\-DBL $\ast$ \hyperlink{part__func__co_8h_ad94c0133157bed6912fe7fe866e0039e}{export\_\-co\_\-bppm} (void)
+\begin{DoxyCompactList}\small\item\em Get a pointer to the base pair probability array. \item\end{DoxyCompactList}\item 
+\hypertarget{part__func__co_8h_ade3ce34ae8214811374b1d28a40dc247}{
+void \hyperlink{part__func__co_8h_ade3ce34ae8214811374b1d28a40dc247}{free\_\-co\_\-pf\_\-arrays} (void)}
+\label{part__func__co_8h_ade3ce34ae8214811374b1d28a40dc247}
+
+\begin{DoxyCompactList}\small\item\em Free the memory occupied by \hyperlink{part__func__co_8h_aa86a5f998789ed71813d23d7307a791b}{co\_\-pf\_\-fold()}. \item\end{DoxyCompactList}\item 
+void \hyperlink{part__func__co_8h_a6e0f36c1f9b7d9dd4bfbad914c1119e5}{update\_\-co\_\-pf\_\-params} (int length)
+\begin{DoxyCompactList}\small\item\em Recalculate energy parameters. \item\end{DoxyCompactList}\item 
+void \hyperlink{part__func__co_8h_a117d880df45bef444d5e2785ffa40a53}{update\_\-co\_\-pf\_\-params\_\-par} (int length, \hyperlink{structpf__paramT}{pf\_\-paramT} $\ast$parameters)
+\begin{DoxyCompactList}\small\item\em Recalculate energy parameters. \item\end{DoxyCompactList}\item 
+void \hyperlink{part__func__co_8h_a15ae04ac5ab84e876dcf0093120cb617}{compute\_\-probabilities} (double FAB, double FEA, double FEB, struct \hyperlink{structplist}{plist} $\ast$prAB, struct \hyperlink{structplist}{plist} $\ast$prA, struct \hyperlink{structplist}{plist} $\ast$prB, int Alength)
+\begin{DoxyCompactList}\small\item\em Compute Boltzmann probabilities of dimerization without homodimers. \item\end{DoxyCompactList}\item 
+\hyperlink{structConcEnt}{ConcEnt} $\ast$ \hyperlink{part__func__co_8h_a5545cb936ac4ff93c7d699d46e72e8c7}{get\_\-concentrations} (double FEAB, double FEAA, double FEBB, double FEA, double FEB, double $\ast$startconc)
+\begin{DoxyCompactList}\small\item\em Given two start monomer concentrations a and b, compute the concentrations in thermodynamic equilibrium of all dimers and the monomers. \item\end{DoxyCompactList}\item 
+\hyperlink{structplist}{plist} $\ast$ \hyperlink{part__func__co_8h_a334de3c96e2186abfbdc0eaea6d08b14}{get\_\-plist} (struct \hyperlink{structplist}{plist} $\ast$pl, int length, double cut\_\-off)
+\begin{DoxyCompactList}\small\item\em DO NOT USE THIS FUNCTION ANYMORE. \item\end{DoxyCompactList}\item 
+void \hyperlink{part__func__co_8h_aa12dda9dd6179cdd22bcce87c0682c07}{init\_\-co\_\-pf\_\-fold} (int length)
+\begin{DoxyCompactList}\small\item\em DO NOT USE THIS FUNCTION ANYMORE. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{part__func__co_8h_aff27888c4088cc1f60fd59cbd589474c}{
+int \hyperlink{part__func__co_8h_aff27888c4088cc1f60fd59cbd589474c}{mirnatog}}
+\label{part__func__co_8h_aff27888c4088cc1f60fd59cbd589474c}
+
+\begin{DoxyCompactList}\small\item\em Toggles no intrabp in 2nd mol. \item\end{DoxyCompactList}\item 
+\hypertarget{part__func__co_8h_ac2d1851a710a8561390861155ca988fe}{
+double \hyperlink{part__func__co_8h_ac2d1851a710a8561390861155ca988fe}{F\_\-monomer} \mbox{[}2\mbox{]}}
+\label{part__func__co_8h_ac2d1851a710a8561390861155ca988fe}
+
+\begin{DoxyCompactList}\small\item\em Free energies of the two monomers. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Partition function for two RNA sequences. As for folding one RNA molecule, this computes the partition function of all possible structures and the base pair probabilities. Uses the same global \hyperlink{fold__vars_8h_ad3b22044065acc6dee0af68931b52cfd}{pf\_\-scale} variable to avoid overflows.
+
+To simplify the implementation the partition function computation is done internally in a null model that does not include the duplex initiation energy, i.e. the entropic penalty for producing a dimer from two monomers). The resulting free energies and pair probabilities are initially relative to that null model. In a second step the free energies can be corrected to include the dimerization penalty, and the pair probabilities can be divided into the conditional pair probabilities given that a re dimer is formed or not formed.
+
+After computing the partition functions of all possible dimeres one can compute the probabilities of base pairs, the concentrations out of start concentrations and sofar and soaway.
+
+Dimer formation is inherently concentration dependent. Given the free energies of the monomers A and B and dimers AB, AA, and BB one can compute the equilibrium concentrations, given input concentrations of A and B, see e.g. Dimitrov \& Zuker (2004) 
+
+\subsection{Function Documentation}
+\hypertarget{part__func__co_8h_aa86a5f998789ed71813d23d7307a791b}{
+\index{part\_\-func\_\-co.h@{part\_\-func\_\-co.h}!co\_\-pf\_\-fold@{co\_\-pf\_\-fold}}
+\index{co\_\-pf\_\-fold@{co\_\-pf\_\-fold}!part_func_co.h@{part\_\-func\_\-co.h}}
+\subsubsection[{co\_\-pf\_\-fold}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cofoldF} co\_\-pf\_\-fold (char $\ast$ {\em sequence}, \/  char $\ast$ {\em structure})}}
+\label{part__func__co_8h_aa86a5f998789ed71813d23d7307a791b}
+
+
+Calculate partition function and base pair probabilities. 
+
+This is the cofold partition function folding. The second molecule starts at the \hyperlink{fold__vars_8h_ab9b2c3a37a5516614c06d0ab54b97cda}{cut\_\-point} nucleotide.
+
+\begin{DoxyNote}{Note}
+OpenMP: Since this function relies on the global parameters \hyperlink{fold__vars_8h_ad512b5dd4dbec60faccfe137bb474489}{do\_\-backtrack}, \hyperlink{fold__vars_8h_a72b511ed1201f7e23ec437e468790d74}{dangles}, \hyperlink{fold__vars_8h_ab4b11c8d9c758430960896bc3fe82ead}{temperature} and \hyperlink{fold__vars_8h_ad3b22044065acc6dee0af68931b52cfd}{pf\_\-scale} it is not threadsafe according to concurrent changes in these variables! Use \hyperlink{part__func__co_8h_abd873b450832ab5f21101fc5ab354d21}{co\_\-pf\_\-fold\_\-par()} instead to circumvent this issue.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{part__func__co_8h_abd873b450832ab5f21101fc5ab354d21}{co\_\-pf\_\-fold\_\-par()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sequence}]Concatenated RNA sequences 
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]Will hold the structure or constraints \begin{DoxyReturn}{Returns}
+\hyperlink{structcofoldF}{cofoldF} structure containing a set of energies needed for concentration computations. 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{part__func__co_8h_abd873b450832ab5f21101fc5ab354d21}{
+\index{part\_\-func\_\-co.h@{part\_\-func\_\-co.h}!co\_\-pf\_\-fold\_\-par@{co\_\-pf\_\-fold\_\-par}}
+\index{co\_\-pf\_\-fold\_\-par@{co\_\-pf\_\-fold\_\-par}!part_func_co.h@{part\_\-func\_\-co.h}}
+\subsubsection[{co\_\-pf\_\-fold\_\-par}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cofoldF} co\_\-pf\_\-fold\_\-par (char $\ast$ {\em sequence}, \/  char $\ast$ {\em structure}, \/  {\bf pf\_\-paramT} $\ast$ {\em parameters}, \/  int {\em calculate\_\-bppm}, \/  int {\em is\_\-constrained})}}
+\label{part__func__co_8h_abd873b450832ab5f21101fc5ab354d21}
+
+
+Calculate partition function and base pair probabilities. 
+
+This is the cofold partition function folding. The second molecule starts at the \hyperlink{fold__vars_8h_ab9b2c3a37a5516614c06d0ab54b97cda}{cut\_\-point} nucleotide.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{params_8h_a6fc2f3eef5a3024d44963ac59a42e39d}{get\_\-boltzmann\_\-factors()}, \hyperlink{part__func__co_8h_aa86a5f998789ed71813d23d7307a791b}{co\_\-pf\_\-fold()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sequence}]Concatenated RNA sequences 
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]Pointer to the structure constraint 
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]Data structure containing the precalculated Boltzmann factors 
+\begin{DoxyParams}{Parameters}
+\item[{\em calculate\_\-bppm}]Switch to turn Base pair probability calculations on/off (0==off) 
+\begin{DoxyParams}{Parameters}
+\item[{\em is\_\-constrained}]Switch to indicate that a structure contraint is passed via the structure argument (0==off) \begin{DoxyReturn}{Returns}
+\hyperlink{structcofoldF}{cofoldF} structure containing a set of energies needed for concentration computations. 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{part__func__co_8h_ad94c0133157bed6912fe7fe866e0039e}{
+\index{part\_\-func\_\-co.h@{part\_\-func\_\-co.h}!export\_\-co\_\-bppm@{export\_\-co\_\-bppm}}
+\index{export\_\-co\_\-bppm@{export\_\-co\_\-bppm}!part_func_co.h@{part\_\-func\_\-co.h}}
+\subsubsection[{export\_\-co\_\-bppm}]{\setlength{\rightskip}{0pt plus 5cm}FLT\_\-OR\_\-DBL$\ast$ export\_\-co\_\-bppm (void)}}
+\label{part__func__co_8h_ad94c0133157bed6912fe7fe866e0039e}
+
+
+Get a pointer to the base pair probability array. 
+
+Accessing the base pair probabilities for a pair (i,j) is achieved by \begin{DoxyVerb}FLT_OR_DBL *pr = export_bppm(); pr_ij = pr[iindx[i]-j]; \end{DoxyVerb}
+
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{utils_8h_a55c0f6b3b07b6adf2ee235ba901fe397}{get\_\-iindx()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+A pointer to the base pair probability array 
+\end{DoxyReturn}
+\hypertarget{part__func__co_8h_a6e0f36c1f9b7d9dd4bfbad914c1119e5}{
+\index{part\_\-func\_\-co.h@{part\_\-func\_\-co.h}!update\_\-co\_\-pf\_\-params@{update\_\-co\_\-pf\_\-params}}
+\index{update\_\-co\_\-pf\_\-params@{update\_\-co\_\-pf\_\-params}!part_func_co.h@{part\_\-func\_\-co.h}}
+\subsubsection[{update\_\-co\_\-pf\_\-params}]{\setlength{\rightskip}{0pt plus 5cm}void update\_\-co\_\-pf\_\-params (int {\em length})}}
+\label{part__func__co_8h_a6e0f36c1f9b7d9dd4bfbad914c1119e5}
+
+
+Recalculate energy parameters. 
+
+This function recalculates all energy parameters given the current model settings.
+
+\begin{DoxyNote}{Note}
+This function relies on the global variables \hyperlink{fold__vars_8h_ad3b22044065acc6dee0af68931b52cfd}{pf\_\-scale}, \hyperlink{fold__vars_8h_a72b511ed1201f7e23ec437e468790d74}{dangles} and \hyperlink{fold__vars_8h_ab4b11c8d9c758430960896bc3fe82ead}{temperature}. Thus it might not be threadsafe in certain situations. Use \hyperlink{part__func__co_8h_a117d880df45bef444d5e2785ffa40a53}{update\_\-co\_\-pf\_\-params\_\-par()} instead.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{params_8h_a6fc2f3eef5a3024d44963ac59a42e39d}{get\_\-boltzmann\_\-factors()}, \hyperlink{part__func__co_8h_a117d880df45bef444d5e2785ffa40a53}{update\_\-co\_\-pf\_\-params\_\-par()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em length}]Length of the current RNA sequence \end{DoxyParams}
+\hypertarget{part__func__co_8h_a117d880df45bef444d5e2785ffa40a53}{
+\index{part\_\-func\_\-co.h@{part\_\-func\_\-co.h}!update\_\-co\_\-pf\_\-params\_\-par@{update\_\-co\_\-pf\_\-params\_\-par}}
+\index{update\_\-co\_\-pf\_\-params\_\-par@{update\_\-co\_\-pf\_\-params\_\-par}!part_func_co.h@{part\_\-func\_\-co.h}}
+\subsubsection[{update\_\-co\_\-pf\_\-params\_\-par}]{\setlength{\rightskip}{0pt plus 5cm}void update\_\-co\_\-pf\_\-params\_\-par (int {\em length}, \/  {\bf pf\_\-paramT} $\ast$ {\em parameters})}}
+\label{part__func__co_8h_a117d880df45bef444d5e2785ffa40a53}
+
+
+Recalculate energy parameters. 
+
+This function recalculates all energy parameters given the current model settings. It's second argument can either be NULL or a data structure containing the precomputed Boltzmann factors. In the first scenario, the necessary data structure will be created automatically according to the current global model settings, i.e. this mode might not be threadsafe. However, if the provided data structure is not NULL, threadsafety for the model parameters \hyperlink{fold__vars_8h_a72b511ed1201f7e23ec437e468790d74}{dangles}, \hyperlink{fold__vars_8h_ad3b22044065acc6dee0af68931b52cfd}{pf\_\-scale} and \hyperlink{fold__vars_8h_ab4b11c8d9c758430960896bc3fe82ead}{temperature} is regained, since their values are taken from this data structure during subsequent calculations.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{params_8h_a6fc2f3eef5a3024d44963ac59a42e39d}{get\_\-boltzmann\_\-factors()}, \hyperlink{part__func__co_8h_a6e0f36c1f9b7d9dd4bfbad914c1119e5}{update\_\-co\_\-pf\_\-params()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em length}]Length of the current RNA sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]data structure containing the precomputed Boltzmann factors \end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{part__func__co_8h_a15ae04ac5ab84e876dcf0093120cb617}{
+\index{part\_\-func\_\-co.h@{part\_\-func\_\-co.h}!compute\_\-probabilities@{compute\_\-probabilities}}
+\index{compute\_\-probabilities@{compute\_\-probabilities}!part_func_co.h@{part\_\-func\_\-co.h}}
+\subsubsection[{compute\_\-probabilities}]{\setlength{\rightskip}{0pt plus 5cm}void compute\_\-probabilities (double {\em FAB}, \/  double {\em FEA}, \/  double {\em FEB}, \/  struct {\bf plist} $\ast$ {\em prAB}, \/  struct {\bf plist} $\ast$ {\em prA}, \/  struct {\bf plist} $\ast$ {\em prB}, \/  int {\em Alength})}}
+\label{part__func__co_8h_a15ae04ac5ab84e876dcf0093120cb617}
+
+
+Compute Boltzmann probabilities of dimerization without homodimers. 
+
+Given the pair probabilities and free energies (in the null model) for a dimer AB and the two constituent monomers A and B, compute the conditional pair probabilities given that a dimer AB actually forms. Null model pair probabilities are given as a list as produced by \hyperlink{part__func_8h_a2f29542659beb5ebd176631a3da11580}{assign\_\-plist\_\-from\_\-pr()}, the dimer probabilities 'prAB' are modified in place.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em FAB}]free energy of dimer AB 
+\begin{DoxyParams}{Parameters}
+\item[{\em FEA}]free energy of monomer A 
+\begin{DoxyParams}{Parameters}
+\item[{\em FEB}]free energy of monomer B 
+\begin{DoxyParams}{Parameters}
+\item[{\em prAB}]pair probabilities for dimer 
+\begin{DoxyParams}{Parameters}
+\item[{\em prA}]pair probabilities monomer 
+\begin{DoxyParams}{Parameters}
+\item[{\em prB}]pair probabilities monomer 
+\begin{DoxyParams}{Parameters}
+\item[{\em Alength}]Length of molecule A \end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{part__func__co_8h_a5545cb936ac4ff93c7d699d46e72e8c7}{
+\index{part\_\-func\_\-co.h@{part\_\-func\_\-co.h}!get\_\-concentrations@{get\_\-concentrations}}
+\index{get\_\-concentrations@{get\_\-concentrations}!part_func_co.h@{part\_\-func\_\-co.h}}
+\subsubsection[{get\_\-concentrations}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ConcEnt}$\ast$ get\_\-concentrations (double {\em FEAB}, \/  double {\em FEAA}, \/  double {\em FEBB}, \/  double {\em FEA}, \/  double {\em FEB}, \/  double $\ast$ {\em startconc})}}
+\label{part__func__co_8h_a5545cb936ac4ff93c7d699d46e72e8c7}
+
+
+Given two start monomer concentrations a and b, compute the concentrations in thermodynamic equilibrium of all dimers and the monomers. 
+
+This function takes an array 'startconc' of input concentrations with alternating entries for the initial concentrations of molecules A and B (terminated by two zeroes), then computes the resulting equilibrium concentrations from the free energies for the dimers. Dimer free energies should be the dimer-\/only free energies, i.e. the FcAB entries from the \hyperlink{structcofoldF}{cofoldF} struct.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em FEAB}]Free energy of AB dimer (FcAB entry) 
+\begin{DoxyParams}{Parameters}
+\item[{\em FEAA}]Free energy of AA dimer (FcAB entry) 
+\begin{DoxyParams}{Parameters}
+\item[{\em FEBB}]Free energy of BB dimer (FcAB entry) 
+\begin{DoxyParams}{Parameters}
+\item[{\em FEA}]Free energy of monomer A 
+\begin{DoxyParams}{Parameters}
+\item[{\em FEB}]Free energy of monomer B 
+\begin{DoxyParams}{Parameters}
+\item[{\em startconc}]List of start concentrations \mbox{[}a0\mbox{]},\mbox{[}b0\mbox{]},\mbox{[}a1\mbox{]},\mbox{[}b1\mbox{]},...,\mbox{[}an\mbox{]}\mbox{[}bn\mbox{]},\mbox{[}0\mbox{]},\mbox{[}0\mbox{]} \begin{DoxyReturn}{Returns}
+\hyperlink{structConcEnt}{ConcEnt} array containing the equilibrium energies and start concentrations 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{part__func__co_8h_a334de3c96e2186abfbdc0eaea6d08b14}{
+\index{part\_\-func\_\-co.h@{part\_\-func\_\-co.h}!get\_\-plist@{get\_\-plist}}
+\index{get\_\-plist@{get\_\-plist}!part_func_co.h@{part\_\-func\_\-co.h}}
+\subsubsection[{get\_\-plist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plist}$\ast$ get\_\-plist (struct {\bf plist} $\ast$ {\em pl}, \/  int {\em length}, \/  double {\em cut\_\-off})}}
+\label{part__func__co_8h_a334de3c96e2186abfbdc0eaea6d08b14}
+
+
+DO NOT USE THIS FUNCTION ANYMORE. 
+
+\begin{Desc}
+\item[\hyperlink{deprecated__deprecated000016}{Deprecated}]\{ This function is deprecated and will be removed soon!\} use \hyperlink{part__func_8h_a2f29542659beb5ebd176631a3da11580}{assign\_\-plist\_\-from\_\-pr()} instead! \end{Desc}
+\hypertarget{part__func__co_8h_aa12dda9dd6179cdd22bcce87c0682c07}{
+\index{part\_\-func\_\-co.h@{part\_\-func\_\-co.h}!init\_\-co\_\-pf\_\-fold@{init\_\-co\_\-pf\_\-fold}}
+\index{init\_\-co\_\-pf\_\-fold@{init\_\-co\_\-pf\_\-fold}!part_func_co.h@{part\_\-func\_\-co.h}}
+\subsubsection[{init\_\-co\_\-pf\_\-fold}]{\setlength{\rightskip}{0pt plus 5cm}void init\_\-co\_\-pf\_\-fold (int {\em length})}}
+\label{part__func__co_8h_aa12dda9dd6179cdd22bcce87c0682c07}
+
+
+DO NOT USE THIS FUNCTION ANYMORE. 
+
+\begin{Desc}
+\item[\hyperlink{deprecated__deprecated000017}{Deprecated}]\{ This function is deprecated and will be removed soon!\} \end{Desc}

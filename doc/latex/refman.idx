@@ -1,0 +1,462 @@
+\indexentry{bondT@{bondT}|hyperpage}{43}
+\indexentry{bondTEn@{bondTEn}|hyperpage}{44}
+\indexentry{cofoldF@{cofoldF}|hyperpage}{45}
+\indexentry{ConcEnt@{ConcEnt}|hyperpage}{46}
+\indexentry{constrain@{constrain}|hyperpage}{47}
+\indexentry{COORDINATE@{COORDINATE}|hyperpage}{48}
+\indexentry{cpair@{cpair}|hyperpage}{49}
+\indexentry{duplexT@{duplexT}|hyperpage}{50}
+\indexentry{dupVar@{dupVar}|hyperpage}{51}
+\indexentry{folden@{folden}|hyperpage}{52}
+\indexentry{interact@{interact}|hyperpage}{53}
+\indexentry{intermediate\_\discretionary {-}{}{}t@{intermediate\_\discretionary {-}{}{}t}|hyperpage}{54}
+\indexentry{INTERVAL@{INTERVAL}|hyperpage}{55}
+\indexentry{LIST@{LIST}|hyperpage}{56}
+\indexentry{LST\_\discretionary {-}{}{}BUCKET@{LST\_\discretionary {-}{}{}BUCKET}|hyperpage}{57}
+\indexentry{model\_\discretionary {-}{}{}detailsT@{model\_\discretionary {-}{}{}detailsT}|hyperpage}{58}
+\indexentry{move\_\discretionary {-}{}{}t@{move\_\discretionary {-}{}{}t}|hyperpage}{59}
+\indexentry{PAIR@{PAIR}|hyperpage}{60}
+\indexentry{pair\_\discretionary {-}{}{}info@{pair\_\discretionary {-}{}{}info}|hyperpage}{61}
+\indexentry{pairpro@{pairpro}|hyperpage}{62}
+\indexentry{paramT@{paramT}|hyperpage}{63}
+\indexentry{path\_\discretionary {-}{}{}t@{path\_\discretionary {-}{}{}t}|hyperpage}{64}
+\indexentry{pf\_\discretionary {-}{}{}paramT@{pf\_\discretionary {-}{}{}paramT}|hyperpage}{65}
+\indexentry{plist@{plist}|hyperpage}{66}
+\indexentry{Postorder\_\discretionary {-}{}{}list@{Postorder\_\discretionary {-}{}{}list}|hyperpage}{67}
+\indexentry{pu\_\discretionary {-}{}{}contrib@{pu\_\discretionary {-}{}{}contrib}|hyperpage}{68}
+\indexentry{pu\_\discretionary {-}{}{}out@{pu\_\discretionary {-}{}{}out}|hyperpage}{69}
+\indexentry{sect@{sect}|hyperpage}{70}
+\indexentry{snoopT@{snoopT}|hyperpage}{71}
+\indexentry{SOLUTION@{SOLUTION}|hyperpage}{72}
+\indexentry{svm\_\discretionary {-}{}{}model@{svm\_\discretionary {-}{}{}model}|hyperpage}{73}
+\indexentry{swString@{swString}|hyperpage}{74}
+\indexentry{Tree@{Tree}|hyperpage}{75}
+\indexentry{TwoDfold\_\discretionary {-}{}{}solution@{TwoDfold\_\discretionary {-}{}{}solution}|hyperpage}{76}
+\indexentry{TwoDfold\_\discretionary {-}{}{}vars@{TwoDfold\_\discretionary {-}{}{}vars}|hyperpage}{77}
+\indexentry{TwoDpfold\_\discretionary {-}{}{}solution@{TwoDpfold\_\discretionary {-}{}{}solution}|hyperpage}{78}
+\indexentry{TwoDpfold\_\discretionary {-}{}{}vars@{TwoDpfold\_\discretionary {-}{}{}vars}|hyperpage}{79}
+\indexentry{H/2Dfold.h@{H/2Dfold.h}|hyperpage}{81}
+\indexentry{2Dfold.h@{2Dfold.h}!get\_\discretionary {-}{}{}TwoDfold\_\discretionary {-}{}{}variables@{get\_\discretionary {-}{}{}TwoDfold\_\discretionary {-}{}{}variables}|hyperpage}{82}
+\indexentry{get\_\discretionary {-}{}{}TwoDfold\_\discretionary {-}{}{}variables@{get\_\discretionary {-}{}{}TwoDfold\_\discretionary {-}{}{}variables}!2Dfold.h@{2Dfold.h}|hyperpage}{82}
+\indexentry{2Dfold.h@{2Dfold.h}!destroy\_\discretionary {-}{}{}TwoDfold\_\discretionary {-}{}{}variables@{destroy\_\discretionary {-}{}{}TwoDfold\_\discretionary {-}{}{}variables}|hyperpage}{82}
+\indexentry{destroy\_\discretionary {-}{}{}TwoDfold\_\discretionary {-}{}{}variables@{destroy\_\discretionary {-}{}{}TwoDfold\_\discretionary {-}{}{}variables}!2Dfold.h@{2Dfold.h}|hyperpage}{82}
+\indexentry{2Dfold.h@{2Dfold.h}!TwoDfoldList@{TwoDfoldList}|hyperpage}{83}
+\indexentry{TwoDfoldList@{TwoDfoldList}!2Dfold.h@{2Dfold.h}|hyperpage}{83}
+\indexentry{2Dfold.h@{2Dfold.h}!TwoDfold\_\discretionary {-}{}{}backtrack\_\discretionary {-}{}{}f5@{TwoDfold\_\discretionary {-}{}{}backtrack\_\discretionary {-}{}{}f5}|hyperpage}{83}
+\indexentry{TwoDfold\_\discretionary {-}{}{}backtrack\_\discretionary {-}{}{}f5@{TwoDfold\_\discretionary {-}{}{}backtrack\_\discretionary {-}{}{}f5}!2Dfold.h@{2Dfold.h}|hyperpage}{83}
+\indexentry{H/2Dpfold.h@{H/2Dpfold.h}|hyperpage}{85}
+\indexentry{2Dpfold.h@{2Dpfold.h}!get\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables@{get\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables}|hyperpage}{86}
+\indexentry{get\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables@{get\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables}!2Dpfold.h@{2Dpfold.h}|hyperpage}{86}
+\indexentry{2Dpfold.h@{2Dpfold.h}!get\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables\_\discretionary {-}{}{}from\_\discretionary {-}{}{}MFE@{get\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables\_\discretionary {-}{}{}from\_\discretionary {-}{}{}MFE}|hyperpage}{86}
+\indexentry{get\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables\_\discretionary {-}{}{}from\_\discretionary {-}{}{}MFE@{get\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables\_\discretionary {-}{}{}from\_\discretionary {-}{}{}MFE}!2Dpfold.h@{2Dpfold.h}|hyperpage}{86}
+\indexentry{2Dpfold.h@{2Dpfold.h}!destroy\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables@{destroy\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables}|hyperpage}{87}
+\indexentry{destroy\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables@{destroy\_\discretionary {-}{}{}TwoDpfold\_\discretionary {-}{}{}variables}!2Dpfold.h@{2Dpfold.h}|hyperpage}{87}
+\indexentry{2Dpfold.h@{2Dpfold.h}!TwoDpfoldList@{TwoDpfoldList}|hyperpage}{87}
+\indexentry{TwoDpfoldList@{TwoDpfoldList}!2Dpfold.h@{2Dpfold.h}|hyperpage}{87}
+\indexentry{2Dpfold.h@{2Dpfold.h}!TwoDpfold\_\discretionary {-}{}{}pbacktrack@{TwoDpfold\_\discretionary {-}{}{}pbacktrack}|hyperpage}{88}
+\indexentry{TwoDpfold\_\discretionary {-}{}{}pbacktrack@{TwoDpfold\_\discretionary {-}{}{}pbacktrack}!2Dpfold.h@{2Dpfold.h}|hyperpage}{88}
+\indexentry{2Dpfold.h@{2Dpfold.h}!TwoDpfold\_\discretionary {-}{}{}pbacktrack5@{TwoDpfold\_\discretionary {-}{}{}pbacktrack5}|hyperpage}{88}
+\indexentry{TwoDpfold\_\discretionary {-}{}{}pbacktrack5@{TwoDpfold\_\discretionary {-}{}{}pbacktrack5}!2Dpfold.h@{2Dpfold.h}|hyperpage}{88}
+\indexentry{H/alifold.h@{H/alifold.h}|hyperpage}{90}
+\indexentry{alifold.h@{alifold.h}!update\_\discretionary {-}{}{}alifold\_\discretionary {-}{}{}params@{update\_\discretionary {-}{}{}alifold\_\discretionary {-}{}{}params}|hyperpage}{91}
+\indexentry{update\_\discretionary {-}{}{}alifold\_\discretionary {-}{}{}params@{update\_\discretionary {-}{}{}alifold\_\discretionary {-}{}{}params}!alifold.h@{alifold.h}|hyperpage}{91}
+\indexentry{alifold.h@{alifold.h}!alifold@{alifold}|hyperpage}{92}
+\indexentry{alifold@{alifold}!alifold.h@{alifold.h}|hyperpage}{92}
+\indexentry{alifold.h@{alifold.h}!circalifold@{circalifold}|hyperpage}{92}
+\indexentry{circalifold@{circalifold}!alifold.h@{alifold.h}|hyperpage}{92}
+\indexentry{alifold.h@{alifold.h}!get\_\discretionary {-}{}{}mpi@{get\_\discretionary {-}{}{}mpi}|hyperpage}{92}
+\indexentry{get\_\discretionary {-}{}{}mpi@{get\_\discretionary {-}{}{}mpi}!alifold.h@{alifold.h}|hyperpage}{92}
+\indexentry{alifold.h@{alifold.h}!energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}alistruct@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}alistruct}|hyperpage}{93}
+\indexentry{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}alistruct@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}alistruct}!alifold.h@{alifold.h}|hyperpage}{93}
+\indexentry{alifold.h@{alifold.h}!encode\_\discretionary {-}{}{}ali\_\discretionary {-}{}{}sequence@{encode\_\discretionary {-}{}{}ali\_\discretionary {-}{}{}sequence}|hyperpage}{93}
+\indexentry{encode\_\discretionary {-}{}{}ali\_\discretionary {-}{}{}sequence@{encode\_\discretionary {-}{}{}ali\_\discretionary {-}{}{}sequence}!alifold.h@{alifold.h}|hyperpage}{93}
+\indexentry{alifold.h@{alifold.h}!alloc\_\discretionary {-}{}{}sequence\_\discretionary {-}{}{}arrays@{alloc\_\discretionary {-}{}{}sequence\_\discretionary {-}{}{}arrays}|hyperpage}{94}
+\indexentry{alloc\_\discretionary {-}{}{}sequence\_\discretionary {-}{}{}arrays@{alloc\_\discretionary {-}{}{}sequence\_\discretionary {-}{}{}arrays}!alifold.h@{alifold.h}|hyperpage}{94}
+\indexentry{alifold.h@{alifold.h}!free\_\discretionary {-}{}{}sequence\_\discretionary {-}{}{}arrays@{free\_\discretionary {-}{}{}sequence\_\discretionary {-}{}{}arrays}|hyperpage}{94}
+\indexentry{free\_\discretionary {-}{}{}sequence\_\discretionary {-}{}{}arrays@{free\_\discretionary {-}{}{}sequence\_\discretionary {-}{}{}arrays}!alifold.h@{alifold.h}|hyperpage}{94}
+\indexentry{alifold.h@{alifold.h}!alipf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par@{alipf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par}|hyperpage}{95}
+\indexentry{alipf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par@{alipf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par}!alifold.h@{alifold.h}|hyperpage}{95}
+\indexentry{alifold.h@{alifold.h}!alipf\_\discretionary {-}{}{}fold@{alipf\_\discretionary {-}{}{}fold}|hyperpage}{95}
+\indexentry{alipf\_\discretionary {-}{}{}fold@{alipf\_\discretionary {-}{}{}fold}!alifold.h@{alifold.h}|hyperpage}{95}
+\indexentry{alifold.h@{alifold.h}!alipf\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}fold@{alipf\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}fold}|hyperpage}{96}
+\indexentry{alipf\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}fold@{alipf\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}fold}!alifold.h@{alifold.h}|hyperpage}{96}
+\indexentry{alifold.h@{alifold.h}!export\_\discretionary {-}{}{}ali\_\discretionary {-}{}{}bppm@{export\_\discretionary {-}{}{}ali\_\discretionary {-}{}{}bppm}|hyperpage}{96}
+\indexentry{export\_\discretionary {-}{}{}ali\_\discretionary {-}{}{}bppm@{export\_\discretionary {-}{}{}ali\_\discretionary {-}{}{}bppm}!alifold.h@{alifold.h}|hyperpage}{96}
+\indexentry{alifold.h@{alifold.h}!alipbacktrack@{alipbacktrack}|hyperpage}{96}
+\indexentry{alipbacktrack@{alipbacktrack}!alifold.h@{alifold.h}|hyperpage}{96}
+\indexentry{alifold.h@{alifold.h}!cv\_\discretionary {-}{}{}fact@{cv\_\discretionary {-}{}{}fact}|hyperpage}{96}
+\indexentry{cv\_\discretionary {-}{}{}fact@{cv\_\discretionary {-}{}{}fact}!alifold.h@{alifold.h}|hyperpage}{96}
+\indexentry{alifold.h@{alifold.h}!nc\_\discretionary {-}{}{}fact@{nc\_\discretionary {-}{}{}fact}|hyperpage}{96}
+\indexentry{nc\_\discretionary {-}{}{}fact@{nc\_\discretionary {-}{}{}fact}!alifold.h@{alifold.h}|hyperpage}{96}
+\indexentry{H/cofold.h@{H/cofold.h}|hyperpage}{98}
+\indexentry{cofold.h@{cofold.h}!cofold@{cofold}|hyperpage}{99}
+\indexentry{cofold@{cofold}!cofold.h@{cofold.h}|hyperpage}{99}
+\indexentry{cofold.h@{cofold.h}!zukersubopt@{zukersubopt}|hyperpage}{99}
+\indexentry{zukersubopt@{zukersubopt}!cofold.h@{cofold.h}|hyperpage}{99}
+\indexentry{cofold.h@{cofold.h}!get\_\discretionary {-}{}{}monomere\_\discretionary {-}{}{}mfes@{get\_\discretionary {-}{}{}monomere\_\discretionary {-}{}{}mfes}|hyperpage}{99}
+\indexentry{get\_\discretionary {-}{}{}monomere\_\discretionary {-}{}{}mfes@{get\_\discretionary {-}{}{}monomere\_\discretionary {-}{}{}mfes}!cofold.h@{cofold.h}|hyperpage}{99}
+\indexentry{cofold.h@{cofold.h}!export\_\discretionary {-}{}{}cofold\_\discretionary {-}{}{}arrays@{export\_\discretionary {-}{}{}cofold\_\discretionary {-}{}{}arrays}|hyperpage}{100}
+\indexentry{export\_\discretionary {-}{}{}cofold\_\discretionary {-}{}{}arrays@{export\_\discretionary {-}{}{}cofold\_\discretionary {-}{}{}arrays}!cofold.h@{cofold.h}|hyperpage}{100}
+\indexentry{cofold.h@{cofold.h}!initialize\_\discretionary {-}{}{}cofold@{initialize\_\discretionary {-}{}{}cofold}|hyperpage}{100}
+\indexentry{initialize\_\discretionary {-}{}{}cofold@{initialize\_\discretionary {-}{}{}cofold}!cofold.h@{cofold.h}|hyperpage}{100}
+\indexentry{H/convert\_\discretionary {-}{}{}epars.h@{H/convert\_\discretionary {-}{}{}epars.h}|hyperpage}{102}
+\indexentry{convert\_\discretionary {-}{}{}epars.h@{convert\_\discretionary {-}{}{}epars.h}!convert\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file@{convert\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file}|hyperpage}{104}
+\indexentry{convert\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file@{convert\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file}!convert_epars.h@{convert\_\discretionary {-}{}{}epars.h}|hyperpage}{104}
+\indexentry{H/data\_\discretionary {-}{}{}structures.h@{H/data\_\discretionary {-}{}{}structures.h}|hyperpage}{105}
+\indexentry{H/dist\_\discretionary {-}{}{}vars.h@{H/dist\_\discretionary {-}{}{}vars.h}|hyperpage}{108}
+\indexentry{dist\_\discretionary {-}{}{}vars.h@{dist\_\discretionary {-}{}{}vars.h}!edit\_\discretionary {-}{}{}backtrack@{edit\_\discretionary {-}{}{}backtrack}|hyperpage}{108}
+\indexentry{edit\_\discretionary {-}{}{}backtrack@{edit\_\discretionary {-}{}{}backtrack}!dist_vars.h@{dist\_\discretionary {-}{}{}vars.h}|hyperpage}{108}
+\indexentry{dist\_\discretionary {-}{}{}vars.h@{dist\_\discretionary {-}{}{}vars.h}!cost\_\discretionary {-}{}{}matrix@{cost\_\discretionary {-}{}{}matrix}|hyperpage}{108}
+\indexentry{cost\_\discretionary {-}{}{}matrix@{cost\_\discretionary {-}{}{}matrix}!dist_vars.h@{dist\_\discretionary {-}{}{}vars.h}|hyperpage}{108}
+\indexentry{H/duplex.h@{H/duplex.h}|hyperpage}{110}
+\indexentry{H/edit\_\discretionary {-}{}{}cost.h@{H/edit\_\discretionary {-}{}{}cost.h}|hyperpage}{111}
+\indexentry{H/energy\_\discretionary {-}{}{}const.h@{H/energy\_\discretionary {-}{}{}const.h}|hyperpage}{112}
+\indexentry{H/findpath.h@{H/findpath.h}|hyperpage}{114}
+\indexentry{H/fold.h@{H/fold.h}|hyperpage}{115}
+\indexentry{fold.h@{fold.h}!fold\_\discretionary {-}{}{}par@{fold\_\discretionary {-}{}{}par}|hyperpage}{117}
+\indexentry{fold\_\discretionary {-}{}{}par@{fold\_\discretionary {-}{}{}par}!fold.h@{fold.h}|hyperpage}{117}
+\indexentry{fold.h@{fold.h}!fold@{fold}|hyperpage}{118}
+\indexentry{fold@{fold}!fold.h@{fold.h}|hyperpage}{118}
+\indexentry{fold.h@{fold.h}!circfold@{circfold}|hyperpage}{119}
+\indexentry{circfold@{circfold}!fold.h@{fold.h}|hyperpage}{119}
+\indexentry{fold.h@{fold.h}!energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}structure@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}structure}|hyperpage}{119}
+\indexentry{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}structure@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}structure}!fold.h@{fold.h}|hyperpage}{119}
+\indexentry{fold.h@{fold.h}!energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}par@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}par}|hyperpage}{120}
+\indexentry{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}par@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}par}!fold.h@{fold.h}|hyperpage}{120}
+\indexentry{fold.h@{fold.h}!energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}structure@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}structure}|hyperpage}{120}
+\indexentry{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}structure@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}structure}!fold.h@{fold.h}|hyperpage}{120}
+\indexentry{fold.h@{fold.h}!energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}par@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}par}|hyperpage}{121}
+\indexentry{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}par@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}par}!fold.h@{fold.h}|hyperpage}{121}
+\indexentry{fold.h@{fold.h}!energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}structure\_\discretionary {-}{}{}pt@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}structure\_\discretionary {-}{}{}pt}|hyperpage}{122}
+\indexentry{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}structure\_\discretionary {-}{}{}pt@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}structure\_\discretionary {-}{}{}pt}!fold.h@{fold.h}|hyperpage}{122}
+\indexentry{fold.h@{fold.h}!energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pt\_\discretionary {-}{}{}par@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pt\_\discretionary {-}{}{}par}|hyperpage}{122}
+\indexentry{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pt\_\discretionary {-}{}{}par@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pt\_\discretionary {-}{}{}par}!fold.h@{fold.h}|hyperpage}{122}
+\indexentry{fold.h@{fold.h}!parenthesis\_\discretionary {-}{}{}structure@{parenthesis\_\discretionary {-}{}{}structure}|hyperpage}{123}
+\indexentry{parenthesis\_\discretionary {-}{}{}structure@{parenthesis\_\discretionary {-}{}{}structure}!fold.h@{fold.h}|hyperpage}{123}
+\indexentry{fold.h@{fold.h}!parenthesis\_\discretionary {-}{}{}zuker@{parenthesis\_\discretionary {-}{}{}zuker}|hyperpage}{123}
+\indexentry{parenthesis\_\discretionary {-}{}{}zuker@{parenthesis\_\discretionary {-}{}{}zuker}!fold.h@{fold.h}|hyperpage}{123}
+\indexentry{fold.h@{fold.h}!assign\_\discretionary {-}{}{}plist\_\discretionary {-}{}{}from\_\discretionary {-}{}{}db@{assign\_\discretionary {-}{}{}plist\_\discretionary {-}{}{}from\_\discretionary {-}{}{}db}|hyperpage}{124}
+\indexentry{assign\_\discretionary {-}{}{}plist\_\discretionary {-}{}{}from\_\discretionary {-}{}{}db@{assign\_\discretionary {-}{}{}plist\_\discretionary {-}{}{}from\_\discretionary {-}{}{}db}!fold.h@{fold.h}|hyperpage}{124}
+\indexentry{fold.h@{fold.h}!LoopEnergy@{LoopEnergy}|hyperpage}{124}
+\indexentry{LoopEnergy@{LoopEnergy}!fold.h@{fold.h}|hyperpage}{124}
+\indexentry{fold.h@{fold.h}!HairpinE@{HairpinE}|hyperpage}{124}
+\indexentry{HairpinE@{HairpinE}!fold.h@{fold.h}|hyperpage}{124}
+\indexentry{fold.h@{fold.h}!initialize\_\discretionary {-}{}{}fold@{initialize\_\discretionary {-}{}{}fold}|hyperpage}{124}
+\indexentry{initialize\_\discretionary {-}{}{}fold@{initialize\_\discretionary {-}{}{}fold}!fold.h@{fold.h}|hyperpage}{124}
+\indexentry{fold.h@{fold.h}!energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct}|hyperpage}{125}
+\indexentry{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct}!fold.h@{fold.h}|hyperpage}{125}
+\indexentry{fold.h@{fold.h}!energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pt@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pt}|hyperpage}{125}
+\indexentry{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pt@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pt}!fold.h@{fold.h}|hyperpage}{125}
+\indexentry{fold.h@{fold.h}!energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}struct@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}struct}|hyperpage}{126}
+\indexentry{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}struct@{energy\_\discretionary {-}{}{}of\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}struct}!fold.h@{fold.h}|hyperpage}{126}
+\indexentry{H/fold\_\discretionary {-}{}{}vars.h@{H/fold\_\discretionary {-}{}{}vars.h}|hyperpage}{127}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!set\_\discretionary {-}{}{}model\_\discretionary {-}{}{}details@{set\_\discretionary {-}{}{}model\_\discretionary {-}{}{}details}|hyperpage}{129}
+\indexentry{set\_\discretionary {-}{}{}model\_\discretionary {-}{}{}details@{set\_\discretionary {-}{}{}model\_\discretionary {-}{}{}details}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{129}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!noLonelyPairs@{noLonelyPairs}|hyperpage}{129}
+\indexentry{noLonelyPairs@{noLonelyPairs}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{129}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!dangles@{dangles}|hyperpage}{129}
+\indexentry{dangles@{dangles}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{129}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!tetra\_\discretionary {-}{}{}loop@{tetra\_\discretionary {-}{}{}loop}|hyperpage}{130}
+\indexentry{tetra\_\discretionary {-}{}{}loop@{tetra\_\discretionary {-}{}{}loop}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{130}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!energy\_\discretionary {-}{}{}set@{energy\_\discretionary {-}{}{}set}|hyperpage}{130}
+\indexentry{energy\_\discretionary {-}{}{}set@{energy\_\discretionary {-}{}{}set}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{130}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!circ@{circ}|hyperpage}{130}
+\indexentry{circ@{circ}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{130}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!nonstandards@{nonstandards}|hyperpage}{130}
+\indexentry{nonstandards@{nonstandards}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{130}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!temperature@{temperature}|hyperpage}{130}
+\indexentry{temperature@{temperature}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{130}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!cut\_\discretionary {-}{}{}point@{cut\_\discretionary {-}{}{}point}|hyperpage}{130}
+\indexentry{cut\_\discretionary {-}{}{}point@{cut\_\discretionary {-}{}{}point}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{130}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!base\_\discretionary {-}{}{}pair@{base\_\discretionary {-}{}{}pair}|hyperpage}{131}
+\indexentry{base\_\discretionary {-}{}{}pair@{base\_\discretionary {-}{}{}pair}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{131}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!pr@{pr}|hyperpage}{131}
+\indexentry{pr@{pr}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{131}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!iindx@{iindx}|hyperpage}{131}
+\indexentry{iindx@{iindx}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{131}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!pf\_\discretionary {-}{}{}scale@{pf\_\discretionary {-}{}{}scale}|hyperpage}{131}
+\indexentry{pf\_\discretionary {-}{}{}scale@{pf\_\discretionary {-}{}{}scale}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{131}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!do\_\discretionary {-}{}{}backtrack@{do\_\discretionary {-}{}{}backtrack}|hyperpage}{131}
+\indexentry{do\_\discretionary {-}{}{}backtrack@{do\_\discretionary {-}{}{}backtrack}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{131}
+\indexentry{fold\_\discretionary {-}{}{}vars.h@{fold\_\discretionary {-}{}{}vars.h}!backtrack\_\discretionary {-}{}{}type@{backtrack\_\discretionary {-}{}{}type}|hyperpage}{132}
+\indexentry{backtrack\_\discretionary {-}{}{}type@{backtrack\_\discretionary {-}{}{}type}!fold_vars.h@{fold\_\discretionary {-}{}{}vars.h}|hyperpage}{132}
+\indexentry{H/inverse.h@{H/inverse.h}|hyperpage}{133}
+\indexentry{inverse.h@{inverse.h}!inverse\_\discretionary {-}{}{}fold@{inverse\_\discretionary {-}{}{}fold}|hyperpage}{133}
+\indexentry{inverse\_\discretionary {-}{}{}fold@{inverse\_\discretionary {-}{}{}fold}!inverse.h@{inverse.h}|hyperpage}{133}
+\indexentry{inverse.h@{inverse.h}!inverse\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold@{inverse\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold}|hyperpage}{134}
+\indexentry{inverse\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold@{inverse\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold}!inverse.h@{inverse.h}|hyperpage}{134}
+\indexentry{inverse.h@{inverse.h}!symbolset@{symbolset}|hyperpage}{134}
+\indexentry{symbolset@{symbolset}!inverse.h@{inverse.h}|hyperpage}{134}
+\indexentry{H/Lfold.h@{H/Lfold.h}|hyperpage}{135}
+\indexentry{Lfold.h@{Lfold.h}!Lfold@{Lfold}|hyperpage}{135}
+\indexentry{Lfold@{Lfold}!Lfold.h@{Lfold.h}|hyperpage}{135}
+\indexentry{Lfold.h@{Lfold.h}!aliLfold@{aliLfold}|hyperpage}{135}
+\indexentry{aliLfold@{aliLfold}!Lfold.h@{Lfold.h}|hyperpage}{135}
+\indexentry{Lfold.h@{Lfold.h}!Lfoldz@{Lfoldz}|hyperpage}{135}
+\indexentry{Lfoldz@{Lfoldz}!Lfold.h@{Lfold.h}|hyperpage}{135}
+\indexentry{H/loop\_\discretionary {-}{}{}energies.h@{H/loop\_\discretionary {-}{}{}energies.h}|hyperpage}{136}
+\indexentry{loop\_\discretionary {-}{}{}energies.h@{loop\_\discretionary {-}{}{}energies.h}!E\_\discretionary {-}{}{}IntLoop@{E\_\discretionary {-}{}{}IntLoop}|hyperpage}{137}
+\indexentry{E\_\discretionary {-}{}{}IntLoop@{E\_\discretionary {-}{}{}IntLoop}!loop_energies.h@{loop\_\discretionary {-}{}{}energies.h}|hyperpage}{137}
+\indexentry{loop\_\discretionary {-}{}{}energies.h@{loop\_\discretionary {-}{}{}energies.h}!E\_\discretionary {-}{}{}Hairpin@{E\_\discretionary {-}{}{}Hairpin}|hyperpage}{139}
+\indexentry{E\_\discretionary {-}{}{}Hairpin@{E\_\discretionary {-}{}{}Hairpin}!loop_energies.h@{loop\_\discretionary {-}{}{}energies.h}|hyperpage}{139}
+\indexentry{loop\_\discretionary {-}{}{}energies.h@{loop\_\discretionary {-}{}{}energies.h}!E\_\discretionary {-}{}{}Stem@{E\_\discretionary {-}{}{}Stem}|hyperpage}{140}
+\indexentry{E\_\discretionary {-}{}{}Stem@{E\_\discretionary {-}{}{}Stem}!loop_energies.h@{loop\_\discretionary {-}{}{}energies.h}|hyperpage}{140}
+\indexentry{loop\_\discretionary {-}{}{}energies.h@{loop\_\discretionary {-}{}{}energies.h}!exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}Stem@{exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}Stem}|hyperpage}{141}
+\indexentry{exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}Stem@{exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}Stem}!loop_energies.h@{loop\_\discretionary {-}{}{}energies.h}|hyperpage}{141}
+\indexentry{loop\_\discretionary {-}{}{}energies.h@{loop\_\discretionary {-}{}{}energies.h}!exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}Hairpin@{exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}Hairpin}|hyperpage}{142}
+\indexentry{exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}Hairpin@{exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}Hairpin}!loop_energies.h@{loop\_\discretionary {-}{}{}energies.h}|hyperpage}{142}
+\indexentry{loop\_\discretionary {-}{}{}energies.h@{loop\_\discretionary {-}{}{}energies.h}!exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}IntLoop@{exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}IntLoop}|hyperpage}{142}
+\indexentry{exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}IntLoop@{exp\_\discretionary {-}{}{}E\_\discretionary {-}{}{}IntLoop}!loop_energies.h@{loop\_\discretionary {-}{}{}energies.h}|hyperpage}{142}
+\indexentry{H/LPfold.h@{H/LPfold.h}|hyperpage}{145}
+\indexentry{LPfold.h@{LPfold.h}!update\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}paramsLP@{update\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}paramsLP}|hyperpage}{146}
+\indexentry{update\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}paramsLP@{update\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}paramsLP}!LPfold.h@{LPfold.h}|hyperpage}{146}
+\indexentry{LPfold.h@{LPfold.h}!pfl\_\discretionary {-}{}{}fold@{pfl\_\discretionary {-}{}{}fold}|hyperpage}{146}
+\indexentry{pfl\_\discretionary {-}{}{}fold@{pfl\_\discretionary {-}{}{}fold}!LPfold.h@{LPfold.h}|hyperpage}{146}
+\indexentry{LPfold.h@{LPfold.h}!putoutpU\_\discretionary {-}{}{}prob@{putoutpU\_\discretionary {-}{}{}prob}|hyperpage}{147}
+\indexentry{putoutpU\_\discretionary {-}{}{}prob@{putoutpU\_\discretionary {-}{}{}prob}!LPfold.h@{LPfold.h}|hyperpage}{147}
+\indexentry{LPfold.h@{LPfold.h}!putoutpU\_\discretionary {-}{}{}prob\_\discretionary {-}{}{}bin@{putoutpU\_\discretionary {-}{}{}prob\_\discretionary {-}{}{}bin}|hyperpage}{147}
+\indexentry{putoutpU\_\discretionary {-}{}{}prob\_\discretionary {-}{}{}bin@{putoutpU\_\discretionary {-}{}{}prob\_\discretionary {-}{}{}bin}!LPfold.h@{LPfold.h}|hyperpage}{147}
+\indexentry{LPfold.h@{LPfold.h}!init\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}foldLP@{init\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}foldLP}|hyperpage}{148}
+\indexentry{init\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}foldLP@{init\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}foldLP}!LPfold.h@{LPfold.h}|hyperpage}{148}
+\indexentry{H/MEA.h@{H/MEA.h}|hyperpage}{149}
+\indexentry{MEA.h@{MEA.h}!MEA@{MEA}|hyperpage}{149}
+\indexentry{MEA@{MEA}!MEA.h@{MEA.h}|hyperpage}{149}
+\indexentry{H/mm.h@{H/mm.h}|hyperpage}{150}
+\indexentry{H/naview.h@{H/naview.h}|hyperpage}{151}
+\indexentry{H/params.h@{H/params.h}|hyperpage}{152}
+\indexentry{params.h@{params.h}!scale\_\discretionary {-}{}{}parameters@{scale\_\discretionary {-}{}{}parameters}|hyperpage}{153}
+\indexentry{scale\_\discretionary {-}{}{}parameters@{scale\_\discretionary {-}{}{}parameters}!params.h@{params.h}|hyperpage}{153}
+\indexentry{params.h@{params.h}!get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}parameters@{get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}parameters}|hyperpage}{153}
+\indexentry{get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}parameters@{get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}parameters}!params.h@{params.h}|hyperpage}{153}
+\indexentry{params.h@{params.h}!get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}parameters@{get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}parameters}|hyperpage}{153}
+\indexentry{get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}parameters@{get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}parameters}!params.h@{params.h}|hyperpage}{153}
+\indexentry{params.h@{params.h}!get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factors@{get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factors}|hyperpage}{154}
+\indexentry{get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factors@{get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factors}!params.h@{params.h}|hyperpage}{154}
+\indexentry{params.h@{params.h}!get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factor\_\discretionary {-}{}{}copy@{get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factor\_\discretionary {-}{}{}copy}|hyperpage}{154}
+\indexentry{get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factor\_\discretionary {-}{}{}copy@{get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factor\_\discretionary {-}{}{}copy}!params.h@{params.h}|hyperpage}{154}
+\indexentry{params.h@{params.h}!get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}alipf\_\discretionary {-}{}{}parameters@{get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}alipf\_\discretionary {-}{}{}parameters}|hyperpage}{154}
+\indexentry{get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}alipf\_\discretionary {-}{}{}parameters@{get\_\discretionary {-}{}{}scaled\_\discretionary {-}{}{}alipf\_\discretionary {-}{}{}parameters}!params.h@{params.h}|hyperpage}{154}
+\indexentry{params.h@{params.h}!get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factors\_\discretionary {-}{}{}ali@{get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factors\_\discretionary {-}{}{}ali}|hyperpage}{155}
+\indexentry{get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factors\_\discretionary {-}{}{}ali@{get\_\discretionary {-}{}{}boltzmann\_\discretionary {-}{}{}factors\_\discretionary {-}{}{}ali}!params.h@{params.h}|hyperpage}{155}
+\indexentry{H/part\_\discretionary {-}{}{}func.h@{H/part\_\discretionary {-}{}{}func.h}|hyperpage}{156}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!pf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par@{pf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par}|hyperpage}{158}
+\indexentry{pf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par@{pf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{158}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!pf\_\discretionary {-}{}{}fold@{pf\_\discretionary {-}{}{}fold}|hyperpage}{159}
+\indexentry{pf\_\discretionary {-}{}{}fold@{pf\_\discretionary {-}{}{}fold}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{159}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!pf\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}fold@{pf\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}fold}|hyperpage}{160}
+\indexentry{pf\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}fold@{pf\_\discretionary {-}{}{}circ\_\discretionary {-}{}{}fold}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{160}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!pbacktrack@{pbacktrack}|hyperpage}{160}
+\indexentry{pbacktrack@{pbacktrack}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{160}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!pbacktrack\_\discretionary {-}{}{}circ@{pbacktrack\_\discretionary {-}{}{}circ}|hyperpage}{161}
+\indexentry{pbacktrack\_\discretionary {-}{}{}circ@{pbacktrack\_\discretionary {-}{}{}circ}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{161}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!free\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}arrays@{free\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}arrays}|hyperpage}{161}
+\indexentry{free\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}arrays@{free\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}arrays}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{161}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!update\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params@{update\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params}|hyperpage}{161}
+\indexentry{update\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params@{update\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{161}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!export\_\discretionary {-}{}{}bppm@{export\_\discretionary {-}{}{}bppm}|hyperpage}{162}
+\indexentry{export\_\discretionary {-}{}{}bppm@{export\_\discretionary {-}{}{}bppm}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{162}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!assign\_\discretionary {-}{}{}plist\_\discretionary {-}{}{}from\_\discretionary {-}{}{}pr@{assign\_\discretionary {-}{}{}plist\_\discretionary {-}{}{}from\_\discretionary {-}{}{}pr}|hyperpage}{162}
+\indexentry{assign\_\discretionary {-}{}{}plist\_\discretionary {-}{}{}from\_\discretionary {-}{}{}pr@{assign\_\discretionary {-}{}{}plist\_\discretionary {-}{}{}from\_\discretionary {-}{}{}pr}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{162}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!get\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}arrays@{get\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}arrays}|hyperpage}{162}
+\indexentry{get\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}arrays@{get\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}arrays}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{162}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!get\_\discretionary {-}{}{}centroid\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pl@{get\_\discretionary {-}{}{}centroid\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pl}|hyperpage}{163}
+\indexentry{get\_\discretionary {-}{}{}centroid\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pl@{get\_\discretionary {-}{}{}centroid\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pl}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{163}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!get\_\discretionary {-}{}{}centroid\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pr@{get\_\discretionary {-}{}{}centroid\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pr}|hyperpage}{164}
+\indexentry{get\_\discretionary {-}{}{}centroid\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pr@{get\_\discretionary {-}{}{}centroid\_\discretionary {-}{}{}struct\_\discretionary {-}{}{}pr}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{164}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}distance@{mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}distance}|hyperpage}{164}
+\indexentry{mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}distance@{mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}distance}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{164}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}distance\_\discretionary {-}{}{}pr@{mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}distance\_\discretionary {-}{}{}pr}|hyperpage}{165}
+\indexentry{mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}distance\_\discretionary {-}{}{}pr@{mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}distance\_\discretionary {-}{}{}pr}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{165}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!init\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold@{init\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold}|hyperpage}{165}
+\indexentry{init\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold@{init\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{165}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!centroid@{centroid}|hyperpage}{165}
+\indexentry{centroid@{centroid}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{165}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}dist@{mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}dist}|hyperpage}{166}
+\indexentry{mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}dist@{mean\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}dist}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{166}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!expLoopEnergy@{expLoopEnergy}|hyperpage}{166}
+\indexentry{expLoopEnergy@{expLoopEnergy}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{166}
+\indexentry{part\_\discretionary {-}{}{}func.h@{part\_\discretionary {-}{}{}func.h}!expHairpinEnergy@{expHairpinEnergy}|hyperpage}{166}
+\indexentry{expHairpinEnergy@{expHairpinEnergy}!part_func.h@{part\_\discretionary {-}{}{}func.h}|hyperpage}{166}
+\indexentry{H/part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h@{H/part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}|hyperpage}{167}
+\indexentry{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}!co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold@{co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold}|hyperpage}{168}
+\indexentry{co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold@{co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold}!part_func_co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}|hyperpage}{168}
+\indexentry{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}!co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par@{co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par}|hyperpage}{169}
+\indexentry{co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par@{co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold\_\discretionary {-}{}{}par}!part_func_co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}|hyperpage}{169}
+\indexentry{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}!export\_\discretionary {-}{}{}co\_\discretionary {-}{}{}bppm@{export\_\discretionary {-}{}{}co\_\discretionary {-}{}{}bppm}|hyperpage}{170}
+\indexentry{export\_\discretionary {-}{}{}co\_\discretionary {-}{}{}bppm@{export\_\discretionary {-}{}{}co\_\discretionary {-}{}{}bppm}!part_func_co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}|hyperpage}{170}
+\indexentry{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}!update\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params@{update\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params}|hyperpage}{170}
+\indexentry{update\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params@{update\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params}!part_func_co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}|hyperpage}{170}
+\indexentry{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}!update\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params\_\discretionary {-}{}{}par@{update\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params\_\discretionary {-}{}{}par}|hyperpage}{170}
+\indexentry{update\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params\_\discretionary {-}{}{}par@{update\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}params\_\discretionary {-}{}{}par}!part_func_co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}|hyperpage}{170}
+\indexentry{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}!compute\_\discretionary {-}{}{}probabilities@{compute\_\discretionary {-}{}{}probabilities}|hyperpage}{171}
+\indexentry{compute\_\discretionary {-}{}{}probabilities@{compute\_\discretionary {-}{}{}probabilities}!part_func_co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}|hyperpage}{171}
+\indexentry{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}!get\_\discretionary {-}{}{}concentrations@{get\_\discretionary {-}{}{}concentrations}|hyperpage}{172}
+\indexentry{get\_\discretionary {-}{}{}concentrations@{get\_\discretionary {-}{}{}concentrations}!part_func_co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}|hyperpage}{172}
+\indexentry{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}!get\_\discretionary {-}{}{}plist@{get\_\discretionary {-}{}{}plist}|hyperpage}{172}
+\indexentry{get\_\discretionary {-}{}{}plist@{get\_\discretionary {-}{}{}plist}!part_func_co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}|hyperpage}{172}
+\indexentry{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}!init\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold@{init\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold}|hyperpage}{173}
+\indexentry{init\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold@{init\_\discretionary {-}{}{}co\_\discretionary {-}{}{}pf\_\discretionary {-}{}{}fold}!part_func_co.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}co.h}|hyperpage}{173}
+\indexentry{H/part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}up.h@{H/part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}up.h}|hyperpage}{174}
+\indexentry{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}up.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}up.h}!pf\_\discretionary {-}{}{}unstru@{pf\_\discretionary {-}{}{}unstru}|hyperpage}{175}
+\indexentry{pf\_\discretionary {-}{}{}unstru@{pf\_\discretionary {-}{}{}unstru}!part_func_up.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}up.h}|hyperpage}{175}
+\indexentry{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}up.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}up.h}!pf\_\discretionary {-}{}{}interact@{pf\_\discretionary {-}{}{}interact}|hyperpage}{175}
+\indexentry{pf\_\discretionary {-}{}{}interact@{pf\_\discretionary {-}{}{}interact}!part_func_up.h@{part\_\discretionary {-}{}{}func\_\discretionary {-}{}{}up.h}|hyperpage}{175}
+\indexentry{H/plot\_\discretionary {-}{}{}layouts.h@{H/plot\_\discretionary {-}{}{}layouts.h}|hyperpage}{177}
+\indexentry{plot\_\discretionary {-}{}{}layouts.h@{plot\_\discretionary {-}{}{}layouts.h}!VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}SIMPLE@{VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}SIMPLE}|hyperpage}{178}
+\indexentry{VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}SIMPLE@{VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}SIMPLE}!plot_layouts.h@{plot\_\discretionary {-}{}{}layouts.h}|hyperpage}{178}
+\indexentry{plot\_\discretionary {-}{}{}layouts.h@{plot\_\discretionary {-}{}{}layouts.h}!VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}NAVIEW@{VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}NAVIEW}|hyperpage}{178}
+\indexentry{VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}NAVIEW@{VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}NAVIEW}!plot_layouts.h@{plot\_\discretionary {-}{}{}layouts.h}|hyperpage}{178}
+\indexentry{plot\_\discretionary {-}{}{}layouts.h@{plot\_\discretionary {-}{}{}layouts.h}!VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}CIRCULAR@{VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}CIRCULAR}|hyperpage}{178}
+\indexentry{VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}CIRCULAR@{VRNA\_\discretionary {-}{}{}PLOT\_\discretionary {-}{}{}TYPE\_\discretionary {-}{}{}CIRCULAR}!plot_layouts.h@{plot\_\discretionary {-}{}{}layouts.h}|hyperpage}{178}
+\indexentry{plot\_\discretionary {-}{}{}layouts.h@{plot\_\discretionary {-}{}{}layouts.h}!simple\_\discretionary {-}{}{}xy\_\discretionary {-}{}{}coordinates@{simple\_\discretionary {-}{}{}xy\_\discretionary {-}{}{}coordinates}|hyperpage}{179}
+\indexentry{simple\_\discretionary {-}{}{}xy\_\discretionary {-}{}{}coordinates@{simple\_\discretionary {-}{}{}xy\_\discretionary {-}{}{}coordinates}!plot_layouts.h@{plot\_\discretionary {-}{}{}layouts.h}|hyperpage}{179}
+\indexentry{plot\_\discretionary {-}{}{}layouts.h@{plot\_\discretionary {-}{}{}layouts.h}!simple\_\discretionary {-}{}{}circplot\_\discretionary {-}{}{}coordinates@{simple\_\discretionary {-}{}{}circplot\_\discretionary {-}{}{}coordinates}|hyperpage}{179}
+\indexentry{simple\_\discretionary {-}{}{}circplot\_\discretionary {-}{}{}coordinates@{simple\_\discretionary {-}{}{}circplot\_\discretionary {-}{}{}coordinates}!plot_layouts.h@{plot\_\discretionary {-}{}{}layouts.h}|hyperpage}{179}
+\indexentry{plot\_\discretionary {-}{}{}layouts.h@{plot\_\discretionary {-}{}{}layouts.h}!rna\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}type@{rna\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}type}|hyperpage}{180}
+\indexentry{rna\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}type@{rna\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}type}!plot_layouts.h@{plot\_\discretionary {-}{}{}layouts.h}|hyperpage}{180}
+\indexentry{H/profiledist.h@{H/profiledist.h}|hyperpage}{181}
+\indexentry{profiledist.h@{profiledist.h}!profile\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance@{profile\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance}|hyperpage}{181}
+\indexentry{profile\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance@{profile\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance}!profiledist.h@{profiledist.h}|hyperpage}{181}
+\indexentry{profiledist.h@{profiledist.h}!Make\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}profile\_\discretionary {-}{}{}bppm@{Make\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}profile\_\discretionary {-}{}{}bppm}|hyperpage}{181}
+\indexentry{Make\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}profile\_\discretionary {-}{}{}bppm@{Make\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}profile\_\discretionary {-}{}{}bppm}!profiledist.h@{profiledist.h}|hyperpage}{181}
+\indexentry{profiledist.h@{profiledist.h}!free\_\discretionary {-}{}{}profile@{free\_\discretionary {-}{}{}profile}|hyperpage}{182}
+\indexentry{free\_\discretionary {-}{}{}profile@{free\_\discretionary {-}{}{}profile}!profiledist.h@{profiledist.h}|hyperpage}{182}
+\indexentry{profiledist.h@{profiledist.h}!Make\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}profile@{Make\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}profile}|hyperpage}{182}
+\indexentry{Make\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}profile@{Make\_\discretionary {-}{}{}bp\_\discretionary {-}{}{}profile}!profiledist.h@{profiledist.h}|hyperpage}{182}
+\indexentry{H/PS\_\discretionary {-}{}{}dot.h@{H/PS\_\discretionary {-}{}{}dot.h}|hyperpage}{183}
+\indexentry{PS\_\discretionary {-}{}{}dot.h@{PS\_\discretionary {-}{}{}dot.h}!PS\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot@{PS\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot}|hyperpage}{184}
+\indexentry{PS\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot@{PS\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot}!PS_dot.h@{PS\_\discretionary {-}{}{}dot.h}|hyperpage}{184}
+\indexentry{PS\_\discretionary {-}{}{}dot.h@{PS\_\discretionary {-}{}{}dot.h}!PS\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}a@{PS\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}a}|hyperpage}{184}
+\indexentry{PS\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}a@{PS\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}a}!PS_dot.h@{PS\_\discretionary {-}{}{}dot.h}|hyperpage}{184}
+\indexentry{PS\_\discretionary {-}{}{}dot.h@{PS\_\discretionary {-}{}{}dot.h}!gmlRNA@{gmlRNA}|hyperpage}{185}
+\indexentry{gmlRNA@{gmlRNA}!PS_dot.h@{PS\_\discretionary {-}{}{}dot.h}|hyperpage}{185}
+\indexentry{PS\_\discretionary {-}{}{}dot.h@{PS\_\discretionary {-}{}{}dot.h}!ssv\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot@{ssv\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot}|hyperpage}{185}
+\indexentry{ssv\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot@{ssv\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot}!PS_dot.h@{PS\_\discretionary {-}{}{}dot.h}|hyperpage}{185}
+\indexentry{PS\_\discretionary {-}{}{}dot.h@{PS\_\discretionary {-}{}{}dot.h}!svg\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot@{svg\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot}|hyperpage}{186}
+\indexentry{svg\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot@{svg\_\discretionary {-}{}{}rna\_\discretionary {-}{}{}plot}!PS_dot.h@{PS\_\discretionary {-}{}{}dot.h}|hyperpage}{186}
+\indexentry{PS\_\discretionary {-}{}{}dot.h@{PS\_\discretionary {-}{}{}dot.h}!xrna\_\discretionary {-}{}{}plot@{xrna\_\discretionary {-}{}{}plot}|hyperpage}{186}
+\indexentry{xrna\_\discretionary {-}{}{}plot@{xrna\_\discretionary {-}{}{}plot}!PS_dot.h@{PS\_\discretionary {-}{}{}dot.h}|hyperpage}{186}
+\indexentry{PS\_\discretionary {-}{}{}dot.h@{PS\_\discretionary {-}{}{}dot.h}!PS\_\discretionary {-}{}{}dot\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}list@{PS\_\discretionary {-}{}{}dot\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}list}|hyperpage}{186}
+\indexentry{PS\_\discretionary {-}{}{}dot\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}list@{PS\_\discretionary {-}{}{}dot\_\discretionary {-}{}{}plot\_\discretionary {-}{}{}list}!PS_dot.h@{PS\_\discretionary {-}{}{}dot.h}|hyperpage}{186}
+\indexentry{PS\_\discretionary {-}{}{}dot.h@{PS\_\discretionary {-}{}{}dot.h}!PS\_\discretionary {-}{}{}dot\_\discretionary {-}{}{}plot@{PS\_\discretionary {-}{}{}dot\_\discretionary {-}{}{}plot}|hyperpage}{187}
+\indexentry{PS\_\discretionary {-}{}{}dot\_\discretionary {-}{}{}plot@{PS\_\discretionary {-}{}{}dot\_\discretionary {-}{}{}plot}!PS_dot.h@{PS\_\discretionary {-}{}{}dot.h}|hyperpage}{187}
+\indexentry{H/read\_\discretionary {-}{}{}epars.h@{H/read\_\discretionary {-}{}{}epars.h}|hyperpage}{189}
+\indexentry{read\_\discretionary {-}{}{}epars.h@{read\_\discretionary {-}{}{}epars.h}!read\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file@{read\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file}|hyperpage}{189}
+\indexentry{read\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file@{read\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file}!read_epars.h@{read\_\discretionary {-}{}{}epars.h}|hyperpage}{189}
+\indexentry{read\_\discretionary {-}{}{}epars.h@{read\_\discretionary {-}{}{}epars.h}!write\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file@{write\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file}|hyperpage}{189}
+\indexentry{write\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file@{write\_\discretionary {-}{}{}parameter\_\discretionary {-}{}{}file}!read_epars.h@{read\_\discretionary {-}{}{}epars.h}|hyperpage}{189}
+\indexentry{H/RNAstruct.h@{H/RNAstruct.h}|hyperpage}{190}
+\indexentry{RNAstruct.h@{RNAstruct.h}!b2HIT@{b2HIT}|hyperpage}{191}
+\indexentry{b2HIT@{b2HIT}!RNAstruct.h@{RNAstruct.h}|hyperpage}{191}
+\indexentry{RNAstruct.h@{RNAstruct.h}!b2C@{b2C}|hyperpage}{191}
+\indexentry{b2C@{b2C}!RNAstruct.h@{RNAstruct.h}|hyperpage}{191}
+\indexentry{RNAstruct.h@{RNAstruct.h}!b2Shapiro@{b2Shapiro}|hyperpage}{192}
+\indexentry{b2Shapiro@{b2Shapiro}!RNAstruct.h@{RNAstruct.h}|hyperpage}{192}
+\indexentry{RNAstruct.h@{RNAstruct.h}!add\_\discretionary {-}{}{}root@{add\_\discretionary {-}{}{}root}|hyperpage}{192}
+\indexentry{add\_\discretionary {-}{}{}root@{add\_\discretionary {-}{}{}root}!RNAstruct.h@{RNAstruct.h}|hyperpage}{192}
+\indexentry{RNAstruct.h@{RNAstruct.h}!expand\_\discretionary {-}{}{}Shapiro@{expand\_\discretionary {-}{}{}Shapiro}|hyperpage}{192}
+\indexentry{expand\_\discretionary {-}{}{}Shapiro@{expand\_\discretionary {-}{}{}Shapiro}!RNAstruct.h@{RNAstruct.h}|hyperpage}{192}
+\indexentry{RNAstruct.h@{RNAstruct.h}!expand\_\discretionary {-}{}{}Full@{expand\_\discretionary {-}{}{}Full}|hyperpage}{192}
+\indexentry{expand\_\discretionary {-}{}{}Full@{expand\_\discretionary {-}{}{}Full}!RNAstruct.h@{RNAstruct.h}|hyperpage}{192}
+\indexentry{RNAstruct.h@{RNAstruct.h}!unexpand\_\discretionary {-}{}{}Full@{unexpand\_\discretionary {-}{}{}Full}|hyperpage}{192}
+\indexentry{unexpand\_\discretionary {-}{}{}Full@{unexpand\_\discretionary {-}{}{}Full}!RNAstruct.h@{RNAstruct.h}|hyperpage}{192}
+\indexentry{RNAstruct.h@{RNAstruct.h}!unweight@{unweight}|hyperpage}{192}
+\indexentry{unweight@{unweight}!RNAstruct.h@{RNAstruct.h}|hyperpage}{192}
+\indexentry{RNAstruct.h@{RNAstruct.h}!unexpand\_\discretionary {-}{}{}aligned\_\discretionary {-}{}{}F@{unexpand\_\discretionary {-}{}{}aligned\_\discretionary {-}{}{}F}|hyperpage}{193}
+\indexentry{unexpand\_\discretionary {-}{}{}aligned\_\discretionary {-}{}{}F@{unexpand\_\discretionary {-}{}{}aligned\_\discretionary {-}{}{}F}!RNAstruct.h@{RNAstruct.h}|hyperpage}{193}
+\indexentry{RNAstruct.h@{RNAstruct.h}!parse\_\discretionary {-}{}{}structure@{parse\_\discretionary {-}{}{}structure}|hyperpage}{193}
+\indexentry{parse\_\discretionary {-}{}{}structure@{parse\_\discretionary {-}{}{}structure}!RNAstruct.h@{RNAstruct.h}|hyperpage}{193}
+\indexentry{RNAstruct.h@{RNAstruct.h}!loop\_\discretionary {-}{}{}size@{loop\_\discretionary {-}{}{}size}|hyperpage}{193}
+\indexentry{loop\_\discretionary {-}{}{}size@{loop\_\discretionary {-}{}{}size}!RNAstruct.h@{RNAstruct.h}|hyperpage}{193}
+\indexentry{H/stringdist.h@{H/stringdist.h}|hyperpage}{194}
+\indexentry{stringdist.h@{stringdist.h}!Make\_\discretionary {-}{}{}swString@{Make\_\discretionary {-}{}{}swString}|hyperpage}{194}
+\indexentry{Make\_\discretionary {-}{}{}swString@{Make\_\discretionary {-}{}{}swString}!stringdist.h@{stringdist.h}|hyperpage}{194}
+\indexentry{stringdist.h@{stringdist.h}!string\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance@{string\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance}|hyperpage}{194}
+\indexentry{string\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance@{string\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance}!stringdist.h@{stringdist.h}|hyperpage}{194}
+\indexentry{H/subopt.h@{H/subopt.h}|hyperpage}{195}
+\indexentry{subopt.h@{subopt.h}!subopt@{subopt}|hyperpage}{196}
+\indexentry{subopt@{subopt}!subopt.h@{subopt.h}|hyperpage}{196}
+\indexentry{subopt.h@{subopt.h}!subopt\_\discretionary {-}{}{}circ@{subopt\_\discretionary {-}{}{}circ}|hyperpage}{196}
+\indexentry{subopt\_\discretionary {-}{}{}circ@{subopt\_\discretionary {-}{}{}circ}!subopt.h@{subopt.h}|hyperpage}{196}
+\indexentry{H/treedist.h@{H/treedist.h}|hyperpage}{197}
+\indexentry{treedist.h@{treedist.h}!make\_\discretionary {-}{}{}tree@{make\_\discretionary {-}{}{}tree}|hyperpage}{197}
+\indexentry{make\_\discretionary {-}{}{}tree@{make\_\discretionary {-}{}{}tree}!treedist.h@{treedist.h}|hyperpage}{197}
+\indexentry{treedist.h@{treedist.h}!tree\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance@{tree\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance}|hyperpage}{197}
+\indexentry{tree\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance@{tree\_\discretionary {-}{}{}edit\_\discretionary {-}{}{}distance}!treedist.h@{treedist.h}|hyperpage}{197}
+\indexentry{treedist.h@{treedist.h}!free\_\discretionary {-}{}{}tree@{free\_\discretionary {-}{}{}tree}|hyperpage}{198}
+\indexentry{free\_\discretionary {-}{}{}tree@{free\_\discretionary {-}{}{}tree}!treedist.h@{treedist.h}|hyperpage}{198}
+\indexentry{H/utils.h@{H/utils.h}|hyperpage}{199}
+\indexentry{utils.h@{utils.h}!VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}FASTA\_\discretionary {-}{}{}HEADER@{VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}FASTA\_\discretionary {-}{}{}HEADER}|hyperpage}{203}
+\indexentry{VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}FASTA\_\discretionary {-}{}{}HEADER@{VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}FASTA\_\discretionary {-}{}{}HEADER}!utils.h@{utils.h}|hyperpage}{203}
+\indexentry{utils.h@{utils.h}!VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}SEQUENCE@{VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}SEQUENCE}|hyperpage}{203}
+\indexentry{VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}SEQUENCE@{VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}SEQUENCE}!utils.h@{utils.h}|hyperpage}{203}
+\indexentry{utils.h@{utils.h}!VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}CONSTRAINT@{VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}CONSTRAINT}|hyperpage}{203}
+\indexentry{VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}CONSTRAINT@{VRNA\_\discretionary {-}{}{}INPUT\_\discretionary {-}{}{}CONSTRAINT}!utils.h@{utils.h}|hyperpage}{203}
+\indexentry{utils.h@{utils.h}!VRNA\_\discretionary {-}{}{}CONSTRAINT\_\discretionary {-}{}{}DOT@{VRNA\_\discretionary {-}{}{}CONSTRAINT\_\discretionary {-}{}{}DOT}|hyperpage}{203}
+\indexentry{VRNA\_\discretionary {-}{}{}CONSTRAINT\_\discretionary {-}{}{}DOT@{VRNA\_\discretionary {-}{}{}CONSTRAINT\_\discretionary {-}{}{}DOT}!utils.h@{utils.h}|hyperpage}{203}
+\indexentry{utils.h@{utils.h}!FILENAME\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}LENGTH@{FILENAME\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}LENGTH}|hyperpage}{204}
+\indexentry{FILENAME\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}LENGTH@{FILENAME\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}LENGTH}!utils.h@{utils.h}|hyperpage}{204}
+\indexentry{utils.h@{utils.h}!FILENAME\_\discretionary {-}{}{}ID\_\discretionary {-}{}{}LENGTH@{FILENAME\_\discretionary {-}{}{}ID\_\discretionary {-}{}{}LENGTH}|hyperpage}{204}
+\indexentry{FILENAME\_\discretionary {-}{}{}ID\_\discretionary {-}{}{}LENGTH@{FILENAME\_\discretionary {-}{}{}ID\_\discretionary {-}{}{}LENGTH}!utils.h@{utils.h}|hyperpage}{204}
+\indexentry{utils.h@{utils.h}!space@{space}|hyperpage}{204}
+\indexentry{space@{space}!utils.h@{utils.h}|hyperpage}{204}
+\indexentry{utils.h@{utils.h}!xrealloc@{xrealloc}|hyperpage}{204}
+\indexentry{xrealloc@{xrealloc}!utils.h@{utils.h}|hyperpage}{204}
+\indexentry{utils.h@{utils.h}!nrerror@{nrerror}|hyperpage}{204}
+\indexentry{nrerror@{nrerror}!utils.h@{utils.h}|hyperpage}{204}
+\indexentry{utils.h@{utils.h}!warn\_\discretionary {-}{}{}user@{warn\_\discretionary {-}{}{}user}|hyperpage}{205}
+\indexentry{warn\_\discretionary {-}{}{}user@{warn\_\discretionary {-}{}{}user}!utils.h@{utils.h}|hyperpage}{205}
+\indexentry{utils.h@{utils.h}!urn@{urn}|hyperpage}{205}
+\indexentry{urn@{urn}!utils.h@{utils.h}|hyperpage}{205}
+\indexentry{utils.h@{utils.h}!int\_\discretionary {-}{}{}urn@{int\_\discretionary {-}{}{}urn}|hyperpage}{205}
+\indexentry{int\_\discretionary {-}{}{}urn@{int\_\discretionary {-}{}{}urn}!utils.h@{utils.h}|hyperpage}{205}
+\indexentry{utils.h@{utils.h}!time\_\discretionary {-}{}{}stamp@{time\_\discretionary {-}{}{}stamp}|hyperpage}{205}
+\indexentry{time\_\discretionary {-}{}{}stamp@{time\_\discretionary {-}{}{}stamp}!utils.h@{utils.h}|hyperpage}{205}
+\indexentry{utils.h@{utils.h}!random\_\discretionary {-}{}{}string@{random\_\discretionary {-}{}{}string}|hyperpage}{206}
+\indexentry{random\_\discretionary {-}{}{}string@{random\_\discretionary {-}{}{}string}!utils.h@{utils.h}|hyperpage}{206}
+\indexentry{utils.h@{utils.h}!hamming@{hamming}|hyperpage}{206}
+\indexentry{hamming@{hamming}!utils.h@{utils.h}|hyperpage}{206}
+\indexentry{utils.h@{utils.h}!hamming\_\discretionary {-}{}{}bound@{hamming\_\discretionary {-}{}{}bound}|hyperpage}{206}
+\indexentry{hamming\_\discretionary {-}{}{}bound@{hamming\_\discretionary {-}{}{}bound}!utils.h@{utils.h}|hyperpage}{206}
+\indexentry{utils.h@{utils.h}!get\_\discretionary {-}{}{}line@{get\_\discretionary {-}{}{}line}|hyperpage}{207}
+\indexentry{get\_\discretionary {-}{}{}line@{get\_\discretionary {-}{}{}line}!utils.h@{utils.h}|hyperpage}{207}
+\indexentry{utils.h@{utils.h}!get\_\discretionary {-}{}{}input\_\discretionary {-}{}{}line@{get\_\discretionary {-}{}{}input\_\discretionary {-}{}{}line}|hyperpage}{207}
+\indexentry{get\_\discretionary {-}{}{}input\_\discretionary {-}{}{}line@{get\_\discretionary {-}{}{}input\_\discretionary {-}{}{}line}!utils.h@{utils.h}|hyperpage}{207}
+\indexentry{utils.h@{utils.h}!read\_\discretionary {-}{}{}record@{read\_\discretionary {-}{}{}record}|hyperpage}{208}
+\indexentry{read\_\discretionary {-}{}{}record@{read\_\discretionary {-}{}{}record}!utils.h@{utils.h}|hyperpage}{208}
+\indexentry{utils.h@{utils.h}!pack\_\discretionary {-}{}{}structure@{pack\_\discretionary {-}{}{}structure}|hyperpage}{209}
+\indexentry{pack\_\discretionary {-}{}{}structure@{pack\_\discretionary {-}{}{}structure}!utils.h@{utils.h}|hyperpage}{209}
+\indexentry{utils.h@{utils.h}!unpack\_\discretionary {-}{}{}structure@{unpack\_\discretionary {-}{}{}structure}|hyperpage}{209}
+\indexentry{unpack\_\discretionary {-}{}{}structure@{unpack\_\discretionary {-}{}{}structure}!utils.h@{utils.h}|hyperpage}{209}
+\indexentry{utils.h@{utils.h}!make\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table@{make\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table}|hyperpage}{210}
+\indexentry{make\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table@{make\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table}!utils.h@{utils.h}|hyperpage}{210}
+\indexentry{utils.h@{utils.h}!copy\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table@{copy\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table}|hyperpage}{210}
+\indexentry{copy\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table@{copy\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table}!utils.h@{utils.h}|hyperpage}{210}
+\indexentry{utils.h@{utils.h}!alimake\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table@{alimake\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table}|hyperpage}{210}
+\indexentry{alimake\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table@{alimake\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table}!utils.h@{utils.h}|hyperpage}{210}
+\indexentry{utils.h@{utils.h}!make\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table\_\discretionary {-}{}{}snoop@{make\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table\_\discretionary {-}{}{}snoop}|hyperpage}{210}
+\indexentry{make\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table\_\discretionary {-}{}{}snoop@{make\_\discretionary {-}{}{}pair\_\discretionary {-}{}{}table\_\discretionary {-}{}{}snoop}!utils.h@{utils.h}|hyperpage}{210}
+\indexentry{utils.h@{utils.h}!bp\_\discretionary {-}{}{}distance@{bp\_\discretionary {-}{}{}distance}|hyperpage}{210}
+\indexentry{bp\_\discretionary {-}{}{}distance@{bp\_\discretionary {-}{}{}distance}!utils.h@{utils.h}|hyperpage}{210}
+\indexentry{utils.h@{utils.h}!print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}input\_\discretionary {-}{}{}seq@{print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}input\_\discretionary {-}{}{}seq}|hyperpage}{211}
+\indexentry{print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}input\_\discretionary {-}{}{}seq@{print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}input\_\discretionary {-}{}{}seq}!utils.h@{utils.h}|hyperpage}{211}
+\indexentry{utils.h@{utils.h}!print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}input\_\discretionary {-}{}{}seq\_\discretionary {-}{}{}str@{print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}input\_\discretionary {-}{}{}seq\_\discretionary {-}{}{}str}|hyperpage}{211}
+\indexentry{print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}input\_\discretionary {-}{}{}seq\_\discretionary {-}{}{}str@{print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}input\_\discretionary {-}{}{}seq\_\discretionary {-}{}{}str}!utils.h@{utils.h}|hyperpage}{211}
+\indexentry{utils.h@{utils.h}!print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}constraint\_\discretionary {-}{}{}full@{print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}constraint\_\discretionary {-}{}{}full}|hyperpage}{211}
+\indexentry{print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}constraint\_\discretionary {-}{}{}full@{print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}constraint\_\discretionary {-}{}{}full}!utils.h@{utils.h}|hyperpage}{211}
+\indexentry{utils.h@{utils.h}!print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}constraint@{print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}constraint}|hyperpage}{211}
+\indexentry{print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}constraint@{print\_\discretionary {-}{}{}tty\_\discretionary {-}{}{}constraint}!utils.h@{utils.h}|hyperpage}{211}
+\indexentry{utils.h@{utils.h}!str\_\discretionary {-}{}{}DNA2RNA@{str\_\discretionary {-}{}{}DNA2RNA}|hyperpage}{212}
+\indexentry{str\_\discretionary {-}{}{}DNA2RNA@{str\_\discretionary {-}{}{}DNA2RNA}!utils.h@{utils.h}|hyperpage}{212}
+\indexentry{utils.h@{utils.h}!str\_\discretionary {-}{}{}uppercase@{str\_\discretionary {-}{}{}uppercase}|hyperpage}{212}
+\indexentry{str\_\discretionary {-}{}{}uppercase@{str\_\discretionary {-}{}{}uppercase}!utils.h@{utils.h}|hyperpage}{212}
+\indexentry{utils.h@{utils.h}!get\_\discretionary {-}{}{}iindx@{get\_\discretionary {-}{}{}iindx}|hyperpage}{212}
+\indexentry{get\_\discretionary {-}{}{}iindx@{get\_\discretionary {-}{}{}iindx}!utils.h@{utils.h}|hyperpage}{212}
+\indexentry{utils.h@{utils.h}!get\_\discretionary {-}{}{}indx@{get\_\discretionary {-}{}{}indx}|hyperpage}{212}
+\indexentry{get\_\discretionary {-}{}{}indx@{get\_\discretionary {-}{}{}indx}!utils.h@{utils.h}|hyperpage}{212}
+\indexentry{utils.h@{utils.h}!constrain\_\discretionary {-}{}{}ptypes@{constrain\_\discretionary {-}{}{}ptypes}|hyperpage}{213}
+\indexentry{constrain\_\discretionary {-}{}{}ptypes@{constrain\_\discretionary {-}{}{}ptypes}!utils.h@{utils.h}|hyperpage}{213}
+\indexentry{utils.h@{utils.h}!xsubi@{xsubi}|hyperpage}{214}
+\indexentry{xsubi@{xsubi}!utils.h@{utils.h}|hyperpage}{214}
+\indexentry{lib/1.8.4\_\discretionary {-}{}{}epars.h@{lib/1.8.4\_\discretionary {-}{}{}epars.h}|hyperpage}{215}
+\indexentry{lib/1.8.4\_\discretionary {-}{}{}intloops.h@{lib/1.8.4\_\discretionary {-}{}{}intloops.h}|hyperpage}{216}

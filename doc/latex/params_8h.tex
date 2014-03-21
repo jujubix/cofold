@@ -1,0 +1,152 @@
+\hypertarget{params_8h}{
+\section{H/params.h File Reference}
+\label{params_8h}\index{H/params.h@{H/params.h}}
+}
+
+
+Several functions to obtain (pre)scaled energy parameter data containers.  
+
+
+Include dependency graph for params.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=84pt]{params_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structparamT}{paramT} $\ast$ \hyperlink{params_8h_a527ef619cd8210b84d5d53be1e0e29b6}{scale\_\-parameters} (void)
+\begin{DoxyCompactList}\small\item\em Get precomputed energy contributions for all the known loop types. \item\end{DoxyCompactList}\item 
+\hyperlink{structparamT}{paramT} $\ast$ \hyperlink{params_8h_ac2f3ca440b7eaf4d999fb27da949fe72}{get\_\-scaled\_\-parameters} (double \hyperlink{fold__vars_8h_ab4b11c8d9c758430960896bc3fe82ead}{temperature}, \hyperlink{structmodel__detailsT}{model\_\-detailsT} md)
+\begin{DoxyCompactList}\small\item\em Get precomputed energy contributions for all the known loop types. \item\end{DoxyCompactList}\item 
+\hyperlink{structpf__paramT}{pf\_\-paramT} $\ast$ \hyperlink{params_8h_ab85f6b6da051f380371deb0d8921bdba}{get\_\-scaled\_\-pf\_\-parameters} (void)
+\begin{DoxyCompactList}\small\item\em get a datastructure of type \hyperlink{structpf__paramT}{pf\_\-paramT} which contains the Boltzmann weights of several energy parameters scaled according to the current temperature \item\end{DoxyCompactList}\item 
+\hyperlink{structpf__paramT}{pf\_\-paramT} $\ast$ \hyperlink{params_8h_a6fc2f3eef5a3024d44963ac59a42e39d}{get\_\-boltzmann\_\-factors} (double \hyperlink{fold__vars_8h_ab4b11c8d9c758430960896bc3fe82ead}{temperature}, double betaScale, \hyperlink{structmodel__detailsT}{model\_\-detailsT} md, double \hyperlink{fold__vars_8h_ad3b22044065acc6dee0af68931b52cfd}{pf\_\-scale})
+\begin{DoxyCompactList}\small\item\em Get precomputed Boltzmann factors of the loop type dependent energy contributions with independent thermodynamic temperature. \item\end{DoxyCompactList}\item 
+\hyperlink{structpf__paramT}{pf\_\-paramT} $\ast$ \hyperlink{params_8h_acba212326a051734797e65987260fdd0}{get\_\-boltzmann\_\-factor\_\-copy} (\hyperlink{structpf__paramT}{pf\_\-paramT} $\ast$parameters)
+\begin{DoxyCompactList}\small\item\em Get a copy of already precomputed Boltzmann factors. \item\end{DoxyCompactList}\item 
+\hyperlink{structpf__paramT}{pf\_\-paramT} $\ast$ \hyperlink{params_8h_aa6a4297a2b91d6f7ae47dd61ca1862a0}{get\_\-scaled\_\-alipf\_\-parameters} (unsigned int n\_\-seq)
+\begin{DoxyCompactList}\small\item\em Get precomputed Boltzmann factors of the loop type dependent energy contributions (alifold variant). \item\end{DoxyCompactList}\item 
+\hyperlink{structpf__paramT}{pf\_\-paramT} $\ast$ \hyperlink{params_8h_af0c74574b40f2778556535bf9d382828}{get\_\-boltzmann\_\-factors\_\-ali} (unsigned int n\_\-seq, double \hyperlink{fold__vars_8h_ab4b11c8d9c758430960896bc3fe82ead}{temperature}, double betaScale, \hyperlink{structmodel__detailsT}{model\_\-detailsT} md, double \hyperlink{fold__vars_8h_ad3b22044065acc6dee0af68931b52cfd}{pf\_\-scale})
+\begin{DoxyCompactList}\small\item\em Get precomputed Boltzmann factors of the loop type dependent energy contributions (alifold variant) with independent thermodynamic temperature. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Several functions to obtain (pre)scaled energy parameter data containers. 
+
+\subsection{Function Documentation}
+\hypertarget{params_8h_a527ef619cd8210b84d5d53be1e0e29b6}{
+\index{params.h@{params.h}!scale\_\-parameters@{scale\_\-parameters}}
+\index{scale\_\-parameters@{scale\_\-parameters}!params.h@{params.h}}
+\subsubsection[{scale\_\-parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf paramT}$\ast$ scale\_\-parameters (void)}}
+\label{params_8h_a527ef619cd8210b84d5d53be1e0e29b6}
+
+
+Get precomputed energy contributions for all the known loop types. 
+
+\begin{DoxyNote}{Note}
+OpenMP: This function relies on several global model settings variables and thus is not to be considered threadsafe. See \hyperlink{params_8h_ac2f3ca440b7eaf4d999fb27da949fe72}{get\_\-scaled\_\-parameters()} for a completely threadsafe implementation.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+A set of precomputed energy contributions 
+\end{DoxyReturn}
+\hypertarget{params_8h_ac2f3ca440b7eaf4d999fb27da949fe72}{
+\index{params.h@{params.h}!get\_\-scaled\_\-parameters@{get\_\-scaled\_\-parameters}}
+\index{get\_\-scaled\_\-parameters@{get\_\-scaled\_\-parameters}!params.h@{params.h}}
+\subsubsection[{get\_\-scaled\_\-parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf paramT}$\ast$ get\_\-scaled\_\-parameters (double {\em temperature}, \/  {\bf model\_\-detailsT} {\em md})}}
+\label{params_8h_ac2f3ca440b7eaf4d999fb27da949fe72}
+
+
+Get precomputed energy contributions for all the known loop types. 
+
+Call this function to retrieve precomputed energy contributions, i.e. scaled according to the temperature passed. Furthermore, this function assumes a data structure that contains the model details as well, such that subsequent folding recursions are able to retrieve the correct model settings
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structmodel__detailsT}{model\_\-detailsT}, \hyperlink{fold__vars_8h_a4c3257186a796182462f18a5480ac8b3}{set\_\-model\_\-details()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em temperature}]The temperature in degrees Celcius 
+\begin{DoxyParams}{Parameters}
+\item[{\em md}]The model details \begin{DoxyReturn}{Returns}
+precomputed energy contributions and model settings 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{params_8h_ab85f6b6da051f380371deb0d8921bdba}{
+\index{params.h@{params.h}!get\_\-scaled\_\-pf\_\-parameters@{get\_\-scaled\_\-pf\_\-parameters}}
+\index{get\_\-scaled\_\-pf\_\-parameters@{get\_\-scaled\_\-pf\_\-parameters}!params.h@{params.h}}
+\subsubsection[{get\_\-scaled\_\-pf\_\-parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pf\_\-paramT}$\ast$ get\_\-scaled\_\-pf\_\-parameters (void)}}
+\label{params_8h_ab85f6b6da051f380371deb0d8921bdba}
+
+
+get a datastructure of type \hyperlink{structpf__paramT}{pf\_\-paramT} which contains the Boltzmann weights of several energy parameters scaled according to the current temperature 
+
+\begin{DoxyReturn}{Returns}
+The datastructure containing Boltzmann weights for use in partition function calculations 
+\end{DoxyReturn}
+\hypertarget{params_8h_a6fc2f3eef5a3024d44963ac59a42e39d}{
+\index{params.h@{params.h}!get\_\-boltzmann\_\-factors@{get\_\-boltzmann\_\-factors}}
+\index{get\_\-boltzmann\_\-factors@{get\_\-boltzmann\_\-factors}!params.h@{params.h}}
+\subsubsection[{get\_\-boltzmann\_\-factors}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pf\_\-paramT}$\ast$ get\_\-boltzmann\_\-factors (double {\em temperature}, \/  double {\em betaScale}, \/  {\bf model\_\-detailsT} {\em md}, \/  double {\em pf\_\-scale})}}
+\label{params_8h_a6fc2f3eef5a3024d44963ac59a42e39d}
+
+
+Get precomputed Boltzmann factors of the loop type dependent energy contributions with independent thermodynamic temperature. 
+
+This function returns a data structure that contains all necessary precalculated Boltzmann factors for each loop type contribution.\par
+ In contrast to \hyperlink{params_8h_ab85f6b6da051f380371deb0d8921bdba}{get\_\-scaled\_\-pf\_\-parameters()}, this function enables setting of independent temperatures for both, the individual energy contributions as well as the thermodynamic temperature used in $ exp(-\Delta G / kT) $
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{params_8h_ab85f6b6da051f380371deb0d8921bdba}{get\_\-scaled\_\-pf\_\-parameters()}, \hyperlink{params_8h_acba212326a051734797e65987260fdd0}{get\_\-boltzmann\_\-factor\_\-copy()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dangle\_\-model}]The dangle model to be used (possible values: 0 or 2) 
+\begin{DoxyParams}{Parameters}
+\item[{\em temperature}]The temperature in degC used for (re-\/)scaling the energy contributions 
+\begin{DoxyParams}{Parameters}
+\item[{\em alpha}]A scaling value that is used as a multiplication factor for the absolute temperature of the system \begin{DoxyReturn}{Returns}
+A set of precomputed Boltzmann factors 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{params_8h_acba212326a051734797e65987260fdd0}{
+\index{params.h@{params.h}!get\_\-boltzmann\_\-factor\_\-copy@{get\_\-boltzmann\_\-factor\_\-copy}}
+\index{get\_\-boltzmann\_\-factor\_\-copy@{get\_\-boltzmann\_\-factor\_\-copy}!params.h@{params.h}}
+\subsubsection[{get\_\-boltzmann\_\-factor\_\-copy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pf\_\-paramT}$\ast$ get\_\-boltzmann\_\-factor\_\-copy ({\bf pf\_\-paramT} $\ast$ {\em parameters})}}
+\label{params_8h_acba212326a051734797e65987260fdd0}
+
+
+Get a copy of already precomputed Boltzmann factors. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{params_8h_a6fc2f3eef5a3024d44963ac59a42e39d}{get\_\-boltzmann\_\-factors()}, \hyperlink{params_8h_ab85f6b6da051f380371deb0d8921bdba}{get\_\-scaled\_\-pf\_\-parameters()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameters}]The input data structure that shall be copied \begin{DoxyReturn}{Returns}
+A copy of the provided Boltzmann factor dataset 
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{params_8h_aa6a4297a2b91d6f7ae47dd61ca1862a0}{
+\index{params.h@{params.h}!get\_\-scaled\_\-alipf\_\-parameters@{get\_\-scaled\_\-alipf\_\-parameters}}
+\index{get\_\-scaled\_\-alipf\_\-parameters@{get\_\-scaled\_\-alipf\_\-parameters}!params.h@{params.h}}
+\subsubsection[{get\_\-scaled\_\-alipf\_\-parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pf\_\-paramT}$\ast$ get\_\-scaled\_\-alipf\_\-parameters (unsigned int {\em n\_\-seq})}}
+\label{params_8h_aa6a4297a2b91d6f7ae47dd61ca1862a0}
+
+
+Get precomputed Boltzmann factors of the loop type dependent energy contributions (alifold variant). 
+
+\hypertarget{params_8h_af0c74574b40f2778556535bf9d382828}{
+\index{params.h@{params.h}!get\_\-boltzmann\_\-factors\_\-ali@{get\_\-boltzmann\_\-factors\_\-ali}}
+\index{get\_\-boltzmann\_\-factors\_\-ali@{get\_\-boltzmann\_\-factors\_\-ali}!params.h@{params.h}}
+\subsubsection[{get\_\-boltzmann\_\-factors\_\-ali}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pf\_\-paramT}$\ast$ get\_\-boltzmann\_\-factors\_\-ali (unsigned int {\em n\_\-seq}, \/  double {\em temperature}, \/  double {\em betaScale}, \/  {\bf model\_\-detailsT} {\em md}, \/  double {\em pf\_\-scale})}}
+\label{params_8h_af0c74574b40f2778556535bf9d382828}
+
+
+Get precomputed Boltzmann factors of the loop type dependent energy contributions (alifold variant) with independent thermodynamic temperature. 
+

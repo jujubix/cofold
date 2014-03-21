@@ -1,0 +1,139 @@
+
+========================================================
+******************      CoFold     *********************
+========================================================
+
+ACKNOWLEDGEMENT
+===============
+
+The source code of CoFold is derived from the ViennaRNA 2.0.4 package. Full
+credit is given Ivo Hofacker's group at the Institute for Theoretical Chemistry
+of the University of Vienna.
+
+http://www.tbi.univie.ac.at/RNA/
+
+
+Note that the file ./lib/naview.c has its own copyright, and it available at
+the head of this file. The ./Readseq/ directory contains a modified version of
+Don Gilbert's public domain readseq program.
+
+
+
+DISCLAIMER AND COPYRIGHT
+========== === =========
+
+CoFold is distributed without a warranty of any kind.
+
+Permission to use and generate derivative works of CoFold is granted for
+research, education, and commercial purposes, provided that (1) credit is given
+to the authors of CoFold at the University of British Columbia and of the
+Vienna RNA package at the Institute for Theoretical Chemistry of the University
+of Vienna, and that (2) neither CoFold nor its derivative works are distributed
+for any fee.
+
+
+AUTHORS
+=======
+
+CoFold is a project undertaken by Jeff R. Proctor and Irmtraud M. Meyer at the
+Center for High-Throughput Biology (CHiBi) at the University of British
+Columbia. Please contact the authors with queries or comments:
+
+Tel: 1-604-827-4232
+Fax: 1-604-822-9126
+Email: irmtraud.meyer@cantab.net
+
+Centre for High-Throughput Biology & Department of Computer Science and Department of Medical Genetics
+University of British Columbia, 2125 East Mall
+Vancouver, BC, V6T 1Z4, Canada
+
+
+CHANGED FILES
+======= =====
+
+Files that have been changed from the Vienna package 2.0.4 source include:
+lib/fold.c
+Progs/RNAfold.c --> Progs/CoFold.c
+
+
+DIRECTIONS FOR USE
+========== === ===
+
+CoFold modifies the folding routine of the ViennaRNA package, which contains a
+wide variety of programs for different purposes. However, CoFold is primarily a
+modification of RNAfold, a ViennaRNA tool for calculated the minimum free
+energy structure given an input sequence. Purely for practical reasons, the
+complete ViennaRNA build system remains as is. when following the installation
+instructions, a executable file CoFold will be generated in the Progs
+directory.
+
+To build the package:
+$ ./configure
+$ make
+
+To run CoFold:
+
+$ CoFold [--options]
+
+CoFold accepts an input sequence from standard input, and returns the predicted
+structure to standard output. e.g. 'CoFold < myseqfile.fasta'
+
+
+Parameters unique to CoFold:
+
+        --distAlpha             A value between 0 and 1 for the alpha CoFold model parameter
+                                    (optimal value from the authors' training = 0.5) 
+
+        --distTau               A value greater than 0 for the tau CoFold model parameter
+                                    (optimal value from the authors' training = 640) 
+
+
+
+RNAfold Parameters:
+
+
+
+      --noPS                    Do not produce postscript drawing of the mfe 
+                                  structure.
+
+      --MEA[=gamma]             Calculate an MEA (maximum expected accuracy) 
+                                  structure, where the expected accuracy is 
+                                  computed from the pair probabilities: each 
+                                  base pair (i,j) gets a score 2*gamma*p_ij and 
+                                  the score of an unpaired base is given by the 
+                                  probability of not forming a pair.
+                                    (default=`1.')
+  -p, --partfunc[=INT]          Calculate the partition function and base 
+                                  pairing probability matrix.
+                                    (default=`1')
+
+  -T, --temp=DOUBLE             Rescale energy parameters to a temperature of 
+                                  temp C. Default is 37C.
+                                  
+
+  -4, --noTetra                 Do not include special tabulated stabilizing 
+                                  energies for tri-, tetra- and hexaloop 
+                                  hairpins. Mostly for testing.
+                                  
+                                    (default=off)
+  -d, --dangles=INT             How to treat "dangling end" energies for 
+                                  bases adjacent to helices in free ends and 
+                                  multi-loops
+                                    (default=`2')
+      --noLP                    Produce structures without lonely pairs 
+                                  (helices of length 1).
+                                    (default=off)
+      --noGU                    Do not allow GU pairs
+                                  
+                                    (default=off)
+      --noClosingGU             Do not allow GU pairs at the end of helices
+                                  
+                                    (default=off)
+  -P, --paramFile=paramfile     Read energy parameters from paramfile, instead 
+                                  of using the default parameter set.
+                                Several parameter files are included in this package, 
+                                including:
+                                rna_andronescu2007.par
+                                rna_turner1999.par
+                                rna_turner2004.par
+

@@ -1,0 +1,280 @@
+\label{mp__utils_toc}
+\hypertarget{mp__utils_toc}{}
+
+
+\subsubsection*{Table of Contents}
+
+
+
+
+
+\begin{DoxyItemize}
+\item \hyperlink{mp__utils_utils_ss}{Producing secondary structure graphs} \item \hyperlink{mp__utils_utils_dot}{Producing (colored) dot plots for base pair probabilities} \item \hyperlink{mp__utils_utils_aln}{Producing (colored) alignments} \item \hyperlink{mp__utils_utils_seq}{RNA sequence related utilities} \item \hyperlink{mp__utils_utils_struc}{RNA secondary structure related utilities} \item \hyperlink{mp__utils_utils_misc}{Miscellaneous Utilities}\end{DoxyItemize}
+
+
+\hypertarget{mp__utils_utils_ss}{}\section{Producing secondary structure graphs}\label{mp__utils_utils_ss}
+\begin{DoxyVerb}
+int PS_rna_plot ( char *string,
+                  char *structure,
+                  char *file)
+\end{DoxyVerb}
+ Produce a secondary structure graph in PostScript and write it to 'filename'. 
+
+\begin{DoxyVerb}
+int PS_rna_plot_a (
+            char *string,
+            char *structure,
+            char *file,
+            char *pre,
+            char *post)
+\end{DoxyVerb}
+ Produce a secondary structure graph in PostScript including additional annotation macros and write it to 'filename'. 
+
+\begin{DoxyVerb}
+int gmlRNA (char *string,
+            char *structure,
+            char *ssfile,
+            char option)
+\end{DoxyVerb}
+ Produce a secondary structure graph in Graph Meta Language (gml) and write it to a file. 
+
+\begin{DoxyVerb}
+int ssv_rna_plot (char *string,
+                  char *structure,
+                  char *ssfile)
+\end{DoxyVerb}
+ Produce a secondary structure graph in SStructView format. 
+
+\begin{DoxyVerb}
+int svg_rna_plot (char *string,
+                  char *structure,
+                  char *ssfile)
+\end{DoxyVerb}
+ Produce a secondary structure plot in SVG format and write it to a file. 
+
+\begin{DoxyVerb}
+int xrna_plot ( char *string,
+                char *structure,
+                char *ssfile)
+\end{DoxyVerb}
+ Produce a secondary structure plot for further editing in XRNA. 
+
+\begin{DoxyVerb}
+int rna_plot_type
+\end{DoxyVerb}
+ Switch for changing the secondary structure layout algorithm. 
+
+Two low-\/level functions provide direct access to the graph lauyouting algorithms:
+
+\begin{DoxyVerb}
+int simple_xy_coordinates ( short *pair_table,
+                            float *X,
+                            float *Y)
+\end{DoxyVerb}
+ Calculate nucleotide coordinates for secondary structure plot the {\itshape Simple way\/} 
+
+\begin{DoxyVerb}
+int naview_xy_coordinates ( short *pair_table,
+                            float *X,
+                            float *Y)
+\end{DoxyVerb}
+ 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{PS__dot_8h}{PS\_\-dot.h} and \hyperlink{naview_8h}{naview.h} for more detailed descriptions.
+\end{DoxySeeAlso}
+\hypertarget{mp__utils_utils_dot}{}\section{Producing (colored) dot plots for base pair probabilities}\label{mp__utils_utils_dot}
+\begin{DoxyVerb}
+int PS_color_dot_plot ( char *string,
+                        cpair *pi,
+                        char *filename)
+\end{DoxyVerb}
+ 
+
+\begin{DoxyVerb}
+int PS_color_dot_plot_turn (char *seq,
+                            cpair *pi,
+                            char *filename,
+                            int winSize)
+\end{DoxyVerb}
+ 
+
+\begin{DoxyVerb}
+int PS_dot_plot_list (char *seq,
+                      char *filename,
+                      plist *pl,
+                      plist *mf,
+                      char *comment)
+\end{DoxyVerb}
+ Produce a postscript dot-\/plot from two pair lists. 
+
+\begin{DoxyVerb}
+int PS_dot_plot_turn (char *seq,
+                      struct plist *pl,
+                      char *filename,
+                      int winSize)
+\end{DoxyVerb}
+ 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{PS__dot_8h}{PS\_\-dot.h} for more detailed descriptions.
+\end{DoxySeeAlso}
+\hypertarget{mp__utils_utils_aln}{}\section{Producing (colored) alignments}\label{mp__utils_utils_aln}
+\begin{DoxyVerb}
+int PS_color_aln (
+            const char *structure,
+            const char *filename,
+            const char *seqs[],
+            const char *names[])
+\end{DoxyVerb}
+ 
+
+\hypertarget{mp__utils_utils_seq}{}\section{RNA sequence related utilities}\label{mp__utils_utils_seq}
+Several functions provide useful applications to RNA sequences
+
+\begin{DoxyVerb}
+char  *random_string (int l,
+                      const char symbols[])
+\end{DoxyVerb}
+ Create a random string using characters from a specified symbol set. 
+
+\begin{DoxyVerb}
+int   hamming ( const char *s1,
+                const char *s2)
+\end{DoxyVerb}
+ Calculate hamming distance between two sequences. 
+
+\begin{DoxyVerb}
+void str_DNA2RNA(char *sequence);
+\end{DoxyVerb}
+ Convert a DNA input sequence to RNA alphabet. 
+
+\begin{DoxyVerb}
+void str_uppercase(char *sequence);
+\end{DoxyVerb}
+ Convert an input sequence to uppercase. 
+
+\hypertarget{mp__utils_utils_struc}{}\section{RNA secondary structure related utilities}\label{mp__utils_utils_struc}
+\begin{DoxyVerb}
+char *pack_structure (const char *struc)
+\end{DoxyVerb}
+ Pack secondary secondary structure, 5:1 compression using base 3 encoding. 
+
+\begin{DoxyVerb}
+char *unpack_structure (const char *packed)
+\end{DoxyVerb}
+ Unpack secondary structure previously packed with \hyperlink{utils_8h_ac6dfa5e22928c087c6e09ff0054a7ced}{pack\_\-structure()}. 
+
+\begin{DoxyVerb}
+short *make_pair_table (const char *structure)
+\end{DoxyVerb}
+ Create a pair table of a secondary structure. 
+
+\begin{DoxyVerb}
+short *copy_pair_table (const short *pt)
+\end{DoxyVerb}
+ Get an exact copy of a pair table. 
+
+\hypertarget{mp__utils_utils_misc}{}\section{Miscellaneous Utilities}\label{mp__utils_utils_misc}
+\begin{DoxyVerb}
+void print_tty_input_seq (void)
+\end{DoxyVerb}
+ Print a line to {\itshape stdout\/} that asks for an input sequence. 
+
+\begin{DoxyVerb}
+void print_tty_constraint_full (void)
+\end{DoxyVerb}
+ Print structure constraint characters to stdout (full constraint support). 
+
+\begin{DoxyVerb}
+void print_tty_constraint (unsigned int option)
+\end{DoxyVerb}
+ Print structure constraint characters to stdout. 
+
+\begin{DoxyVerb}
+int   *get_iindx (unsigned int length)
+\end{DoxyVerb}
+ Get an index mapper array (iindx) for accessing the energy matrices, e.g. 
+
+\begin{DoxyVerb}
+int   *get_indx (unsigned int length)
+\end{DoxyVerb}
+ Get an index mapper array (indx) for accessing the energy matrices, e.g. 
+
+\begin{DoxyVerb}
+void constrain_ptypes (
+                const char *constraint,
+                unsigned int length,
+                char *ptype,
+                int *BP,
+                int min_loop_size,
+                unsigned int idx_type)
+\end{DoxyVerb}
+ Insert constraining pair types according to constraint structure string. 
+
+\begin{DoxyVerb}
+char  *get_line(FILE *fp);
+\end{DoxyVerb}
+ Read a line of arbitrary length from a stream. 
+
+\begin{DoxyVerb}
+unsigned int read_record(
+                char **header,
+                char **sequence,
+                char ***rest,
+                unsigned int options);
+\end{DoxyVerb}
+ Get a data record from stdin. 
+
+\begin{DoxyVerb}
+char  *time_stamp (void)
+\end{DoxyVerb}
+ Get a timestamp. 
+
+\begin{DoxyVerb}
+void warn_user (const char message[])
+\end{DoxyVerb}
+ Print a warning message. 
+
+\begin{DoxyVerb}
+void nrerror (const char message[])
+\end{DoxyVerb}
+ Die with an error message. 
+
+\begin{DoxyVerb}
+void   init_rand (void)
+\end{DoxyVerb}
+ Make random number seeds. 
+
+\begin{DoxyVerb}
+unsigned short xsubi[3];
+\end{DoxyVerb}
+ Current 48 bit random number. 
+
+\begin{DoxyVerb}
+double urn (void)
+\end{DoxyVerb}
+ get a random number from \mbox{[}0..1\mbox{]} 
+
+\begin{DoxyVerb}
+int    int_urn (int from, int to)
+\end{DoxyVerb}
+ Generates a pseudo random integer in a specified range. 
+
+\begin{DoxyVerb}
+void  *space (unsigned size)
+\end{DoxyVerb}
+ Allocate space safely. 
+
+\begin{DoxyVerb}
+void  *xrealloc ( void *p,
+                  unsigned size)
+\end{DoxyVerb}
+ Reallocate space safely. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{utils_8h}{utils.h} for a complete overview and detailed description of the utility functions
+\end{DoxySeeAlso}
+
+
+\hyperlink{mp__example}{Next Page: Examples} 

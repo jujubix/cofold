@@ -1,0 +1,37 @@
+\hypertarget{MEA_8h}{
+\section{H/MEA.h File Reference}
+\label{MEA_8h}\index{H/MEA.h@{H/MEA.h}}
+}
+
+
+Computes a MEA (maximum expected accuracy) structure.  
+
+
+Include dependency graph for MEA.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=68pt]{MEA_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{MEA_8h_a396ec6144c6a74fcbab4cea6b42d76c3}{MEA} (\hyperlink{structplist}{plist} $\ast$p, char $\ast$structure, double gamma)
+\begin{DoxyCompactList}\small\item\em Computes a MEA (maximum expected accuracy) structure. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Computes a MEA (maximum expected accuracy) structure. 
+
+\subsection{Function Documentation}
+\hypertarget{MEA_8h_a396ec6144c6a74fcbab4cea6b42d76c3}{
+\index{MEA.h@{MEA.h}!MEA@{MEA}}
+\index{MEA@{MEA}!MEA.h@{MEA.h}}
+\subsubsection[{MEA}]{\setlength{\rightskip}{0pt plus 5cm}float MEA ({\bf plist} $\ast$ {\em p}, \/  char $\ast$ {\em structure}, \/  double {\em gamma})}}
+\label{MEA_8h_a396ec6144c6a74fcbab4cea6b42d76c3}
+
+
+Computes a MEA (maximum expected accuracy) structure. 
+
+The algorithm maximizes the expected accuracy \[ A(S) = \sum_{(i,j) \in S} 2 \gamma p_{ij} + \sum_{i \notin S} p^u_i \] Higher values of $\gamma$ result in more base pairs of lower probability and thus higher sensitivity. Low values of $\gamma$ result in structures containing only highly likely pairs (high specificity). The code of the MEA function also demonstrates the use of sparse dynamic programming scheme to reduce the time and memory complexity of folding. 

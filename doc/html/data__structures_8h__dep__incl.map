@@ -1,0 +1,25 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$2Dpfold_8h.html" title="Compute the partition function and stochastically sample secondary structures for..." alt="" coords="5,86,96,117"/>
+<area shape="rect" id="node5" href="$ali__plex_8h_source.html" title="H/ali_plex.h" alt="" coords="120,86,211,117"/>
+<area shape="rect" id="node7" href="$alifold_8h.html" title="compute various properties (consensus MFE structures, partition function, Boltzmann..." alt="" coords="235,86,315,117"/>
+<area shape="rect" id="node9" href="$cofold_8h.html" title="MFE version of cofolding routines." alt="" coords="339,86,419,117"/>
+<area shape="rect" id="node11" href="$duplex_8h.html" title="Duplex folding function declarations." alt="" coords="443,86,525,117"/>
+<area shape="rect" id="node13" href="$findpath_8h.html" title="Compute direct refolding paths between two secondary structures." alt="" coords="549,86,640,117"/>
+<area shape="rect" id="node15" href="$fold_8h.html" title="MFE calculations and energy evaluations for single RNA sequences." alt="" coords="664,86,731,117"/>
+<area shape="rect" id="node17" href="$fold__vars_8h.html" title="Here all all declarations of the global variables used throughout RNAlib." alt="" coords="755,86,853,117"/>
+<area shape="rect" id="node19" href="$loop__energies_8h.html" title="Energy evaluation for MFE and partition function calculations." alt="" coords="877,86,1003,117"/>
+<area shape="rect" id="node22" href="$LPfold_8h.html" title="Function declarations of partition function variants of the Lfold algorithm." alt="" coords="1051,86,1133,117"/>
+<area shape="rect" id="node24" href="$MEA_8h.html" title="Computes a MEA (maximum expected accuracy) structure." alt="" coords="1157,86,1232,117"/>
+<area shape="rect" id="node26" href="$params_8h.html" title="Several functions to obtain (pre)scaled energy parameter data containers." alt="" coords="1256,86,1344,117"/>
+<area shape="rect" id="node28" href="$part__func_8h.html" title="Partition function of single RNA sequences." alt="" coords="1368,86,1467,117"/>
+<area shape="rect" id="node30" href="$part__func__co_8h.html" title="Partition function for two RNA sequences." alt="" coords="1491,86,1611,117"/>
+<area shape="rect" id="node32" href="$part__func__up_8h.html" title="Partition Function Cofolding as stepwise process." alt="" coords="1635,86,1755,117"/>
+<area shape="rect" id="node34" href="$PKplex_8h_source.html" title="H/PKplex.h" alt="" coords="1779,86,1867,117"/>
+<area shape="rect" id="node36" href="$plex_8h_source.html" title="H/plex.h" alt="" coords="1891,86,1960,117"/>
+<area shape="rect" id="node38" href="$plot__layouts_8h.html" title="Secondary structure plot layout algorithms." alt="" coords="1984,86,2099,117"/>
+<area shape="rect" id="node41" href="$profiledist_8h.html" title="H/profiledist.h" alt="" coords="2147,86,2248,117"/>
+<area shape="rect" id="node43" href="$PS__dot_8h.html" title="Various functions for plotting RNA secondary structures, dot&#45;plots and other visualizations..." alt="" coords="2272,86,2360,117"/>
+<area shape="rect" id="node46" href="$snofold_8h_source.html" title="H/snofold.h" alt="" coords="2408,86,2496,117"/>
+<area shape="rect" id="node48" href="$snoop_8h_source.html" title="H/snoop.h" alt="" coords="2520,86,2600,117"/>
+<area shape="rect" id="node50" href="$subopt_8h.html" title="RNAsubopt and density of states declarations." alt="" coords="2624,86,2709,117"/>
+</map>

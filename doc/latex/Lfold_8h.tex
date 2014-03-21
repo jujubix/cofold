@@ -1,0 +1,81 @@
+\hypertarget{Lfold_8h}{
+\section{H/Lfold.h File Reference}
+\label{Lfold_8h}\index{H/Lfold.h@{H/Lfold.h}}
+}
+
+
+Predicting local MFE structures of large sequences.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{Lfold_8h_a16e5a70e60835bb969eaecbe6482f1be}{Lfold} (const char $\ast$string, char $\ast$structure, int maxdist)
+\begin{DoxyCompactList}\small\item\em The local analog to \hyperlink{fold_8h_aadafcb0f140795ae62e5ca027e335a9b}{fold()}. \item\end{DoxyCompactList}\item 
+float \hyperlink{Lfold_8h_a20a173a3cdb83f5d1778e36c1a6b1f2b}{aliLfold} (const char $\ast$$\ast$strings, char $\ast$structure, int maxdist)
+\item 
+float \hyperlink{Lfold_8h_ab6d79eecc180f586679f7b85cce5cbe9}{Lfoldz} (const char $\ast$string, char $\ast$structure, int maxdist, int zsc, double min\_\-z)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Predicting local MFE structures of large sequences. 
+
+\subsection{Function Documentation}
+\hypertarget{Lfold_8h_a16e5a70e60835bb969eaecbe6482f1be}{
+\index{Lfold.h@{Lfold.h}!Lfold@{Lfold}}
+\index{Lfold@{Lfold}!Lfold.h@{Lfold.h}}
+\subsubsection[{Lfold}]{\setlength{\rightskip}{0pt plus 5cm}float Lfold (const char $\ast$ {\em string}, \/  char $\ast$ {\em structure}, \/  int {\em maxdist})}}
+\label{Lfold_8h_a16e5a70e60835bb969eaecbe6482f1be}
+
+
+The local analog to \hyperlink{fold_8h_aadafcb0f140795ae62e5ca027e335a9b}{fold()}. 
+
+Computes the minimum free energy structure including only base pairs with a span smaller than 'maxdist'
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]
+\begin{DoxyParams}{Parameters}
+\item[{\em maxdist}]\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{Lfold_8h_a20a173a3cdb83f5d1778e36c1a6b1f2b}{
+\index{Lfold.h@{Lfold.h}!aliLfold@{aliLfold}}
+\index{aliLfold@{aliLfold}!Lfold.h@{Lfold.h}}
+\subsubsection[{aliLfold}]{\setlength{\rightskip}{0pt plus 5cm}float aliLfold (const char $\ast$$\ast$ {\em strings}, \/  char $\ast$ {\em structure}, \/  int {\em maxdist})}}
+\label{Lfold_8h_a20a173a3cdb83f5d1778e36c1a6b1f2b}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em strings}]
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]
+\begin{DoxyParams}{Parameters}
+\item[{\em maxdist}]\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{Lfold_8h_ab6d79eecc180f586679f7b85cce5cbe9}{
+\index{Lfold.h@{Lfold.h}!Lfoldz@{Lfoldz}}
+\index{Lfoldz@{Lfoldz}!Lfold.h@{Lfold.h}}
+\subsubsection[{Lfoldz}]{\setlength{\rightskip}{0pt plus 5cm}float Lfoldz (const char $\ast$ {\em string}, \/  char $\ast$ {\em structure}, \/  int {\em maxdist}, \/  int {\em zsc}, \/  double {\em min\_\-z})}}
+\label{Lfold_8h_ab6d79eecc180f586679f7b85cce5cbe9}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]
+\begin{DoxyParams}{Parameters}
+\item[{\em maxdist}]
+\begin{DoxyParams}{Parameters}
+\item[{\em zsc}]
+\begin{DoxyParams}{Parameters}
+\item[{\em min\_\-z}]\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}

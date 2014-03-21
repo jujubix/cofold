@@ -1,0 +1,821 @@
+\hypertarget{utils_8h}{
+\section{H/utils.h File Reference}
+\label{utils_8h}\index{H/utils.h@{H/utils.h}}
+}
+
+
+Various utility-\/ and helper-\/functions used throughout the Vienna RNA package.  
+
+
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{utils_8h_ad403c9ea58f1836689404c2931419c8c}{
+\#define \hyperlink{utils_8h_ad403c9ea58f1836689404c2931419c8c}{VRNA\_\-INPUT\_\-ERROR}~1U}
+\label{utils_8h_ad403c9ea58f1836689404c2931419c8c}
+
+\begin{DoxyCompactList}\small\item\em Output flag of \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()}: \char`\"{}An ERROR has occured, maybe EOF\char`\"{}. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a72f3c6ca5c83d2b9baed2922d19c403d}{
+\#define \hyperlink{utils_8h_a72f3c6ca5c83d2b9baed2922d19c403d}{VRNA\_\-INPUT\_\-QUIT}~2U}
+\label{utils_8h_a72f3c6ca5c83d2b9baed2922d19c403d}
+
+\begin{DoxyCompactList}\small\item\em Output flag of \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()}: \char`\"{}the user requested quitting the program\char`\"{}. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a8e3241b321c9c1a78a69e59e2e019a71}{
+\#define \hyperlink{utils_8h_a8e3241b321c9c1a78a69e59e2e019a71}{VRNA\_\-INPUT\_\-MISC}~4U}
+\label{utils_8h_a8e3241b321c9c1a78a69e59e2e019a71}
+
+\begin{DoxyCompactList}\small\item\em Output flag of \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()}: \char`\"{}something was read\char`\"{}. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{utils_8h_a2f0d8069e93d3ac54d9320d6bdb8e7e7}{VRNA\_\-INPUT\_\-FASTA\_\-HEADER}~8U
+\begin{DoxyCompactList}\small\item\em Input/Output flag of \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()}:\par
+ if used as input option this tells \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()} that the data to be read should comply with the FASTA format. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{utils_8h_a8566d6787972100e68b5a2a159b4cf45}{VRNA\_\-INPUT\_\-SEQUENCE}~16U
+\begin{DoxyCompactList}\small\item\em Input flag for \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()}:\par
+ Tell \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()} that we assume to read a nucleotide sequence. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{utils_8h_ac08a9df45b9721b97a47dbfe7a6e5f85}{VRNA\_\-INPUT\_\-CONSTRAINT}~32U
+\begin{DoxyCompactList}\small\item\em Input flag for \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()}:\par
+ Tell \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()} that we assume to read a structure constraint. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a086742158293217a46ae2f71bb296937}{
+\#define \hyperlink{utils_8h_a086742158293217a46ae2f71bb296937}{VRNA\_\-INPUT\_\-NO\_\-TRUNCATION}~256U}
+\label{utils_8h_a086742158293217a46ae2f71bb296937}
+
+\begin{DoxyCompactList}\small\item\em Input switch for \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()}: \char`\"{}do not trunkate the line by eliminating white spaces at end of line\char`\"{}. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a7a2e8c50a0c7ce82e60da1016e1367fd}{
+\#define \hyperlink{utils_8h_a7a2e8c50a0c7ce82e60da1016e1367fd}{VRNA\_\-INPUT\_\-NO\_\-REST}~512U}
+\label{utils_8h_a7a2e8c50a0c7ce82e60da1016e1367fd}
+
+\begin{DoxyCompactList}\small\item\em Input switch for \hyperlink{utils_8h_afd194a69af9d92b5b0412a7627ac1595}{read\_\-record()}: \char`\"{}do fill rest array\char`\"{}. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a0de536599b881c787b0943a2671da476}{
+\#define \hyperlink{utils_8h_a0de536599b881c787b0943a2671da476}{VRNA\_\-INPUT\_\-NO\_\-SPAN}~1024U}
+\label{utils_8h_a0de536599b881c787b0943a2671da476}
+
+\begin{DoxyCompactList}\small\item\em Input switch for \hyperlink{utils_8h_afd194a69af9d92b5b0412a7627ac1595}{read\_\-record()}: \char`\"{}never allow data to span more than one line\char`\"{}. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_ab4db885222b3b69608310d7c7e63e286}{
+\#define \hyperlink{utils_8h_ab4db885222b3b69608310d7c7e63e286}{VRNA\_\-INPUT\_\-NOSKIP\_\-BLANK\_\-LINES}~2048U}
+\label{utils_8h_ab4db885222b3b69608310d7c7e63e286}
+
+\begin{DoxyCompactList}\small\item\em Input switch for \hyperlink{utils_8h_afd194a69af9d92b5b0412a7627ac1595}{read\_\-record()}: \char`\"{}do not skip empty lines\char`\"{}. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a305474b93ccb79ae4c7754016a8ddd84}{
+\#define \hyperlink{utils_8h_a305474b93ccb79ae4c7754016a8ddd84}{VRNA\_\-INPUT\_\-BLANK\_\-LINE}~4096U}
+\label{utils_8h_a305474b93ccb79ae4c7754016a8ddd84}
+
+\begin{DoxyCompactList}\small\item\em Output flag for \hyperlink{utils_8h_afd194a69af9d92b5b0412a7627ac1595}{read\_\-record()}: \char`\"{}read an empty line\char`\"{}. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a0f6311f11bed1842e3a527ab27b294c6}{
+\#define \hyperlink{utils_8h_a0f6311f11bed1842e3a527ab27b294c6}{VRNA\_\-INPUT\_\-NOSKIP\_\-COMMENTS}~128U}
+\label{utils_8h_a0f6311f11bed1842e3a527ab27b294c6}
+
+\begin{DoxyCompactList}\small\item\em Input switch for \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()}: \char`\"{}do not skip comment lines\char`\"{}. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_af2062e0eeefffd3ed639af460b3d4fab}{
+\#define \hyperlink{utils_8h_af2062e0eeefffd3ed639af460b3d4fab}{VRNA\_\-INPUT\_\-COMMENT}~8192U}
+\label{utils_8h_af2062e0eeefffd3ed639af460b3d4fab}
+
+\begin{DoxyCompactList}\small\item\em Output flag for \hyperlink{utils_8h_afd194a69af9d92b5b0412a7627ac1595}{read\_\-record()}: \char`\"{}read a comment\char`\"{}. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a4e8d7120619b21df0309af425acbc9a2}{
+\#define \hyperlink{utils_8h_a4e8d7120619b21df0309af425acbc9a2}{VRNA\_\-CONSTRAINT\_\-PIPE}~1U}
+\label{utils_8h_a4e8d7120619b21df0309af425acbc9a2}
+
+\begin{DoxyCompactList}\small\item\em pipe sign '$|$' switch for structure constraints (paired with another base) \item\end{DoxyCompactList}\item 
+\#define \hyperlink{utils_8h_a55e1d16fd693ae9ec8e987b0750da804}{VRNA\_\-CONSTRAINT\_\-DOT}~2U
+\begin{DoxyCompactList}\small\item\em dot '. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a077c56550c915d4516d84a5ed8d051f4}{
+\#define \hyperlink{utils_8h_a077c56550c915d4516d84a5ed8d051f4}{VRNA\_\-CONSTRAINT\_\-X}~4U}
+\label{utils_8h_a077c56550c915d4516d84a5ed8d051f4}
+
+\begin{DoxyCompactList}\small\item\em 'x' switch for structure constraint (base must not pair) \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a0512d790f738742cbdcf3f7c87b46f48}{
+\#define \hyperlink{utils_8h_a0512d790f738742cbdcf3f7c87b46f48}{VRNA\_\-CONSTRAINT\_\-ANG\_\-BRACK}~8U}
+\label{utils_8h_a0512d790f738742cbdcf3f7c87b46f48}
+
+\begin{DoxyCompactList}\small\item\em angle brackets '$<$', '$>$' switch for structure constraint (paired downstream/upstream) \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_aa20bfca4bb2903c8548000a33d7bbb53}{
+\#define \hyperlink{utils_8h_aa20bfca4bb2903c8548000a33d7bbb53}{VRNA\_\-CONSTRAINT\_\-RND\_\-BRACK}~16U}
+\label{utils_8h_aa20bfca4bb2903c8548000a33d7bbb53}
+
+\begin{DoxyCompactList}\small\item\em round brackets '(',')' switch for structure constraint (base i pairs base j) \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a7d725ef525b29891abef3f1ed42599a4}{
+\#define \hyperlink{utils_8h_a7d725ef525b29891abef3f1ed42599a4}{VRNA\_\-CONSTRAINT\_\-MULTILINE}~32U}
+\label{utils_8h_a7d725ef525b29891abef3f1ed42599a4}
+
+\begin{DoxyCompactList}\small\item\em constraint may span over several lines \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a08d12a9a846ea593b7171d277c9f033f}{
+\#define \hyperlink{utils_8h_a08d12a9a846ea593b7171d277c9f033f}{VRNA\_\-CONSTRAINT\_\-NO\_\-HEADER}~64U}
+\label{utils_8h_a08d12a9a846ea593b7171d277c9f033f}
+
+\begin{DoxyCompactList}\small\item\em do not print the header information line \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a0a697f77a6fbb10f34e16fa68ed9e655}{
+\#define \hyperlink{utils_8h_a0a697f77a6fbb10f34e16fa68ed9e655}{VRNA\_\-CONSTRAINT\_\-ALL}~128U}
+\label{utils_8h_a0a697f77a6fbb10f34e16fa68ed9e655}
+
+\begin{DoxyCompactList}\small\item\em placeholder for all constraining characters \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_ae0b9cd0ce090bd69b951aa73e8fa4f7d}{
+\#define \hyperlink{utils_8h_ae0b9cd0ce090bd69b951aa73e8fa4f7d}{MIN2}(A, B)~((A) $<$ (B) ? (A) : (B))}
+\label{utils_8h_ae0b9cd0ce090bd69b951aa73e8fa4f7d}
+
+\begin{DoxyCompactList}\small\item\em Get the minimum of two comparable values. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a33297b3679c713b0c4d897cd0fe3b122}{
+\#define \hyperlink{utils_8h_a33297b3679c713b0c4d897cd0fe3b122}{MAX2}(A, B)~((A) $>$ (B) ? (A) : (B))}
+\label{utils_8h_a33297b3679c713b0c4d897cd0fe3b122}
+
+\begin{DoxyCompactList}\small\item\em Get the maximum of two comparable values. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a721b8d5f3abef17f10293f1f7f8c958e}{
+\#define \hyperlink{utils_8h_a721b8d5f3abef17f10293f1f7f8c958e}{MIN3}(A, B, C)~(MIN2(  (MIN2((A),(B))) ,(C)))}
+\label{utils_8h_a721b8d5f3abef17f10293f1f7f8c958e}
+
+\begin{DoxyCompactList}\small\item\em Get the minimum of three comparable values. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a8d577123d2e66d2b7d0bf9af6e172b93}{
+\#define \hyperlink{utils_8h_a8d577123d2e66d2b7d0bf9af6e172b93}{MAX3}(A, B, C)~(MAX2(  (MAX2((A),(B))) ,(C)))}
+\label{utils_8h_a8d577123d2e66d2b7d0bf9af6e172b93}
+
+\begin{DoxyCompactList}\small\item\em Get the maximum of three comparable values. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a03943706e48069237cd57f2d35ca987e}{
+\#define \hyperlink{utils_8h_a03943706e48069237cd57f2d35ca987e}{XSTR}(s)~STR(s)}
+\label{utils_8h_a03943706e48069237cd57f2d35ca987e}
+
+\begin{DoxyCompactList}\small\item\em Stringify a macro after expansion. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a6388870e639eee9c0a69446876f1f8cc}{
+\#define \hyperlink{utils_8h_a6388870e639eee9c0a69446876f1f8cc}{STR}(s)~\#s}
+\label{utils_8h_a6388870e639eee9c0a69446876f1f8cc}
+
+\begin{DoxyCompactList}\small\item\em Stringify a macro argument. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{utils_8h_afb228174279df9486a5cb56ac0bc79a3}{FILENAME\_\-MAX\_\-LENGTH}~80
+\begin{DoxyCompactList}\small\item\em Maximum length of filenames that are generated by our programs. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{utils_8h_a33c3b1826b8e2739f09f111ec719ded5}{FILENAME\_\-ID\_\-LENGTH}~42
+\begin{DoxyCompactList}\small\item\em Maximum length of id taken from fasta header for filename generation. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{utils_8h_ad7e1e137b3bf1f7108933d302a7f0177}{space} (unsigned size)
+\begin{DoxyCompactList}\small\item\em Allocate space safely. \item\end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{utils_8h_a9037ada838835b1b9db41581a021b0c8}{xrealloc} (void $\ast$p, unsigned size)
+\begin{DoxyCompactList}\small\item\em Reallocate space safely. \item\end{DoxyCompactList}\item 
+void \hyperlink{utils_8h_a127ce946e56b5a5773781cabe68e38c5}{nrerror} (const char message\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Die with an error message. \item\end{DoxyCompactList}\item 
+void \hyperlink{utils_8h_af2355fa8746f2f30fbe71db65dea3d51}{warn\_\-user} (const char message\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Print a warning message. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a8aaa6d9be6f803f496d9b97375c371f3}{
+void \hyperlink{utils_8h_a8aaa6d9be6f803f496d9b97375c371f3}{init\_\-rand} (void)}
+\label{utils_8h_a8aaa6d9be6f803f496d9b97375c371f3}
+
+\begin{DoxyCompactList}\small\item\em Make random number seeds. \item\end{DoxyCompactList}\item 
+double \hyperlink{utils_8h_aaa328491c84996e445d027fde9800f2e}{urn} (void)
+\begin{DoxyCompactList}\small\item\em get a random number from \mbox{[}0..1\mbox{]} \item\end{DoxyCompactList}\item 
+int \hyperlink{utils_8h_a68ff0849d44f62fe491800378a5ffcb4}{int\_\-urn} (int from, int to)
+\begin{DoxyCompactList}\small\item\em Generates a pseudo random integer in a specified range. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{utils_8h_a7afeb906cb36e9d77379eabc6907ac46}{time\_\-stamp} (void)
+\begin{DoxyCompactList}\small\item\em Get a timestamp. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{utils_8h_a1b95eac365a021572e1c37e5993a89be}{random\_\-string} (int l, const char symbols\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Create a random string using characters from a specified symbol set. \item\end{DoxyCompactList}\item 
+int \hyperlink{utils_8h_ad9dc7bfc9aa664dc6698f17ce07fc7e7}{hamming} (const char $\ast$s1, const char $\ast$s2)
+\begin{DoxyCompactList}\small\item\em Calculate hamming distance between two sequences. \item\end{DoxyCompactList}\item 
+int \hyperlink{utils_8h_a96d3c36717d624514055ce201cab1542}{hamming\_\-bound} (const char $\ast$s1, const char $\ast$s2, int n)
+\begin{DoxyCompactList}\small\item\em Calculate hamming distance between two sequences up to a specified length. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{utils_8h_abe51806d14cff0789a8c1df7dbc45b71}{get\_\-line} (FILE $\ast$fp)
+\begin{DoxyCompactList}\small\item\em Read a line of arbitrary length from a stream. \item\end{DoxyCompactList}\item 
+unsigned int \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line} (char $\ast$$\ast$string, unsigned int options)
+\begin{DoxyCompactList}\small\item\em Retrieve a line from 'stdin' savely while skipping comment characters and other features This function returns the type of input it has read if recognized. \item\end{DoxyCompactList}\item 
+unsigned int \hyperlink{utils_8h_afd194a69af9d92b5b0412a7627ac1595}{read\_\-record} (char $\ast$$\ast$header, char $\ast$$\ast$sequence, char $\ast$$\ast$$\ast$rest, unsigned int options)
+\begin{DoxyCompactList}\small\item\em Get a data record from stdin. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{utils_8h_ac6dfa5e22928c087c6e09ff0054a7ced}{pack\_\-structure} (const char $\ast$struc)
+\begin{DoxyCompactList}\small\item\em Pack secondary secondary structure, 5:1 compression using base 3 encoding. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{utils_8h_a071c6921efe1eb974f115ee6fefa3c39}{unpack\_\-structure} (const char $\ast$packed)
+\begin{DoxyCompactList}\small\item\em Unpack secondary structure previously packed with \hyperlink{utils_8h_ac6dfa5e22928c087c6e09ff0054a7ced}{pack\_\-structure()}. \item\end{DoxyCompactList}\item 
+short $\ast$ \hyperlink{utils_8h_a89c32307ee50a0026f4a3131fac0845a}{make\_\-pair\_\-table} (const char $\ast$structure)
+\begin{DoxyCompactList}\small\item\em Create a pair table of a secondary structure. \item\end{DoxyCompactList}\item 
+short $\ast$ \hyperlink{utils_8h_afeaa6d68eef3a99d0a7aa08aa91c6601}{copy\_\-pair\_\-table} (const short $\ast$pt)
+\begin{DoxyCompactList}\small\item\em Get an exact copy of a pair table. \item\end{DoxyCompactList}\item 
+short $\ast$ \hyperlink{utils_8h_a3c81b3967056c3888b8472b65fbb16f5}{alimake\_\-pair\_\-table} (const char $\ast$structure)
+\begin{DoxyCompactList}\small\item\em Pair table for snoop align. \item\end{DoxyCompactList}\item 
+short $\ast$ \hyperlink{utils_8h_a9aa3bf3b4346bb7fb88efc154dd07a79}{make\_\-pair\_\-table\_\-snoop} (const char $\ast$structure)
+\begin{DoxyCompactList}\small\item\em returns a newly allocated table, such that: table\mbox{[}i\mbox{]}=j if (i.j) pair or 0 if i is unpaired, table\mbox{[}0\mbox{]} contains the length of the structure. \item\end{DoxyCompactList}\item 
+int \hyperlink{utils_8h_a6ebbcd29a754f0e4f1a66d1fd84184db}{bp\_\-distance} (const char $\ast$str1, const char $\ast$str2)
+\begin{DoxyCompactList}\small\item\em Compute the \char`\"{}base pair\char`\"{} distance between two secondary structures s1 and s2. \item\end{DoxyCompactList}\item 
+void \hyperlink{utils_8h_a6bf778117d31b7fd90db435323f4ef74}{print\_\-tty\_\-input\_\-seq} (void)
+\begin{DoxyCompactList}\small\item\em Print a line to {\itshape stdout\/} that asks for an input sequence. \item\end{DoxyCompactList}\item 
+void \hyperlink{utils_8h_ae4ef89b662a3e9b5b5f0781d9757aba0}{print\_\-tty\_\-input\_\-seq\_\-str} (const char $\ast$s)
+\begin{DoxyCompactList}\small\item\em Print a line with a user defined string and a ruler to stdout. \item\end{DoxyCompactList}\item 
+void \hyperlink{utils_8h_ae8ae8a34962b9959be3f6c40f0a80ac1}{print\_\-tty\_\-constraint\_\-full} (void)
+\begin{DoxyCompactList}\small\item\em Print structure constraint characters to stdout (full constraint support). \item\end{DoxyCompactList}\item 
+void \hyperlink{utils_8h_a4d167deb70bb51723e44374dc981deb2}{print\_\-tty\_\-constraint} (unsigned int option)
+\begin{DoxyCompactList}\small\item\em Print structure constraint characters to stdout. \item\end{DoxyCompactList}\item 
+void \hyperlink{utils_8h_ad3f18dd83f958f18b2f26ecb99305208}{str\_\-DNA2RNA} (char $\ast$sequence)
+\begin{DoxyCompactList}\small\item\em Convert a DNA input sequence to RNA alphabet. \item\end{DoxyCompactList}\item 
+void \hyperlink{utils_8h_a17b796b806f96b70382077fb5bc519bb}{str\_\-uppercase} (char $\ast$sequence)
+\begin{DoxyCompactList}\small\item\em Convert an input sequence to uppercase. \item\end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{utils_8h_a55c0f6b3b07b6adf2ee235ba901fe397}{get\_\-iindx} (unsigned int length)
+\begin{DoxyCompactList}\small\item\em Get an index mapper array (iindx) for accessing the energy matrices, e.g. \item\end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{utils_8h_a4d9ee1572c1bfcd02d3d3f2db8a6530f}{get\_\-indx} (unsigned int length)
+\begin{DoxyCompactList}\small\item\em Get an index mapper array (indx) for accessing the energy matrices, e.g. \item\end{DoxyCompactList}\item 
+void \hyperlink{utils_8h_a36c3a6c3218b041f992052767bc74549}{constrain\_\-ptypes} (const char $\ast$constraint, unsigned int length, char $\ast$ptype, int $\ast$BP, int min\_\-loop\_\-size, unsigned int idx\_\-type)
+\begin{DoxyCompactList}\small\item\em Insert constraining pair types according to constraint structure string. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned short \hyperlink{utils_8h_af9a866c8417afda7368bbac939ab3c47}{xsubi} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Current 48 bit random number. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Various utility-\/ and helper-\/functions used throughout the Vienna RNA package. 
+
+\subsection{Define Documentation}
+\hypertarget{utils_8h_a2f0d8069e93d3ac54d9320d6bdb8e7e7}{
+\index{utils.h@{utils.h}!VRNA\_\-INPUT\_\-FASTA\_\-HEADER@{VRNA\_\-INPUT\_\-FASTA\_\-HEADER}}
+\index{VRNA\_\-INPUT\_\-FASTA\_\-HEADER@{VRNA\_\-INPUT\_\-FASTA\_\-HEADER}!utils.h@{utils.h}}
+\subsubsection[{VRNA\_\-INPUT\_\-FASTA\_\-HEADER}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRNA\_\-INPUT\_\-FASTA\_\-HEADER~8U}}
+\label{utils_8h_a2f0d8069e93d3ac54d9320d6bdb8e7e7}
+
+
+Input/Output flag of \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()}:\par
+ if used as input option this tells \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()} that the data to be read should comply with the FASTA format. 
+
+the function will return this flag if a fasta header was read \hypertarget{utils_8h_a8566d6787972100e68b5a2a159b4cf45}{
+\index{utils.h@{utils.h}!VRNA\_\-INPUT\_\-SEQUENCE@{VRNA\_\-INPUT\_\-SEQUENCE}}
+\index{VRNA\_\-INPUT\_\-SEQUENCE@{VRNA\_\-INPUT\_\-SEQUENCE}!utils.h@{utils.h}}
+\subsubsection[{VRNA\_\-INPUT\_\-SEQUENCE}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRNA\_\-INPUT\_\-SEQUENCE~16U}}
+\label{utils_8h_a8566d6787972100e68b5a2a159b4cf45}
+
+
+Input flag for \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()}:\par
+ Tell \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()} that we assume to read a nucleotide sequence. 
+
+\hypertarget{utils_8h_ac08a9df45b9721b97a47dbfe7a6e5f85}{
+\index{utils.h@{utils.h}!VRNA\_\-INPUT\_\-CONSTRAINT@{VRNA\_\-INPUT\_\-CONSTRAINT}}
+\index{VRNA\_\-INPUT\_\-CONSTRAINT@{VRNA\_\-INPUT\_\-CONSTRAINT}!utils.h@{utils.h}}
+\subsubsection[{VRNA\_\-INPUT\_\-CONSTRAINT}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRNA\_\-INPUT\_\-CONSTRAINT~32U}}
+\label{utils_8h_ac08a9df45b9721b97a47dbfe7a6e5f85}
+
+
+Input flag for \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()}:\par
+ Tell \hyperlink{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{get\_\-input\_\-line()} that we assume to read a structure constraint. 
+
+\hypertarget{utils_8h_a55e1d16fd693ae9ec8e987b0750da804}{
+\index{utils.h@{utils.h}!VRNA\_\-CONSTRAINT\_\-DOT@{VRNA\_\-CONSTRAINT\_\-DOT}}
+\index{VRNA\_\-CONSTRAINT\_\-DOT@{VRNA\_\-CONSTRAINT\_\-DOT}!utils.h@{utils.h}}
+\subsubsection[{VRNA\_\-CONSTRAINT\_\-DOT}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRNA\_\-CONSTRAINT\_\-DOT~2U}}
+\label{utils_8h_a55e1d16fd693ae9ec8e987b0750da804}
+
+
+dot '. 
+
+' switch for structure constraints (no constraint at all) \hypertarget{utils_8h_afb228174279df9486a5cb56ac0bc79a3}{
+\index{utils.h@{utils.h}!FILENAME\_\-MAX\_\-LENGTH@{FILENAME\_\-MAX\_\-LENGTH}}
+\index{FILENAME\_\-MAX\_\-LENGTH@{FILENAME\_\-MAX\_\-LENGTH}!utils.h@{utils.h}}
+\subsubsection[{FILENAME\_\-MAX\_\-LENGTH}]{\setlength{\rightskip}{0pt plus 5cm}\#define FILENAME\_\-MAX\_\-LENGTH~80}}
+\label{utils_8h_afb228174279df9486a5cb56ac0bc79a3}
+
+
+Maximum length of filenames that are generated by our programs. 
+
+This definition should be used throughout the complete ViennaRNA package wherever a static array holding filenames of output files is declared. \hypertarget{utils_8h_a33c3b1826b8e2739f09f111ec719ded5}{
+\index{utils.h@{utils.h}!FILENAME\_\-ID\_\-LENGTH@{FILENAME\_\-ID\_\-LENGTH}}
+\index{FILENAME\_\-ID\_\-LENGTH@{FILENAME\_\-ID\_\-LENGTH}!utils.h@{utils.h}}
+\subsubsection[{FILENAME\_\-ID\_\-LENGTH}]{\setlength{\rightskip}{0pt plus 5cm}\#define FILENAME\_\-ID\_\-LENGTH~42}}
+\label{utils_8h_a33c3b1826b8e2739f09f111ec719ded5}
+
+
+Maximum length of id taken from fasta header for filename generation. 
+
+this has to be smaller than FILENAME\_\-MAX\_\-LENGTH since in most cases, some suffix will be appended to the ID 
+
+\subsection{Function Documentation}
+\hypertarget{utils_8h_ad7e1e137b3bf1f7108933d302a7f0177}{
+\index{utils.h@{utils.h}!space@{space}}
+\index{space@{space}!utils.h@{utils.h}}
+\subsubsection[{space}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ space (unsigned {\em size})}}
+\label{utils_8h_ad7e1e137b3bf1f7108933d302a7f0177}
+
+
+Allocate space safely. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em size}]The size of the memory to be allocated in bytes \begin{DoxyReturn}{Returns}
+A pointer to the allocated memory 
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{utils_8h_a9037ada838835b1b9db41581a021b0c8}{
+\index{utils.h@{utils.h}!xrealloc@{xrealloc}}
+\index{xrealloc@{xrealloc}!utils.h@{utils.h}}
+\subsubsection[{xrealloc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ xrealloc (void $\ast$ {\em p}, \/  unsigned {\em size})}}
+\label{utils_8h_a9037ada838835b1b9db41581a021b0c8}
+
+
+Reallocate space safely. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em p}]A pointer to the memory region to be reallocated 
+\begin{DoxyParams}{Parameters}
+\item[{\em size}]The size of the memory to be allocated in bytes \begin{DoxyReturn}{Returns}
+A pointer to the newly allocated memory 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{utils_8h_a127ce946e56b5a5773781cabe68e38c5}{
+\index{utils.h@{utils.h}!nrerror@{nrerror}}
+\index{nrerror@{nrerror}!utils.h@{utils.h}}
+\subsubsection[{nrerror}]{\setlength{\rightskip}{0pt plus 5cm}void nrerror (const char {\em message}\mbox{[}$\,$\mbox{]})}}
+\label{utils_8h_a127ce946e56b5a5773781cabe68e38c5}
+
+
+Die with an error message. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{utils_8h_af2355fa8746f2f30fbe71db65dea3d51}{warn\_\-user()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em message}]The error message to be printed before exiting with 'FAILURE' \end{DoxyParams}
+\hypertarget{utils_8h_af2355fa8746f2f30fbe71db65dea3d51}{
+\index{utils.h@{utils.h}!warn\_\-user@{warn\_\-user}}
+\index{warn\_\-user@{warn\_\-user}!utils.h@{utils.h}}
+\subsubsection[{warn\_\-user}]{\setlength{\rightskip}{0pt plus 5cm}void warn\_\-user (const char {\em message}\mbox{[}$\,$\mbox{]})}}
+\label{utils_8h_af2355fa8746f2f30fbe71db65dea3d51}
+
+
+Print a warning message. 
+
+Print a warning message to {\itshape stderr\/} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em message}]The warning message \end{DoxyParams}
+\hypertarget{utils_8h_aaa328491c84996e445d027fde9800f2e}{
+\index{utils.h@{utils.h}!urn@{urn}}
+\index{urn@{urn}!utils.h@{utils.h}}
+\subsubsection[{urn}]{\setlength{\rightskip}{0pt plus 5cm}double urn (void)}}
+\label{utils_8h_aaa328491c84996e445d027fde9800f2e}
+
+
+get a random number from \mbox{[}0..1\mbox{]} 
+
+\begin{DoxyNote}{Note}
+Usually implemented by calling {\itshape erand48()\/}. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+A random number in range \mbox{[}0..1\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{utils_8h_a68ff0849d44f62fe491800378a5ffcb4}{
+\index{utils.h@{utils.h}!int\_\-urn@{int\_\-urn}}
+\index{int\_\-urn@{int\_\-urn}!utils.h@{utils.h}}
+\subsubsection[{int\_\-urn}]{\setlength{\rightskip}{0pt plus 5cm}int int\_\-urn (int {\em from}, \/  int {\em to})}}
+\label{utils_8h_a68ff0849d44f62fe491800378a5ffcb4}
+
+
+Generates a pseudo random integer in a specified range. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em from}]The first number in range 
+\begin{DoxyParams}{Parameters}
+\item[{\em to}]The last number in range \begin{DoxyReturn}{Returns}
+A pseudo random number in range \mbox{[}from, to\mbox{]} 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{utils_8h_a7afeb906cb36e9d77379eabc6907ac46}{
+\index{utils.h@{utils.h}!time\_\-stamp@{time\_\-stamp}}
+\index{time\_\-stamp@{time\_\-stamp}!utils.h@{utils.h}}
+\subsubsection[{time\_\-stamp}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ time\_\-stamp (void)}}
+\label{utils_8h_a7afeb906cb36e9d77379eabc6907ac46}
+
+
+Get a timestamp. 
+
+Returns a string containing the current date in the format \begin{DoxyVerb}Fri Mar 19 21:10:57 1993\end{DoxyVerb}
+
+
+\begin{DoxyReturn}{Returns}
+A string containing the timestamp 
+\end{DoxyReturn}
+\hypertarget{utils_8h_a1b95eac365a021572e1c37e5993a89be}{
+\index{utils.h@{utils.h}!random\_\-string@{random\_\-string}}
+\index{random\_\-string@{random\_\-string}!utils.h@{utils.h}}
+\subsubsection[{random\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ random\_\-string (int {\em l}, \/  const char {\em symbols}\mbox{[}$\,$\mbox{]})}}
+\label{utils_8h_a1b95eac365a021572e1c37e5993a89be}
+
+
+Create a random string using characters from a specified symbol set. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em l}]The length of the sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em symbols}]The symbol set \begin{DoxyReturn}{Returns}
+A random string of length 'l' containing characters from the symbolset 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{utils_8h_ad9dc7bfc9aa664dc6698f17ce07fc7e7}{
+\index{utils.h@{utils.h}!hamming@{hamming}}
+\index{hamming@{hamming}!utils.h@{utils.h}}
+\subsubsection[{hamming}]{\setlength{\rightskip}{0pt plus 5cm}int hamming (const char $\ast$ {\em s1}, \/  const char $\ast$ {\em s2})}}
+\label{utils_8h_ad9dc7bfc9aa664dc6698f17ce07fc7e7}
+
+
+Calculate hamming distance between two sequences. 
+
+Calculate the number of positions in which 
+\begin{DoxyParams}{Parameters}
+\item[{\em s1}]The first sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em s2}]The second sequence \begin{DoxyReturn}{Returns}
+The hamming distance between s1 and s2 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{utils_8h_a96d3c36717d624514055ce201cab1542}{
+\index{utils.h@{utils.h}!hamming\_\-bound@{hamming\_\-bound}}
+\index{hamming\_\-bound@{hamming\_\-bound}!utils.h@{utils.h}}
+\subsubsection[{hamming\_\-bound}]{\setlength{\rightskip}{0pt plus 5cm}int hamming\_\-bound (const char $\ast$ {\em s1}, \/  const char $\ast$ {\em s2}, \/  int {\em n})}}
+\label{utils_8h_a96d3c36717d624514055ce201cab1542}
+
+
+Calculate hamming distance between two sequences up to a specified length. 
+
+This function is similar to \hyperlink{utils_8h_ad9dc7bfc9aa664dc6698f17ce07fc7e7}{hamming()} but instead of comparing both sequences up to their actual length only the first 'n' characters are taken into account 
+\begin{DoxyParams}{Parameters}
+\item[{\em s1}]The first sequence 
+\begin{DoxyParams}{Parameters}
+\item[{\em s2}]The second sequence \begin{DoxyReturn}{Returns}
+The hamming distance between s1 and s2 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{utils_8h_abe51806d14cff0789a8c1df7dbc45b71}{
+\index{utils.h@{utils.h}!get\_\-line@{get\_\-line}}
+\index{get\_\-line@{get\_\-line}!utils.h@{utils.h}}
+\subsubsection[{get\_\-line}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\_\-line (FILE $\ast$ {\em fp})}}
+\label{utils_8h_abe51806d14cff0789a8c1df7dbc45b71}
+
+
+Read a line of arbitrary length from a stream. 
+
+Returns a pointer to the resulting string. The necessary memory is allocated and should be released using {\itshape free()\/} when the string is no longer needed.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fp}]A file pointer to the stream where the function should read from \begin{DoxyReturn}{Returns}
+A pointer to the resulting string 
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{utils_8h_a8ef1835eb83f542396f59f0b205965e5}{
+\index{utils.h@{utils.h}!get\_\-input\_\-line@{get\_\-input\_\-line}}
+\index{get\_\-input\_\-line@{get\_\-input\_\-line}!utils.h@{utils.h}}
+\subsubsection[{get\_\-input\_\-line}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int get\_\-input\_\-line (char $\ast$$\ast$ {\em string}, \/  unsigned int {\em options})}}
+\label{utils_8h_a8ef1835eb83f542396f59f0b205965e5}
+
+
+Retrieve a line from 'stdin' savely while skipping comment characters and other features This function returns the type of input it has read if recognized. 
+
+An option argument allows to switch between different reading modes.\par
+ Currently available options are:\par
+ VRNA\_\-INPUT\_\-NOPRINT\_\-COMMENTS, \hyperlink{utils_8h_a0f6311f11bed1842e3a527ab27b294c6}{VRNA\_\-INPUT\_\-NOSKIP\_\-COMMENTS}, VRNA\_\-INPUT\_\-NOELIM\_\-WS\_\-SUFFIX
+
+pass a collection of options as one value like this: \begin{DoxyVerb}get_input_line(string, option_1 | option_2 | option_n) \end{DoxyVerb}
+
+
+If the function recognizes the type of input, it will report it in the return value. It also reports if a user defined 'quit' command (@-\/sign on 'stdin') was given. Possible return values are:\par
+ \hyperlink{utils_8h_a2f0d8069e93d3ac54d9320d6bdb8e7e7}{VRNA\_\-INPUT\_\-FASTA\_\-HEADER}, \hyperlink{utils_8h_ad403c9ea58f1836689404c2931419c8c}{VRNA\_\-INPUT\_\-ERROR}, \hyperlink{utils_8h_a8e3241b321c9c1a78a69e59e2e019a71}{VRNA\_\-INPUT\_\-MISC}, \hyperlink{utils_8h_a72f3c6ca5c83d2b9baed2922d19c403d}{VRNA\_\-INPUT\_\-QUIT}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]A pointer to the character array that contains the line read 
+\begin{DoxyParams}{Parameters}
+\item[{\em options}]A collection of options for switching the functions behavior \begin{DoxyReturn}{Returns}
+A flag with information about what has been read 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{utils_8h_afd194a69af9d92b5b0412a7627ac1595}{
+\index{utils.h@{utils.h}!read\_\-record@{read\_\-record}}
+\index{read\_\-record@{read\_\-record}!utils.h@{utils.h}}
+\subsubsection[{read\_\-record}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int read\_\-record (char $\ast$$\ast$ {\em header}, \/  char $\ast$$\ast$ {\em sequence}, \/  char $\ast$$\ast$$\ast$ {\em rest}, \/  unsigned int {\em options})}}
+\label{utils_8h_afd194a69af9d92b5b0412a7627ac1595}
+
+
+Get a data record from stdin. 
+
+This function may be used to obtain complete datasets from stdin. A dataset is always defined to contain at least a sequence. If data on stdin starts with a fasta header, i.e. a line like \begin{DoxyVerb}>some header info \end{DoxyVerb}
+ then \hyperlink{utils_8h_afd194a69af9d92b5b0412a7627ac1595}{read\_\-record()} will assume that the sequence that follows the header may span over several lines. To disable this behavior and to assign a single line to the argument 'sequence' one can pass VRNA\_\-INPUT\_\-NO\_\-SPAN in the 'options' argument. If no fasta header is read in the beginning of a data block, a sequence must not span over multiple lines!\par
+ Unless the options \hyperlink{utils_8h_a0f6311f11bed1842e3a527ab27b294c6}{VRNA\_\-INPUT\_\-NOSKIP\_\-COMMENTS} or \hyperlink{utils_8h_ab4db885222b3b69608310d7c7e63e286}{VRNA\_\-INPUT\_\-NOSKIP\_\-BLANK\_\-LINES} are passed, a sequence may be interrupted by lines starting with a comment character or empty lines.\par
+ A sequence is regarded as completely read if it was either assumed to not span over multiple lines, a secondary structure or structure constraint follows the sequence on the next line or a new header marks the beginning of a new sequence...\par
+ All lines following the sequence (this includes comments) and not initiating a new dataset are available through the line-\/array 'rest'. Here one can usually find the structure constraint or other information belonging to the current dataset. Filling of 'rest' may be prevented by passing \hyperlink{utils_8h_a7a2e8c50a0c7ce82e60da1016e1367fd}{VRNA\_\-INPUT\_\-NO\_\-REST} to the options argument.\par
+
+
+\begin{DoxyNote}{Note}
+This function will exit any program with an error message if no sequence could be read!
+\end{DoxyNote}
+The main purpose of this function is to be able to easily parse blocks of data from stdin in the header of a loop where all calculations for the appropriate data is done inside the loop. The loop may be then left on certain return values, e.g.: \begin{DoxyVerb}
+char *id, *seq, **rest;
+int  i;
+while(!(read_record(&id, &seq, &rest, 0) & (VRNA_INPUT_ERROR | VRNA_INPUT_QUIT))){
+  if(id) printf("%s\n", id);
+  printf("%s\n", seq);
+  if(rest)
+    for(i=0;rest[i];i++)
+      printf("%s\n", rest[i]);
+} \end{DoxyVerb}
+
+
+In the example above, the while loop will be terminated when \hyperlink{utils_8h_afd194a69af9d92b5b0412a7627ac1595}{read\_\-record()} returns either an error or a user initiated quit request.\par
+ As long as data is read from stdin, the id is printed if it is available for the current block of data. The sequence will be printed in any case and if some more lines belong to the current block of data each line will be printed as well.
+
+\begin{DoxyNote}{Note}
+Do not forget to free the memory occupied by header, sequence and rest!
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em header}]A pointer which will be set such that it points to the header of the record 
+\begin{DoxyParams}{Parameters}
+\item[{\em sequence}]A pointer which will be set such that it points to the sequence of the record 
+\begin{DoxyParams}{Parameters}
+\item[{\em rest}]A pointer which will be set such that it points to an array of lines which also belong to the record 
+\begin{DoxyParams}{Parameters}
+\item[{\em options}]Some options which may be passed to alter the behavior of the function, use 0 for no options \begin{DoxyReturn}{Returns}
+A flag with information about what the function actually did read 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{utils_8h_ac6dfa5e22928c087c6e09ff0054a7ced}{
+\index{utils.h@{utils.h}!pack\_\-structure@{pack\_\-structure}}
+\index{pack\_\-structure@{pack\_\-structure}!utils.h@{utils.h}}
+\subsubsection[{pack\_\-structure}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ pack\_\-structure (const char $\ast$ {\em struc})}}
+\label{utils_8h_ac6dfa5e22928c087c6e09ff0054a7ced}
+
+
+Pack secondary secondary structure, 5:1 compression using base 3 encoding. 
+
+Returns a binary string encoding of the secondary structure using a 5:1 compression scheme. The string is NULL terminated and can therefore be used with standard string functions such as strcmp(). Useful for programs that need to keep many structures in memory.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em struc}]The secondary structure in dot-\/bracket notation \begin{DoxyReturn}{Returns}
+The binary encoded structure 
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{utils_8h_a071c6921efe1eb974f115ee6fefa3c39}{
+\index{utils.h@{utils.h}!unpack\_\-structure@{unpack\_\-structure}}
+\index{unpack\_\-structure@{unpack\_\-structure}!utils.h@{utils.h}}
+\subsubsection[{unpack\_\-structure}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ unpack\_\-structure (const char $\ast$ {\em packed})}}
+\label{utils_8h_a071c6921efe1eb974f115ee6fefa3c39}
+
+
+Unpack secondary structure previously packed with \hyperlink{utils_8h_ac6dfa5e22928c087c6e09ff0054a7ced}{pack\_\-structure()}. 
+
+Translate a compressed binary string produced by \hyperlink{utils_8h_ac6dfa5e22928c087c6e09ff0054a7ced}{pack\_\-structure()} back into the familiar dot-\/bracket notation.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em packed}]The binary encoded packed secondary structure \begin{DoxyReturn}{Returns}
+The unpacked secondary structure in dot-\/bracket notation 
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{utils_8h_a89c32307ee50a0026f4a3131fac0845a}{
+\index{utils.h@{utils.h}!make\_\-pair\_\-table@{make\_\-pair\_\-table}}
+\index{make\_\-pair\_\-table@{make\_\-pair\_\-table}!utils.h@{utils.h}}
+\subsubsection[{make\_\-pair\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}short$\ast$ make\_\-pair\_\-table (const char $\ast$ {\em structure})}}
+\label{utils_8h_a89c32307ee50a0026f4a3131fac0845a}
+
+
+Create a pair table of a secondary structure. 
+
+Returns a newly allocated table, such that table\mbox{[}i\mbox{]}=j if (i.j) pair or 0 if i is unpaired, table\mbox{[}0\mbox{]} contains the length of the structure.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em structure}]The secondary structure in dot-\/bracket notation \begin{DoxyReturn}{Returns}
+A pointer to the created pair\_\-table 
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{utils_8h_afeaa6d68eef3a99d0a7aa08aa91c6601}{
+\index{utils.h@{utils.h}!copy\_\-pair\_\-table@{copy\_\-pair\_\-table}}
+\index{copy\_\-pair\_\-table@{copy\_\-pair\_\-table}!utils.h@{utils.h}}
+\subsubsection[{copy\_\-pair\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}short$\ast$ copy\_\-pair\_\-table (const short $\ast$ {\em pt})}}
+\label{utils_8h_afeaa6d68eef3a99d0a7aa08aa91c6601}
+
+
+Get an exact copy of a pair table. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pt}]The pair table to be copied \begin{DoxyReturn}{Returns}
+A pointer to the copy of 'pt' 
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{utils_8h_a3c81b3967056c3888b8472b65fbb16f5}{
+\index{utils.h@{utils.h}!alimake\_\-pair\_\-table@{alimake\_\-pair\_\-table}}
+\index{alimake\_\-pair\_\-table@{alimake\_\-pair\_\-table}!utils.h@{utils.h}}
+\subsubsection[{alimake\_\-pair\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}short$\ast$ alimake\_\-pair\_\-table (const char $\ast$ {\em structure})}}
+\label{utils_8h_a3c81b3967056c3888b8472b65fbb16f5}
+
+
+Pair table for snoop align. 
+
+\hypertarget{utils_8h_a9aa3bf3b4346bb7fb88efc154dd07a79}{
+\index{utils.h@{utils.h}!make\_\-pair\_\-table\_\-snoop@{make\_\-pair\_\-table\_\-snoop}}
+\index{make\_\-pair\_\-table\_\-snoop@{make\_\-pair\_\-table\_\-snoop}!utils.h@{utils.h}}
+\subsubsection[{make\_\-pair\_\-table\_\-snoop}]{\setlength{\rightskip}{0pt plus 5cm}short$\ast$ make\_\-pair\_\-table\_\-snoop (const char $\ast$ {\em structure})}}
+\label{utils_8h_a9aa3bf3b4346bb7fb88efc154dd07a79}
+
+
+returns a newly allocated table, such that: table\mbox{[}i\mbox{]}=j if (i.j) pair or 0 if i is unpaired, table\mbox{[}0\mbox{]} contains the length of the structure. 
+
+The special pseudoknotted H/ACA-\/mRNA structure is taken into account. \hypertarget{utils_8h_a6ebbcd29a754f0e4f1a66d1fd84184db}{
+\index{utils.h@{utils.h}!bp\_\-distance@{bp\_\-distance}}
+\index{bp\_\-distance@{bp\_\-distance}!utils.h@{utils.h}}
+\subsubsection[{bp\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}int bp\_\-distance (const char $\ast$ {\em str1}, \/  const char $\ast$ {\em str2})}}
+\label{utils_8h_a6ebbcd29a754f0e4f1a66d1fd84184db}
+
+
+Compute the \char`\"{}base pair\char`\"{} distance between two secondary structures s1 and s2. 
+
+The sequences should have the same length. dist = number of base pairs in one structure but not in the other same as edit distance with open-\/pair close-\/pair as move-\/set
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em str1}]First structure in dot-\/bracket notation 
+\begin{DoxyParams}{Parameters}
+\item[{\em str2}]Second structure in dot-\/bracket notation \begin{DoxyReturn}{Returns}
+The base pair distance between str1 and str2 
+\end{DoxyReturn}
+\end{DoxyParams}
+\end{DoxyParams}
+\hypertarget{utils_8h_a6bf778117d31b7fd90db435323f4ef74}{
+\index{utils.h@{utils.h}!print\_\-tty\_\-input\_\-seq@{print\_\-tty\_\-input\_\-seq}}
+\index{print\_\-tty\_\-input\_\-seq@{print\_\-tty\_\-input\_\-seq}!utils.h@{utils.h}}
+\subsubsection[{print\_\-tty\_\-input\_\-seq}]{\setlength{\rightskip}{0pt plus 5cm}void print\_\-tty\_\-input\_\-seq (void)}}
+\label{utils_8h_a6bf778117d31b7fd90db435323f4ef74}
+
+
+Print a line to {\itshape stdout\/} that asks for an input sequence. 
+
+There will also be a ruler (scale line) printed that helps orientation of the sequence positions \hypertarget{utils_8h_ae4ef89b662a3e9b5b5f0781d9757aba0}{
+\index{utils.h@{utils.h}!print\_\-tty\_\-input\_\-seq\_\-str@{print\_\-tty\_\-input\_\-seq\_\-str}}
+\index{print\_\-tty\_\-input\_\-seq\_\-str@{print\_\-tty\_\-input\_\-seq\_\-str}!utils.h@{utils.h}}
+\subsubsection[{print\_\-tty\_\-input\_\-seq\_\-str}]{\setlength{\rightskip}{0pt plus 5cm}void print\_\-tty\_\-input\_\-seq\_\-str (const char $\ast$ {\em s})}}
+\label{utils_8h_ae4ef89b662a3e9b5b5f0781d9757aba0}
+
+
+Print a line with a user defined string and a ruler to stdout. 
+
+(usually this is used to ask for user input) There will also be a ruler (scale line) printed that helps orientation of the sequence positions
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]A user defined string that will be printed to stdout \end{DoxyParams}
+\hypertarget{utils_8h_ae8ae8a34962b9959be3f6c40f0a80ac1}{
+\index{utils.h@{utils.h}!print\_\-tty\_\-constraint\_\-full@{print\_\-tty\_\-constraint\_\-full}}
+\index{print\_\-tty\_\-constraint\_\-full@{print\_\-tty\_\-constraint\_\-full}!utils.h@{utils.h}}
+\subsubsection[{print\_\-tty\_\-constraint\_\-full}]{\setlength{\rightskip}{0pt plus 5cm}void print\_\-tty\_\-constraint\_\-full (void)}}
+\label{utils_8h_ae8ae8a34962b9959be3f6c40f0a80ac1}
+
+
+Print structure constraint characters to stdout (full constraint support). 
+
+\hypertarget{utils_8h_a4d167deb70bb51723e44374dc981deb2}{
+\index{utils.h@{utils.h}!print\_\-tty\_\-constraint@{print\_\-tty\_\-constraint}}
+\index{print\_\-tty\_\-constraint@{print\_\-tty\_\-constraint}!utils.h@{utils.h}}
+\subsubsection[{print\_\-tty\_\-constraint}]{\setlength{\rightskip}{0pt plus 5cm}void print\_\-tty\_\-constraint (unsigned int {\em option})}}
+\label{utils_8h_a4d167deb70bb51723e44374dc981deb2}
+
+
+Print structure constraint characters to stdout. 
+
+(constraint support is specified by option parameter)
+
+Currently available options are:\par
+ \hyperlink{utils_8h_a4e8d7120619b21df0309af425acbc9a2}{VRNA\_\-CONSTRAINT\_\-PIPE} (paired with another base)\par
+ \hyperlink{utils_8h_a55e1d16fd693ae9ec8e987b0750da804}{VRNA\_\-CONSTRAINT\_\-DOT} (no constraint at all)\par
+ \hyperlink{utils_8h_a077c56550c915d4516d84a5ed8d051f4}{VRNA\_\-CONSTRAINT\_\-X} (base must not pair)\par
+ \hyperlink{utils_8h_a0512d790f738742cbdcf3f7c87b46f48}{VRNA\_\-CONSTRAINT\_\-ANG\_\-BRACK} (paired downstream/upstream)\par
+ \hyperlink{utils_8h_aa20bfca4bb2903c8548000a33d7bbb53}{VRNA\_\-CONSTRAINT\_\-RND\_\-BRACK} (base i pairs base j)\par
+
+
+pass a collection of options as one value like this: \begin{DoxyVerb}print_tty_constraint(option_1 | option_2 | option_n) \end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em option}]Option switch that tells which constraint help will be printed \end{DoxyParams}
+\hypertarget{utils_8h_ad3f18dd83f958f18b2f26ecb99305208}{
+\index{utils.h@{utils.h}!str\_\-DNA2RNA@{str\_\-DNA2RNA}}
+\index{str\_\-DNA2RNA@{str\_\-DNA2RNA}!utils.h@{utils.h}}
+\subsubsection[{str\_\-DNA2RNA}]{\setlength{\rightskip}{0pt plus 5cm}void str\_\-DNA2RNA (char $\ast$ {\em sequence})}}
+\label{utils_8h_ad3f18dd83f958f18b2f26ecb99305208}
+
+
+Convert a DNA input sequence to RNA alphabet. 
+
+This function substitudes {\itshape T\/} and {\itshape t\/} with {\itshape U\/} and {\itshape u\/}, respectively
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sequence}]The sequence to be converted \end{DoxyParams}
+\hypertarget{utils_8h_a17b796b806f96b70382077fb5bc519bb}{
+\index{utils.h@{utils.h}!str\_\-uppercase@{str\_\-uppercase}}
+\index{str\_\-uppercase@{str\_\-uppercase}!utils.h@{utils.h}}
+\subsubsection[{str\_\-uppercase}]{\setlength{\rightskip}{0pt plus 5cm}void str\_\-uppercase (char $\ast$ {\em sequence})}}
+\label{utils_8h_a17b796b806f96b70382077fb5bc519bb}
+
+
+Convert an input sequence to uppercase. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sequence}]The sequence to be converted \end{DoxyParams}
+\hypertarget{utils_8h_a55c0f6b3b07b6adf2ee235ba901fe397}{
+\index{utils.h@{utils.h}!get\_\-iindx@{get\_\-iindx}}
+\index{get\_\-iindx@{get\_\-iindx}!utils.h@{utils.h}}
+\subsubsection[{get\_\-iindx}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ get\_\-iindx (unsigned int {\em length})}}
+\label{utils_8h_a55c0f6b3b07b6adf2ee235ba901fe397}
+
+
+Get an index mapper array (iindx) for accessing the energy matrices, e.g. 
+
+in partition function related functions.
+
+Access of a position \char`\"{}(i,j)\char`\"{} is then accomplished by using \begin{DoxyVerb}(i,j) ~ iindx[i]-j \end{DoxyVerb}
+ This function is necessary as most of the two-\/dimensional energy matrices are actually one-\/dimensional arrays throughout the ViennaRNAPackage
+
+Consult the implemented code to find out about the mapping formula ;)
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{utils_8h_a4d9ee1572c1bfcd02d3d3f2db8a6530f}{get\_\-indx()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em length}]The length of the RNA sequence \begin{DoxyReturn}{Returns}
+The mapper array 
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{utils_8h_a4d9ee1572c1bfcd02d3d3f2db8a6530f}{
+\index{utils.h@{utils.h}!get\_\-indx@{get\_\-indx}}
+\index{get\_\-indx@{get\_\-indx}!utils.h@{utils.h}}
+\subsubsection[{get\_\-indx}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ get\_\-indx (unsigned int {\em length})}}
+\label{utils_8h_a4d9ee1572c1bfcd02d3d3f2db8a6530f}
+
+
+Get an index mapper array (indx) for accessing the energy matrices, e.g. 
+
+in MFE related functions.
+
+Access of a position \char`\"{}(i,j)\char`\"{} is then accomplished by using \begin{DoxyVerb}(i,j) ~ indx[j]+i \end{DoxyVerb}
+ This function is necessary as most of the two-\/dimensional energy matrices are actually one-\/dimensional arrays throughout the ViennaRNAPackage
+
+Consult the implemented code to find out about the mapping formula ;)
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{utils_8h_a55c0f6b3b07b6adf2ee235ba901fe397}{get\_\-iindx()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em length}]The length of the RNA sequence \begin{DoxyReturn}{Returns}
+The mapper array 
+\end{DoxyReturn}
+\end{DoxyParams}
+\hypertarget{utils_8h_a36c3a6c3218b041f992052767bc74549}{
+\index{utils.h@{utils.h}!constrain\_\-ptypes@{constrain\_\-ptypes}}
+\index{constrain\_\-ptypes@{constrain\_\-ptypes}!utils.h@{utils.h}}
+\subsubsection[{constrain\_\-ptypes}]{\setlength{\rightskip}{0pt plus 5cm}void constrain\_\-ptypes (const char $\ast$ {\em constraint}, \/  unsigned int {\em length}, \/  char $\ast$ {\em ptype}, \/  int $\ast$ {\em BP}, \/  int {\em min\_\-loop\_\-size}, \/  unsigned int {\em idx\_\-type})}}
+\label{utils_8h_a36c3a6c3218b041f992052767bc74549}
+
+
+Insert constraining pair types according to constraint structure string. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{utils_8h_a4d9ee1572c1bfcd02d3d3f2db8a6530f}{get\_\-indx()}, \hyperlink{utils_8h_a55c0f6b3b07b6adf2ee235ba901fe397}{get\_\-iindx()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em constraint}]The structure constraint string 
+\begin{DoxyParams}{Parameters}
+\item[{\em length}]The actual length of the sequence (constraint may be shorter) 
+\begin{DoxyParams}{Parameters}
+\item[{\em ptype}]A pointer to the basepair type array 
+\begin{DoxyParams}{Parameters}
+\item[{\em min\_\-loop\_\-size}]The minimal loop size (usually \hyperlink{energy__const_8h_ae646250fd59311356c7e5722a81c3a96}{TURN} ) 
+\begin{DoxyParams}{Parameters}
+\item[{\em idx\_\-type}]Define the access type for base pair type array (0 = indx, 1 = iindx) \end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\hypertarget{utils_8h_af9a866c8417afda7368bbac939ab3c47}{
+\index{utils.h@{utils.h}!xsubi@{xsubi}}
+\index{xsubi@{xsubi}!utils.h@{utils.h}}
+\subsubsection[{xsubi}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short {\bf xsubi}\mbox{[}3\mbox{]}}}
+\label{utils_8h_af9a866c8417afda7368bbac939ab3c47}
+
+
+Current 48 bit random number. 
+
+This variable is used by \hyperlink{utils_8h_aaa328491c84996e445d027fde9800f2e}{urn()}. These should be set to some random number seeds before the first call to \hyperlink{utils_8h_aaa328491c84996e445d027fde9800f2e}{urn()}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{utils_8h_aaa328491c84996e445d027fde9800f2e}{urn()} 
+\end{DoxySeeAlso}

@@ -1,0 +1,462 @@
+\label{mp__utils_toc}
+\hypertarget{mp__utils_toc}{}
+
+
+\subsubsection*{Table of Contents}
+
+
+
+
+
+\begin{DoxyItemize}
+\item \hyperlink{mp__fold_mp_mfe_Fold}{Calculating Minimum Free Energy Structures} \item \hyperlink{mp__fold_mp_PF_Fold}{Calculating Partition Functions and Pair Probabilities} \item \hyperlink{mp__fold_mp_Inverse_Fold}{Searching for Predefined Structures} \item \hyperlink{mp__fold_mp_Suboptimal_folding}{Enumerating Suboptimal Structures} \item \hyperlink{mp__fold_mp_Cofolding}{Predicting hybridization structures of two molecules} \item \hyperlink{mp__fold_mp_Local_Fold}{Predicting local structures of large sequences} \item \hyperlink{mp__fold_mp_Alignment_Fold}{Predicting Consensus Structures from Alignment} \item \hyperlink{mp__fold_mp_Fold_Vars}{Global Variables for the Folding Routines} \item \hyperlink{mp__fold_mp_Param_Files}{Reading Energy Parameters from File}\end{DoxyItemize}
+
+
+\hypertarget{mp__fold_mp_mfe_Fold}{}\section{Calculating Minimum Free Energy Structures}\label{mp__fold_mp_mfe_Fold}
+The library provides a fast dynamic programming minimum free energy folding algorithm as described by \hyperlink{mp__ref_zuker_81}{Zuker \& Stiegler (1981)}.
+
+Associated functions are:
+
+\begin{DoxyVerb}
+float fold (char* sequence, char* structure);
+\end{DoxyVerb}
+ Compute minimum free energy and an appropriate secondary structure of an RNA sequence. 
+
+\begin{DoxyVerb}
+float circfold (char* sequence, char* structure);
+\end{DoxyVerb}
+ Compute minimum free energy and an appropriate secondary structure of a circular RNA sequence. 
+
+\begin{DoxyVerb}
+float energy_of_structure(const char *string,
+                          const char *structure,
+                          int verbosity_level);
+\end{DoxyVerb}
+ Calculate the free energy of an already folded RNA using global model detail settings. 
+
+\begin{DoxyVerb}
+float energy_of_circ_structure( const char *string,
+                                const char *structure,
+                                int verbosity_level);
+\end{DoxyVerb}
+ Calculate the free energy of an already folded circular RNA. 
+
+\begin{DoxyVerb}
+void  update_fold_params(void);
+\end{DoxyVerb}
+ Recalculate energy parameters. 
+
+\begin{DoxyVerb}
+void  free_arrays(void);
+\end{DoxyVerb}
+ Free arrays for mfe folding. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{fold_8h}{fold.h}, \hyperlink{cofold_8h}{cofold.h}, \hyperlink{2Dfold_8h}{2Dfold.h}, \hyperlink{Lfold_8h}{Lfold.h}, \hyperlink{alifold_8h}{alifold.h} and \hyperlink{subopt_8h}{subopt.h} for a complete list of available functions.
+\end{DoxySeeAlso}
+\hypertarget{mp__fold_mp_PF_Fold}{}\section{Calculating Partition Functions and Pair Probabilities}\label{mp__fold_mp_PF_Fold}
+Instead of the minimum free energy structure the partition function of all possible structures and from that the pairing probability for every possible pair can be calculated, using a dynamic programming algorithm as described by \hyperlink{mp__ref_mccaskill_90}{McCaskill (1990)}. The following functions are provided:
+
+\begin{DoxyVerb}
+float pf_fold ( char* sequence,
+                char* structure)
+\end{DoxyVerb}
+ Compute the partition function $Q$ of an RNA sequence. 
+
+\begin{DoxyVerb}
+void free_pf_arrays (void)
+\end{DoxyVerb}
+ Free arrays for the partition function recursions. 
+
+\begin{DoxyVerb}
+void update_pf_params (int length)
+\end{DoxyVerb}
+ Recalculate energy parameters. 
+
+\begin{DoxyVerb}
+char *get_centroid_struct_pl( int length,
+                              double *dist,
+                              plist *pl);
+\end{DoxyVerb}
+ Get the centroid structure of the ensemble. 
+
+\begin{DoxyVerb}
+char *get_centroid_struct_pr( int length,
+                              double *dist,
+                              double *pr);
+\end{DoxyVerb}
+ Get the centroid structure of the ensemble. 
+
+\begin{DoxyVerb}
+double mean_bp_distance_pr( int length,
+                            double *pr);
+\end{DoxyVerb}
+ Get the mean base pair distance in the thermodynamic ensemble. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{part__func_8h}{part\_\-func.h}, \hyperlink{part__func__co_8h}{part\_\-func\_\-co.h}, \hyperlink{part__func__up_8h}{part\_\-func\_\-up.h}, \hyperlink{2Dpfold_8h}{2Dpfold.h}, \hyperlink{LPfold_8h}{LPfold.h}, \hyperlink{alifold_8h}{alifold.h} and \hyperlink{MEA_8h}{MEA.h} for a complete list of available functions.
+\end{DoxySeeAlso}
+\hypertarget{mp__fold_mp_Inverse_Fold}{}\section{Searching for Predefined Structures}\label{mp__fold_mp_Inverse_Fold}
+We provide two functions that search for sequences with a given structure, thereby inverting the folding routines.
+
+\begin{DoxyVerb}
+float inverse_fold (char *start,
+                    char *target)
+\end{DoxyVerb}
+ Find sequences with predefined structure. 
+
+\begin{DoxyVerb}
+float inverse_pf_fold ( char *start,
+                        char *target)
+\end{DoxyVerb}
+ Find sequence that maximizes probability of a predefined structure. 
+
+The following global variables define the behavior or show the results of the inverse folding routines:
+
+\begin{DoxyVerb}
+char *symbolset
+\end{DoxyVerb}
+ This global variable points to the allowed bases, initially \char`\"{}AUGC\char`\"{}. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{inverse_8h}{inverse.h} for more details and a complete list of available functions.
+\end{DoxySeeAlso}
+\hypertarget{mp__fold_mp_Suboptimal_folding}{}\section{Enumerating Suboptimal Structures}\label{mp__fold_mp_Suboptimal_folding}
+\begin{DoxyVerb}
+SOLUTION *subopt (char *sequence,
+                  char *constraint,
+                  int *delta,
+                  FILE *fp)
+\end{DoxyVerb}
+ Returns list of subopt structures or writes to fp. 
+
+\begin{DoxyVerb}
+SOLUTION *subopt_circ ( char *sequence,
+                        char *constraint,
+                        int *delta,
+                        FILE *fp)
+\end{DoxyVerb}
+ Returns list of circular subopt structures or writes to fp. 
+
+\begin{DoxyVerb}
+SOLUTION  *zukersubopt(const char *string);
+\end{DoxyVerb}
+ Compute Zuker type suboptimal structures. 
+
+\begin{DoxyVerb}
+char  *TwoDpfold_pbacktrack ( TwoDpfold_vars *vars,
+                              unsigned int d1,
+                              unsigned int d2)
+\end{DoxyVerb}
+ Sample secondary structure representatives from a set of distance classes according to their Boltzmann probability. 
+
+\begin{DoxyVerb}
+char  *alipbacktrack (double *prob)
+\end{DoxyVerb}
+ Sample a consensus secondary structure from the Boltzmann ensemble according its probability\par
+. 
+
+\begin{DoxyVerb}
+char    *pbacktrack(char *sequence);
+\end{DoxyVerb}
+ Sample a secondary structure from the Boltzmann ensemble according its probability\par
+. 
+
+\begin{DoxyVerb}
+char    *pbacktrack_circ(char *sequence);
+\end{DoxyVerb}
+ Sample a secondary structure of a circular RNA from the Boltzmann ensemble according its probability. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{subopt_8h}{subopt.h}, \hyperlink{part__func_8h}{part\_\-func.h}, \hyperlink{alifold_8h}{alifold.h} and \hyperlink{2Dpfold_8h}{2Dpfold.h} for more detailed descriptions
+\end{DoxySeeAlso}
+\hypertarget{mp__fold_mp_Cofolding}{}\section{Predicting hybridization structures of two molecules}\label{mp__fold_mp_Cofolding}
+The function of an RNA molecule often depends on its interaction with other RNAs. The following routines therefore allow to predict structures formed by two RNA molecules upon hybridization.\par
+ One approach to co-\/folding two RNAs consists of concatenating the two sequences and keeping track of the concatenation point in all energy evaluations. Correspondingly, many of the \hyperlink{cofold_8h_abc8517f22cfe70595ee81fc837910d52}{cofold()} and \hyperlink{part__func__co_8h_aa86a5f998789ed71813d23d7307a791b}{co\_\-pf\_\-fold()} routines below take one sequence string as argument and use the the global variable \hyperlink{fold__vars_8h_ab9b2c3a37a5516614c06d0ab54b97cda}{cut\_\-point} to mark the concatenation point. Note that while the {\itshape RNAcofold\/} program uses the '\&' character to mark the chain break in its input, you should not use an '\&' when using the library routines (set \hyperlink{fold__vars_8h_ab9b2c3a37a5516614c06d0ab54b97cda}{cut\_\-point} instead).\par
+ In a second approach to co-\/folding two RNAs, cofolding is seen as a stepwise process. In the first step the probability of an unpaired region is calculated and in a second step this probability of an unpaired region is multiplied with the probability of an interaction between the two RNAs. This approach is implemented for the interaction between a long target sequence and a short ligand RNA. Function \hyperlink{part__func__up_8h_a5b4ee40e190d2f633cd01cf0d2fe93cf}{pf\_\-unstru()} calculates the partition function over all unpaired regions in the input sequence. Function \hyperlink{part__func__up_8h_a1aa0aa02bc3a724f87360c03097afd00}{pf\_\-interact()}, which calculates the partition function over all possible interactions between two sequences, needs both sequence as separate strings as input.
+
+\begin{DoxyVerb}
+int cut_point
+\end{DoxyVerb}
+ Marks the position (starting from 1) of the first nucleotide of the second molecule within the concatenated sequence. 
+
+\begin{DoxyVerb}
+float cofold (char *sequence,
+              char *structure)
+\end{DoxyVerb}
+ Compute the minimum free energy of two interacting RNA molecules. 
+
+\begin{DoxyVerb}
+void  free_co_arrays (void)
+\end{DoxyVerb}
+ Free memory occupied by \hyperlink{cofold_8h_abc8517f22cfe70595ee81fc837910d52}{cofold()}. 
+
+{\bfseries Partition Function Cofolding}
+
+To simplify the implementation the partition function computation is done internally in a null model that does not include the duplex initiation energy, i.e. the entropic penalty for producing a dimer from two monomers). The resulting free energies and pair probabilities are initially relative to that null model. In a second step the free energies can be corrected to include the dimerization penalty, and the pair probabilities can be divided into the conditional pair probabilities given that a re dimer is formed or not formed.
+
+\begin{DoxyVerb}
+cofoldF co_pf_fold( char *sequence,
+                    char *structure);
+\end{DoxyVerb}
+ Calculate partition function and base pair probabilities. 
+
+\begin{DoxyVerb}
+void    free_co_pf_arrays(void);
+\end{DoxyVerb}
+ Free the memory occupied by \hyperlink{part__func__co_8h_aa86a5f998789ed71813d23d7307a791b}{co\_\-pf\_\-fold()}. 
+
+{\bfseries Cofolding all Dimeres, Concentrations}
+
+After computing the partition functions of all possible dimeres one can compute the probabilities of base pairs, the concentrations out of start concentrations and sofar and soaway.
+
+\begin{DoxyVerb}
+void  compute_probabilities(
+              double FAB,
+              double FEA,
+              double FEB,
+              struct plist  *prAB,
+              struct plist  *prA,
+              struct plist  *prB,
+              int Alength)
+\end{DoxyVerb}
+ Compute Boltzmann probabilities of dimerization without homodimers. 
+
+\begin{DoxyVerb}
+ConcEnt *get_concentrations(double FEAB,
+                            double FEAA,
+                            double FEBB,
+                            double FEA,
+                            double FEB,
+                            double * startconc)
+\end{DoxyVerb}
+ Given two start monomer concentrations a and b, compute the concentrations in thermodynamic equilibrium of all dimers and the monomers. 
+
+{\bfseries Partition Function Cofolding as a stepwise process}
+
+In this approach to cofolding the interaction between two RNA molecules is seen as a stepwise process. In a first step, the target molecule has to adopt a structure in which a binding site is accessible. In a second step, the ligand molecule will hybridize with a region accessible to an interaction. Consequently the algorithm is designed as a two step process: The first step is the calculation of the probability that a region within the target is unpaired, or equivalently, the calculation of the free energy needed to expose a region. In the second step we compute the free energy of an interaction for every possible binding site. Associated functions are:
+
+\begin{DoxyVerb}
+pu_contrib *pf_unstru ( char *sequence,
+                        int max_w)
+\end{DoxyVerb}
+ Calculate the partition function over all unpaired regions of a maximal length. 
+
+\begin{DoxyVerb}
+void  free_pu_contrib_struct (pu_contrib *pu)
+\end{DoxyVerb}
+ Frees the output of function \hyperlink{part__func__up_8h_a5b4ee40e190d2f633cd01cf0d2fe93cf}{pf\_\-unstru()}. 
+
+\begin{DoxyVerb}
+interact *pf_interact(
+              const char *s1,
+              const char *s2,
+              pu_contrib *p_c,
+              pu_contrib *p_c2,
+              int max_w,
+              char *cstruc,
+              int incr3,
+              int incr5)
+\end{DoxyVerb}
+ Calculates the probability of a local interaction between two sequences. 
+
+\begin{DoxyVerb}
+void free_interact (interact *pin)
+\end{DoxyVerb}
+ Frees the output of function \hyperlink{part__func__up_8h_a1aa0aa02bc3a724f87360c03097afd00}{pf\_\-interact()}. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{cofold_8h}{cofold.h}, \hyperlink{part__func__co_8h}{part\_\-func\_\-co.h} and \hyperlink{part__func__up_8h}{part\_\-func\_\-up.h} for more details
+\end{DoxySeeAlso}
+\hypertarget{mp__fold_mp_Local_Fold}{}\section{Predicting local structures of large sequences}\label{mp__fold_mp_Local_Fold}
+Local structures can be predicted by a modified version of the \hyperlink{fold_8h_aadafcb0f140795ae62e5ca027e335a9b}{fold()} algorithm that restricts the span of all base pairs.
+
+\begin{DoxyVerb}
+float Lfold ( const char *string,
+              char *structure,
+              int maxdist)
+\end{DoxyVerb}
+ The local analog to \hyperlink{fold_8h_aadafcb0f140795ae62e5ca027e335a9b}{fold()}. 
+
+\begin{DoxyVerb}
+float aliLfold( const char **strings,
+                char *structure,
+                int maxdist)
+\end{DoxyVerb}
+ 
+
+\begin{DoxyVerb}
+float Lfoldz (const char *string,
+              char *structure,
+              int maxdist,
+              int zsc,
+              double min_z)
+\end{DoxyVerb}
+ 
+
+\begin{DoxyVerb}
+plist *pfl_fold (
+            char *sequence,
+            int winSize,
+            int pairSize,
+            float cutoffb,
+            double **pU,
+            struct plist **dpp2,
+            FILE *pUfp,
+            FILE *spup)
+\end{DoxyVerb}
+ Compute partition functions for locally stable secondary structures {\bfseries (berni! update me)} 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{Lfold_8h}{Lfold.h} and \hyperlink{LPfold_8h}{LPfold.h} for more details
+\end{DoxySeeAlso}
+\hypertarget{mp__fold_mp_Alignment_Fold}{}\section{Predicting Consensus Structures from Alignment}\label{mp__fold_mp_Alignment_Fold}
+Consensus structures can be predicted by a modified version of the \hyperlink{fold_8h_aadafcb0f140795ae62e5ca027e335a9b}{fold()} algorithm that takes a set of aligned sequences instead of a single sequence. The energy function consists of the mean energy averaged over the sequences, plus a covariance term that favors pairs with consistent and compensatory mutations and penalizes pairs that cannot be formed by all structures. For details see \hyperlink{mp__ref_hofacker_02}{Hofacker (2002)}.
+
+\begin{DoxyVerb}
+float  alifold (const char **strings,
+                char *structure)
+\end{DoxyVerb}
+ Compute MFE and according consensus structure of an alignment of sequences. 
+
+\begin{DoxyVerb}
+float  circalifold (const char **strings,
+                    char *structure)
+\end{DoxyVerb}
+ Compute MFE and according structure of an alignment of sequences assuming the sequences are circular instead of linear. 
+
+\begin{DoxyVerb}
+void    free_alifold_arrays (void)
+\end{DoxyVerb}
+ Free the memory occupied by MFE alifold functions. 
+
+\begin{DoxyVerb}
+float   energy_of_alistruct (
+            const char **sequences,
+            const char *structure,
+            int n_seq,
+            float *energy)
+\end{DoxyVerb}
+ Calculate the free energy of a consensus structure given a set of aligned sequences. 
+
+\begin{DoxyVerb}
+struct pair_info
+\end{DoxyVerb}
+ A base pair info structure. 
+
+\begin{DoxyVerb}
+double  cv_fact
+\end{DoxyVerb}
+ This variable controls the weight of the covariance term in the energy function of alignment folding algorithms. 
+
+\begin{DoxyVerb}
+double  nc_fact
+\end{DoxyVerb}
+ This variable controls the magnitude of the penalty for non-\/compatible sequences in the covariance term of alignment folding algorithms. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{alifold_8h}{alifold.h} for more details
+\end{DoxySeeAlso}
+\hypertarget{mp__fold_mp_Fold_Vars}{}\section{Global Variables for the Folding Routines}\label{mp__fold_mp_Fold_Vars}
+The following global variables change the behavior the folding algorithms or contain additional information after folding.
+
+\begin{DoxyVerb}
+int noGU
+\end{DoxyVerb}
+ Global switch to forbid/allow GU base pairs at all. 
+
+\begin{DoxyVerb}
+int no_closingGU
+\end{DoxyVerb}
+ GU allowed only inside stacks if set to 1. 
+
+\begin{DoxyVerb}
+int noLonelyPairs
+\end{DoxyVerb}
+ Global switch to avoid/allow helices of length 1. 
+
+\begin{DoxyVerb}
+int tetra_loop
+\end{DoxyVerb}
+ Include special stabilizing energies for some tri-\/, tetra-\/ and hexa-\/loops;. 
+
+\begin{DoxyVerb}
+int energy_set
+\end{DoxyVerb}
+ 0 = BP; 1=any mit GC; 2=any mit AU-\/parameter 
+
+\begin{DoxyVerb}
+float temperature
+\end{DoxyVerb}
+ Rescale energy parameters to a temperature in degC. 
+
+\begin{DoxyVerb}
+int dangles
+\end{DoxyVerb}
+ Switch the energy model for dangling end contributions (0, 1, 2, 3). 
+
+\begin{DoxyVerb}
+char *nonstandards
+\end{DoxyVerb}
+ contains allowed non standard base pairs 
+
+\begin{DoxyVerb}
+int cut_point
+\end{DoxyVerb}
+ Marks the position (starting from 1) of the first nucleotide of the second molecule within the concatenated sequence. 
+
+\begin{DoxyVerb}
+float pf_scale
+\end{DoxyVerb}
+ A scaling factor used by \hyperlink{part__func_8h_adc3db3d98742427e7001a7fd36ef28c2}{pf\_\-fold()} to avoid overflows. 
+
+\begin{DoxyVerb}
+int fold_constrained
+\end{DoxyVerb}
+ Global switch to activate/deactivate folding with structure constraints. 
+
+\begin{DoxyVerb}
+int do_backtrack
+\end{DoxyVerb}
+ do backtracking, i.e. 
+
+\begin{DoxyVerb}
+char backtrack_type
+\end{DoxyVerb}
+ A backtrack array marker for \hyperlink{inverse_8h_a7af026de55d4babad879f2c92559cbbc}{inverse\_\-fold()}. 
+
+include \hyperlink{fold__vars_8h}{fold\_\-vars.h} if you want to change any of these variables from their defaults.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{fold__vars_8h}{fold\_\-vars.h} for a more complete and detailed description of all global variables and how to use them
+\end{DoxySeeAlso}
+\hypertarget{mp__fold_mp_Param_Files}{}\section{Reading Energy Parameters from File}\label{mp__fold_mp_Param_Files}
+A default set of parameters, identical to the one described in \hyperlink{mp__ref_mathews_04}{Mathews et.al. (2004)}, is compiled into the library.\par
+ Alternately, parameters can be read from and written to a file.
+
+\begin{DoxyVerb}
+void  read_parameter_file (const char fname[])
+\end{DoxyVerb}
+ Read energy parameters from a file. 
+
+\begin{DoxyVerb}
+void  write_parameter_file (const char fname[])
+\end{DoxyVerb}
+ Write energy parameters to a file. 
+
+To preserve some backward compatibility the RNAlib also provides functions to convert energy parameter files from the format used in version 1.4-\/1.8 into the new format used since version 2.0
+
+\begin{DoxyVerb}
+void convert_parameter_file (
+            const char *iname,
+            const char *oname,
+            unsigned int options)
+\end{DoxyVerb}
+ Convert/dump a Vienna 1.8.4 formatted energy parameter file. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{read__epars_8h}{read\_\-epars.h} and \hyperlink{convert__epars_8h}{convert\_\-epars.h} for detailed description of the available functions
+\end{DoxySeeAlso}
+
+
+\hyperlink{mp__parse}{Next Page: Parsing and Comparing} 

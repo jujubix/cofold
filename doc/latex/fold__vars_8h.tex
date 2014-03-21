@@ -1,0 +1,262 @@
+\hypertarget{fold__vars_8h}{
+\section{H/fold\_\-vars.h File Reference}
+\label{fold__vars_8h}\index{H/fold\_\-vars.h@{H/fold\_\-vars.h}}
+}
+
+
+Here all all declarations of the global variables used throughout RNAlib.  
+
+
+Include dependency graph for fold\_\-vars.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=68pt]{fold__vars_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{fold__vars_8h_a4c3257186a796182462f18a5480ac8b3}{set\_\-model\_\-details} (\hyperlink{structmodel__detailsT}{model\_\-detailsT} $\ast$md)
+\begin{DoxyCompactList}\small\item\em Set default model details. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{fold__vars_8h_a0afc287c2464866d94858c39175154af}{
+int \hyperlink{fold__vars_8h_a0afc287c2464866d94858c39175154af}{fold\_\-constrained}}
+\label{fold__vars_8h_a0afc287c2464866d94858c39175154af}
+
+\begin{DoxyCompactList}\small\item\em Global switch to activate/deactivate folding with structure constraints. \item\end{DoxyCompactList}\item 
+int \hyperlink{fold__vars_8h_a097eccaabd6ae8b4fef83cccff85bb5d}{noLonelyPairs}
+\begin{DoxyCompactList}\small\item\em Global switch to avoid/allow helices of length 1. \item\end{DoxyCompactList}\item 
+int \hyperlink{fold__vars_8h_a72b511ed1201f7e23ec437e468790d74}{dangles}
+\begin{DoxyCompactList}\small\item\em Switch the energy model for dangling end contributions (0, 1, 2, 3). \item\end{DoxyCompactList}\item 
+\hypertarget{fold__vars_8h_abf380d09e4f1ab94fc6af57cf0ad5d32}{
+int \hyperlink{fold__vars_8h_abf380d09e4f1ab94fc6af57cf0ad5d32}{noGU}}
+\label{fold__vars_8h_abf380d09e4f1ab94fc6af57cf0ad5d32}
+
+\begin{DoxyCompactList}\small\item\em Global switch to forbid/allow GU base pairs at all. \item\end{DoxyCompactList}\item 
+\hypertarget{fold__vars_8h_aa8d1c7b92489179e1eafa562b7bdd259}{
+int \hyperlink{fold__vars_8h_aa8d1c7b92489179e1eafa562b7bdd259}{no\_\-closingGU}}
+\label{fold__vars_8h_aa8d1c7b92489179e1eafa562b7bdd259}
+
+\begin{DoxyCompactList}\small\item\em GU allowed only inside stacks if set to 1. \item\end{DoxyCompactList}\item 
+int \hyperlink{fold__vars_8h_a4f6265bdf0ead7ff4628a360adbfd77e}{tetra\_\-loop}
+\begin{DoxyCompactList}\small\item\em Include special stabilizing energies for some tri-\/, tetra-\/ and hexa-\/loops;. \item\end{DoxyCompactList}\item 
+int \hyperlink{fold__vars_8h_afb1ef1166da85092ae8a325e02dcae71}{energy\_\-set}
+\begin{DoxyCompactList}\small\item\em 0 = BP; 1=any mit GC; 2=any mit AU-\/parameter \item\end{DoxyCompactList}\item 
+int \hyperlink{fold__vars_8h_af9202a1a09f5828dc731e2d9a10fa111}{circ}
+\begin{DoxyCompactList}\small\item\em backward compatibility variable. \item\end{DoxyCompactList}\item 
+\hypertarget{fold__vars_8h_af2763d55a74663a5e60652b8880baa5b}{
+int \hyperlink{fold__vars_8h_af2763d55a74663a5e60652b8880baa5b}{csv}}
+\label{fold__vars_8h_af2763d55a74663a5e60652b8880baa5b}
+
+\begin{DoxyCompactList}\small\item\em generate comma seperated output \item\end{DoxyCompactList}\item 
+\hypertarget{fold__vars_8h_ac408868ba00671cbc7d1d535105af045}{
+int \hyperlink{fold__vars_8h_ac408868ba00671cbc7d1d535105af045}{oldAliEn}}
+\label{fold__vars_8h_ac408868ba00671cbc7d1d535105af045}
+
+\begin{DoxyCompactList}\small\item\em use old alifold energies (with gaps) \item\end{DoxyCompactList}\item 
+\hypertarget{fold__vars_8h_a0656afca1d2853f9ee6591172f5638de}{
+int \hyperlink{fold__vars_8h_a0656afca1d2853f9ee6591172f5638de}{ribo}}
+\label{fold__vars_8h_a0656afca1d2853f9ee6591172f5638de}
+
+\begin{DoxyCompactList}\small\item\em use ribosum matrices \item\end{DoxyCompactList}\item 
+\hypertarget{fold__vars_8h_a5dbaa0cca2c8c82048a0f0e38e164944}{
+char $\ast$ \hyperlink{fold__vars_8h_a5dbaa0cca2c8c82048a0f0e38e164944}{RibosumFile}}
+\label{fold__vars_8h_a5dbaa0cca2c8c82048a0f0e38e164944}
+
+\begin{DoxyCompactList}\small\item\em warning this variable will vanish in the future ribosums will be compiled in instead \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{fold__vars_8h_a2695d91cc535d09c2eae5c3884e2ec64}{nonstandards}
+\begin{DoxyCompactList}\small\item\em contains allowed non standard base pairs \item\end{DoxyCompactList}\item 
+double \hyperlink{fold__vars_8h_ab4b11c8d9c758430960896bc3fe82ead}{temperature}
+\begin{DoxyCompactList}\small\item\em Rescale energy parameters to a temperature in degC. \item\end{DoxyCompactList}\item 
+\hypertarget{fold__vars_8h_af349001ad3b4d008d0051d935b1b6261}{
+int \hyperlink{fold__vars_8h_af349001ad3b4d008d0051d935b1b6261}{james\_\-rule}}
+\label{fold__vars_8h_af349001ad3b4d008d0051d935b1b6261}
+
+\begin{DoxyCompactList}\small\item\em interior loops of size 2 get energy 0.8Kcal and no mismatches, default 1 \item\end{DoxyCompactList}\item 
+\hypertarget{fold__vars_8h_a80c3c5fd35e7479704cc91d2d0367743}{
+int \hyperlink{fold__vars_8h_a80c3c5fd35e7479704cc91d2d0367743}{logML}}
+\label{fold__vars_8h_a80c3c5fd35e7479704cc91d2d0367743}
+
+\begin{DoxyCompactList}\small\item\em use logarithmic multiloop energy function \item\end{DoxyCompactList}\item 
+int \hyperlink{fold__vars_8h_ab9b2c3a37a5516614c06d0ab54b97cda}{cut\_\-point}
+\begin{DoxyCompactList}\small\item\em Marks the position (starting from 1) of the first nucleotide of the second molecule within the concatenated sequence. \item\end{DoxyCompactList}\item 
+\hyperlink{structbondT}{bondT} $\ast$ \hyperlink{fold__vars_8h_a0244a629b5ab4f58b77590c3dfd130dc}{base\_\-pair}
+\begin{DoxyCompactList}\small\item\em Contains a list of base pairs after a call to \hyperlink{fold_8h_aadafcb0f140795ae62e5ca027e335a9b}{fold()}. \item\end{DoxyCompactList}\item 
+FLT\_\-OR\_\-DBL $\ast$ \hyperlink{fold__vars_8h_ac98ec419070aee6831b44e5c700f090f}{pr}
+\begin{DoxyCompactList}\small\item\em A pointer to the base pair probability matrix. \item\end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{fold__vars_8h_a92089ae3a51b5d75a14ce9cc29cc8317}{iindx}
+\begin{DoxyCompactList}\small\item\em index array to move through pr. \item\end{DoxyCompactList}\item 
+double \hyperlink{fold__vars_8h_ad3b22044065acc6dee0af68931b52cfd}{pf\_\-scale}
+\begin{DoxyCompactList}\small\item\em A scaling factor used by \hyperlink{part__func_8h_adc3db3d98742427e7001a7fd36ef28c2}{pf\_\-fold()} to avoid overflows. \item\end{DoxyCompactList}\item 
+int \hyperlink{fold__vars_8h_ad512b5dd4dbec60faccfe137bb474489}{do\_\-backtrack}
+\begin{DoxyCompactList}\small\item\em do backtracking, i.e. \item\end{DoxyCompactList}\item 
+char \hyperlink{fold__vars_8h_a83bdb43472a259c71e69fa9f70f420c3}{backtrack\_\-type}
+\begin{DoxyCompactList}\small\item\em A backtrack array marker for \hyperlink{inverse_8h_a7af026de55d4babad879f2c92559cbbc}{inverse\_\-fold()}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Here all all declarations of the global variables used throughout RNAlib. 
+
+\subsection{Function Documentation}
+\hypertarget{fold__vars_8h_a4c3257186a796182462f18a5480ac8b3}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!set\_\-model\_\-details@{set\_\-model\_\-details}}
+\index{set\_\-model\_\-details@{set\_\-model\_\-details}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{set\_\-model\_\-details}]{\setlength{\rightskip}{0pt plus 5cm}void set\_\-model\_\-details ({\bf model\_\-detailsT} $\ast$ {\em md})}}
+\label{fold__vars_8h_a4c3257186a796182462f18a5480ac8b3}
+
+
+Set default model details. 
+
+Use this function if you wish to initialize a \hyperlink{structmodel__detailsT}{model\_\-detailsT} data structure with its default values, i.e. the global model settings
+
+\begin{DoxySeeAlso}{See also}
+
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em md}]A pointer to the data structure that shall be initialized \end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\hypertarget{fold__vars_8h_a097eccaabd6ae8b4fef83cccff85bb5d}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!noLonelyPairs@{noLonelyPairs}}
+\index{noLonelyPairs@{noLonelyPairs}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{noLonelyPairs}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf noLonelyPairs}}}
+\label{fold__vars_8h_a097eccaabd6ae8b4fef83cccff85bb5d}
+
+
+Global switch to avoid/allow helices of length 1. 
+
+Disallow all pairs which can only occur as lonely pairs (i.e. as helix of length 1). This avoids lonely base pairs in the predicted structures in most cases. \hypertarget{fold__vars_8h_a72b511ed1201f7e23ec437e468790d74}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!dangles@{dangles}}
+\index{dangles@{dangles}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{dangles}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf dangles}}}
+\label{fold__vars_8h_a72b511ed1201f7e23ec437e468790d74}
+
+
+Switch the energy model for dangling end contributions (0, 1, 2, 3). 
+
+If set to 0 no stabilizing energies are assigned to bases adjacent to helices in free ends and multiloops (so called dangling ends). Normally (dangles = 1) dangling end energies are assigned only to unpaired bases and a base cannot participate simultaneously in two dangling ends. In the partition function algorithm \hyperlink{part__func_8h_adc3db3d98742427e7001a7fd36ef28c2}{pf\_\-fold()} these checks are neglected. If \hyperlink{fold__vars_8h_a72b511ed1201f7e23ec437e468790d74}{dangles} is set to 2, all folding routines will follow this convention. This treatment of dangling ends gives more favorable energies to helices directly adjacent to one another, which can be beneficial since such helices often do engage in stabilizing interactions through co-\/axial stacking.\par
+ If dangles = 3 co-\/axial stacking is explicitly included for adjacent helices in mutli-\/loops. The option affects only mfe folding and energy evaluation (\hyperlink{fold_8h_aadafcb0f140795ae62e5ca027e335a9b}{fold()} and \hyperlink{fold_8h_af93986cb3cb29770ec9cca69c9fab8cf}{energy\_\-of\_\-structure()}), as well as suboptimal folding (\hyperlink{subopt_8h_ac7f749cb177da547798509ebe021884c}{subopt()}) via re-\/evaluation of energies. Co-\/axial stacking with one intervening mismatch is not considered so far.
+
+Default is 2 in most algorithms, partition function algorithms can only handle 0 and 2 \hypertarget{fold__vars_8h_a4f6265bdf0ead7ff4628a360adbfd77e}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!tetra\_\-loop@{tetra\_\-loop}}
+\index{tetra\_\-loop@{tetra\_\-loop}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{tetra\_\-loop}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tetra\_\-loop}}}
+\label{fold__vars_8h_a4f6265bdf0ead7ff4628a360adbfd77e}
+
+
+Include special stabilizing energies for some tri-\/, tetra-\/ and hexa-\/loops;. 
+
+default is 1. \hypertarget{fold__vars_8h_afb1ef1166da85092ae8a325e02dcae71}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!energy\_\-set@{energy\_\-set}}
+\index{energy\_\-set@{energy\_\-set}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{energy\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf energy\_\-set}}}
+\label{fold__vars_8h_afb1ef1166da85092ae8a325e02dcae71}
+
+
+0 = BP; 1=any mit GC; 2=any mit AU-\/parameter 
+
+If set to 1 or 2: fold sequences from an artificial alphabet ABCD..., where A pairs B, C pairs D, etc. using either GC (1) or AU parameters (2); default is 0, you probably don't want to change it. \hypertarget{fold__vars_8h_af9202a1a09f5828dc731e2d9a10fa111}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!circ@{circ}}
+\index{circ@{circ}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{circ}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf circ}}}
+\label{fold__vars_8h_af9202a1a09f5828dc731e2d9a10fa111}
+
+
+backward compatibility variable. 
+
+. this does not effect anything \hypertarget{fold__vars_8h_a2695d91cc535d09c2eae5c3884e2ec64}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!nonstandards@{nonstandards}}
+\index{nonstandards@{nonstandards}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{nonstandards}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf nonstandards}}}
+\label{fold__vars_8h_a2695d91cc535d09c2eae5c3884e2ec64}
+
+
+contains allowed non standard base pairs 
+
+Lists additional base pairs that will be allowed to form in addition to GC, CG, AU, UA, GU and UG. Nonstandard base pairs are given a stacking energy of 0. \hypertarget{fold__vars_8h_ab4b11c8d9c758430960896bc3fe82ead}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!temperature@{temperature}}
+\index{temperature@{temperature}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{temperature}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf temperature}}}
+\label{fold__vars_8h_ab4b11c8d9c758430960896bc3fe82ead}
+
+
+Rescale energy parameters to a temperature in degC. 
+
+Default is 37C. You have to call the update\_\-...\_\-params() functions after changing this parameter. \hypertarget{fold__vars_8h_ab9b2c3a37a5516614c06d0ab54b97cda}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!cut\_\-point@{cut\_\-point}}
+\index{cut\_\-point@{cut\_\-point}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{cut\_\-point}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf cut\_\-point}}}
+\label{fold__vars_8h_ab9b2c3a37a5516614c06d0ab54b97cda}
+
+
+Marks the position (starting from 1) of the first nucleotide of the second molecule within the concatenated sequence. 
+
+To evaluate the energy of a duplex structure (a structure formed by two strands), concatenate the to sequences and set it to the first base of the second strand in the concatenated sequence. The default value of -\/1 stands for single molecule folding. The cut\_\-point variable is also used by \hyperlink{PS__dot_8h_a0873c7cc4cd7a11c9a2cea19dde7e9c9}{PS\_\-rna\_\-plot()} and \hyperlink{PS__dot_8h_a689a97a7e3b8a2df14728b8204d9d57b}{PS\_\-dot\_\-plot()} to mark the chain break in postscript plots. \hypertarget{fold__vars_8h_a0244a629b5ab4f58b77590c3dfd130dc}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!base\_\-pair@{base\_\-pair}}
+\index{base\_\-pair@{base\_\-pair}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{base\_\-pair}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bondT}$\ast$ {\bf base\_\-pair}}}
+\label{fold__vars_8h_a0244a629b5ab4f58b77590c3dfd130dc}
+
+
+Contains a list of base pairs after a call to \hyperlink{fold_8h_aadafcb0f140795ae62e5ca027e335a9b}{fold()}. 
+
+base\_\-pair\mbox{[}0\mbox{]}.i contains the total number of pairs. \begin{Desc}
+\item[\hyperlink{deprecated__deprecated000008}{Deprecated}]Do not use this variable anymore! \end{Desc}
+\hypertarget{fold__vars_8h_ac98ec419070aee6831b44e5c700f090f}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!pr@{pr}}
+\index{pr@{pr}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{pr}]{\setlength{\rightskip}{0pt plus 5cm}FLT\_\-OR\_\-DBL$\ast$ {\bf pr}}}
+\label{fold__vars_8h_ac98ec419070aee6831b44e5c700f090f}
+
+
+A pointer to the base pair probability matrix. 
+
+\begin{Desc}
+\item[\hyperlink{deprecated__deprecated000009}{Deprecated}]Do not use this variable anymore! \end{Desc}
+\hypertarget{fold__vars_8h_a92089ae3a51b5d75a14ce9cc29cc8317}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!iindx@{iindx}}
+\index{iindx@{iindx}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{iindx}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf iindx}}}
+\label{fold__vars_8h_a92089ae3a51b5d75a14ce9cc29cc8317}
+
+
+index array to move through pr. 
+
+The probability for base i and j to form a pair is in pr\mbox{[}iindx\mbox{[}i\mbox{]}-\/j\mbox{]}. \begin{Desc}
+\item[\hyperlink{deprecated__deprecated000010}{Deprecated}]Do not use this variable anymore! \end{Desc}
+\hypertarget{fold__vars_8h_ad3b22044065acc6dee0af68931b52cfd}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!pf\_\-scale@{pf\_\-scale}}
+\index{pf\_\-scale@{pf\_\-scale}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{pf\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf pf\_\-scale}}}
+\label{fold__vars_8h_ad3b22044065acc6dee0af68931b52cfd}
+
+
+A scaling factor used by \hyperlink{part__func_8h_adc3db3d98742427e7001a7fd36ef28c2}{pf\_\-fold()} to avoid overflows. 
+
+Should be set to approximately $exp{((-F/kT)/length)}$, where $F$ is an estimate for the ensemble free energy, for example the minimum free energy. You must call \hyperlink{part__func_8h_a384e927890f9c034ff09fa66da102d28}{update\_\-pf\_\-params()} after changing this parameter.\par
+ If pf\_\-scale is -\/1 (the default) , an estimate will be provided automatically when computing partition functions, e.g. \hyperlink{part__func_8h_adc3db3d98742427e7001a7fd36ef28c2}{pf\_\-fold()} The automatic estimate is usually insufficient for sequences more than a few hundred bases long. \hypertarget{fold__vars_8h_ad512b5dd4dbec60faccfe137bb474489}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!do\_\-backtrack@{do\_\-backtrack}}
+\index{do\_\-backtrack@{do\_\-backtrack}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{do\_\-backtrack}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf do\_\-backtrack}}}
+\label{fold__vars_8h_ad512b5dd4dbec60faccfe137bb474489}
+
+
+do backtracking, i.e. 
+
+compute secondary structures or base pair probabilities
+
+If 0, do not calculate pair probabilities in \hyperlink{part__func_8h_adc3db3d98742427e7001a7fd36ef28c2}{pf\_\-fold()}; this is about twice as fast. Default is 1. \hypertarget{fold__vars_8h_a83bdb43472a259c71e69fa9f70f420c3}{
+\index{fold\_\-vars.h@{fold\_\-vars.h}!backtrack\_\-type@{backtrack\_\-type}}
+\index{backtrack\_\-type@{backtrack\_\-type}!fold_vars.h@{fold\_\-vars.h}}
+\subsubsection[{backtrack\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf backtrack\_\-type}}}
+\label{fold__vars_8h_a83bdb43472a259c71e69fa9f70f420c3}
+
+
+A backtrack array marker for \hyperlink{inverse_8h_a7af026de55d4babad879f2c92559cbbc}{inverse\_\-fold()}. 
+
+If set to 'C': force (1,N) to be paired, 'M' fold as if the sequence were inside a multi-\/loop. Otherwise ('F') the usual mfe structure is computed. 
